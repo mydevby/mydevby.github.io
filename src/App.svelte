@@ -11,15 +11,19 @@
 </script>
 
 <button on:click={handleClick}>
-	Count: {count}
+	<span>Count: {count}</span>
 </button>
 
 <p>{count} * 2 = {doubled}</p>
 <p>{doubled} * 2 = {quadrupled}</p>
 
 <style lang="scss">
-	$pink: rgb(200, 0, 220);
+	$red: #f00;
+	$blue: #f0f;
 	button {
-		color: $pink;
+		background: #f0f;
+		span {
+			color: $red
+		}
 	}
 </style>
