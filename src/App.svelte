@@ -18,12 +18,20 @@
 <p>{doubled} * 2 = {quadrupled}</p>
 
 <style lang="scss">
+	* {
+		font-family: Arial, Helvetica, sans-serif;
+	}
 	$red: #f00;
 	$blue: #f0f;
 	button {
-		background: #f0f;
+		background: yellow;
+		border-color: green;
 		span {
-			color: $red
+			color: blue;
 		}
+	}
+	p {
+		font-size: 20px;
+		color: darkblue;
 	}
 </style>
