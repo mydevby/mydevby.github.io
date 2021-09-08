@@ -16,3 +16,10 @@
 
 <p>{count} * 2 = {doubled}</p>
 <p>{doubled} * 2 = {quadrupled}</p>
+
+<style lang="scss">
+	$pink: rgb(200, 0, 220);
+	button {
+		color: $pink;
+	}
+</style>
