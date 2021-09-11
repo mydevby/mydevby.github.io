@@ -1,37 +1,55 @@
 <script>
-	let count = 1;
+	let name = 'Valha';
+	let color = 'black';
+	let size = 18;
 
-	// the `$:` means 're-run whenever these values change'
-	$: doubled = count * 2;
-	$: quadrupled = doubled * 2;
-
-	function handleClick() {
-		count += 1;
-	}
+	const colorText = (e) => {
+		color = e.target.value;
+	};
 </script>
 
-<button on:click={handleClick}>
-	<span>Count: {count}</span>
-</button>
+<main>
+	<h1 style="color: {color}; font-size: {size}px;">Hello {name}!</h1>
+	<form>
+		<label>
+			Color text:
+			<input type="color" on:input={colorText} value={color}>
+		</label>
+		<label>
+			Size text:
+			<input type="range" bind:value={size} min="12" max="30">
+		</label>
+	</form>
+</main>
 
-<p>{count} * 2 = {doubled}</p>
-<p>{doubled} * 2 = {quadrupled}</p>
+
 
 <style lang="scss">
 	* {
 		font-family: Arial, Helvetica, sans-serif;
 	}
-	$red: #f00;
-	$blue: #f0f;
-	button {
-		background: yellow;
-		border-color: green;
-		span {
-			color: blue;
-		}
+
+	main {
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
-	p {
-		font-size: 20px;
-		color: darkblue;
+	h1 {
+		line-height: 30px;
+		margin: 0 0 20px;
+	}
+	form {
+		padding: 10px;
+		background-color: lightgray;
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		};
 	}
 </style>
