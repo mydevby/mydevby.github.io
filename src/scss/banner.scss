@@ -1,0 +1,135 @@
+.banner {
+	background-color: #b6b1be;
+	@include bgr2x("@img/banner", "jpg");
+
+	@media (max-width: 1500px) {
+		@include bgr2x("@img/banner1500", "jpg"); 
+	}
+
+	@media (max-width: 991px) {
+		@include bgr2x("@img/banner992", "jpg");
+	}
+
+	@media (max-width: 768px) {
+		@include bgr2x("@img/banner768", "jpg");
+	}
+
+	&__container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 203px 15px;
+
+		@media (max-width: 1200px) {
+			padding: 170px 15px 120px; 
+		}
+
+		@media (max-width: 991px) {
+			padding: 100px 15px 70px; 
+		}
+
+		@media (max-width: 767px) {
+			padding: 80px 15px 50px; 
+		}
+	}
+
+	&__title {
+		color: $black;
+		font-weight: 700;
+		font-size: 48px;
+		text-transform: uppercase;
+		margin-bottom: 80px;
+		max-width: 780px;
+
+		&--blue {
+			color: $blue;
+		}
+
+		@media (max-width: 1200px) {
+			font-size: 40px;
+			margin-bottom: 60px;
+			max-width: 680px;
+		}
+
+		@media (max-width: 991px) {
+			font-size: 35px;
+			margin-bottom: 40px;
+			max-width: 580px;
+		}
+
+		@media (max-width: 767px) {
+			font-size: 25px;
+			margin-bottom: 20px;
+			max-width: 400px;
+		}
+	}
+
+	&__content {
+		color: $black;
+		max-width: 600px;
+		font-size: 20px;
+		margin-bottom: 80px;
+
+		@media (max-width: 1200px) {
+			max-width: 500px;
+			font-size: 18px;
+			margin-bottom: 60px;
+		}
+		@media (max-width: 991px) {
+			margin-bottom: 40px;
+		}
+
+		@media (max-width: 767px) {
+			margin-bottom: 20px;
+			max-width: 450px;
+			font-size: 16px;
+		}
+	}
+
+	&__text {
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+
+	&__list {
+		padding-left: 26px;
+	}
+
+	&__item {
+		margin-bottom: 5px;
+		position: relative;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:before {
+			content: "-";
+			position: absolute;
+			left: -16px;
+			font-weight: 600;
+		}
+	}
+
+	&__btn-wraper {
+		display: flex;
+
+		@media (max-width: 767px) {
+			flex-direction: column;
+		}
+	}
+
+	&__btn {
+		margin-right: 30px;
+		width: 183px;
+
+		@media (max-width: 767px) {
+			margin-bottom: 10px;
+			margin-right: 0;
+		}
+		
+		&:last-child {
+			margin-right: 0;
+			margin-bottom: 0;
+		}
+	}
+}

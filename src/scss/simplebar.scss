@@ -1,0 +1,19 @@
+.simplebar-track.simplebar-vertical {
+    width: 7px;
+    background: red;
+    top: 2px;
+    bottom: 2px;
+    right: 2px;
+    background: $gray;
+    border-radius: 4px;
+}
+
+.simplebar-scrollbar:before {
+    background: $blue;
+    left: 0;
+    right: 0;
+}
+
+.simplebar-scrollbar.simplebar-visible:before {
+    opacity: 1;
+}
