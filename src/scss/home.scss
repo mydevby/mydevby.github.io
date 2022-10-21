@@ -1,17 +1,21 @@
 .home {
 	background: #000;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
 
 	&__container {
 		@include container;
-		padding: 150px 20px 100px;
 		display: flex;
 		align-items: center;
+		width: 100%;
+		padding: 150px 20px 100px;
 		justify-content: space-between;
 		gap: 50px;
 	}
 
 	&__text-wrapper {
-		max-width: 500px;
+		max-width: 550px;
 	}
 
 	&__title {
@@ -29,6 +33,7 @@
 		font-size: 25px;
 		color: #fff;
 		font-weight: 600;
+		margin-bottom: 50px;
 	}
 
 	&__image-wrapper {

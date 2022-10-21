@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/style.min.css?_v=20221021180958">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221021200148">
 </head>
 <body>
 	<header class="header">
@@ -14,10 +14,10 @@
 			<nav class="header__nav">
 				<ul class="header__nav-list">
 					<li class="header__nav-item">
-						<a class="header__nav-link" href="#">Home</a>
+						<a class="header__nav-link" href="#home">Home</a>
 					</li>
 					<li class="header__nav-item">
-						<a class="header__nav-link" href="#">About</a>
+						<a class="header__nav-link" href="#about">About</a>
 					</li>
 					<li class="header__nav-item">
 						<a class="header__nav-link" href="#">Services</a>
@@ -33,20 +33,26 @@
 		</div>
 	</header>
 	<main>
-		<section class="home">
+		<section class="home" id="home">
 			<div class="home__container">
 				<div class="home__text-wrapper">
 					<h1 class="home__title">Hello, my name is <span class="home__title--red">Mikalai Yurtsevich</span></h1>
 					<p class="home__title">I'm a <span class="home__title--red">Front-end Developer</span></p>
 					<p class="home__text">I'm a Front-end Developer with extensive experience for over 5 years. My expertise is to create website and many more...</p>
+					<a class="btn" href="#about">More about me</a>
 				</div>
 				<div class="home__image-wrapper">
 					<picture><source srcset="img/i.webp" type="image/webp"><img class="home__image" src="img/i.jpg" alt="Mikalai Yurtsevich" title="Mikalai Yurtsevich" width="440px"></picture>
 				</div>
 			</div>
 		</section>
+		<section class="about" id="about">
+			<div class="about__container">
+				<h2 class="about__title">About Me</h2>
+			</div>
+		</section>
 	</main>
 	
-	<script src="js/app.min.js?_v=20221021180958"></script>
+	<script src="js/app.min.js?_v=20221021200148"></script>
 </body>
 </html>

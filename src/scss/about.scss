@@ -1,0 +1,35 @@
+.about {
+	padding: 120px;
+	background: #000;
+	height: 1000px;
+
+	&__container {
+		@include container;
+	}
+
+	&__title {
+		font-size: 35px;
+		color: #fff;
+		position: relative;
+
+		&:before {
+			content: "";
+			position: absolute;
+			width: 60px;
+			height: 4px;
+			background: red;
+			left: 0;
+			bottom: -10px;
+		}
+
+		&:after {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 4px;
+            background: red;
+            bottom: -25px;
+			left: 0;
+        }
+	}
+}
