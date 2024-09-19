@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Тест</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://vladrub.github.io/jquery.modalBox/Jquery-modalBox/jquery.modalBox.css"/>
+    <link rel="stylesheet" href="css/vendors.min.css" type="text/css">
+    <link rel="stylesheet" href="css/test.css" type="text/css">
+</head>
+<body>
+    <div id="varioMain">
+        <button class="open-modal independent">Выбрать самостоятельно</button>
+        <button class="open-modal experts">Довериться экспертам</button>
+        <button class="open-modal-info">Информация</button>
+        <div class="modal-box modal-box-info">
+            <div class="inner">
+                <ul class="information-list">
+                    <button class="close">&times;</button>
+                    <li class="information-item" data-item="1">
+                        <div class="content">
+                            <h2 class="title">сияние</h2>
+                            <p class="text">
+                                <span class="text-bold">Эликсир «Сияние»</span> содержит уникальный экстракт листьев вьетнамского дерева Дуку, витамин С и&nbsp;ниацинамид (витамин В3). Снижает производство пигмента меланина в коже, уменьшает выраженность пигментных пятен. Ниацинамид заметно улучшает внешний вид расширенных пор, выравнивает тон кожи.
+                            </p>
+                            <button class="btn-info js-close-modal-info">
+                                <span class="btn-info-text">Закрыть</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="information-item" data-item="2">
+                        <div class="content">
+                            <h2 class="title">аквалифтинг</h2>
+                            <p class="text">
+                                <span class="text-bold">Эликсир «Аквалифтинг»</span> с комплексом увлажняющих полисахаридов, экстрактом фиалки трехцветной и ниацинамидом регулирует процесс гидратации эпидермиса, запускает синтез гиалуроновой кислоты. Ниацинамид восстанавливает, уменьшает выраженность мелких морщинок, улучшает текстуру кожи.
+                            </p>
+                            <button class="btn-info js-close-modal-info">
+                                <span class="btn-info-text">Закрыть</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="information-item" data-item="3">
+                        <div class="content">
+                            <h2 class="title">защита от&nbsp;морщин</h2>
+                            <p class="text">
+                                <span class="text-bold">Эликсир «Защита от морщин»</span> содержит уникальный кислородный комплекс и&nbsp;активное вещество – сверциамарин, выделенное из листьев горечавки индийской. Борется с мимическими морщинами, уменьшает выраженность глубоких морщин.
+                            </p>
+                            <button class="btn-info js-close-modal-info">
+                                <span class="btn-info-text">Закрыть</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="information-item" data-item="4">
+                        <div class="content">
+                            <h2 class="title">Антистресс</h2>
+                            <p class="text">
+                                <span class="text-bold">Эликсир «Антистресс»</span> с комплексом масел, витамином F и экстрактом корня цикория обыкновенного восстанавливает целостность внешнего защитного слоя кожи, запускает процессы регенерации, поддерживает работу иммунной системы кожи.
+                            </p>
+                            <button class="btn-info js-close-modal-info">
+                                <span class="btn-info-text">Закрыть</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="information-item" data-item="5">
+                        <div class="content">
+                            <h2 class="title">
+                                <span class="title-small">Уникальный комплекс</span>
+                                BEAUTIFEYE™*
+                            </h2>
+                            <p class="text">
+                                Получили из коры шелкового дерева и зверобоя восточного. Он омолаживает кожу вокруг глаз, обеспечивает уникальный лифтинг-эффект верхнего века, укрепляет стенки капилляров, осветляет темные круги, уменьшает припухлости и активирует системы самозащиты кожи.
+                            </p>
+                            <p class="text-more">
+                                * Торговая марка BEAUTIFEYE™ является собственностью компании Sederma, Франция
+                            </p>
+                            <button class="btn-info js-close-modal-info">
+                                <span class="btn-info-text">Закрыть</span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-box modal-box-test">
+            <div class="inner">
+                <div class="independent">
+                    <button class="close">&times;</button>
+                    <ul class="options-list">
+                        <li   class="options-item" data-option="1" data-select="0">
+                            <h2 class="title">1 шаг: выбери крем-основу: light или rich</h2>
+                            <div class="swiper-container swiper-1">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slide-content slide-content-1"></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-content slide-content-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text"></div>
+                            <div class="content">
+                                <div class="content-image">
+                                    <div class="cream-wrapper">
+                                        <div class="sheet sheet-1"></div>
+                                        <div class="cream cream-1">
+                                            <div class="shadow"></div>
+                                        </div>
+                                        <div class="sheet sheet-2"></div>
+                                        <div class="cream cream-2">
+                                            <div class="shadow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-wrapper-select">
+                                <button class="btn-select" data-select="1">
+                                    <span class="btn-select-text">выбрать Light</span>
+                                </button>
+                                <button class="btn-select" data-select="2">
+                                    <span class="btn-select-text">выбрать RICH</span>
+                                </button>
+                            </div>
+                            <button class="next"></button>
+                            <button class="top js-btn-top"></button>
+                            <div class="select-block"></div>
+                        </li>
+                        <li class="options-item" data-option="2" data-select="0" data-select-one="0" data-select-two="0">
+                            <h2 class="title">2 шаг: выбери 1 или 2 эликсира</h2>
+                            <div class="swiper-container swiper-2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slide-content slide-content-1">
+                                            <button class="btn-more-info-slider btn-more-info-slider-1" data-elixir="1"></button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-content slide-content-2">
+                                            <button class="btn-more-info-slider btn-more-info-slider-2" data-elixir="2"></button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-content slide-content-3">
+                                            <button class="btn-more-info-slider btn-more-info-slider-3" data-elixir="3"></button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-content slide-content-4">
+                                            <button class="btn-more-info-slider btn-more-info-slider-4" data-elixir="4"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text"></div>
+                            <div class="content">
+                                <div class="sheet sheet-1"></div>
+                                <div class="sheet sheet-2"></div>
+                                <div class="sheet sheet-3"></div>
+                                <div class="sheet sheet-4"></div>
+                                <div class="content-image">
+                                    <div class="elixir elixir-1">
+                                        <div class="shadow"></div>
+                                    </div>
+                                    <div class="elixir elixir-2">
+                                        <div class="shadow"></div>
+                                    </div>
+                                    <div class="elixir elixir-3">
+                                        <div class="shadow"></div>
+                                    </div>
+                                    <div class="elixir elixir-4">
+                                        <div class="shadow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="prev"></button>
+                            <button class="next"></button>
+                            <button class="btn-more-info js-open-modal-info"></button>
+                            <div class="btn-wrapper-select">
+                                <button class="btn-select" data-select="1">
+                                    <span class="btn-select-text">выбрать radiance</span>
+                                </button>
+                                <button class="btn-select" data-select="2">
+                                    <span class="btn-select-text">выбрать aqua lifting</span>
+                                </button>
+                                <button class="btn-select" data-select="3">
+                                    <span class="btn-select-text">выбрать wrinkle care</span>
+                                </button>
+                                <button class="btn-select" data-select="4">
+                                    <span class="btn-select-text">выбрать antistress</span>
+                                </button>
+                            </div>
+                            <button class="top js-btn-top"></button>
+                            <div class="select-block"></div>
+                        </li>
+                        <li class="options-item" data-option="3">
+                            <h2 class="title">не забудь:<br class="mob"> крем для век</h2>
+                            <button class="btn-more-info js-open-modal-info"></button>
+                            <button class="prev"></button>
+                            <button class="next"></button>
+                            <button class="top js-btn-top"></button>
+                            <div class="select-block"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="experts">
+                    <button class="close">&times;</button>
+                    <ul class="question-list">
+                        <li class="question-item" data-question="1">
+                            <h2 class="title">
+                                Какая проблема кожи лица вас беспокоит<br>
+                                (не более 2  вариантов)
+                            </h2>
+                            <div class="wrapper-answer wrapper-answer-1">
+                                <button class="btn-answer" data-elixir="1000" data-cream="00">
+                                    <span class="btn-answer-text">тусклый серый цвет лица</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="1000" data-cream="00">
+                                    <span class="btn-answer-text">расширенные поры и&nbsp;жирный блеск</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0001" data-cream="00">
+                                    <span class="btn-answer-text">покраснение и&nbsp;раздражение</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0001" data-cream="01">
+                                    <span class="btn-answer-text">ощущение сухости и&nbsp;шелушение</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0010" data-cream="01">
+                                    <span class="btn-answer-text">мимические и&nbsp;глубокие морщины</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="1000" data-cream="10">
+                                    <span class="btn-answer-text">высыпания и&nbsp;прыщики</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="1000" data-cream="00">
+                                    <span class="btn-answer-text">неровный тон</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0100" data-cream="00">
+                                    <span class="btn-answer-text">потеря тонуса</span>
+                                </button>
+                            </div>
+                            <button tabindex="-1" class="btn-more disabled" data-next="1">
+                                <span class="btn-more-text">Дальше</span>
+                            </button>
+                        </li>
+                        <li class="question-item" data-question="2">
+                            <h2 class="title">
+                                Сколько вам лет?
+                            </h2>
+                            <div class="wrapper-answer wrapper-answer-2">
+                                <button class="btn-answer" data-elixir="1100" data-cream="00">
+                                    <span class="btn-answer-text btn-answer-text-big">менее 25</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="1100" data-cream="00">
+                                    <span class="btn-answer-text btn-answer-text-big">25+</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0000" data-cream="00">
+                                    <span class="btn-answer-text btn-answer-text-big">35+</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0010" data-cream="01">
+                                    <span class="btn-answer-text btn-answer-text-big">45+</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0010" data-cream="01">
+                                    <span class="btn-answer-text btn-answer-text-big">55+</span>
+                                </button>
+                            </div>
+                            <button tabindex="-1" class="btn-more disabled" data-next="2">
+                                <span class="btn-more-text">Дальше</span>
+                            </button>
+                        </li>
+                        <li class="question-item" data-question="3">
+                            <h2 class="title">
+                                Ваш тип кожи?
+                            </h2>
+                            <div class="wrapper-answer wrapper-answer-3">
+                                <button class="btn-answer" data-elixir="0001" data-cream="00">
+                                    <span class="btn-answer-text">чувствительная</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="1000" data-cream="10">
+                                    <span class="btn-answer-text btn-answer-text-small-mob">жирная или склонная к&nbsp;жирности</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0001" data-cream="01">
+                                    <span class="btn-answer-text">сухая</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0000" data-cream="00">
+                                    <span class="btn-answer-text">нормальная</span>
+                                </button>
+                            </div>
+                            <button tabindex="-1" class="btn-more disabled" data-next="3">
+                                <span class="btn-more-text">Дальше</span>
+                            </button>
+                        </li>
+                        <li class="question-item" data-question="4">
+                            <h2 class="title">
+                                Сколько часов вы спите ежедневно?
+                            </h2>
+                            <div class="wrapper-answer wrapper-answer-4">
+                                <button class="btn-answer" data-elixir="0000" data-cream="00">
+                                    <span class="btn-answer-text btn-answer-text-middle">более 8 часов</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0000" data-cream="00">
+                                    <span class="btn-answer-text btn-answer-text-middle">7 часов</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0000" data-cream="00">
+                                    <span class="btn-answer-text btn-answer-text-middle">6 часов</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0100" data-cream="00">
+                                    <span class="btn-answer-text btn-answer-text-middle">от 4 до 5 часов</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0100" data-cream="01">
+                                    <span class="btn-answer-text btn-answer-text-middle">менее 4 часов</span>
+                                </button>
+                            </div>
+                            <button tabindex="-1" class="btn-more disabled" data-next="4">
+                                <span class="btn-more-text">Дальше</span>
+                            </button>
+                        </li>
+                        <li class="question-item" data-question="5">
+                            <h2 class="title">
+                                Сколько часов в день вы проводите на улице?
+                            </h2>
+                            <div class="wrapper-answer wrapper-answer-5">
+                                <button class="btn-answer" data-elixir="0000" data-cream="00">
+                                    <span class="btn-answer-text btn-answer-text-middle">более 8 часов</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0000" data-cream="00">
+                                    <span class="btn-answer-text btn-answer-text-middle">от 7 до 8 часов</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0000" data-cream="00">
+                                    <span class="btn-answer-text btn-answer-text-middle">от 4 до 6 часов</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0001" data-cream="00">
+                                    <span class="btn-answer-text btn-answer-text-middle">от 1 до 3 часов</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0001" data-cream="00">
+                                    <span class="btn-answer-text btn-answer-text-middle">менее 1 часа</span>
+                                </button>
+                            </div>
+                            <button tabindex="-1" class="btn-more disabled" data-next="5">
+                                <span class="btn-more-text">Дальше</span>
+                            </button>
+                        </li>
+                        <li class="question-item" data-question="6">
+                            <h2 class="title">
+                                Как часто вы летаете на самолете?
+                            </h2>
+                            <div class="wrapper-answer wrapper-answer-6">
+                                <button class="btn-answer" data-elixir="0000" data-cream="00">
+                                    <span class="btn-answer-text btn-answer-text-small">менее 1 раза в месяц</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0000" data-cream="00">
+                                    <span class="btn-answer-text btn-answer-text-small">один раз в месяц</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0100" data-cream="00">
+                                    <span class="btn-answer-text btn-answer-text-small">один раз в неделю</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0100" data-cream="01">
+                                    <span class="btn-answer-text btn-answer-text-small">более 1 раза в неделю</span>
+                                </button>
+                            </div>
+                            <button tabindex="-1" class="btn-more disabled" data-next="6">
+                                <span class="btn-more-text">Дальше</span>
+                            </button>
+                        </li>
+                        <li class="question-item" data-question="7">
+                            <h2 class="title">
+                                вы курите?
+                            </h2>
+                            <div class="wrapper-answer wrapper-answer-7">
+                                <button class="btn-answer" data-elixir="0000" data-cream="00">
+                                    <span class="btn-answer-text btn-answer-text-middle">не курю</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0000" data-cream="00">
+                                    <span class="btn-answer-text btn-answer-text-middle">иногда</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="1000" data-cream="00">
+                                    <span class="btn-answer-text btn-answer-text-middle">часто</span>
+                                </button>
+                            </div>
+                            <button tabindex="-1" class="btn-more disabled" data-next="7">
+                                <span class="btn-more-text">Дальше</span>
+                            </button>
+                        </li>
+                        <li class="question-item" data-question="8">
+                            <h2 class="title">
+                                Как часто вы сталкиваетесь<br>
+                                со стрессовыми ситуациями?
+                            </h2>
+                            <div class="wrapper-answer wrapper-answer-8">
+                                <button class="btn-answer" data-elixir="0001" data-cream="00">
+                                    <span class="btn-answer-text btn-answer-text-small">постоянно</span>
+                                </button>
+                                <button class="btn-answer" data-elixir="0000" data-cream="00">
+                                    <span class="btn-answer-text btn-answer-text-small">несколько раз в&nbsp;неделю</span>
+                                </button>
+                                <button class="btn-answer btn-answer-big" data-elixir="0000" data-cream="00">
+                                    <span class="btn-answer-text btn-answer-text-small">никогда, у меня спокойный размеренный образ жизни</span>
+                                </button>
+                            </div>
+                            <button tabindex="-1" class="btn-more disabled" data-next="8">
+                                <span class="btn-more-text">Дальше</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="results">
+                    <button class="close">&times;</button>
+                    <h2 class="title">Ваша формула ухода</h2>
+                    <p class="title-more">Это ваша индивидуальная программа ухода!&nbsp;<br class="mob">
+                        Используйте все четыре продукта, чтобы получить максимальный результат, или выберите два-три элемента.</p>
+                    <ul class="result-list">
+                        <li class="result-item" data-result-cream="0">
+                            <div class="image-wrapper">
+                                <img class="result-image result-image-cream" src="img/test/result-0.png" alt="Легкий увлажняющий крем-флюид">
+                            </div>
+                            <h3 class="result-title">Легкий увлажняющий крем-флюид</h3>
+                            <p class="result-text">
+                                Нежная невесомая текстура крема надолго увлажняет и&nbsp;заботится о&nbsp;коже лица, быстро впитывается и&nbsp;не&nbsp;оставляет жирного блеска.
+                            </p>
+                            <div class="result-art">Арт. 0154</div>
+                            <a class="result-link" href="#" target="_blank">
+                                <span class="result-link-text">Купить</span>
+                            </a>
+                        </li>
+                        <li class="result-item" data-result-cream="1">
+                            <div class="image-wrapper">
+                                <img class="result-image result-image-cream" src="img/test/result-1.png" alt="Насыщенный питательный крем для лица">
+                            </div>
+                            <h3 class="result-title">Насыщенный питательный крем для лица</h3>
+                            <p class="result-text">
+                                Богатая текстура крема дарит питание и&nbsp;комфорт даже сухой обезвоженной коже.
+                            </p>
+                            <div class="result-art">Арт. 0155</div>
+                            <a class="result-link" href="#" target="_blank">
+                                <span class="result-link-text">Купить</span>
+                            </a>
+                        </li>
+                        <li class="result-item" data-result-elixir="0">
+                            <div class="image-wrapper">
+                                <img class="result-image" src="img/test/result-2.png" alt="Эликсир для лица «Сияние»">
+                            </div>
+                            <h3 class="result-title">
+                                Эликсир для лица<br>
+                                «Сияние»
+                            </h3>
+                            <p class="result-text">
+                                Борется с&nbsp;тусклым и&nbsp;неровным цветом&nbsp;лица.
+                            </p>
+                            <div class="result-art">Арт. 0164</div>
+                            <a class="result-link" href="#" target="_blank">
+                                <span class="result-link-text">Купить</span>
+                            </a>
+                        </li>
+                        <li class="result-item shower" data-result-elixir="1">
+                            <div class="image-wrapper">
+                                <img class="result-image" src="img/test/result-3.png" alt="Эликсир для лица «Аквалифтинг»">
+                            </div>
+                            <h3 class="result-title">
+                                Эликсир для лица<br>
+                                «Аквалифтинг»
+                            </h3>
+                            <p class="result-text">
+                                Борется с&nbsp;обезвоженностью кожи, ощущением стянутости и&nbsp;морщинами.
+                            </p>
+                            <div class="result-art">Арт. 0165</div>
+                            <a class="result-link" href="#" target="_blank">
+                                <span class="result-link-text">Купить</span>
+                            </a>
+                        </li>
+                        <li class="result-item shower" data-result-elixir="2">
+                            <div class="image-wrapper">
+                                <img class="result-image" src="img/test/result-4.png" alt="Эликсир для лица «Защита от морщин»">
+                            </div>
+                            <h3 class="result-title">
+                                Эликсир для лица<br>
+                                «Защита от морщин»
+                            </h3>
+                            <p class="result-text">
+                                Борется с&nbsp;вертикальными и&nbsp;горизонтальными морщинами.
+                            </p>
+                            <div class="result-art">Арт. 0168</div>
+                            <a class="result-link" href="#" target="_blank">
+                                <span class="result-link-text">Купить</span>
+                            </a>
+                        </li>
+                        <li class="result-item shower" data-result-elixir="3">
+                            <div class="image-wrapper">
+                                <img class="result-image" src="img/test/result-5.png" alt="Эликсир для лица «Антистресс»">
+                            </div>
+                            <h3 class="result-title">
+                                Эликсир для лица<br>
+                                «Антистресс»
+                            </h3>
+                            <p class="result-text">
+                                Борется с&nbsp;усталостью кожи, повышает ее&nbsp;иммунитет и&nbsp;улучшает внешний вид.
+                            </p>
+                            <div class="result-art">Арт. 0168</div>
+                            <a class="result-link" href="#" target="_blank">
+                                <span class="result-link-text">Купить</span>
+                            </a>
+                        </li>
+                        <li class="result-item shower" data-result-all="0">
+                            <div class="image-wrapper">
+                                <img class="result-image" src="img/test/result-6.png" alt="Крем для ухода за кожей вокруг глаз">
+                            </div>
+                            <h3 class="result-title">
+                                Крем для&nbsp;ухода за&nbsp;кожей вокруг&nbsp;глаз
+                            </h3>
+                            <p class="result-text">
+                                Приятно наносится и&nbsp;легко впитывается. Активная природная основа оказывает многовекторное омоложение кожи.
+                            </p>
+                            <div class="result-art">Арт. 0160</div>
+                            <a class="result-link" href="#" target="_blank">
+                                <span class="result-link-text">Купить</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="select-block"></div>
+                    <a class="result-link-more" href="https://new.faberlic.com/ru/c/series-vario" target="_blank">
+                        <span class="result-link-more-text">Смотреть всю серию</span>
+                    </a>
+                    <div class="buttons-custom-wrapper">
+                        <a class="link-download" href="#" download="Ваша формула ухода">
+                            <div class="round">
+                                <img class="round-icon" src="img/test/download-icon.svg" alt="Скачать">
+                            </div>
+                            <span class="link-download-text">
+                                Сохрани свои<br>
+                                результаты
+                            </span>
+                        </a>
+                        <div class="btn-new-test">
+                            <div class="round">
+                                <img class="round-icon" src="img/test/restart-test-icon.svg" alt="Перезапустить тест">
+                            </div>
+                            <span class="btn-new-test-text">
+                                Пройди<br>
+                                тест заново
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://vladrub.github.io/jquery.modalBox/Jquery-modalBox/jquery.modalBox.js"></script>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

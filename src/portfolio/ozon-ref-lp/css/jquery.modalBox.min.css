@@ -1,0 +1,127 @@
+body div.modal-box-scroll-bar {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll; }
+
+body.modal-box-open {
+  overflow: hidden; }
+
+div.modal-box {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow-x: hidden;
+  overflow-y: auto;
+  visibility: hidden;
+  -webkit-transition: visibility .3s linear .5s,opacity .3s linear;
+  -o-transition: visibility .3s linear .5s,opacity .3s linear;
+  transition: visibility .3s linear .5s,opacity .3s linear;
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+  -webkit-overflow-scrolling: touch; }
+
+div.modal-box > .inner {
+  background: #fbfbfb;
+  color: #101010;
+  padding: 25px 35px;
+  width: 600px;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  visibility: hidden;
+  margin-top: auto;
+  margin-bottom: auto; }
+
+div.modal-box > .inner a {
+  color: #101010; }
+
+div.modal-box > .inner button.close {
+  display: block;
+  position: absolute;
+  font-size: 22px;
+  line-height: 11px;
+  right: 10px;
+  top: 10px;
+  opacity: .5;
+  background: 0 0;
+  border: none; }
+
+div.modal-box > .inner button.close.close:hover {
+  opacity: 1; }
+
+div.modal-box > .inner.hide-modal-inner, div.modal-box > .inner.show-modal-inner {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  visibility: visible; }
+
+div.modal-box > .inner.show-modal-inner {
+  -webkit-animation-name: modalBoxIn;
+          animation-name: modalBoxIn; }
+
+div.modal-box > .inner.hide-modal-inner {
+  -webkit-animation-name: modalBoxOut;
+          animation-name: modalBoxOut; }
+
+div.modal-box.active {
+  visibility: visible;
+  opacity: 1; }
+
+@-webkit-keyframes modalBoxIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+@keyframes modalBoxIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+@-webkit-keyframes modalBoxOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0); } }
+
+@keyframes modalBoxOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0); } }

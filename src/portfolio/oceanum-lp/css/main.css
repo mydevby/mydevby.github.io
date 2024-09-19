@@ -1,0 +1,1379 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.5.3
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url("../fonts/ProximaNova-Bold.woff?v=e2cf3dc2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url("../fonts/ProximaNova-Regular.woff?v=2d2ae255") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url("../fonts/ProximaNova-Light.woff?v=f7d4a806") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url("../fonts/ProximaNova-Semibold.woff?v=cab8b2fb") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'ProximaNova-Semibold-It';
+  src: url("../fonts/ProximaNova-Semibold-It.woff?v=12fd4b24") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+#oceanum-lp {
+  font-size: -webkit-calc(100vw / 120);
+  font-size: calc(100vw / 120);
+  overflow-x: hidden; }
+  @media (max-width: 1025px) {
+    #oceanum-lp {
+      font-size: -webkit-calc(100vw / 48);
+      font-size: calc(100vw / 48); } }
+  @media (max-width: 767px) {
+    #oceanum-lp {
+      font-size: -webkit-calc(100vw / 20);
+      font-size: calc(100vw / 20); } }
+  #oceanum-lp * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    font-family: Arial, sans-serif;
+    -webkit-appearance: none;
+    outline: none !important; }
+  #oceanum-lp h1, #oceanum-lp h2, #oceanum-lp h3, #oceanum-lp h4, #oceanum-lp h5, #oceanum-lp h6 {
+    font-style: normal;
+    font-weight: normal; }
+
+#oceanum-lp {
+  background: #095a78; }
+  #oceanum-lp section.banner {
+    overflow: hidden; }
+    #oceanum-lp section.banner .top {
+      position: relative;
+      background: url("../img/banner-bg.jpg?v=e0d540e5") no-repeat 50% 50%/cover;
+      height: 68.75em; }
+      @media (max-width: 1025px) {
+        #oceanum-lp section.banner .top {
+          height: 65.625em;
+          background-image: url("../img/banner-bg-tab.jpg?v=04f5d4d7"); } }
+      @media (max-width: 767px) {
+        #oceanum-lp section.banner .top {
+          height: 45.4375em;
+          background-image: url("../img/banner-bg-mob.jpg?v=42cfddbc"); } }
+      #oceanum-lp section.banner .top .title {
+        position: absolute;
+        top: 8.125em;
+        left: 10em;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1em;
+        line-height: 1; }
+        @media (max-width: 1025px) {
+          #oceanum-lp section.banner .top .title {
+            padding: 1.875em;
+            position: static;
+            text-align: center;
+            margin-bottom: 2.8125em; } }
+        @media (max-width: 767px) {
+          #oceanum-lp section.banner .top .title {
+            padding: 0.9375em 0.625em;
+            margin-bottom: 2.5em; } }
+        #oceanum-lp section.banner .top .title .title-middle {
+          font-family: ProximaNova-Regular, Arial, sans-serif;
+          font-size: 7.5em; }
+          @media (max-width: 1025px) {
+            #oceanum-lp section.banner .top .title .title-middle {
+              display: inline-block;
+              font-size: 5em;
+              margin-bottom: 0.125em; } }
+          @media (max-width: 767px) {
+            #oceanum-lp section.banner .top .title .title-middle {
+              font-size: 2.5em; } }
+        #oceanum-lp section.banner .top .title .title-big {
+          display: inline-block;
+          margin-bottom: 0.1875em;
+          font-family: ProximaNova-Bold, Arial, sans-serif;
+          font-size: 11.25em; }
+          @media (max-width: 1025px) {
+            #oceanum-lp section.banner .top .title .title-big {
+              font-size: 7.5em; } }
+          @media (max-width: 767px) {
+            #oceanum-lp section.banner .top .title .title-big {
+              font-size: 4.375em; } }
+        #oceanum-lp section.banner .top .title .title-small {
+          font-family: ProximaNova-Bold, Arial, sans-serif;
+          font-size: 3.125em; }
+          @media (max-width: 1025px) {
+            #oceanum-lp section.banner .top .title .title-small {
+              font-size: 1.875em; } }
+          @media (max-width: 767px) {
+            #oceanum-lp section.banner .top .title .title-small {
+              font-size: 1.5em; } }
+      #oceanum-lp section.banner .top .info {
+        position: absolute;
+        top: 12.5em;
+        right: 6.25em;
+        width: 29.0625em; }
+        @media (max-width: 1025px) {
+          #oceanum-lp section.banner .top .info {
+            position: relative;
+            top: 0;
+            right: 0;
+            padding-left: 17.5em;
+            width: 100%; } }
+        @media (max-width: 767px) {
+          #oceanum-lp section.banner .top .info {
+            padding-left: 1.875em; } }
+        #oceanum-lp section.banner .top .info:before {
+          content: "";
+          top: -1.875em;
+          left: -17.8125em;
+          position: absolute;
+          width: 14.8125em;
+          height: 19.4375em;
+          background: url("../img/banner-num.svg?v=40cebb75") no-repeat 50% 50%/contain; }
+          @media (max-width: 1025px) {
+            #oceanum-lp section.banner .top .info:before {
+              top: 0.625em;
+              left: 1.25em; } }
+          @media (max-width: 767px) {
+            #oceanum-lp section.banner .top .info:before {
+              top: 0.25em;
+              left: 0.875em;
+              width: 4.1875em;
+              height: 5.5em; } }
+        #oceanum-lp section.banner .top .info .info-big {
+          font-family: ProximaNova-Bold, Arial, sans-serif;
+          font-size: 5.625em;
+          line-height: 1.25;
+          text-transform: uppercase;
+          color: #fff;
+          margin-bottom: 0.1875em; }
+          @media (max-width: 1025px) {
+            #oceanum-lp section.banner .top .info .info-big {
+              margin-bottom: 0.1875em; } }
+          @media (max-width: 767px) {
+            #oceanum-lp section.banner .top .info .info-big {
+              font-size: 2.5em;
+              padding-left: 1.625em;
+              margin-bottom: 0.1875em; } }
+        #oceanum-lp section.banner .top .info .info-red {
+          display: inline-block;
+          font-family: ProximaNova-Semibold, Arial, sans-serif;
+          font-size: 2.25em;
+          line-height: 1.5;
+          background: red;
+          color: #fff;
+          padding: 0em 0.4375em;
+          -webkit-transform: translateX(-0.3125em);
+              -ms-transform: translateX(-0.3125em);
+                  transform: translateX(-0.3125em); }
+          @media (max-width: 1025px) {
+            #oceanum-lp section.banner .top .info .info-red {
+              padding: 0em 0.4375em; } }
+          @media (max-width: 767px) {
+            #oceanum-lp section.banner .top .info .info-red {
+              font-size: 1.5em;
+              padding: 0em 0.5625em;
+              -webkit-transform: translateX(-0.5em);
+                  -ms-transform: translateX(-0.5em);
+                      transform: translateX(-0.5em); } }
+        #oceanum-lp section.banner .top .info .info-white {
+          position: relative;
+          display: inline-block;
+          font-family: ProximaNova-Semibold, Arial, sans-serif;
+          font-size: 2.25em;
+          line-height: 1.5;
+          color: #fff;
+          padding: 0 0.4375em;
+          -webkit-transform: translateX(-0.3125em);
+              -ms-transform: translateX(-0.3125em);
+                  transform: translateX(-0.3125em); }
+          @media (max-width: 1025px) {
+            #oceanum-lp section.banner .top .info .info-white {
+              line-height: 1.7; } }
+          @media (max-width: 767px) {
+            #oceanum-lp section.banner .top .info .info-white {
+              font-size: 1.5em;
+              line-height: 1.5; } }
+          #oceanum-lp section.banner .top .info .info-white:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -1.1125em;
+            width: 1.1125em;
+            height: 0.75em;
+            -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+            background: url("../img/banner-flag.svg?v=14868719") no-repeat 50% 50%/cover; }
+            @media (max-width: 767px) {
+              #oceanum-lp section.banner .top .info .info-white:before {
+                right: -0.9375em;
+                width: 1.25em;
+                height: 0.83125em; } }
+        #oceanum-lp section.banner .top .info .info-text {
+          font-family: ProximaNova-Semibold, Arial, sans-serif;
+          font-size: 1.5em;
+          line-height: 1.67;
+          color: #fff;
+          padding: 0 0.3125em; }
+          @media (max-width: 767px) {
+            #oceanum-lp section.banner .top .info .info-text {
+              font-size: 1em;
+              line-height: 1.6; } }
+          #oceanum-lp section.banner .top .info .info-text .info-bold {
+            font-family: ProximaNova-Bold, Arial, sans-serif; }
+    #oceanum-lp section.banner .bottom {
+      background: #fff;
+      height: 25.4375em; }
+  #oceanum-lp .section-wrapper {
+    background: url("../img/content-bg.jpg?v=f8e9dd78") no-repeat 50% 50%/cover;
+    min-height: 277.375em; }
+    @media (max-width: 1025px) {
+      #oceanum-lp .section-wrapper {
+        min-height: 376.5625em;
+        background-image: url("../img/content-bg-tab.jpg?v=4be1ab78"); } }
+    @media (max-width: 767px) {
+      #oceanum-lp .section-wrapper {
+        min-height: 230.625em;
+        background-image: url("../img/content-bg-mob.jpg?v=e03352c8"); } }
+    #oceanum-lp .section-wrapper section.prizes {
+      position: relative;
+      height: 25.4375em; }
+      @media (max-width: 1025px) {
+        #oceanum-lp .section-wrapper section.prizes {
+          height: 108.125em; } }
+      @media (max-width: 767px) {
+        #oceanum-lp .section-wrapper section.prizes {
+          height: 62.5em; } }
+      #oceanum-lp .section-wrapper section.prizes .card-list {
+        list-style: none;
+        position: absolute;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        left: 0;
+        right: 0;
+        top: -24.5em;
+        bottom: 6.25em; }
+        @media (max-width: 1025px) {
+          #oceanum-lp .section-wrapper section.prizes .card-list {
+            -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+            top: -10.125em;
+            bottom: 0; } }
+        @media (max-width: 767px) {
+          #oceanum-lp .section-wrapper section.prizes .card-list {
+            top: -14.1875em; } }
+        #oceanum-lp .section-wrapper section.prizes .card-list .card-item {
+          position: relative;
+          width: 31.875em;
+          height: 43.75em;
+          background-color: #fff;
+          background-repeat: no-repeat;
+          -webkit-background-size: cover;
+                  background-size: cover;
+          background-position: 50% 50%;
+          -webkit-box-shadow: 0 0.3125em 1.875em rgba(19, 21, 40, 0.3);
+                  box-shadow: 0 0.3125em 1.875em rgba(19, 21, 40, 0.3);
+          margin: 0 1.25em;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          @media (max-width: 1025px) {
+            #oceanum-lp .section-wrapper section.prizes .card-list .card-item {
+              width: 28.125em;
+              height: 38.25em;
+              margin: 0 auto 1.25em; } }
+          @media (max-width: 767px) {
+            #oceanum-lp .section-wrapper section.prizes .card-list .card-item {
+              width: 17.5em;
+              height: 24em; } }
+          #oceanum-lp .section-wrapper section.prizes .card-list .card-item:last-child {
+            margin-bottom: 0; }
+          #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-1 {
+            background-image: url("../img/prizes-card-1.jpg?v=441b5901");
+            padding: 2.8125em 6.25em; }
+            @media (max-width: 1025px) {
+              #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-1 {
+                padding: 2.1875em 6.25em;
+                -webkit-box-ordinal-group: 2;
+                -webkit-order: 1;
+                    -ms-flex-order: 1;
+                        order: 1; } }
+            @media (max-width: 767px) {
+              #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-1 {
+                background-image: url("../img/prizes-card-1-mob.jpg?v=40de3d29");
+                padding: 1.5625em 2.5em; } }
+            #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-1 .num {
+              font-family: ProximaNova-Bold, Arial, sans-serif;
+              font-size: 7.5em;
+              line-height: 1;
+              color: #0E2F29;
+              text-transform: uppercase;
+              text-align: center; }
+              @media (max-width: 1025px) {
+                #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-1 .num {
+                  margin-bottom: -0.0625em; } }
+              @media (max-width: 767px) {
+                #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-1 .num {
+                  font-size: 5em; } }
+            #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-1 .text {
+              font-family: ProximaNova-Bold, Arial, sans-serif;
+              font-size: 1.5em;
+              line-height: 1.67;
+              color: #331F1F;
+              text-align: center; }
+              @media (max-width: 1025px) {
+                #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-1 .text {
+                  font-size: 1.375em; } }
+              @media (max-width: 767px) {
+                #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-1 .text {
+                  font-size: 1em; } }
+              #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-1 .text .text-light {
+                font-family: ProximaNova-Regular, Arial, sans-serif; }
+          #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-2 {
+            background-image: url("../img/prizes-card-2.jpg?v=a374c9af");
+            padding: 29.375em 6.25em 3.125em; }
+            @media (max-width: 1025px) {
+              #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-2 {
+                padding: 26.25em 6.25em 3.125em; } }
+            @media (max-width: 767px) {
+              #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-2 {
+                padding: 16.25em 1.875em 1.875em;
+                background-image: url("../img/prizes-card-2-mob.jpg?v=2779a73c"); } }
+            #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-2 .image {
+              content: "";
+              position: absolute;
+              top: -4.75em;
+              left: 5.8125em;
+              width: 21.875em;
+              height: 24.1875em;
+              background: url("../img/prizes-card-2-image.png?v=70f2ac23") no-repeat 50% 50%/contain; }
+              @media (max-width: 1025px) {
+                #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-2 .image {
+                  width: 19.25em;
+                  height: 21.25em;
+                  top: -4.0625em;
+                  left: 5.1875em; } }
+              @media (max-width: 767px) {
+                #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-2 .image {
+                  width: 12em;
+                  height: 13.1875em;
+                  top: -2.5em;
+                  left: 3.125em; } }
+            #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-2 .text {
+              font-family: ProximaNova-Bold, Arial, sans-serif;
+              font-size: 2.5em;
+              line-height: 1.2;
+              text-align: center;
+              color: #331F1F; }
+              @media (max-width: 767px) {
+                #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-2 .text {
+                  font-size: 1.5em; } }
+          #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-3 {
+            background-image: url("../img/prizes-card-3.jpg?v=7af0448d");
+            padding: 3.75em 3.75em; }
+            @media (max-width: 1025px) {
+              #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-3 {
+                -webkit-box-ordinal-group: 2;
+                -webkit-order: 1;
+                    -ms-flex-order: 1;
+                        order: 1;
+                padding: 2.1875em 2.8125em; } }
+            @media (max-width: 767px) {
+              #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-3 {
+                padding: 1.25em 1.5625em; } }
+            #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-3 .num {
+              font-family: ProximaNova-Bold, Arial, sans-serif;
+              font-size: 6.25em;
+              line-height: 1;
+              color: #0E2F29;
+              text-transform: uppercase;
+              text-align: center; }
+              @media (max-width: 1025px) {
+                #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-3 .num {
+                  margin-bottom: -0.0625em; } }
+              @media (max-width: 767px) {
+                #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-3 .num {
+                  font-size: 5em; } }
+            #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-3 .text {
+              font-family: ProximaNova-Bold, Arial, sans-serif;
+              font-size: 1.5em;
+              line-height: 1.67;
+              color: #331F1F;
+              text-align: center; }
+              @media (max-width: 1025px) {
+                #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-3 .text {
+                  font-size: 1.375em;
+                  line-height: 1.6; } }
+              @media (max-width: 767px) {
+                #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-3 .text {
+                  font-size: 0.875em; } }
+              #oceanum-lp .section-wrapper section.prizes .card-list .card-item.card-3 .text .text-light {
+                font-family: ProximaNova-Regular, Arial, sans-serif; }
+    #oceanum-lp .section-wrapper section.rules {
+      padding: 8.125em 0 0; }
+      @media (max-width: 1025px) {
+        #oceanum-lp .section-wrapper section.rules {
+          padding: 5.625em 0 0; } }
+      @media (max-width: 767px) {
+        #oceanum-lp .section-wrapper section.rules {
+          padding-top: 1.875em; } }
+      #oceanum-lp .section-wrapper section.rules .title {
+        font-family: ProximaNova-Semibold, Arial, sans-serif;
+        font-size: 3.125em;
+        line-height: 1.2;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 0.875em; }
+        @media (max-width: 1025px) {
+          #oceanum-lp .section-wrapper section.rules .title {
+            font-size: 2.5em;
+            margin-bottom: 1.25em; } }
+        @media (max-width: 767px) {
+          #oceanum-lp .section-wrapper section.rules .title {
+            font-size: 1.25em;
+            line-height: 1.5;
+            margin-bottom: 2.5em; } }
+      #oceanum-lp .section-wrapper section.rules .rule-list {
+        list-style: none;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        max-width: 93.75em;
+        margin: 0 auto 3.5em; }
+        @media (max-width: 1025px) {
+          #oceanum-lp .section-wrapper section.rules .rule-list {
+            margin-bottom: 4em; } }
+        @media (max-width: 767px) {
+          #oceanum-lp .section-wrapper section.rules .rule-list {
+            max-width: 17.5em;
+            margin-bottom: 1.5625em; } }
+        #oceanum-lp .section-wrapper section.rules .rule-list .rule-item {
+          position: relative;
+          width: 46.25em;
+          height: 17em;
+          padding: 3.4375em 0 0 7.5em; }
+          @media (max-width: 1025px) {
+            #oceanum-lp .section-wrapper section.rules .rule-list .rule-item {
+              width: 100%;
+              height: auto;
+              padding: 1.5625em 0 0 11.875em; } }
+          @media (max-width: 767px) {
+            #oceanum-lp .section-wrapper section.rules .rule-list .rule-item {
+              padding: 0 0 0 3em; } }
+          #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-img {
+            position: absolute;
+            z-index: 2;
+            top: -0.125em;
+            left: 0;
+            width: 100%;
+            height: -webkit-calc(100% + 0.25em);
+            height: calc(100% + 0.25em);
+            -webkit-background-size: cover;
+                    background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            pointer-events: none;
+            opacity: 0;
+            -webkit-transition: .2s ease-in-out;
+            -o-transition: .2s ease-in-out;
+            transition: .2s ease-in-out; }
+            @media (max-width: 1025px) {
+              #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-img {
+                display: none; } }
+          #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-title {
+            position: relative;
+            font-family: ProximaNova-Bold, Arial, sans-serif;
+            font-size: 2.375em;
+            text-transform: uppercase;
+            line-height: 1.2;
+            margin-bottom: 0.4375em;
+            color: #fff; }
+            @media (max-width: 1025px) {
+              #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-title {
+                margin-bottom: 0.4375em;
+                padding-right: 2.5em; } }
+            @media (max-width: 767px) {
+              #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-title {
+                font-size: 1.25em;
+                padding-right: 0;
+                margin-bottom: 0.1875em; } }
+            #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-title:before {
+              position: absolute;
+              top: -0.625em;
+              font-family: ProximaNova-Bold, Arial, sans-serif;
+              font-size: 3.625em;
+              line-height: 1.2;
+              text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+              color: #00B7AC; }
+              @media (max-width: 1025px) {
+                #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-title:before {
+                  top: -0.375em; } }
+              @media (max-width: 767px) {
+                #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-title:before {
+                  top: -0.5em;
+                  font-size: 3em; } }
+          #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-text {
+            font-family: ProximaNova-Regular, Arial, sans-serif;
+            font-size: 1.625em;
+            line-height: 1.7;
+            color: #fff; }
+            @media (max-width: 1025px) {
+              #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-text {
+                font-size: 1.5em; } }
+            @media (max-width: 767px) {
+              #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-text {
+                font-size: 1em;
+                margin-right: -0.3125em; } }
+            #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-text .rule-span-bold {
+              font-family: ProximaNova-Bold, Arial, sans-serif;
+              font-size: 1em;
+              line-height: 1.7;
+              color: #fff; }
+              #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-text .rule-span-bold.rule-span-bold-big {
+                font-size: 1.25em; }
+                @media (max-width: 1025px) {
+                  #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-text .rule-span-bold.rule-span-bold-big {
+                    font-size: 1.0625em; } }
+            #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-text .rule-link {
+              position: relative;
+              display: inline-block;
+              font-family: ProximaNova-Bold, Arial, sans-serif;
+              text-decoration: none;
+              color: #fff;
+              -webkit-transition: .2s;
+              -o-transition: .2s;
+              transition: .2s; }
+              #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-text .rule-link:before {
+                content: "";
+                position: absolute;
+                bottom: 0.375em;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 1px;
+                background: #fff;
+                -webkit-transition: .2s;
+                -o-transition: .2s;
+                transition: .2s; }
+              #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-text .rule-link:hover {
+                color: #eee; }
+                #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-text .rule-link:hover:before {
+                  background: #eee; }
+          #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-text-bold {
+            font-family: ProximaNova-Bold, Arial, sans-serif;
+            font-size: 1.5em;
+            line-height: 1.7;
+            color: #fff; }
+            @media (max-width: 1025px) {
+              #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-text-bold {
+                font-size: 1.5em; } }
+            @media (max-width: 767px) {
+              #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-text-bold {
+                font-size: 1em; } }
+          #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-more {
+            font-family: ProximaNova-Semibold-It, Arial, sans-serif;
+            font-size: 1.125em;
+            line-height: 1.7;
+            color: #fff; }
+            @media (max-width: 767px) {
+              #oceanum-lp .section-wrapper section.rules .rule-list .rule-item .rule-more {
+                margin-top: 0.1875em;
+                font-size: 0.75em; } }
+          #oceanum-lp .section-wrapper section.rules .rule-list .rule-item:hover .rule-img {
+            opacity: 1;
+            pointer-events: auto;
+            cursor: default; }
+          #oceanum-lp .section-wrapper section.rules .rule-list .rule-item.rule-item-1 {
+            margin-bottom: 1.25em; }
+            @media (max-width: 1025px) {
+              #oceanum-lp .section-wrapper section.rules .rule-list .rule-item.rule-item-1 {
+                margin-bottom: 3.75em; } }
+            @media (max-width: 767px) {
+              #oceanum-lp .section-wrapper section.rules .rule-list .rule-item.rule-item-1 {
+                margin-bottom: 2.5em; } }
+            #oceanum-lp .section-wrapper section.rules .rule-list .rule-item.rule-item-1 .rule-img {
+              background-image: url("../img/rule-item-1.jpg?v=cc35613c"); }
+            #oceanum-lp .section-wrapper section.rules .rule-list .rule-item.rule-item-1 .rule-title:before {
+              content: "1";
+              left: -0.625em; }
+              @media (max-width: 767px) {
+                #oceanum-lp .section-wrapper section.rules .rule-list .rule-item.rule-item-1 .rule-title:before {
+                  left: -0.6875em; } }
+          #oceanum-lp .section-wrapper section.rules .rule-list .rule-item.rule-item-2 {
+            margin-bottom: 1.25em; }
+            @media (max-width: 1025px) {
+              #oceanum-lp .section-wrapper section.rules .rule-list .rule-item.rule-item-2 {
+                margin-bottom: 3.125em; } }
+            @media (max-width: 767px) {
+              #oceanum-lp .section-wrapper section.rules .rule-list .rule-item.rule-item-2 {
+                margin-bottom: 2.5em; } }
+            #oceanum-lp .section-wrapper section.rules .rule-list .rule-item.rule-item-2 .rule-img {
+              background-image: url("../img/rule-item-2.jpg?v=e59a8764"); }
+            #oceanum-lp .section-wrapper section.rules .rule-list .rule-item.rule-item-2 .rule-title:before {
+              content: "2";
+              left: -0.75em; }
+          @media (max-width: 1025px) {
+            #oceanum-lp .section-wrapper section.rules .rule-list .rule-item.rule-item-3 {
+              margin-bottom: 3.125em; } }
+          @media (max-width: 767px) {
+            #oceanum-lp .section-wrapper section.rules .rule-list .rule-item.rule-item-3 {
+              margin-bottom: 2.5em; } }
+          #oceanum-lp .section-wrapper section.rules .rule-list .rule-item.rule-item-3 .rule-img {
+            background-image: url("../img/rule-item-3.jpg?v=3b4cc52a"); }
+          #oceanum-lp .section-wrapper section.rules .rule-list .rule-item.rule-item-3 .rule-title:before {
+            content: "3";
+            left: -0.75em; }
+          #oceanum-lp .section-wrapper section.rules .rule-list .rule-item.rule-item-4 .rule-img {
+            background-image: url("../img/rule-item-4.jpg?v=b96a3beb"); }
+          #oceanum-lp .section-wrapper section.rules .rule-list .rule-item.rule-item-4 .rule-title:before {
+            content: "4";
+            left: -0.75em; }
+      #oceanum-lp .section-wrapper section.rules .wrapper-link {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 56.25em;
+        margin: 0 auto; }
+        @media (max-width: 1025px) {
+          #oceanum-lp .section-wrapper section.rules .wrapper-link {
+            -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            width: 25em; } }
+        @media (max-width: 767px) {
+          #oceanum-lp .section-wrapper section.rules .wrapper-link {
+            width: 18.125em; } }
+        #oceanum-lp .section-wrapper section.rules .wrapper-link .rule-link {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          width: 26.875em;
+          height: 5em;
+          -webkit-transition: .2s;
+          -o-transition: .2s;
+          transition: .2s;
+          text-decoration: none; }
+          @media (max-width: 767px) {
+            #oceanum-lp .section-wrapper section.rules .wrapper-link .rule-link {
+              width: 18.125em;
+              height: 4.0625em; } }
+          #oceanum-lp .section-wrapper section.rules .wrapper-link .rule-link:nth-child(1) {
+            background: #217FF9; }
+            @media (max-width: 1025px) {
+              #oceanum-lp .section-wrapper section.rules .wrapper-link .rule-link:nth-child(1) {
+                margin-bottom: 2.375em; } }
+            @media (max-width: 767px) {
+              #oceanum-lp .section-wrapper section.rules .wrapper-link .rule-link:nth-child(1) {
+                margin-bottom: 1.25em; } }
+          #oceanum-lp .section-wrapper section.rules .wrapper-link .rule-link:nth-child(2) {
+            background: #00B7AC; }
+          #oceanum-lp .section-wrapper section.rules .wrapper-link .rule-link:hover:nth-child(1) {
+            background: #0664e0; }
+          #oceanum-lp .section-wrapper section.rules .wrapper-link .rule-link:hover:nth-child(2) {
+            background: #00857c; }
+          #oceanum-lp .section-wrapper section.rules .wrapper-link .rule-link .text {
+            display: inline-block;
+            font-family: ProximaNova-Bold, Arial, sans-serif;
+            font-size: 1.25em;
+            line-height: 1.2;
+            margin-right: 2em;
+            color: #fff; }
+            @media (max-width: 767px) {
+              #oceanum-lp .section-wrapper section.rules .wrapper-link .rule-link .text {
+                font-size: 0.875em;
+                margin-right: 0.9375em; } }
+          #oceanum-lp .section-wrapper section.rules .wrapper-link .rule-link .arrow {
+            display: inline-block;
+            width: 1.75em;
+            height: 0.9375em;
+            background: url("../img/btn-arrow.svg?v=77d92083") no-repeat 50% 50%/contain; }
+            @media (max-width: 767px) {
+              #oceanum-lp .section-wrapper section.rules .wrapper-link .rule-link .arrow {
+                width: 1.4375em;
+                height: 1em;
+                background-image: url("../img/btn-arrow-mob.svg?v=4ee2f6d9"); } }
+    #oceanum-lp .section-wrapper section.activate {
+      position: relative;
+      padding: 9.0625em 0 16.875em; }
+      @media (max-width: 1025px) {
+        #oceanum-lp .section-wrapper section.activate {
+          padding: 30.3125em 0 7.1875em; } }
+      @media (max-width: 767px) {
+        #oceanum-lp .section-wrapper section.activate {
+          padding: 15.625em 0 3.875em; } }
+      #oceanum-lp .section-wrapper section.activate .title {
+        font-family: ProximaNova-Semibold, Arial, sans-serif;
+        font-size: 3.125em;
+        line-height: 1.2;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 0.3125em; }
+        @media (max-width: 1025px) {
+          #oceanum-lp .section-wrapper section.activate .title {
+            line-height: 1.5; } }
+        @media (max-width: 767px) {
+          #oceanum-lp .section-wrapper section.activate .title {
+            font-size: 1.5em;
+            margin-bottom: 0.625em; } }
+      #oceanum-lp .section-wrapper section.activate .title-more {
+        font-family: ProximaNova-Regular, Arial, sans-serif;
+        color: #fff;
+        font-size: 2em;
+        line-height: 1.8;
+        text-align: center;
+        max-width: 30em;
+        margin: 0 auto 2.5em; }
+        @media (max-width: 1025px) {
+          #oceanum-lp .section-wrapper section.activate .title-more {
+            max-width: 20.9375em;
+            line-height: 1.6;
+            margin-bottom: 2em; } }
+        @media (max-width: 767px) {
+          #oceanum-lp .section-wrapper section.activate .title-more {
+            font-family: ProximaNova-Semibold, Arial, sans-serif;
+            font-size: 1em;
+            padding: 0 0.625em;
+            margin-bottom: 1.375em; } }
+      #oceanum-lp .section-wrapper section.activate .info {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        max-width: 90.625em;
+        margin: 0 auto; }
+        @media (max-width: 1025px) {
+          #oceanum-lp .section-wrapper section.activate .info {
+            max-width: 38.75em; } }
+        #oceanum-lp .section-wrapper section.activate .info .info-list {
+          list-style: none;
+          width: 43.125em; }
+          @media (max-width: 1025px) {
+            #oceanum-lp .section-wrapper section.activate .info .info-list {
+              max-width: 33.125em; } }
+          @media (max-width: 767px) {
+            #oceanum-lp .section-wrapper section.activate .info .info-list {
+              max-width: 16.875em;
+              margin: 0 auto; } }
+          #oceanum-lp .section-wrapper section.activate .info .info-list .info-item {
+            position: relative;
+            font-family: ProximaNova-Regular, Arial, sans-serif;
+            font-size: 1.5em;
+            color: #fff;
+            line-height: 1.8;
+            margin-bottom: 2.5em; }
+            @media (max-width: 1025px) {
+              #oceanum-lp .section-wrapper section.activate .info .info-list .info-item {
+                margin-bottom: 1.5625em; } }
+            @media (max-width: 767px) {
+              #oceanum-lp .section-wrapper section.activate .info .info-list .info-item {
+                font-size: 1em;
+                padding-left: 2.1875em; } }
+            #oceanum-lp .section-wrapper section.activate .info .info-list .info-item:before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: -3.125em;
+              width: 1.8125em;
+              height: 1.375em;
+              background: url("../img/list-style.svg?v=8214c8ae") no-repeat 50% 50%/contain; }
+              @media (max-width: 767px) {
+                #oceanum-lp .section-wrapper section.activate .info .info-list .info-item:before {
+                  left: -0.3125em; } }
+            #oceanum-lp .section-wrapper section.activate .info .info-list .info-item:last-child {
+              margin-bottom: 0; }
+      #oceanum-lp .section-wrapper section.activate .cards {
+        position: absolute;
+        top: 23.75em;
+        left: 16.875em;
+        width: 37.25em;
+        height: 26.125em;
+        background: url("../img/actinvate-card.png?v=f3098301") no-repeat 50% 50%/contain; }
+        @media (max-width: 1025px) {
+          #oceanum-lp .section-wrapper section.activate .cards {
+            top: 6.25em;
+            left: 8.75em;
+            width: 30.125em;
+            height: 21.125em; } }
+        @media (max-width: 767px) {
+          #oceanum-lp .section-wrapper section.activate .cards {
+            top: 2.0625em;
+            left: 0.9375em;
+            width: 17.5em;
+            height: 12.3125em; } }
+    #oceanum-lp .section-wrapper section.timer {
+      position: relative;
+      height: 45.75em;
+      padding: 8.75em 0 5em;
+      background: rgba(0, 15, 35, 0.4);
+      max-width: 100%; }
+      @media (max-width: 1025px) {
+        #oceanum-lp .section-wrapper section.timer {
+          height: 32.75em;
+          background: none;
+          padding: 6.25em 0 4.6875em; } }
+      @media (max-width: 767px) {
+        #oceanum-lp .section-wrapper section.timer {
+          height: 20em;
+          padding: 3.75em 0 2.8125em; } }
+      #oceanum-lp .section-wrapper section.timer:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 51.25em;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.5); }
+        @media (max-width: 1025px) {
+          #oceanum-lp .section-wrapper section.timer:before {
+            display: none; } }
+      #oceanum-lp .section-wrapper section.timer:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 51.25em;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.5); }
+        @media (max-width: 1025px) {
+          #oceanum-lp .section-wrapper section.timer:after {
+            display: none; } }
+      #oceanum-lp .section-wrapper section.timer .round {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 12.375em;
+        height: 12.375em;
+        background: url("../img/timer-round.svg?v=a85b64c8") no-repeat 50% 50%/contain;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+        @media (max-width: 1025px) {
+          #oceanum-lp .section-wrapper section.timer .round {
+            display: none; } }
+      #oceanum-lp .section-wrapper section.timer .timer-title {
+        font-family: ProximaNova-Bold, Arial, sans-serif;
+        font-size: 3.125em;
+        line-height: 1.2;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 0.625em; }
+        @media (max-width: 1025px) {
+          #oceanum-lp .section-wrapper section.timer .timer-title {
+            font-size: 2.1875em; } }
+        @media (max-width: 767px) {
+          #oceanum-lp .section-wrapper section.timer .timer-title {
+            font-size: 1.125em;
+            margin-bottom: 1.25em; } }
+      #oceanum-lp .section-wrapper section.timer .blab_count-wrapper {
+        width: 75em;
+        max-width: 75em;
+        margin: 0 auto 2.1875em; }
+        @media (max-width: 1025px) {
+          #oceanum-lp .section-wrapper section.timer .blab_count-wrapper {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 1.25em; } }
+        @media (max-width: 767px) {
+          #oceanum-lp .section-wrapper section.timer .blab_count-wrapper {
+            width: 20em;
+            max-width: 20em;
+            margin-bottom: 1.875em; } }
+        #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown {
+          width: 100%; }
+          #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count {
+            width: 100%; }
+            #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .counter {
+              width: 100%; }
+            #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles {
+              width: 100%;
+              height: 100%;
+              position: relative; }
+              @media (max-width: 1025px) {
+                #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles {
+                  width: 100%;
+                  margin: 0 auto;
+                  height: 11.25em; } }
+              @media (max-width: 767px) {
+                #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles {
+                  height: 4.75em; } }
+              #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles canvas {
+                width: 100% !important;
+                height: 18.125em !important; }
+                @media (max-width: 1025px) {
+                  #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles canvas {
+                    height: 11.25em !important;
+                    -webkit-transform: translateX(0.75em);
+                        -ms-transform: translateX(0.75em);
+                            transform: translateX(0.75em); } }
+                @media (max-width: 767px) {
+                  #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles canvas {
+                    height: 4.875em !important;
+                    -webkit-transform: translateX(0.625em);
+                        -ms-transform: translateX(0.625em);
+                            transform: translateX(0.625em); } }
+              #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Days {
+                left: 2.5% !important; }
+                @media (max-width: 1025px) {
+                  #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Days {
+                    left: 2.4% !important; } }
+                @media (max-width: 767px) {
+                  #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Days {
+                    left: 4.2% !important; } }
+              #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Hours {
+                left: 27.3% !important; }
+                @media (max-width: 1025px) {
+                  #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Hours {
+                    left: 25.7% !important; } }
+                @media (max-width: 767px) {
+                  #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Hours {
+                    left: 28% !important; } }
+              #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Minutes {
+                left: 52.3% !important; }
+                @media (max-width: 1025px) {
+                  #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Minutes {
+                    left: 49.8% !important; } }
+                @media (max-width: 767px) {
+                  #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Minutes {
+                    left: 52.3% !important; } }
+              #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Seconds {
+                left: 77.1% !important; }
+                @media (max-width: 1025px) {
+                  #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Seconds {
+                    left: 73.4% !important; } }
+                @media (max-width: 767px) {
+                  #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Seconds {
+                    left: 76.4% !important; } }
+              #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Hours,
+              #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Days,
+              #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Minutes,
+              #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Seconds {
+                position: absolute;
+                top: 0% !important;
+                width: 20% !important;
+                height: 100%;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                font-size: 1.125em;
+                font-family: ProximaNova-Semibold, Arial, sans-serif; }
+                @media (max-width: 1025px) {
+                  #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Hours,
+                  #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Days,
+                  #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Minutes,
+                  #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Seconds {
+                    font-size: 1.25em; } }
+                @media (max-width: 767px) {
+                  #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Hours,
+                  #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Days,
+                  #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Minutes,
+                  #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Seconds {
+                    top: 4% !important;
+                    font-size: 1.125em; } }
+                #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Hours span,
+                #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Days span,
+                #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Minutes span,
+                #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Seconds span {
+                  font-family: ProximaNova-Bold, Arial, sans-serif;
+                  font-size: 4.375em !important;
+                  line-height: 1.2 !important;
+                  color: #217FF9; }
+                  @media (max-width: 1025px) {
+                    #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Hours span,
+                    #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Days span,
+                    #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Minutes span,
+                    #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Seconds span {
+                      font-size: 2.5em !important; } }
+                  @media (max-width: 767px) {
+                    #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Hours span,
+                    #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Days span,
+                    #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Minutes span,
+                    #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Seconds span {
+                      line-height: .8 !important;
+                      font-size: 1.25em !important; } }
+                #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Hours h4,
+                #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Days h4,
+                #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Minutes h4,
+                #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Seconds h4 {
+                  font-family: ProximaNova-Regular, Arial, sans-serif;
+                  font-size: 1em !important;
+                  line-height: 1.2 !important; }
+                  @media (max-width: 767px) {
+                    #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Hours h4,
+                    #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Days h4,
+                    #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Minutes h4,
+                    #oceanum-lp .section-wrapper section.timer .blab_count-wrapper .blab_countdown .blab_count .time_circles .textDiv_Seconds h4 {
+                      font-size: 0.625em !important; } }
+      #oceanum-lp .section-wrapper section.timer .timer-link {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 20em;
+        height: 5em;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s;
+        text-decoration: none;
+        background: #217FF9;
+        margin: 0 auto; }
+        @media (max-width: 767px) {
+          #oceanum-lp .section-wrapper section.timer .timer-link {
+            width: 15em;
+            height: 4.0625em; } }
+        #oceanum-lp .section-wrapper section.timer .timer-link:hover {
+          background: #0664e0; }
+        #oceanum-lp .section-wrapper section.timer .timer-link .text {
+          display: inline-block;
+          font-family: ProximaNova-Bold, Arial, sans-serif;
+          font-size: 1.25em;
+          line-height: 1.2;
+          margin-right: 1.875em;
+          color: #fff; }
+          @media (max-width: 767px) {
+            #oceanum-lp .section-wrapper section.timer .timer-link .text {
+              font-size: 0.875em;
+              margin-right: 1.25em; } }
+        #oceanum-lp .section-wrapper section.timer .timer-link .arrow {
+          display: inline-block;
+          width: 1.75em;
+          height: 0.9375em;
+          background: url("../img/btn-arrow.svg?v=77d92083") no-repeat 50% 50%/contain; }
+          @media (max-width: 767px) {
+            #oceanum-lp .section-wrapper section.timer .timer-link .arrow {
+              width: 1.4375em;
+              height: 1em;
+              background-image: url("../img/btn-arrow-mob.svg?v=4ee2f6d9"); } }
+    #oceanum-lp .section-wrapper section.information {
+      padding: 9.375em 0; }
+      @media (max-width: 1025px) {
+        #oceanum-lp .section-wrapper section.information {
+          padding: 5.3125em 0; } }
+      @media (max-width: 767px) {
+        #oceanum-lp .section-wrapper section.information {
+          padding: 3.125em 0 3.125em; } }
+      #oceanum-lp .section-wrapper section.information .title {
+        font-family: ProximaNova-Bold, Arial, sans-serif;
+        font-size: 4.375em;
+        text-align: center;
+        line-height: 1.43;
+        color: #fff;
+        text-transform: uppercase;
+        max-width: 17.1875em;
+        margin: 0 auto 0.625em; }
+        @media (max-width: 1025px) {
+          #oceanum-lp .section-wrapper section.information .title {
+            font-size: 3.125em;
+            max-width: 15em; } }
+        @media (max-width: 767px) {
+          #oceanum-lp .section-wrapper section.information .title {
+            font-size: 1.875em;
+            max-width: 100%; } }
+        #oceanum-lp .section-wrapper section.information .title .span-blue {
+          font-family: ProximaNova-Bold, Arial, sans-serif;
+          color: #217FF9;
+          font-size: 1em; }
+          @media (max-width: 767px) {
+            #oceanum-lp .section-wrapper section.information .title .span-blue {
+              font-size: 1.125em; } }
+      #oceanum-lp .section-wrapper section.information .title-more {
+        font-family: ProximaNova-Bold, Arial, sans-serif;
+        font-size: 2.25em;
+        line-height: 1.7;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 1.6875em; }
+        @media (max-width: 1025px) {
+          #oceanum-lp .section-wrapper section.information .title-more {
+            margin-bottom: 1.5em; } }
+        @media (max-width: 767px) {
+          #oceanum-lp .section-wrapper section.information .title-more {
+            font-size: 1.25em; } }
+      #oceanum-lp .section-wrapper section.information .information-link {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 20em;
+        height: 5em;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s;
+        text-decoration: none;
+        background: #217FF9;
+        margin: 0 auto; }
+        @media (max-width: 767px) {
+          #oceanum-lp .section-wrapper section.information .information-link {
+            width: 15em;
+            height: 4.0625em; } }
+        #oceanum-lp .section-wrapper section.information .information-link:hover {
+          background: #0664e0; }
+        #oceanum-lp .section-wrapper section.information .information-link .text {
+          display: inline-block;
+          font-family: ProximaNova-Bold, Arial, sans-serif;
+          font-size: 1.25em;
+          line-height: 1.2;
+          margin-right: 1.875em;
+          color: #fff; }
+          @media (max-width: 767px) {
+            #oceanum-lp .section-wrapper section.information .information-link .text {
+              font-size: 0.875em;
+              margin-right: 1.25em; } }
+        #oceanum-lp .section-wrapper section.information .information-link .arrow {
+          display: inline-block;
+          width: 1.75em;
+          height: 0.9375em;
+          background: url("../img/btn-arrow.svg?v=77d92083") no-repeat 50% 50%/contain; }
+          @media (max-width: 767px) {
+            #oceanum-lp .section-wrapper section.information .information-link .arrow {
+              width: 1.4375em;
+              height: 1em;
+              background-image: url("../img/btn-arrow-mob.svg?v=4ee2f6d9"); } }
+    #oceanum-lp .section-wrapper section.share {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      @media (max-width: 767px) {
+        #oceanum-lp .section-wrapper section.share {
+          height: auto;
+          padding: 3.75em 0; } }
+      @media (max-width: 767px) {
+        #oceanum-lp .section-wrapper section.share {
+          padding: 0; } }
+      #oceanum-lp .section-wrapper section.share .title {
+        font-family: ProximaNova-Bold, Arial, sans-serif;
+        font-size: 2.875em;
+        line-height: 1.55;
+        text-align: center;
+        color: #fff;
+        max-width: 20em;
+        margin-bottom: 0.75em; }
+        @media (max-width: 1025px) {
+          #oceanum-lp .section-wrapper section.share .title {
+            font-size: 2.25em;
+            line-height: 1.4;
+            margin-bottom: 0.625em; } }
+        @media (max-width: 767px) {
+          #oceanum-lp .section-wrapper section.share .title {
+            font-size: 1.25em;
+            line-height: 1.5; } }
+        #oceanum-lp .section-wrapper section.share .title .title-blue {
+          font-family: ProximaNova-Bold, Arial, sans-serif;
+          color: #00B2FF;
+          font-size: 1em; }
+      #oceanum-lp .section-wrapper section.share .tag {
+        font-family: ProximaNova-Bold, Arial, sans-serif;
+        font-size: 3.75em;
+        line-height: 1;
+        text-align: center;
+        color: #9CF3FF;
+        margin-bottom: 0.75em; }
+        @media (max-width: 1025px) {
+          #oceanum-lp .section-wrapper section.share .tag {
+            margin-bottom: 0.625em; } }
+        @media (max-width: 767px) {
+          #oceanum-lp .section-wrapper section.share .tag {
+            font-size: 1.875em;
+            margin-bottom: 0.875em; } }
+      #oceanum-lp .section-wrapper section.share .share-block {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 46.375em; }
+        @media (max-width: 1025px) {
+          #oceanum-lp .section-wrapper section.share .share-block {
+            width: 42.5em; } }
+        @media (max-width: 767px) {
+          #oceanum-lp .section-wrapper section.share .share-block {
+            width: 17.625em; } }
+        #oceanum-lp .section-wrapper section.share .share-block .social-list__item {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          width: 5.875em;
+          height: 5.875em;
+          -webkit-border-radius: 50%;
+                  border-radius: 50%;
+          border: 1px solid #fff;
+          -webkit-transition: .3s;
+          -o-transition: .3s;
+          transition: .3s; }
+          @media (max-width: 1025px) {
+            #oceanum-lp .section-wrapper section.share .share-block .social-list__item {
+              width: 5.25em;
+              height: 5.25em; } }
+          @media (max-width: 767px) {
+            #oceanum-lp .section-wrapper section.share .share-block .social-list__item {
+              width: 2.25em;
+              height: 2.25em; } }
+          #oceanum-lp .section-wrapper section.share .share-block .social-list__item svg {
+            -webkit-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s;
+            fill: #fff; }
+            @media (max-width: 1025px) {
+              #oceanum-lp .section-wrapper section.share .share-block .social-list__item svg {
+                font-size: 0.75em;
+                -webkit-transform: scale(1.2);
+                    -ms-transform: scale(1.2);
+                        transform: scale(1.2); } }
+            @media (max-width: 767px) {
+              #oceanum-lp .section-wrapper section.share .share-block .social-list__item svg {
+                -webkit-transform: scale(0.6);
+                    -ms-transform: scale(0.6);
+                        transform: scale(0.6); } }
+          #oceanum-lp .section-wrapper section.share .share-block .social-list__item.vk-btn svg {
+            width: 2.5em;
+            height: 1.4375em; }
+          #oceanum-lp .section-wrapper section.share .share-block .social-list__item.ok-btn svg {
+            width: 1.5em;
+            height: 2.4375em; }
+          #oceanum-lp .section-wrapper section.share .share-block .social-list__item.fb-btn svg {
+            width: 1.4375em;
+            height: 1.875em; }
+          #oceanum-lp .section-wrapper section.share .share-block .social-list__item.tm-btn svg {
+            width: 2.5em;
+            height: 2.1875em; }
+          #oceanum-lp .section-wrapper section.share .share-block .social-list__item.wa-btn svg {
+            width: 2.625em;
+            height: 2.5625em; }
+          #oceanum-lp .section-wrapper section.share .share-block .social-list__item.vr-btn svg {
+            width: 2.1875em;
+            height: 2.1875em; }
+          #oceanum-lp .section-wrapper section.share .share-block .social-list__item:hover {
+            background: #00B2FF;
+            border-color: #00B2FF; }
+            #oceanum-lp .section-wrapper section.share .share-block .social-list__item:hover svg {
+              fill: #fff; }

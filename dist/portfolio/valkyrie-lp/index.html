@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Valkyrie-lp</title>
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/main.css?v=cbc7813a48ee8f4d6e246cdd2ba2eb89" type="text/css">
+</head>
+<body>
+<div id="valkyrie-lp">
+
+	<section class="banner">
+        <div class="banner-content">
+            <h1 class="banner-title">
+                Viking<br>
+                <span class="banner-and">и</span><br>
+                Valkyrie
+            </h1>
+            <p class="banner-text">ароматы-талисманы от&nbsp;Faberlic</p>
+            <a class="buy-link" href="https://new.faberlic.com/ru/c/series-viking-Valkyrie" target="_blank">
+                <span class="buy-link-text">Купить</span>
+            </a>
+        </div>
+	</section>
+
+    <div class="fog">
+
+        <section class="name">
+            <div class="name-rune name-rune-1" data-rellax-speed="-.5"></div>
+            <div class="name-rune name-rune-2" data-rellax-speed="-1"></div>
+            <div class="name-rune name-rune-3" data-rellax-speed="-1"></div>
+            <div class="name-rune name-rune-4" data-rellax-speed="1"></div>
+            <div class="name-rune name-rune-5" data-rellax-speed="3"></div>
+            <div class="name-rune name-rune-6" data-rellax-speed="-4"></div>
+            <div class="name-rune name-rune-7" data-rellax-speed="-2"></div>
+            <div class="name-rune name-rune-8" data-rellax-speed="-3"></div>
+            <div class="content">
+                <h2 class="name-title">Узнай свое скандинавское имя и его значение</h2>
+                <div class="name-form">
+                    <label class="column column-1">
+                        <p class="text">Как тебя зовут?</p>
+                        <input class="input js-name" id="name" type="text" autocomplete="off">
+                    </label>
+                    <div class="column column-2">
+                        <p class="text">Выбери свой пол</p>
+                        <div class="check-wrapper">
+                            <div class="check js-check-gender" data-gender="man">
+                                Mуж.
+                            </div>
+                            <div class="check js-check-gender" data-gender="woman">
+                                Жен.
+                            </div>
+                        </div>
+                    </div>
+                    <label class="column column-3">
+                        <p class="text">Укажи дату рождения</p>
+                        <input class="input js-date" id="date" type="text" autocomplete="off" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}">
+                    </label>
+                </div>
+                <div class="name-block">
+                    <p class="text">Твое скандинавское имя</p>
+                    <p id="name-result" class="result">?</p>
+                </div>
+                <button tabindex="-1" class="btn-result js-result disabled">
+                    <span class="btn-result-span">Узнать</span>
+                </button>
+                <button abindex="-1" class="btn-more js-more hidden">
+                    <svg class="svg" width="35" height="47" viewBox="0 0 35 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="svg-icon" d="M17.5 6.40909V0L8.75 8.54545L17.5 17.0909V10.6818C24.7188 10.6818 30.625 16.45 30.625 23.5C30.625 25.6364 29.9688 27.7727 29.0938 29.4818L32.375 32.6864C33.9062 29.9091 35 26.9182 35 23.5C35 14.1 27.125 6.40909 17.5 6.40909ZM17.5 36.3182C10.2812 36.3182 4.375 30.55 4.375 23.5C4.375 21.3636 5.03125 19.2273 5.90625 17.5182L2.625 14.3136C1.09375 17.0909 0 20.0818 0 23.5C0 32.9 7.875 40.5909 17.5 40.5909V47L26.25 38.4545L17.5 29.9091V36.3182Z" fill="#BFD1EE"/>
+                    </svg>
+                    <span class="btn-more-span">Заново</span>
+                </button>
+                <div class="share-block-wrap">
+                    <h3 class="share-title">Поделиться результатом</h3>
+                    <div class="share-block">
+                        <button class="btn-share btn-vk js-share" data-share="vk">
+                            <svg class="svg svg-vk" fill="none" height="23" viewbox="0 0 40 23" width="40" xmlns="http://www.w3.org/2000/svg">
+                                <path  class="svg-icon" d="M39.0667 20.3168C39.0195 20.2162 38.9756 20.1336 38.9346 20.0665C38.2594 18.8671 36.9685 17.3944 35.0646 15.6487L35.0248 15.608L35.004 15.5886L34.9834 15.5684H34.9639C34.0994 14.7549 33.5517 14.2083 33.3223 13.9291C32.9033 13.396 32.8088 12.8555 33.0382 12.3092C33.2008 11.8957 33.8078 11.0237 34.8619 9.68996C35.4155 8.98414 35.8551 8.41728 36.178 7.99091C38.5156 4.9247 39.5283 2.96554 39.2175 2.11248L39.0972 1.91341C39.0157 1.79378 38.8071 1.68335 38.4696 1.58397C38.132 1.48335 37.6996 1.46648 37.1727 1.53366L31.3369 1.57323C31.2434 1.54102 31.1075 1.54317 30.9325 1.58397C30.7566 1.62353 30.668 1.64378 30.668 1.64378L30.5673 1.69439L30.4871 1.75421C30.419 1.79378 30.345 1.8631 30.2636 1.96371C30.1834 2.0634 30.1156 2.18058 30.0622 2.31371C29.4259 3.92656 28.7047 5.42562 27.8934 6.81179C27.3932 7.63846 26.9341 8.35501 26.5154 8.96144C26.0964 9.56757 25.7455 10.0148 25.4626 10.301C25.1785 10.5875 24.9223 10.8175 24.6926 10.9899C24.462 11.1639 24.2873 11.2369 24.1657 11.2105C24.0442 11.1829 23.9289 11.1565 23.821 11.1301C23.6314 11.0105 23.4797 10.8473 23.3656 10.6402C23.2503 10.4341 23.1726 10.174 23.1325 9.8602C23.0924 9.54732 23.0681 9.2777 23.0607 9.05132C23.0548 8.82494 23.0582 8.50378 23.0716 8.09152C23.0849 7.67803 23.0924 7.39767 23.0924 7.25166C23.0924 6.74461 23.102 6.19462 23.1216 5.60169C23.1421 5.00845 23.1592 4.53882 23.1726 4.19251C23.186 3.8462 23.1931 3.47964 23.1931 3.09253C23.1931 2.70664 23.1689 2.40358 23.1216 2.18303C23.0753 1.96371 23.0038 1.75053 22.909 1.54317C22.8142 1.33704 22.6759 1.17661 22.4937 1.06404C22.3115 0.950234 22.0859 0.860358 21.8161 0.793181C21.0999 0.633675 20.1879 0.54748 19.0806 0.533063C16.5684 0.506683 14.9545 0.667417 14.238 1.01373C13.9539 1.15974 13.6977 1.36004 13.4683 1.6128C13.2256 1.90635 13.1914 2.06678 13.3664 2.09316C14.1774 2.2131 14.7506 2.49959 15.0894 2.95235L15.2106 3.19314C15.3054 3.36584 15.4002 3.67258 15.4938 4.11214C15.5883 4.55201 15.6492 5.03851 15.6756 5.57163C15.7437 6.54461 15.7437 7.37742 15.6756 8.07127C15.6091 8.76359 15.5448 9.30408 15.4838 9.68996C15.4232 10.0771 15.3321 10.3896 15.2106 10.6304C15.0894 10.8703 15.0079 11.0163 14.9666 11.0703C14.9265 11.1231 14.8926 11.1565 14.8659 11.1697C14.6899 11.2369 14.5078 11.2703 14.3182 11.2703C14.1301 11.2703 13.9004 11.177 13.6297 10.9899C13.3601 10.8031 13.0798 10.5467 12.7894 10.2194C12.4994 9.89364 12.1715 9.4372 11.8059 8.8501C11.4416 8.26391 11.0642 7.57159 10.672 6.77099L10.3478 6.19125C10.1448 5.81855 9.86812 5.27562 9.51717 4.56152C9.16623 3.84865 8.85539 3.1597 8.58588 2.49223C8.47771 2.2131 8.31514 1.99991 8.09879 1.85237L7.99808 1.79255C7.93 1.73979 7.82214 1.68335 7.67386 1.62231C7.52466 1.56249 7.37048 1.51924 7.2076 1.49286L1.65622 1.53243C1.08924 1.53243 0.704102 1.65942 0.501431 1.91218L0.41999 2.03212C0.379891 2.09929 0.359375 2.20573 0.359375 2.35205C0.359375 2.49959 0.399474 2.67934 0.480915 2.89253C1.29191 4.77133 2.17222 6.58418 3.12527 8.32986C4.07739 10.0771 4.90424 11.4826 5.60612 12.5488C6.30926 13.6153 7.0242 14.6218 7.75406 15.5672C8.48393 16.5138 8.96698 17.1202 9.2026 17.3874C9.43946 17.6545 9.62535 17.8533 9.75994 17.9864L10.2663 18.4668C10.5905 18.7867 11.0664 19.1702 11.6956 19.6159C12.3232 20.0628 13.0192 20.5027 13.7817 20.9364C14.5454 21.3689 15.4329 21.7223 16.4468 21.9956C17.4596 22.2689 18.4456 22.379 19.4048 22.325H21.7349C22.2071 22.2854 22.5655 22.1382 22.8083 21.8854L22.8885 21.7861C22.9429 21.7057 22.9939 21.5821 23.0402 21.4155C23.0874 21.2493 23.1117 21.0658 23.1117 20.8658C23.0983 20.2928 23.1421 19.7766 23.2428 19.3165C23.3435 18.8576 23.4589 18.5113 23.5879 18.2775C23.7166 18.0438 23.8608 17.8475 24.0237 17.688C24.185 17.5275 24.3006 17.4315 24.3684 17.3981C24.4352 17.3644 24.4887 17.3417 24.53 17.3272C24.8543 17.2208 25.2354 17.3251 25.6749 17.6377C26.1135 17.9518 26.525 18.3374 26.9111 18.7975C27.2959 19.2576 27.7588 19.7741 28.2978 20.3468C28.8393 20.9195 29.3118 21.3462 29.7159 21.6266L30.1215 21.8661C30.3923 22.0269 30.7432 22.1729 31.1756 22.306C31.6077 22.44 31.9854 22.4738 32.3096 22.4066L37.4969 22.3262C38.0092 22.3262 38.4086 22.2425 38.6915 22.0759C38.9756 21.9094 39.1435 21.7259 39.1979 21.5272C39.2526 21.3269 39.2551 21.1005 39.2088 20.8465C39.1603 20.5938 39.113 20.4165 39.0667 20.3168Z"></path>
+                            </svg>
+                        </button>
+                        <button class="btn-share btn-ok js-share" data-share="ok">
+                            <svg class="svg svg-ok" fill="none" height="30" viewbox="0 0 24 39" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path class="svg-icon" clip-rule="evenodd" d="M10.2509 27.3322C7.23604 27.022 4.51565 26.2896 2.18549 24.4929C1.89663 24.2692 1.59861 24.0531 1.33524 23.8037C0.316871 22.8375 0.213964 21.7321 1.01938 20.5909C1.70967 19.6152 2.86813 19.3538 4.07193 19.9138C4.30474 20.0234 4.52737 20.1591 4.74031 20.3044C9.08071 23.2457 15.0406 23.3287 19.3989 20.4361C19.8309 20.1098 20.2904 19.8429 20.8258 19.7072C21.8666 19.4443 22.8355 19.8213 23.3928 20.7186C24.0317 21.7436 24.0215 22.745 23.2375 23.5403C22.0316 24.7599 20.5828 25.6436 18.973 26.2604C17.4508 26.8416 15.7849 27.1341 14.1333 27.3302C14.384 27.5976 14.4996 27.7288 14.6565 27.8822C16.8975 30.1051 19.1482 32.316 21.3811 34.545C22.1411 35.3051 22.3001 36.2457 21.8824 37.1294C21.4228 38.0936 20.3979 38.7295 19.3927 38.6612C18.7559 38.6179 18.2587 38.3057 17.8165 37.8659C16.1252 36.1873 14.4038 34.539 12.7461 32.8288C12.2647 32.3301 12.0319 32.4241 11.608 32.8564C9.90651 34.5842 8.17748 36.2869 6.43827 37.9775C5.65781 38.7376 4.72859 38.8748 3.82333 38.441C2.85998 37.9815 2.24713 37.0113 2.29501 36.0375C2.3266 35.3775 2.65519 34.8728 3.1147 34.4213C5.33177 32.2376 7.54221 30.0463 9.75521 27.8585C9.90244 27.7132 10.0379 27.5584 10.2509 27.3322Z" fill-rule="evenodd"></path>
+                                <path class="svg-icon" clip-rule="evenodd" d="M12.0902 19.7207C6.7095 19.7031 2.29573 15.3006 2.32732 9.98133C2.35737 4.60269 6.77318 0.269115 12.2079 0.285201C17.6543 0.298773 22.0242 4.69518 21.9982 10.1286C21.9707 15.4359 17.5269 19.7383 12.0902 19.7207ZM16.9818 9.9949C16.9711 7.35384 14.8406 5.25114 12.1702 5.24913C9.47524 5.24511 7.32643 7.38551 7.3463 10.0517C7.36617 12.6812 9.51548 14.7703 12.1936 14.7603C14.8646 14.7507 16.9889 12.6339 16.9818 9.9949Z" fill-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <button class="btn-share btn-ok fb js-share" data-share="fb">
+                            <svg class="svg svg-fb" fill="none" height="30" viewbox="0 0 23 39" width="23" xmlns="http://www.w3.org/2000/svg">
+                                <path class="svg-icon" d="M6.89899 38.6878V21.1246H0.171894V14.4065H6.90062V9.33562C6.90062 3.4972 10.9045 0.282211 16.8292 0.282211C19.6659 0.282211 22.1557 0.458023 22.8673 0.538001V6.72852H18.6609C15.4383 6.72852 14.8354 8.07228 14.8354 10.0557V14.4065H22.5464L21.5446 21.1246H14.8354V38.6878H6.89899Z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video">
+            <h2 class="video-title">Для сильных духом мужчин и&nbsp;решительных женщин!</h2>
+            <p class="video-text">Они – герои скандинавских саг. Он силён и бесстрашен, она благородна и мудра. Их энергия двигает горы, они одерживают победы одну за другой! Отважный викинг, суровый северный завоеватель, и неподражаемая валькирия, дева-воительница из древних легенд, вдохновили нас на создание  концептуальных парных ароматов. Почувствуй, как звучит туманный рассвет над вершинами гор и сила яркой любви проникает в самое сердце...</p>
+            <div class="video-wrap">
+                <iframe
+                    class="video-iframe"
+                    src="https://www.youtube.com/embed/cPtnVBQXCdQ?rel=0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+                <div class="video-poster">
+                    <button class="video-play"></button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="price">
+        <div class="price-viking parallax" data-speed="1" data-num="-0.8"></div>
+        <div class="price-aroma"></div>
+        <div class="price-fog-1 parallax" data-speed="3" data-num="-1"></div>
+        <div class="price-fog-2 parallax" data-speed="3" data-num="-1"></div>
+        <div class="price-content">
+            <h2 class="price-title">
+                Парфюмерная вода<br>
+                <span class="price-title-big">Viking / Викинг</span><br>
+                для мужчин
+            </h2>
+            <div class="price-text">
+                <p class="price-old">2000 р.</p>
+                <p class="price-new">999<span> р.</span></p>
+            </div>
+        </div>
+        <a class="buy-link" href="https://new.faberlic.com/ru/p/010502-00048" target="_blank">
+            <span class="buy-link-text">Купить</span>
+        </a>
+    </section>
+
+    <section class="notes">
+        <h2 class="notes-title">Основные<br> ноты аромата</h2>
+        <ul class="notes-list">
+            <li class="notes-item notes-item-1-1">
+                <h3 class="notes-item-title">Зеленое яблоко</h3>
+            </li>
+            <li class="notes-item notes-item-1-2">
+                <h3 class="notes-item-title">Замороженная мята</h3>
+            </li>
+            <li class="notes-item notes-item-1-3">
+                <h3 class="notes-item-title">Древесный аккорд</h3>
+            </li>
+        </ul>
+        <p class="notes-text">
+            Древесно-фруктовый аромат с&nbsp;холодным морским аккордом воспевает смелость и&nbsp;отвагу нотами вереска, зелёного яблока и&nbsp;апельсина Тарокко. Созвучие амбры и&nbsp;древесных нот отражает твёрдый характер и&nbsp;горячее сердце героя скандинавских саг!
+        </p>
+        <div class="list-wrapper">
+            <ul class="note-list">
+                <li class="note-list-title">Начальные ноты</li>
+                <li class="note-item">Апельсин Тарокко</li>
+                <li class="note-item">Бергамот</li>
+                <li class="note-item">Замороженная мята</li>
+            </ul>
+            <ul class="note-list">
+                <li class="note-list-title">Ноты сердца</li>
+                <li class="note-item">Зеленое яблоко</li>
+                <li class="note-item">Вереск</li>
+                <li class="note-item">Морской аккорд</li>
+            </ul>
+            <ul class="note-list">
+                <li class="note-list-title">Шлейф</li>
+                <li class="note-item">Арктический мох</li>
+                <li class="note-item">Кедр, Ветивер</li>
+                <li class="note-item">Амбра</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="people">
+        <div class="people-wrapper">
+            <p class="people-aroma-text">
+                Аромат создал парфюмер<br class="tab"> с&nbsp;мировым именем Илиас Эрминидис –<br class="tab"> эксклюзивно для&nbsp;Faberlic.
+            </p>
+            <figure class="people-image-wrapper">
+                <img class="people-image" src="img/people-1.jpg?v=cbc7813a48ee8f4d6e246cdd2ba2eb89" alt="Ilias erminidis">
+                <figcaption>
+                    <h3 class="people-name">Ilias erminidis</h3>
+                    <p class="people-work">Парфюмер</p>
+                </figcaption>
+            </figure>
+            <p class="people-text">
+                Создание аромата для&nbsp;Илиаса не&nbsp;только творчество, но&nbsp;и&nbsp;занятная игра, полная радости и&nbsp;приключений!  Характер решительного северного завоевателя в&nbsp;аромате Viking мастер подчеркнул нотой замороженной мяты и&nbsp;мужественным древесно-амбровым аккордом.
+            </p>
+        </div>
+    </section>
+
+    <section class="price price-2">
+        <div class="price-viking parallax" data-speed="1" data-num="-0.8"></div>
+        <div class="price-aroma"></div>
+        <div class="price-fog-1 parallax" data-speed="3" data-num="-0.3"></div>
+        <div class="price-fog-2 parallax" data-speed="3" data-num="-1"></div>
+        <div class="price-content">
+            <h2 class="price-title">
+                Парфюмерная вода<br>
+                <span class="price-title-big">Valkyrie / Валькирия</span><br>
+                для женщин
+            </h2>
+            <div class="price-text">
+                <p class="price-old">2000 р.</p>
+                <p class="price-new">999<span> р.</span></p>
+            </div>
+        </div>
+        <a class="buy-link" href="https://new.faberlic.com/ru/p/010501-00299" target="_blank">
+            <span class="buy-link-text">Купить</span>
+        </a>
+    </section>
+
+    <section class="notes notes-2">
+        <h2 class="notes-title">Основные<br> ноты аромата</h2>
+        <ul class="notes-list">
+            <li class="notes-item notes-item-2-1">
+                <h3 class="notes-item-title">Апельсин Тарокко</h3>
+            </li>
+            <li class="notes-item notes-item-2-2">
+                <h3 class="notes-item-title">Эдельвейс</h3>
+            </li>
+            <li class="notes-item notes-item-2-3">
+                <h3 class="notes-item-title">Княженика</h3>
+            </li>
+        </ul>
+        <p class="notes-text">
+            Прохладный цветочно-цитрусовый аромат рисует образ скандинавской девы-воительницы прохладными нотами княженики и&nbsp;апельсина Тарокко.  В&nbsp;самом сердце парфюма – созвучие эдельвейса, нежного гиацинта и&nbsp;розовых лепестков, а&nbsp;холодную нордическую красоту подчёркивает изысканный мускус и&nbsp;благородный кедр.
+        </p>
+        <div class="list-wrapper">
+            <ul class="note-list">
+                <li class="note-list-title">Начальные ноты</li>
+                <li class="note-item">Лимон</li>
+                <li class="note-item">Бергамот</li>
+                <li class="note-item">Апельсин Тарокко</li>
+            </ul>
+            <ul class="note-list">
+                <li class="note-list-title">Ноты сердца</li>
+                <li class="note-item">Эдельвейс, княженика</li>
+                <li class="note-item">Заснеженные лепестки розы</li>
+                <li class="note-item">Зеленое яблоко, гиацинт</li>
+            </ul>
+            <ul class="note-list">
+                <li class="note-list-title">Шлейф</li>
+                <li class="note-item">Мускус</li>
+                <li class="note-item">Кедр</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="people people-2">
+        <div class="people-wrapper">
+            <p class="people-aroma-text">
+                Аромат создал парфюмер<br class="tab"> с&nbsp;мировым именем Оливье Кресп –<br class="tab"> эксклюзивно для&nbsp;Faberlic.
+            </p>
+            <figure class="people-image-wrapper">
+                <img class="people-image" src="img/people-2.jpg?v=cbc7813a48ee8f4d6e246cdd2ba2eb89" alt="Olivier cresp">
+                <figcaption>
+                    <h3 class="people-name">Olivier cresp</h3>
+                    <p class="people-work">Парфюмер</p>
+                </figcaption>
+            </figure>
+            <p class="people-text">
+                Знаменитый парфюмер не&nbsp;терпит суеты и&nbsp;творит красочные композиции, полные тайн и&nbsp;страсти. Его хрустальный, мерцающий аромат Valkyrie – отражение любви и&nbsp;преданности, подобной нежному гиацинту, и&nbsp;величественной страсти, сотканной из&nbsp;нот княженики и&nbsp;заснеженных розовых лепестков.
+            </p>
+        </div>
+    </section>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js?v=cbc7813a48ee8f4d6e246cdd2ba2eb89"></script>
+<script src="js/main.js?v=cbc7813a48ee8f4d6e246cdd2ba2eb89"></script>
+</body>
+</html>

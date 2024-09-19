@@ -1,0 +1,3211 @@
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url("../fonts/ProximaNova-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url("../fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url("../fonts/ProximaNova-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url("../fonts/ProximaNova-Semibold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'ProximaNova-SemiboldIt';
+  src: url("../fonts/ProximaNova-SemiboldIt.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.5.3
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+a {
+  background-color: transparent; }
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; }
+
+b,
+strong {
+  font-weight: bolder; }
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+img {
+  border-style: none; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0; }
+
+button,
+input {
+  overflow: visible; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal; }
+
+progress {
+  vertical-align: baseline; }
+
+textarea {
+  overflow: auto; }
+
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0; }
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px; }
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit; }
+
+details {
+  display: block; }
+
+summary {
+  display: list-item; }
+
+template {
+  display: none; }
+
+[hidden] {
+  display: none; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent; }
+
+#varioMain {
+  font-size: -webkit-calc(100vw / 120);
+  font-size: calc(100vw / 120); }
+  @media (max-width: 991px) {
+    #varioMain {
+      font-size: -webkit-calc(100vw / 48);
+      font-size: calc(100vw / 48);
+      overflow-x: hidden; } }
+  @media (max-width: 767px) {
+    #varioMain {
+      font-size: -webkit-calc(100vw / 20);
+      font-size: calc(100vw / 20);
+      overflow-x: hidden; } }
+  #varioMain ul {
+    margin: 0; }
+  #varioMain :after, #varioMain :before {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box; }
+  #varioMain .shadow {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important; }
+  #varioMain .btn:focus, #varioMain .btn:hover, #varioMain [class*=btn-]:focus, #varioMain [class*=btn-]:hover {
+    text-decoration: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  #varioMain .btn, #varioMain [class*=btn-] {
+    position: static;
+    display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    white-space: normal;
+    vertical-align: middle;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    border: none;
+    padding: auto;
+    height: auto;
+    font-size: inherit;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none; }
+  #varioMain .btn.disabled, #varioMain .btn:disabled, #varioMain [class*=btn-].disabled, #varioMain [class*=btn-]:disabled {
+    pointer-events: auto;
+    opacity: 1; }
+  #varioMain div.modal-box.active {
+    z-index: 2000 !important; }
+  #varioMain div.modal-box > inner:not(.active) {
+    opacity: 0; }
+  #varioMain div.modal-box.modal-box-info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-height: 100vh;
+    background: transparent;
+    padding: 0;
+    outline: none; }
+    #varioMain div.modal-box.modal-box-info:not(.active) > .inner {
+      opacity: 0; }
+    #varioMain div.modal-box.modal-box-info > .inner {
+      position: absolute;
+      width: 100%;
+      min-height: 58.75em;
+      height: 100%;
+      max-height: 65.625em;
+      background: #fff;
+      padding: 0;
+      margin: 0; }
+      @media (max-width: 991px) {
+        #varioMain div.modal-box.modal-box-info > .inner {
+          min-height: auto;
+          height: 66.875em;
+          max-height: none; } }
+      @media (max-width: 767px) {
+        #varioMain div.modal-box.modal-box-info > .inner {
+          height: auto; } }
+      #varioMain div.modal-box.modal-box-info > .inner .information-list {
+        position: relative;
+        list-style: none;
+        position: relative;
+        background: #fff;
+        height: 100%;
+        width: 100%; }
+        #varioMain div.modal-box.modal-box-info > .inner .information-list .close {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          width: 0.625em;
+          height: 0.625em;
+          font-size: 6.25em;
+          right: 0.3125em;
+          top: 0.125em;
+          color: #000;
+          cursor: pointer;
+          z-index: 10;
+          opacity: 1;
+          outline: none;
+          font-weight: normal; }
+          @media (max-width: 991px) {
+            #varioMain div.modal-box.modal-box-info > .inner .information-list .close {
+              font-size: 3.75em; } }
+          @media (max-width: 767px) {
+            #varioMain div.modal-box.modal-box-info > .inner .information-list .close {
+              font-size: 2.5em; } }
+        #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item {
+          display: none; }
+          #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item.show {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: end;
+            -webkit-justify-content: flex-end;
+                -ms-flex-pack: end;
+                    justify-content: flex-end;
+            height: 100%; }
+            @media (max-width: 991px) {
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item.show {
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                        justify-content: center; } }
+          #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item .content {
+            width: 50%;
+            height: 100%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column; }
+            @media (max-width: 991px) {
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item .content {
+                width: 100%;
+                height: 100%; } }
+            #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item .content .btn-info {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              width: 16.5625em;
+              min-height: 5.125em;
+              height: 5.125em;
+              outline: none;
+              border: 1px solid #000;
+              background: transparent;
+              cursor: pointer;
+              -webkit-transition: .2s;
+              -o-transition: .2s;
+              transition: .2s; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item .content .btn-info {
+                  margin: 0 auto; } }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item .content .btn-info {
+                  width: 11.25em;
+                  min-height: 3.125em;
+                  height: 3.125em; } }
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item .content .btn-info .btn-info-text {
+                font-family: ProximaNova-Regular, Arial, sans-serif;
+                font-size: 1.25em;
+                line-height: 1.2;
+                text-align: center;
+                color: #000; }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item .content .btn-info .btn-info-text {
+                    font-size: 0.875em; } }
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item .content .btn-info:hover {
+                background: #000; }
+                #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item .content .btn-info:hover .btn-info-text {
+                  color: #fff; }
+          #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="1"] {
+            background: url(../img/test/info-1-bg.jpg) no-repeat 50% 0%;
+            -webkit-background-size: 120em 65.625em;
+                    background-size: 120em 65.625em; }
+            @media (max-width: 991px) {
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="1"] {
+                background: url(../img/test/info-1-bg-tab.jpg) no-repeat 50% 0%;
+                -webkit-background-size: 100% 66.875em;
+                        background-size: 100% 66.875em; } }
+            @media (max-width: 767px) {
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="1"] {
+                background: url(../img/test/info-1-bg-mob.jpg) no-repeat 50% 0%;
+                -webkit-background-size: 100% 44.6875em;
+                        background-size: 100% 44.6875em;
+                height: 44.6875em; } }
+            #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="1"] .content {
+              padding: 8.4375em 6.25em 6.25em 6.25em; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="1"] .content {
+                  padding: 3.125em 1.25em; } }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="1"] .content {
+                  padding: 2.5em 1.25em; } }
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="1"] .content .title {
+                font-family: ProximaNova-Semibold, Arial, sans-serif;
+                font-size: 8.125em;
+                line-height: 1.2;
+                text-transform: uppercase;
+                color: #FAEBD5;
+                margin-left: -0.4375em;
+                margin-bottom: 0.4375em; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="1"] .content .title {
+                    font-size: 5em;
+                    margin-left: 0;
+                    text-align: center;
+                    margin-bottom: 0.3125em; } }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="1"] .content .title {
+                    font-size: 3.125em;
+                    text-align: left; } }
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="1"] .content .text {
+                font-family: ProximaNova-Regular, Arial, sans-serif;
+                font-size: 1.25em;
+                line-height: 2;
+                color: #000;
+                margin-bottom: 10em;
+                max-width: 26.25em; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="1"] .content .text {
+                    max-width: none;
+                    margin-bottom: 1.6875em; } }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="1"] .content .text {
+                    font-size: 0.875em; } }
+                #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="1"] .content .text .text-bold {
+                  font-family: ProximaNova-Semibold, Arial, sans-serif;
+                  font-size: 1em;
+                  color: #000; }
+          #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="2"] {
+            background: url(../img/test/info-2-bg.jpg) no-repeat 50% 0%;
+            -webkit-background-size: 120em 65.625em;
+                    background-size: 120em 65.625em; }
+            @media (max-width: 991px) {
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="2"] {
+                background: url(../img/test/info-2-bg-tab.jpg) no-repeat 50% 0%;
+                -webkit-background-size: 100% 66.875em;
+                        background-size: 100% 66.875em; } }
+            @media (max-width: 767px) {
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="2"] {
+                background: url(../img/test/info-2-bg-mob.jpg) no-repeat 50% 0%;
+                -webkit-background-size: 100% 44.6875em;
+                        background-size: 100% 44.6875em;
+                height: 44.6875em; } }
+            #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="2"] .content {
+              padding: 8.75em 6.25em 6.25em 6.25em; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="2"] .content {
+                  padding: 3.125em 1.25em; } }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="2"] .content {
+                  padding: 3.125em 1.25em 1.875em; } }
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="2"] .content .title {
+                font-family: ProximaNova-Semibold, Arial, sans-serif;
+                font-size: 5.625em;
+                line-height: 1.2;
+                text-transform: uppercase;
+                color: #C6E9E0;
+                margin-left: -0.625em;
+                margin-bottom: 1.0625em; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="2"] .content .title {
+                    font-size: 5em;
+                    margin-left: 0;
+                    text-align: center;
+                    margin-bottom: 0.3125em; } }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="2"] .content .title {
+                    font-size: 2.25em;
+                    text-align: left;
+                    margin-bottom: 0.3125em; } }
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="2"] .content .text {
+                font-family: ProximaNova-Regular, Arial, sans-serif;
+                font-size: 1.25em;
+                line-height: 2;
+                color: #000;
+                margin-bottom: 7.5em;
+                max-width: 23.75em; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="2"] .content .text {
+                    max-width: none;
+                    margin-bottom: 1.6875em; } }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="2"] .content .text {
+                    font-size: 0.875em; } }
+                #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="2"] .content .text .text-bold {
+                  font-family: ProximaNova-Semibold, Arial, sans-serif;
+                  font-size: 1em;
+                  color: #000; }
+          #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="3"] {
+            background: url(../img/test/info-3-bg.jpg) no-repeat 50% 0%;
+            -webkit-background-size: 120em 65.625em;
+                    background-size: 120em 65.625em; }
+            @media (max-width: 991px) {
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="3"] {
+                background: url(../img/test/info-3-bg-tab.jpg) no-repeat 50% 0%;
+                -webkit-background-size: 100% 66.875em;
+                        background-size: 100% 66.875em; } }
+            @media (max-width: 767px) {
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="3"] {
+                background: url(../img/test/info-3-bg-mob.jpg) no-repeat 50% 0%;
+                -webkit-background-size: 100% 44.6875em;
+                        background-size: 100% 44.6875em;
+                height: 44.6875em; } }
+            #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="3"] .content {
+              padding: 12.5em 6.25em 6.25em 6.25em; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="3"] .content {
+                  padding: 3.4375em 1.25em; } }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="3"] .content {
+                  padding: 2.5em 1.25em 1.875em; } }
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="3"] .content .title {
+                font-family: ProximaNova-Semibold, Arial, sans-serif;
+                font-size: 5.625em;
+                line-height: 1.2;
+                text-transform: uppercase;
+                color: #E3D4E3;
+                margin-left: -0.625em;
+                margin-bottom: 0.5em; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="3"] .content .title {
+                    font-size: 3.75em;
+                    margin-left: 0;
+                    text-align: center;
+                    margin-bottom: 0.625em; } }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="3"] .content .title {
+                    font-size: 2.25em;
+                    text-align: left;
+                    margin-bottom: 0.5em; } }
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="3"] .content .text {
+                font-family: ProximaNova-Regular, Arial, sans-serif;
+                font-size: 1.25em;
+                line-height: 2;
+                color: #000;
+                margin-bottom: 3.75em;
+                max-width: 23.75em; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="3"] .content .text {
+                    max-width: none;
+                    margin-bottom: 3.75em; } }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="3"] .content .text {
+                    font-size: 0.875em;
+                    margin-bottom: 1.875em; } }
+                #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="3"] .content .text .text-bold {
+                  font-family: ProximaNova-Semibold, Arial, sans-serif;
+                  font-size: 1em;
+                  color: #000; }
+          #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="4"] {
+            background: url(../img/test/info-4-bg.jpg) no-repeat 50% 0%;
+            -webkit-background-size: 120em 65.625em;
+                    background-size: 120em 65.625em; }
+            @media (max-width: 991px) {
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="4"] {
+                background: url(../img/test/info-4-bg-tab.jpg) no-repeat 50% 0%;
+                -webkit-background-size: 100% 66.875em;
+                        background-size: 100% 66.875em; } }
+            @media (max-width: 767px) {
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="4"] {
+                background: url(../img/test/info-4-bg-mob.jpg) no-repeat 50% 0%;
+                -webkit-background-size: 100% 44.6875em;
+                        background-size: 100% 44.6875em;
+                height: 44.6875em; } }
+            #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="4"] .content {
+              padding: 10em 6.25em 6.25em 6.25em; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="4"] .content {
+                  padding: 3.125em 1.25em; } }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="4"] .content {
+                  padding: 3.125em 1.25em 1.875em; } }
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="4"] .content .title {
+                font-family: ProximaNova-Semibold, Arial, sans-serif;
+                font-size: 5.625em;
+                line-height: 1.2;
+                text-transform: uppercase;
+                color: #BADFF1;
+                margin-left: -0.625em;
+                margin-bottom: 0.75em; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="4"] .content .title {
+                    font-size: 5em;
+                    margin-left: 0;
+                    text-align: center;
+                    margin-bottom: 0.3125em; } }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="4"] .content .title {
+                    font-size: 2.625em;
+                    text-align: left;
+                    margin-bottom: 0.625em; } }
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="4"] .content .text {
+                font-family: ProximaNova-Regular, Arial, sans-serif;
+                font-size: 1.25em;
+                line-height: 2;
+                color: #000;
+                margin-bottom: 8.75em;
+                max-width: 23.75em; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="4"] .content .text {
+                    max-width: none;
+                    margin-bottom: 3.75em; } }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="4"] .content .text {
+                    font-size: 0.875em;
+                    margin-bottom: 1.875em; } }
+                #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="4"] .content .text .text-bold {
+                  font-family: ProximaNova-Semibold, Arial, sans-serif;
+                  font-size: 1em;
+                  color: #000; }
+          #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="5"] {
+            background: url(../img/test/info-5-bg.jpg) no-repeat 50% 0%;
+            -webkit-background-size: 120em 65.625em;
+                    background-size: 120em 65.625em; }
+            @media (max-width: 991px) {
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="5"] {
+                background: url(../img/test/info-5-bg-tab.jpg) no-repeat 50% 0%;
+                -webkit-background-size: 100% 66.875em;
+                        background-size: 100% 66.875em; } }
+            @media (max-width: 767px) {
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="5"] {
+                background: url(../img/test/info-5-bg-mob.jpg) no-repeat 50% 0%;
+                -webkit-background-size: 100% 47.375em;
+                        background-size: 100% 47.375em;
+                height: 47.375em; } }
+            #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="5"] .content {
+              padding: 7.5em 6.25em 6.25em 6.25em; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="5"] .content {
+                  padding: 3.125em 1.25em; } }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="5"] .content {
+                  padding: 1.875em 1.25em; } }
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="5"] .content .title {
+                font-family: ProximaNova-Semibold, Arial, sans-serif;
+                font-size: 5.625em;
+                line-height: 1.2;
+                text-transform: uppercase;
+                color: #00A4AD;
+                margin-left: -0.625em;
+                margin-bottom: 0.625em; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="5"] .content .title {
+                    font-size: 5em;
+                    margin-left: 0;
+                    text-align: center;
+                    margin-bottom: 0.3125em;
+                    line-height: 1; } }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="5"] .content .title {
+                    font-size: 2.5em;
+                    text-align: left;
+                    margin-bottom: 0.3125em; } }
+                #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="5"] .content .title .title-small {
+                  font-size: 0.555em; }
+                  @media (max-width: 767px) {
+                    #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="5"] .content .title .title-small {
+                      font-size: 0.45em; } }
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="5"] .content .text {
+                font-family: ProximaNova-Regular, Arial, sans-serif;
+                font-size: 1.25em;
+                line-height: 2;
+                color: #000;
+                margin-bottom: 3.125em;
+                max-width: 30em; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="5"] .content .text {
+                    max-width: none;
+                    margin-bottom: 1.875em; } }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="5"] .content .text {
+                    font-size: 0.875em;
+                    margin-bottom: 1.25em; } }
+                #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="5"] .content .text .text-bold {
+                  font-family: ProximaNova-Semibold, Arial, sans-serif;
+                  font-size: 1em;
+                  color: #000; }
+              #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="5"] .content .text-more {
+                font-family: ProximaNova-SemiboldIt, Arial, sans-serif;
+                font-size: 1.25em;
+                max-width: 25em;
+                line-height: 1.5;
+                color: #858585;
+                margin-bottom: 3.125em; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="5"] .content .text-more {
+                    max-width: none;
+                    margin-bottom: 1.25em; } }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-info > .inner .information-list .information-item[data-item="5"] .content .text-more {
+                    max-width: 25em;
+                    font-size: 0.625em;
+                    margin-bottom: 2.5em; } }
+  #varioMain div.modal-box.modal-box-test {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background: #fff;
+    padding: 0; }
+    #varioMain div.modal-box.modal-box-test:not(.active) > .inner {
+      opacity: 0; }
+    #varioMain div.modal-box.modal-box-test > .inner {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      max-height: 78.125em;
+      min-height: 58.75em;
+      background: #fff;
+      padding: 0;
+      margin: 0; }
+      @media (max-width: 991px) {
+        #varioMain div.modal-box.modal-box-test > .inner {
+          max-height: none;
+          min-height: auto;
+          height: auto; } }
+      #varioMain div.modal-box.modal-box-test > .inner .experts {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: url(../img/test/modal-experts-bg.jpg) no-repeat 50% -3.125em;
+        -webkit-background-size: 120em 78.125em;
+                background-size: 120em 78.125em;
+        display: none; }
+        @media (max-width: 991px) {
+          #varioMain div.modal-box.modal-box-test > .inner .experts {
+            background: url(../img/test/modal-experts-bg-tab.jpg) no-repeat;
+            background-position: 50% 0;
+            -webkit-background-size: cover;
+                    background-size: cover;
+            height: 81.25em; } }
+        @media (max-width: 767px) {
+          #varioMain div.modal-box.modal-box-test > .inner .experts {
+            background: url(../img/test/modal-experts-bg-mob.jpg) no-repeat;
+            -webkit-background-size: contain;
+                    background-size: contain;
+            height: 37.5em; } }
+        #varioMain div.modal-box.modal-box-test > .inner .experts.show {
+          display: block; }
+        #varioMain div.modal-box.modal-box-test > .inner .experts .close {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          width: 0.625em;
+          height: 0.625em;
+          font-size: 6.25em;
+          right: 0.3125em;
+          top: 0.125em;
+          color: #fff;
+          cursor: pointer;
+          z-index: 10;
+          opacity: 1;
+          outline: none; }
+          @media (max-width: 991px) {
+            #varioMain div.modal-box.modal-box-test > .inner .experts .close {
+              font-size: 3.75em; } }
+          @media (max-width: 767px) {
+            #varioMain div.modal-box.modal-box-test > .inner .experts .close {
+              font-size: 2.5em; } }
+        #varioMain div.modal-box.modal-box-test > .inner .experts .question-list {
+          width: 100%;
+          height: 100%; }
+          #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item {
+            display: none;
+            width: 100%;
+            height: 100%;
+            padding-top: 6.25em;
+            display: none;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center; }
+            @media (max-width: 991px) {
+              #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item {
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                padding-top: 4.375em;
+                padding-bottom: 6.25em; } }
+            @media (max-width: 767px) {
+              #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item {
+                padding-top: 1.875em;
+                padding-bottom: 1.875em; } }
+            #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item.show {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex; }
+            #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .title {
+              font-family: ProximaNova-Bold, Arial, sans-serif;
+              font-size: 2.5em;
+              line-height: 1.5;
+              color: #fff;
+              text-align: center;
+              text-transform: uppercase;
+              min-height: 3em;
+              margin-bottom: 0.875em; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .title {
+                  padding: 0 1.25em;
+                  min-height: auto; } }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .title {
+                  font-size: 1.125em;
+                  padding: 0 0.625em; } }
+            #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              -webkit-flex-wrap: wrap;
+                  -ms-flex-wrap: wrap;
+                      flex-wrap: wrap;
+              margin: 0 auto 5.625em; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer {
+                  margin: 0 auto 2.5em; } }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer {
+                  margin: 0 auto 1.25em; } }
+              #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer.wrapper-answer-1 {
+                max-width: 88.75em; }
+              #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer.wrapper-answer-2 {
+                max-width: 68.75em; }
+              #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer.wrapper-answer-3 {
+                max-width: 46.875em; }
+              #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer.wrapper-answer-4 {
+                max-width: 68.75em; }
+              #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer.wrapper-answer-5 {
+                max-width: 68.75em; }
+              #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer.wrapper-answer-6 {
+                max-width: 46.875em; }
+              #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer.wrapper-answer-7 {
+                max-width: 46.875em; }
+              #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer.wrapper-answer-8 {
+                max-width: 46.875em; }
+              #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer .btn-answer {
+                position: relative;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                width: 20em;
+                max-width: 20em;
+                height: 11.375em;
+                max-height: 11.375em;
+                margin: 1.1875em 0.625em;
+                border: 1px solid #DAEFF9;
+                -webkit-border-radius: 1.25em;
+                        border-radius: 1.25em;
+                -webkit-box-shadow: 0 0 3.125em rgba(0, 164, 173, 0.2);
+                        box-shadow: 0 0 3.125em rgba(0, 164, 173, 0.2);
+                background: rgba(255, 255, 255, 0.8);
+                -webkit-transition: .2s;
+                -o-transition: .2s;
+                transition: .2s;
+                cursor: pointer;
+                padding: 1.875em 1.875em 3.75em;
+                outline: none; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer .btn-answer {
+                    height: 9.375em;
+                    margin: 0.625em 0.625em;
+                    padding: 1.25em 1.25em 3.75em; } }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer .btn-answer {
+                    -webkit-border-radius: 0.9375em;
+                            border-radius: 0.9375em;
+                    width: 9.375em;
+                    max-width: 9.375em;
+                    height: 5.125em;
+                    max-height: 5.125em;
+                    padding: 0.625em 0.125em 1.5625em;
+                    margin: 0.3125em; } }
+                #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer .btn-answer.btn-answer-big {
+                  width: 27.5em;
+                  max-width: 27.5em; }
+                  @media (max-width: 767px) {
+                    #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer .btn-answer.btn-answer-big {
+                      width: 13.375em;
+                      max-width: 13.375em; } }
+                #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer .btn-answer .btn-answer-text {
+                  font-family: ProximaNova-Regular, Arial, sans-serif;
+                  font-size: 1.25em;
+                  line-height: 1.4;
+                  color: #000; }
+                  @media (max-width: 767px) {
+                    #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer .btn-answer .btn-answer-text {
+                      font-size: 0.875em; } }
+                  @media (max-width: 767px) {
+                    #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer .btn-answer .btn-answer-text.btn-answer-text-small-mob {
+                      font-size: 0.75em; } }
+                  #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer .btn-answer .btn-answer-text.btn-answer-text-small {
+                    font-size: 1.5em; }
+                    @media (max-width: 767px) {
+                      #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer .btn-answer .btn-answer-text.btn-answer-text-small {
+                        font-size: 0.875em; } }
+                  #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer .btn-answer .btn-answer-text.btn-answer-text-middle {
+                    font-size: 1.875em; }
+                    @media (max-width: 767px) {
+                      #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer .btn-answer .btn-answer-text.btn-answer-text-middle {
+                        font-size: 1.125em; } }
+                  #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer .btn-answer .btn-answer-text.btn-answer-text-big {
+                    font-size: 2.25em; }
+                    @media (max-width: 767px) {
+                      #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer .btn-answer .btn-answer-text.btn-answer-text-big {
+                        font-size: 1.5em; } }
+                #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer .btn-answer.active, #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer .btn-answer:hover {
+                  background: #fff; }
+                  #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer .btn-answer.active:before, #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer .btn-answer:hover:before {
+                    background: #EA406D;
+                    border-color: #FDC5D4; }
+                #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer .btn-answer:before {
+                  position: absolute;
+                  content: "";
+                  left: 50%;
+                  bottom: 1.0625em;
+                  width: 1.375em;
+                  height: 1.375em;
+                  -webkit-border-radius: 50%;
+                          border-radius: 50%;
+                  background: #DADADA;
+                  -webkit-transition: .2s;
+                  -o-transition: .2s;
+                  transition: .2s;
+                  border: 0.3125em solid #fff;
+                  -webkit-transform: translateX(-50%);
+                      -ms-transform: translateX(-50%);
+                          transform: translateX(-50%); }
+                  @media (max-width: 767px) {
+                    #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .wrapper-answer .btn-answer:before {
+                      bottom: 0.625em;
+                      width: 0.625em;
+                      height: 0.625em;
+                      border: 0.125em solid #fff; } }
+            #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .btn-more {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              background: #fff;
+              width: 17.625em;
+              height: 6.25em;
+              -webkit-border-radius: 1.25em;
+                      border-radius: 1.25em;
+              -webkit-box-shadow: 0 0 3.125em rgba(0, 164, 173, 0.2);
+                      box-shadow: 0 0 3.125em rgba(0, 164, 173, 0.2);
+              cursor: pointer;
+              outline: none;
+              border: none;
+              margin: 0 auto;
+              -webkit-transition: .2s;
+              -o-transition: .2s;
+              transition: .2s; }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .btn-more {
+                  -webkit-border-radius: 0.9375em;
+                          border-radius: 0.9375em;
+                  width: 9.375em;
+                  height: 3.125em; } }
+              #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .btn-more .btn-more-text {
+                font-family: ProximaNova-Bold, Arial, sans-serif;
+                font-size: 1.5em;
+                line-height: 1.2;
+                color: #000;
+                -webkit-transition: .2s;
+                -o-transition: .2s;
+                transition: .2s; }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .btn-more .btn-more-text {
+                    font-size: 1.125em; } }
+              #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .btn-more.disabled {
+                cursor: not-allowed; }
+                #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .btn-more.disabled:hover {
+                  background: #fff; }
+                  #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .btn-more.disabled:hover .btn-more-text {
+                    color: #000; }
+              #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .btn-more:hover {
+                background: #E83E6D; }
+                #varioMain div.modal-box.modal-box-test > .inner .experts .question-list .question-item .btn-more:hover .btn-more-text {
+                  color: #fff; }
+      #varioMain div.modal-box.modal-box-test > .inner .independent {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        display: none; }
+        @media (max-width: 991px) {
+          #varioMain div.modal-box.modal-box-test > .inner .independent {
+            height: 66.875em; } }
+        @media (max-width: 767px) {
+          #varioMain div.modal-box.modal-box-test > .inner .independent {
+            height: 68.75em; } }
+        #varioMain div.modal-box.modal-box-test > .inner .independent.show {
+          display: block; }
+        #varioMain div.modal-box.modal-box-test > .inner .independent .close {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          width: 0.625em;
+          height: 0.625em;
+          font-size: 6.25em;
+          right: 0.3125em;
+          top: 0.125em;
+          color: #000;
+          cursor: pointer;
+          z-index: 10;
+          opacity: 1;
+          outline: none; }
+          @media (max-width: 991px) {
+            #varioMain div.modal-box.modal-box-test > .inner .independent .close {
+              font-size: 3.75em; } }
+          @media (max-width: 767px) {
+            #varioMain div.modal-box.modal-box-test > .inner .independent .close {
+              font-size: 2.5em; } }
+        #varioMain div.modal-box.modal-box-test > .inner .independent .options-list {
+          width: 100%;
+          height: 100%;
+          overflow: hidden; }
+          #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item {
+            position: relative;
+            display: none;
+            width: 100%;
+            height: 100%; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item.show {
+              display: block; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item .title {
+              padding-top: 1.5em;
+              font-family: ProximaNova-Bold, Arial, sans-serif;
+              font-size: 1.875em;
+              line-height: 1.2;
+              color: #B5B5B5;
+              text-align: center;
+              text-transform: uppercase; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item .title {
+                  padding-top: 1.5em; } }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item .title {
+                  font-size: 1.125em;
+                  padding: 1.5em 1.0625em 5em; } }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] {
+              background: url(../img/test/options-item-1-bg.jpg) no-repeat 50% 0%/cover; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] {
+                  background: url(../img/test/options-item-1-bg-tab.jpg) no-repeat 50% 0%/cover; } }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] {
+                  background: none !important; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .swiper-1 {
+                width: 100%;
+                height: 6.25em;
+                overflow: hidden;
+                height: 0; }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .swiper-1 {
+                    height: 52.125em; } }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .swiper-1 .swiper-wrapper {
+                  height: 100%; }
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .swiper-1 .swiper-wrapper .swiper-slide {
+                    height: 100%;
+                    width: 90%;
+                    padding: 0.9375em 0.9375em; }
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .swiper-1 .swiper-wrapper .swiper-slide .slide-content {
+                      height: 100%;
+                      -webkit-box-shadow: 0 0 0.9375em rgba(0, 0, 0, 0.2);
+                              box-shadow: 0 0 0.9375em rgba(0, 0, 0, 0.2); }
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .swiper-1 .swiper-wrapper .swiper-slide .slide-content.slide-content-1 {
+                        background: url(../img/test/swiperOne-slide-1.jpg) no-repeat 50% 50%/cover; }
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .swiper-1 .swiper-wrapper .swiper-slide .slide-content.slide-content-2 {
+                        background: url(../img/test/swiperOne-slide-2.jpg) no-repeat 50% 50%/cover; }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content {
+                position: absolute;
+                top: 7.5625em;
+                width: 50.875em;
+                height: 50.875em;
+                left: 34.4375em; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content {
+                    top: 36.875em;
+                    left: 10em;
+                    width: 27.625em;
+                    height: 27.625em; } }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content {
+                    display: none; } }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  background: url(../img/test/options-item-1-content-bg.png) no-repeat 50% 50%/contain;
+                  -webkit-transition: .5s;
+                  -o-transition: .5s;
+                  transition: .5s; }
+                  @media (max-width: 991px) {
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image {
+                      background: url(../img/test/options-item-1-content-bg-tab.png) no-repeat 50% 50%/contain; } }
+                  @media (max-width: 767px) {
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image {
+                      display: none; } }
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image.active-1 {
+                    -webkit-transform: rotate(0deg);
+                        -ms-transform: rotate(0deg);
+                            transform: rotate(0deg); }
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image.active-1 .cream-wrapper .cream-1 {
+                      -webkit-animation: 1.5s linear cream1 infinite;
+                              animation: 1.5s linear cream1 infinite; }
+                      @media (max-width: 991px) {
+                        #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image.active-1 .cream-wrapper .cream-1 {
+                          -webkit-animation: 1.5s linear cream1-tab infinite;
+                                  animation: 1.5s linear cream1-tab infinite; } }
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image.active-1 .cream-wrapper .cream-1 .shadow {
+                        opacity: 1;
+                        bottom: -3.75em;
+                        -webkit-animation: 1.5s linear shodow1 infinite;
+                                animation: 1.5s linear shodow1 infinite; }
+                        @media (max-width: 991px) {
+                          #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image.active-1 .cream-wrapper .cream-1 .shadow {
+                            -webkit-animation: 1.5s linear shodow1-tab infinite;
+                                    animation: 1.5s linear shodow1-tab infinite;
+                            bottom: -2.5em; } }
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image.active-2 {
+                    -webkit-transform: rotate(180deg);
+                        -ms-transform: rotate(180deg);
+                            transform: rotate(180deg); }
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image.active-2 .cream-wrapper .cream-2 {
+                      -webkit-animation: 1.5s linear cream2 infinite;
+                              animation: 1.5s linear cream2 infinite; }
+                      @media (max-width: 991px) {
+                        #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image.active-2 .cream-wrapper .cream-2 {
+                          -webkit-animation: 1.5s linear cream2-tab infinite;
+                                  animation: 1.5s linear cream2-tab infinite; } }
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image.active-2 .cream-wrapper .cream-2 .shadow {
+                        opacity: 1;
+                        bottom: -3.75em;
+                        -webkit-animation: 1.5s linear shodow2 infinite;
+                                animation: 1.5s linear shodow2 infinite; }
+                        @media (max-width: 991px) {
+                          #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image.active-2 .cream-wrapper .cream-2 .shadow {
+                            bottom: -2.5em;
+                            -webkit-animation: 1.5s linear shodow2-tab infinite;
+                                    animation: 1.5s linear shodow2-tab infinite; } }
+
+@-webkit-keyframes cream1 {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(-0.625em);
+            transform: translateY(-0.625em); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes cream1 {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(-0.625em);
+            transform: translateY(-0.625em); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@-webkit-keyframes cream2 {
+  0% {
+    -webkit-transform: translateY(0) rotate(180deg);
+            transform: translateY(0) rotate(180deg); }
+  50% {
+    -webkit-transform: translateY(-0.625em) rotate(180deg);
+            transform: translateY(-0.625em) rotate(180deg); }
+  100% {
+    -webkit-transform: translateY(0) rotate(180deg);
+            transform: translateY(0) rotate(180deg); } }
+
+@keyframes cream2 {
+  0% {
+    -webkit-transform: translateY(0) rotate(180deg);
+            transform: translateY(0) rotate(180deg); }
+  50% {
+    -webkit-transform: translateY(-0.625em) rotate(180deg);
+            transform: translateY(-0.625em) rotate(180deg); }
+  100% {
+    -webkit-transform: translateY(0) rotate(180deg);
+            transform: translateY(0) rotate(180deg); } }
+
+@-webkit-keyframes cream1-tab {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(-0.3125em);
+            transform: translateY(-0.3125em); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes cream1-tab {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(-0.3125em);
+            transform: translateY(-0.3125em); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@-webkit-keyframes cream2-tab {
+  0% {
+    -webkit-transform: translateY(0) rotate(180deg);
+            transform: translateY(0) rotate(180deg); }
+  50% {
+    -webkit-transform: translateY(-0.3125em) rotate(180deg);
+            transform: translateY(-0.3125em) rotate(180deg); }
+  100% {
+    -webkit-transform: translateY(0) rotate(180deg);
+            transform: translateY(0) rotate(180deg); } }
+
+@keyframes cream2-tab {
+  0% {
+    -webkit-transform: translateY(0) rotate(180deg);
+            transform: translateY(0) rotate(180deg); }
+  50% {
+    -webkit-transform: translateY(-0.3125em) rotate(180deg);
+            transform: translateY(-0.3125em) rotate(180deg); }
+  100% {
+    -webkit-transform: translateY(0) rotate(180deg);
+            transform: translateY(0) rotate(180deg); } }
+
+@-webkit-keyframes shodow1 {
+  0% {
+    -webkit-transform: scale(0.8) translateY(-0.625em);
+            transform: scale(0.8) translateY(-0.625em); }
+  50% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0); }
+  100% {
+    -webkit-transform: scale(0.8) translateY(-0.625em);
+            transform: scale(0.8) translateY(-0.625em); } }
+
+@keyframes shodow1 {
+  0% {
+    -webkit-transform: scale(0.8) translateY(-0.625em);
+            transform: scale(0.8) translateY(-0.625em); }
+  50% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0); }
+  100% {
+    -webkit-transform: scale(0.8) translateY(-0.625em);
+            transform: scale(0.8) translateY(-0.625em); } }
+
+@-webkit-keyframes shodow2 {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0); }
+  50% {
+    -webkit-transform: scale(0.8) translateY(-0.625em);
+            transform: scale(0.8) translateY(-0.625em); }
+  100% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0); } }
+
+@keyframes shodow2 {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0); }
+  50% {
+    -webkit-transform: scale(0.8) translateY(-0.625em);
+            transform: scale(0.8) translateY(-0.625em); }
+  100% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0); } }
+
+@-webkit-keyframes shodow1-tab {
+  0% {
+    -webkit-transform: scale(0.8) translateY(-0.3125em);
+            transform: scale(0.8) translateY(-0.3125em); }
+  50% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0); }
+  100% {
+    -webkit-transform: scale(0.8) translateY(-0.3125em);
+            transform: scale(0.8) translateY(-0.3125em); } }
+
+@keyframes shodow1-tab {
+  0% {
+    -webkit-transform: scale(0.8) translateY(-0.3125em);
+            transform: scale(0.8) translateY(-0.3125em); }
+  50% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0); }
+  100% {
+    -webkit-transform: scale(0.8) translateY(-0.3125em);
+            transform: scale(0.8) translateY(-0.3125em); } }
+
+@-webkit-keyframes shodow2-tab {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0); }
+  50% {
+    -webkit-transform: scale(0.8) translateY(-0.3125em);
+            transform: scale(0.8) translateY(-0.3125em); }
+  100% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0); } }
+
+@keyframes shodow2-tab {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0); }
+  50% {
+    -webkit-transform: scale(0.8) translateY(-0.3125em);
+            transform: scale(0.8) translateY(-0.3125em); }
+  100% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0); } }
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image .cream-wrapper {
+                    position: absolute;
+                    width: 20.625em;
+                    height: 43.75em;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                            transform: translate(-50%, -50%); }
+                    @media (max-width: 991px) {
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image .cream-wrapper {
+                        width: 11.1875em;
+                        height: 23.625em; } }
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image .cream-wrapper .sheet {
+                      position: absolute;
+                      width: 16.5em;
+                      height: 16.5em;
+                      -webkit-transition: .5s;
+                      -o-transition: .5s;
+                      transition: .5s; }
+                      @media (max-width: 991px) {
+                        #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image .cream-wrapper .sheet {
+                          width: 9em;
+                          height: 9em; } }
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image .cream-wrapper .sheet.active.sheet-1 {
+                        -webkit-transform: translate(11.125em, -1.875em);
+                            -ms-transform: translate(11.125em, -1.875em);
+                                transform: translate(11.125em, -1.875em); }
+                        @media (max-width: 991px) {
+                          #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image .cream-wrapper .sheet.active.sheet-1 {
+                            -webkit-transform: translate(6.125em, -1.25em);
+                                -ms-transform: translate(6.125em, -1.25em);
+                                    transform: translate(6.125em, -1.25em); } }
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image .cream-wrapper .sheet.active.sheet-2 {
+                        -webkit-transform: translate(-11.125em, 1.875em);
+                            -ms-transform: translate(-11.125em, 1.875em);
+                                transform: translate(-11.125em, 1.875em); }
+                        @media (max-width: 991px) {
+                          #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image .cream-wrapper .sheet.active.sheet-2 {
+                            -webkit-transform: translate(-6.125em, 1.25em);
+                                -ms-transform: translate(-6.125em, 1.25em);
+                                    transform: translate(-6.125em, 1.25em); } }
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image .cream-wrapper .sheet.sheet-1 {
+                        right: 0;
+                        top: 0;
+                        background: url(../img/test/cream-1-sheet.png) no-repeat 50% 50%/contain; }
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image .cream-wrapper .sheet.sheet-2 {
+                        left: 0;
+                        bottom: 0;
+                        background: url(../img/test/cream-2-sheet.png) no-repeat 50% 50%/contain; }
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image .cream-wrapper .cream {
+                      position: absolute;
+                      left: 0;
+                      right: 0;
+                      height: 16em;
+                      z-index: 2; }
+                      @media (max-width: 991px) {
+                        #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image .cream-wrapper .cream {
+                          height: 8.75em; } }
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image .cream-wrapper .cream .shadow {
+                        opacity: 0;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        height: 2.5em;
+                        -webkit-transition: .5s;
+                        -o-transition: .5s;
+                        transition: .5s;
+                        background: url(../img/test/cream-shadow.png) no-repeat 50% 50%/contain; }
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image .cream-wrapper .cream.cream-1 {
+                        top: 0;
+                        background: url(../img/test/cream-1.png) no-repeat 50% 50%/contain; }
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .content .content-image .cream-wrapper .cream.cream-2 {
+                        bottom: 0;
+                        background: url(../img/test/cream-2.png) no-repeat 50% 50%/contain;
+                        z-index: 2;
+                        -webkit-transform: rotate(180deg);
+                            -ms-transform: rotate(180deg);
+                                transform: rotate(180deg); }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .text {
+                position: absolute;
+                top: 6.25em;
+                left: 13.25em;
+                width: 104.375em;
+                height: 21.875em;
+                background: url(../img/test/options-item-1-text-1.png) no-repeat 50% 50%/contain;
+                -webkit-transition: .5s;
+                -o-transition: .5s;
+                transition: .5s; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .text {
+                    top: 6.25em;
+                    left: 1.25em;
+                    width: 45.5625em;
+                    height: 57.25em;
+                    background: url(../img/test/options-item-1-text-1-tab.png) no-repeat 50% 50%/contain; } }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .text {
+                    display: none; } }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .text.active-1 {
+                  background: url(../img/test/options-item-1-text-1.png) no-repeat 50% 50%/contain; }
+                  @media (max-width: 991px) {
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .text.active-1 {
+                      background: url(../img/test/options-item-1-text-1-tab.png) no-repeat 50% 50%/contain; } }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .text.active-2 {
+                  background: url(../img/test/options-item-1-text-2.png) no-repeat 50% 50%/contain; }
+                  @media (max-width: 991px) {
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .text.active-2 {
+                      background: url(../img/test/options-item-1-text-2-tab.png) no-repeat 50% 50%/contain; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .btn-select:nth-child(1):hover .btn-select-text {
+                color: #EA406D; }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .btn-select:nth-child(1):hover:before {
+                background: #EA406D;
+                border-color: #FDC5D4; }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .btn-select:nth-child(2):hover .btn-select-text {
+                color: #9e004d; }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .btn-select:nth-child(2):hover:before {
+                background: #9e004d;
+                border-color: #FDC5D4; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="0"] {
+                  background: url(../img/test/options-item-1-bg-tab.jpg) no-repeat 50% 0%/cover; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="0"] .next {
+                display: none; }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="0"] .select-block {
+                background: url(../img/test/options-item-1-selected-0.png) no-repeat 50% 50%/contain; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] {
+                  background: url(../img/test/options-item-1-bg-tab.jpg) no-repeat 50% 50%/cover; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] .btn-wrapper-select .btn-select:nth-child(1) .btn-select-text {
+                color: #EA406D; }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] .btn-wrapper-select .btn-select:nth-child(1):before {
+                background: #EA406D;
+                border-color: #FDC5D4; }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] .select-block {
+                background: url(../img/test/options-item-1-selected-1.png) no-repeat 50% 50%/contain; }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] {
+                background: url(../img/test/options-item-1-bg.jpg) no-repeat 50% 0%/cover; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] {
+                    background: url(../img/test/options-item-1-bg-tab.jpg) no-repeat 50% 50%/cover; } }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] .btn-wrapper-select .btn-select:nth-child(2) .btn-select-text {
+                  color: #9e004d; }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] .btn-wrapper-select .btn-select:nth-child(2):before {
+                  background: #9e004d;
+                  border-color: #FDC5D4; }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] .select-block {
+                  background: url(../img/test/options-item-1-selected-2.png) no-repeat 50% 50%/contain; }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .btn-wrapper-select {
+                position: absolute;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
+                width: 11.875em;
+                height: 5.3125em;
+                top: 30em;
+                right: 18.125em; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .btn-wrapper-select {
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                    -webkit-flex-direction: row;
+                        -ms-flex-direction: row;
+                            flex-direction: row;
+                    right: 50%;
+                    top: 22.5em;
+                    width: 25em;
+                    -webkit-transform: translateX(50%);
+                        -ms-transform: translateX(50%);
+                            transform: translateX(50%); } }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .btn-wrapper-select {
+                    top: 5.3125em;
+                    right: auto;
+                    left: 20px;
+                    -webkit-transform: none;
+                        -ms-transform: none;
+                            transform: none;
+                    width: 8.125em;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -webkit-flex-direction: column;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
+                    height: 3.5em; } }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .btn-wrapper-select .btn-select {
+                  position: relative;
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-align: center;
+                  -webkit-align-items: center;
+                      -ms-flex-align: center;
+                          align-items: center;
+                  background: transparent;
+                  width: 100%;
+                  padding-left: 3.5em;
+                  height: 2em;
+                  border: none;
+                  outline: none;
+                  cursor: pointer; }
+                  @media (max-width: 767px) {
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .btn-wrapper-select .btn-select {
+                      height: 1.375em;
+                      padding-left: 2.25em; } }
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .btn-wrapper-select .btn-select .btn-select-text {
+                    font-family: ProximaNova-Semibold, Arial, sans-serif;
+                    font-size: 1em;
+                    text-transform: uppercase;
+                    color: #D5D5D5;
+                    -webkit-transition: .2s;
+                    -o-transition: .2s;
+                    transition: .2s; }
+                    @media (max-width: 767px) {
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .btn-wrapper-select .btn-select .btn-select-text {
+                        font-size: 0.75em; } }
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .btn-wrapper-select .btn-select:before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 1.25em;
+                    height: 1.25em;
+                    background: #D5D5D5;
+                    border: 0.3125em solid #EDEDED;
+                    -webkit-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                            transform: translateY(-50%);
+                    -webkit-transition: .2s;
+                    -o-transition: .2s;
+                    transition: .2s;
+                    -webkit-border-radius: 50%;
+                            border-radius: 50%; }
+                    @media (max-width: 767px) {
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .btn-wrapper-select .btn-select:before {
+                        width: 0.875em;
+                        height: 0.875em;
+                        border-width: 0.1875em; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .next {
+                position: absolute;
+                right: 2.1875em;
+                top: 28.4375em;
+                width: 7.5em;
+                height: 13.125em;
+                border: none;
+                outline: none;
+                background: url(../img/test/options-item-1-next.png) no-repeat 50% 50%/contain;
+                cursor: pointer; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .next {
+                    right: 1.25em;
+                    top: 42.5em;
+                    width: 6.25em;
+                    height: 11.125em; } }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .next {
+                    right: 0.9375em;
+                    top: 4.875em;
+                    width: 2.5em;
+                    height: 4.75em; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .top {
+                display: none;
+                position: absolute;
+                right: 0.625em;
+                bottom: 10em;
+                width: 3.5em;
+                height: 3.5em;
+                border: none;
+                outline: none;
+                background: url(../img/test/btn-top.png) no-repeat 50% 50%/contain;
+                cursor: pointer;
+                -webkit-box-shadow: 0 0 0.9375em rgba(0, 0, 0, 0.2);
+                        box-shadow: 0 0 0.9375em rgba(0, 0, 0, 0.2);
+                z-index: 5;
+                -webkit-border-radius: 50%;
+                        border-radius: 50%; }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .top {
+                    display: block; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .select-block {
+                position: absolute;
+                right: 2.5em;
+                top: 53.125em;
+                width: 19.25em;
+                height: 5.625em; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .select-block {
+                    top: auto;
+                    right: 1.25em;
+                    bottom: 3.75em;
+                    width: 12.9375em;
+                    height: 3.75em; } }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"] .select-block {
+                    right: 50%;
+                    bottom: 1.875em;
+                    -webkit-transform: translateX(50%);
+                        -ms-transform: translateX(50%);
+                            transform: translateX(50%); } }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select="0"] .select-block, #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select="1"] .select-block, #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select="2"] .select-block, #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select="3"] .select-block, #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select="4"] .select-block {
+              background: url(../img/test/options-item-1-selected-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select="0"] .next, #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select="1"] .next, #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select="2"] .next, #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select="3"] .next, #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select="4"] .next {
+              display: none; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="1"] .next {
+              display: block; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="1"][data-select-two="0"] .select-block {
+              background: url(../img/test/options-item-1-selected-1-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="1"][data-select-two="2"] .select-block {
+              background: url(../img/test/options-item-1-selected-1-1-2.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="1"][data-select-two="3"] .select-block {
+              background: url(../img/test/options-item-1-selected-1-1-3.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="1"][data-select-two="4"] .select-block {
+              background: url(../img/test/options-item-1-selected-1-1-4.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="2"] .next {
+              display: block; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="2"][data-select-two="0"] .select-block {
+              background: url(../img/test/options-item-1-selected-1-2.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="2"][data-select-two="2"] .select-block {
+              background: url(../img/test/options-item-1-selected-1-1-2.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="2"][data-select-two="3"] .select-block {
+              background: url(../img/test/options-item-1-selected-1-2-3.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="2"][data-select-two="4"] .select-block {
+              background: url(../img/test/options-item-1-selected-1-2-4.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="3"] .next {
+              display: block; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="3"][data-select-two="0"] .select-block {
+              background: url(../img/test/options-item-1-selected-1-3.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="3"][data-select-two="1"] .select-block {
+              background: url(../img/test/options-item-1-selected-1-1-3.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="3"][data-select-two="2"] .select-block {
+              background: url(../img/test/options-item-1-selected-1-2-3.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="3"][data-select-two="4"] .select-block {
+              background: url(../img/test/options-item-1-selected-1-3-4.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="4"] .next {
+              display: block; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="4"][data-select-two="0"] .select-block {
+              background: url(../img/test/options-item-1-selected-1-4.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="4"][data-select-two="1"] .select-block {
+              background: url(../img/test/options-item-1-selected-1-1-4.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="4"][data-select-two="2"] .select-block {
+              background: url(../img/test/options-item-1-selected-1-2-4.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="4"][data-select-two="3"] .select-block {
+              background: url(../img/test/options-item-1-selected-1-3-4.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select="0"] .select-block, #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select="1"] .select-block, #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select="2"] .select-block, #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select="3"] .select-block, #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select="4"] .select-block {
+              background: url(../img/test/options-item-1-selected-2.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select="0"] .next, #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select="1"] .next, #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select="2"] .next, #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select="3"] .next, #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select="4"] .next {
+              display: none; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="1"] .next {
+              display: block; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="1"][data-select-two="0"] .select-block {
+              background: url(../img/test/options-item-1-selected-2-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="1"][data-select-two="2"] .select-block {
+              background: url(../img/test/options-item-1-selected-2-1-2.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="1"][data-select-two="3"] .select-block {
+              background: url(../img/test/options-item-1-selected-2-1-3.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="1"][data-select-two="4"] .select-block {
+              background: url(../img/test/options-item-1-selected-2-1-4.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="2"] .next {
+              display: block; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="2"][data-select-two="0"] .select-block {
+              background: url(../img/test/options-item-1-selected-2-2.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="2"][data-select-two="2"] .select-block {
+              background: url(../img/test/options-item-1-selected-2-1-2.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="2"][data-select-two="3"] .select-block {
+              background: url(../img/test/options-item-1-selected-2-2-3.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="2"][data-select-two="4"] .select-block {
+              background: url(../img/test/options-item-1-selected-2-1-4.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="3"] .next {
+              display: block; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="3"][data-select-two="0"] .select-block {
+              background: url(../img/test/options-item-1-selected-2-3.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="3"][data-select-two="1"] .select-block {
+              background: url(../img/test/options-item-1-selected-2-1-3.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="3"][data-select-two="2"] .select-block {
+              background: url(../img/test/options-item-1-selected-2-2-3.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="3"][data-select-two="4"] .select-block {
+              background: url(../img/test/options-item-1-selected-2-3-4.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="4"] .next {
+              display: block; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="4"][data-select-two="0"] .select-block {
+              background: url(../img/test/options-item-1-selected-2-4.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="4"][data-select-two="1"] .select-block {
+              background: url(../img/test/options-item-1-selected-2-1-4.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="4"][data-select-two="2"] .select-block {
+              background: url(../img/test/options-item-1-selected-2-2-4.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="4"][data-select-two="3"] .select-block {
+              background: url(../img/test/options-item-1-selected-2-3-4.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="1"][data-select-two="0"] + .options-item[data-option="3"].show .select-block {
+              background: url(../img/test/options-item-1-selected-1-1-1-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="1"][data-select-two="2"] + .options-item[data-option="3"].show .select-block {
+              background: url(../img/test/options-item-1-selected-1-1-2-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="1"][data-select-two="3"] + .options-item[data-option="3"].show .select-block {
+              background: url(../img/test/options-item-1-selected-1-1-3-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="1"][data-select-two="4"] + .options-item[data-option="3"].show .select-block {
+              background: url(../img/test/options-item-1-selected-1-1-4-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="2"][data-select-two="0"] + .options-item[data-option="3"].show .select-block {
+              background: url(../img/test/options-item-1-selected-1-2-2-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="2"][data-select-two="3"] + .options-item[data-option="3"].show .select-block {
+              background: url(../img/test/options-item-1-selected-1-2-3-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="2"][data-select-two="4"] + .options-item[data-option="3"].show .select-block {
+              background: url(../img/test/options-item-1-selected-1-2-4-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="3"][data-select-two="0"] + .options-item[data-option="3"].show .select-block {
+              background: url(../img/test/options-item-1-selected-1-3-3-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="4"][data-select-two="0"] + .options-item[data-option="3"].show .select-block {
+              background: url(../img/test/options-item-1-selected-1-4-4-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="1"] + .options-item[data-option="2"][data-select-one="3"][data-select-two="4"] + .options-item[data-option="3"].show .select-block {
+              background: url(../img/test/options-item-1-selected-1-3-4-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="1"][data-select-two="0"] + .options-item[data-option="3"].show .select-block {
+              background: url(../img/test/options-item-1-selected-2-1-1-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="1"][data-select-two="2"] + .options-item[data-option="3"].show .select-block {
+              background: url(../img/test/options-item-1-selected-2-1-2-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="1"][data-select-two="3"] + .options-item[data-option="3"].show .select-block {
+              background: url(../img/test/options-item-1-selected-2-1-3-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="1"][data-select-two="4"] + .options-item[data-option="3"].show .select-block {
+              background: url(../img/test/options-item-1-selected-2-1-4-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="2"][data-select-two="0"] + .options-item[data-option="3"].show .select-block {
+              background: url(../img/test/options-item-1-selected-2-2-2-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="2"][data-select-two="3"] + .options-item[data-option="3"].show .select-block {
+              background: url(../img/test/options-item-1-selected-2-2-3-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="2"][data-select-two="4"] + .options-item[data-option="3"].show .select-block {
+              background: url(../img/test/options-item-1-selected-2-2-4-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="3"][data-select-two="0"] + .options-item[data-option="3"].show .select-block {
+              background: url(../img/test/options-item-1-selected-2-3-3-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="4"][data-select-two="0"] + .options-item[data-option="3"].show .select-block {
+              background: url(../img/test/options-item-1-selected-2-4-4-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="1"][data-select="2"] + .options-item[data-option="2"][data-select-one="3"][data-select-two="4"] + .options-item[data-option="3"].show .select-block {
+              background: url(../img/test/options-item-1-selected-2-3-4-1.png) no-repeat 50% 50%/contain; }
+            @media (max-width: 767px) {
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .title {
+                padding-bottom: 6.875em; } }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .swiper-2 {
+              width: 100%;
+              height: 6.25em;
+              overflow: hidden;
+              height: 0; }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .swiper-2 {
+                  height: 50.875em; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .swiper-2 .swiper-wrapper {
+                height: 100%; }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .swiper-2 .swiper-wrapper .swiper-slide {
+                  height: 100%;
+                  width: 90%;
+                  padding: 0.9375em 0.9375em; }
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .swiper-2 .swiper-wrapper .swiper-slide .slide-content {
+                    position: relative;
+                    height: 100%;
+                    -webkit-box-shadow: 0 0 0.9375em rgba(0, 0, 0, 0.2);
+                            box-shadow: 0 0 0.9375em rgba(0, 0, 0, 0.2); }
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .swiper-2 .swiper-wrapper .swiper-slide .slide-content .btn-more-info-slider {
+                      position: absolute;
+                      bottom: 2.625em;
+                      left: 5.375em;
+                      width: 2em;
+                      height: 2em;
+                      border: none;
+                      outline: none;
+                      cursor: pointer;
+                      z-index: 3; }
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .swiper-2 .swiper-wrapper .swiper-slide .slide-content .btn-more-info-slider.btn-more-info-slider-1 {
+                        background: url(../img/test/more-info-0.png) no-repeat 50% 50%/contain; }
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .swiper-2 .swiper-wrapper .swiper-slide .slide-content .btn-more-info-slider.btn-more-info-slider-2 {
+                        background: url(../img/test/more-info-1.png) no-repeat 50% 50%/contain; }
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .swiper-2 .swiper-wrapper .swiper-slide .slide-content .btn-more-info-slider.btn-more-info-slider-3 {
+                        background: url(../img/test/more-info-2.png) no-repeat 50% 50%/contain; }
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .swiper-2 .swiper-wrapper .swiper-slide .slide-content .btn-more-info-slider.btn-more-info-slider-4 {
+                        background: url(../img/test/more-info-3.png) no-repeat 50% 50%/contain; }
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .swiper-2 .swiper-wrapper .swiper-slide .slide-content.slide-content-1 {
+                      background: url(../img/test/swiperTwo-slide-1.jpg) no-repeat 50% 50%/cover; }
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .swiper-2 .swiper-wrapper .swiper-slide .slide-content.slide-content-2 {
+                      background: url(../img/test/swiperTwo-slide-2.jpg) no-repeat 50% 50%/cover; }
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .swiper-2 .swiper-wrapper .swiper-slide .slide-content.slide-content-3 {
+                      background: url(../img/test/swiperTwo-slide-3.jpg) no-repeat 50% 50%/cover; }
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .swiper-2 .swiper-wrapper .swiper-slide .slide-content.slide-content-4 {
+                      background: url(../img/test/swiperTwo-slide-4.jpg) no-repeat 50% 50%/cover; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .top {
+              display: none;
+              position: absolute;
+              right: 0.625em;
+              bottom: 10em;
+              width: 3.5em;
+              height: 3.5em;
+              border: none;
+              outline: none;
+              background: url(../img/test/btn-top.png) no-repeat 50% 50%/contain;
+              cursor: pointer;
+              -webkit-box-shadow: 0 0 0.9375em rgba(0, 0, 0, 0.2);
+                      box-shadow: 0 0 0.9375em rgba(0, 0, 0, 0.2);
+              z-index: 5;
+              -webkit-border-radius: 50%;
+                      border-radius: 50%; }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .top {
+                  display: block; } }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="0"] {
+              background: url(../img/test/options-item-2-bg-1.jpg) no-repeat 50% 0%/cover; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="0"] {
+                  background: url(../img/test/options-item-2-bg-1-tab.jpg) no-repeat 50% 50%/cover; } }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="0"] {
+                  background: none !important; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="0"] .text {
+                background: url(../img/test/options-item-2-text-1.png) no-repeat 50% 50%/contain; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="0"] .text {
+                    background: url(../img/test/options-item-2-text-1-tab.png) no-repeat 50% 50%/contain; } }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="1"] {
+              background: url(../img/test/options-item-2-bg-1.jpg) no-repeat 50% 0%/cover; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="1"] {
+                  background: url(../img/test/options-item-2-bg-1-tab.jpg) no-repeat 50% 50%/cover; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="1"] .text {
+                background: url(../img/test/options-item-2-text-1.png) no-repeat 50% 50%/contain; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="1"] .text {
+                    background: url(../img/test/options-item-2-text-1-tab.png) no-repeat 50% 50%/contain; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="1"] .btn-more-info {
+                background: url(../img/test/more-info-0.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="2"] {
+              background: url(../img/test/options-item-2-bg-2.jpg) no-repeat 50% 0%/cover; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="2"] {
+                  background: url(../img/test/options-item-2-bg-2-tab.jpg) no-repeat 50% 50%/cover; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="2"] .text {
+                background: url(../img/test/options-item-2-text-2.png) no-repeat 50% 50%/contain; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="2"] .text {
+                    background: url(../img/test/options-item-2-text-2-tab.png) no-repeat 50% 50%/contain; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="2"] .btn-more-info {
+                background: url(../img/test/more-info-1.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="3"] {
+              background: url(../img/test/options-item-2-bg-3.jpg) no-repeat 50% 0%/cover; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="3"] {
+                  background: url(../img/test/options-item-2-bg-3-tab.jpg) no-repeat 50% 50%/cover; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="3"] .text {
+                background: url(../img/test/options-item-2-text-3.png) no-repeat 50% 50%/contain; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="3"] .text {
+                    background: url(../img/test/options-item-2-text-3-tab.png) no-repeat 50% 50%/contain; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="3"] .btn-more-info {
+                background: url(../img/test/more-info-2.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="4"] {
+              background: url(../img/test/options-item-2-bg-4.jpg) no-repeat 50% 0%/cover; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="4"] {
+                  background: url(../img/test/options-item-2-bg-4-tab.jpg) no-repeat 50% 50%/cover; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="4"] .text {
+                background: url(../img/test/options-item-2-text-4.png) no-repeat 50% 50%/contain; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="4"] .text {
+                    background: url(../img/test/options-item-2-text-4-tab.png) no-repeat 50% 50%/contain; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"][data-select="4"] .btn-more-info {
+                background: url(../img/test/more-info-2.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content {
+              position: absolute;
+              top: 7.5625em;
+              width: 50.875em;
+              height: 50.875em;
+              left: 34.4375em; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content {
+                  top: 37.1875em;
+                  left: 10em;
+                  width: 27.625em;
+                  height: 27.625em; } }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content {
+                  display: none !important; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .sheet {
+                position: absolute;
+                top: 12.5em;
+                left: 12.5em;
+                background: red;
+                z-index: 1;
+                -webkit-transition: .5s;
+                -o-transition: .5s;
+                transition: .5s;
+                opacity: 0; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .sheet {
+                    top: 7.1875em;
+                    left: 7.1875em; } }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .sheet.sheet-1 {
+                  width: 33em;
+                  height: 22em;
+                  background: url(../img/test/elixir-1-sheet.png) no-repeat 50% 50%/contain; }
+                  @media (max-width: 991px) {
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .sheet.sheet-1 {
+                      width: 19.0625em;
+                      height: 12.6875em; } }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .sheet.sheet-2 {
+                  width: 27.1875em;
+                  height: 26.5625em;
+                  background: url(../img/test/elixir-2-sheet.png) no-repeat 50% 50%/contain; }
+                  @media (max-width: 991px) {
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .sheet.sheet-2 {
+                      width: 15.6875em;
+                      height: 15.375em; } }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .sheet.sheet-3 {
+                  width: 35.375em;
+                  height: 23.0625em;
+                  background: url(../img/test/elixir-3-sheet.png) no-repeat 50% 50%/contain; }
+                  @media (max-width: 991px) {
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .sheet.sheet-3 {
+                      width: 22.5em;
+                      height: 11.25em; } }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .sheet.sheet-4 {
+                  width: 23.875em;
+                  height: 27.375em;
+                  background: url(../img/test/elixir-4-sheet.png) no-repeat 50% 50%/contain; }
+                  @media (max-width: 991px) {
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .sheet.sheet-4 {
+                      width: 13.75em;
+                      height: 15.8125em; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content.active-1 .sheet.sheet-1 {
+                opacity: 1;
+                -webkit-transform: translate(10em, -6.25em);
+                    -ms-transform: translate(10em, -6.25em);
+                        transform: translate(10em, -6.25em); }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content.active-1 .sheet.sheet-1 {
+                    -webkit-transform: translate(3.25em, -4.875em);
+                        -ms-transform: translate(3.25em, -4.875em);
+                            transform: translate(3.25em, -4.875em); } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content.active-2 .sheet.sheet-2 {
+                opacity: 1;
+                -webkit-transform: translate(15em, -8.75em);
+                    -ms-transform: translate(15em, -8.75em);
+                        transform: translate(15em, -8.75em); }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content.active-2 .sheet.sheet-2 {
+                    -webkit-transform: translate(5.5em, -8.125em);
+                        -ms-transform: translate(5.5em, -8.125em);
+                            transform: translate(5.5em, -8.125em); } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content.active-3 .sheet.sheet-3 {
+                opacity: 1;
+                -webkit-transform: translate(6.5625em, -10.625em);
+                    -ms-transform: translate(6.5625em, -10.625em);
+                        transform: translate(6.5625em, -10.625em); }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content.active-3 .sheet.sheet-3 {
+                    -webkit-transform: translate(1.875em, -5.625em);
+                        -ms-transform: translate(1.875em, -5.625em);
+                            transform: translate(1.875em, -5.625em); } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content.active-4 .sheet.sheet-4 {
+                opacity: 1;
+                -webkit-transform: translate(14.6875em, -11.875em);
+                    -ms-transform: translate(14.6875em, -11.875em);
+                        transform: translate(14.6875em, -11.875em); }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content.active-4 .sheet.sheet-4 {
+                    -webkit-transform: translate(6.25em, -7.5em);
+                        -ms-transform: translate(6.25em, -7.5em);
+                            transform: translate(6.25em, -7.5em); } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: url(../img/test/options-item-2-content-bg.png) no-repeat 50% 50%/contain;
+                -webkit-transition: .5s;
+                -o-transition: .5s;
+                transition: .5s;
+                z-index: 2; }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image.active-1 {
+                  -webkit-transform: rotate(0deg);
+                      -ms-transform: rotate(0deg);
+                          transform: rotate(0deg); }
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image.active-1 .elixir.elixir-1 {
+                    -webkit-animation: 2s linear elixir1 infinite;
+                            animation: 2s linear elixir1 infinite; }
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image.active-1 .elixir.elixir-1 .shadow {
+                      -webkit-animation: 2s linear shodow1-elixir infinite;
+                              animation: 2s linear shodow1-elixir infinite;
+                      opacity: 1;
+                      bottom: -3.125em; }
+                      @media (max-width: 991px) {
+                        #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image.active-1 .elixir.elixir-1 .shadow {
+                          bottom: -2.8125em; } }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image.active-2 {
+                  -webkit-transform: rotate(-90deg);
+                      -ms-transform: rotate(-90deg);
+                          transform: rotate(-90deg); }
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image.active-2 .elixir.elixir-2 {
+                    -webkit-animation: 2s linear elixir2 infinite;
+                            animation: 2s linear elixir2 infinite; }
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image.active-2 .elixir.elixir-2 .shadow {
+                      -webkit-animation: 2s linear shodow2-elixir infinite;
+                              animation: 2s linear shodow2-elixir infinite;
+                      opacity: 1;
+                      bottom: -3.125em; }
+                      @media (max-width: 991px) {
+                        #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image.active-2 .elixir.elixir-2 .shadow {
+                          bottom: -2.5em; } }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image.active-3 {
+                  -webkit-transform: rotate(-180deg);
+                      -ms-transform: rotate(-180deg);
+                          transform: rotate(-180deg); }
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image.active-3 .elixir.elixir-3 {
+                    -webkit-animation: 2s linear elixir3 infinite;
+                            animation: 2s linear elixir3 infinite; }
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image.active-3 .elixir.elixir-3 .shadow {
+                      -webkit-animation: 2s linear shodow2-elixir infinite;
+                              animation: 2s linear shodow2-elixir infinite;
+                      opacity: 1;
+                      bottom: -3.125em; }
+                      @media (max-width: 991px) {
+                        #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image.active-3 .elixir.elixir-3 .shadow {
+                          bottom: -2.5em; } }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image.active-4 {
+                  -webkit-transform: rotate(-270deg);
+                      -ms-transform: rotate(-270deg);
+                          transform: rotate(-270deg); }
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image.active-4 .elixir.elixir-4 {
+                    -webkit-animation: 2s linear elixir4 infinite;
+                            animation: 2s linear elixir4 infinite; }
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image.active-4 .elixir.elixir-4 .shadow {
+                      -webkit-animation: 2s linear shodow2-elixir infinite;
+                              animation: 2s linear shodow2-elixir infinite;
+                      opacity: 1;
+                      bottom: -3.125em; }
+                      @media (max-width: 991px) {
+                        #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image.active-4 .elixir.elixir-4 .shadow {
+                          bottom: -2.5em; } }
+
+@-webkit-keyframes elixir1 {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(-0.625em);
+            transform: translateY(-0.625em); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes elixir1 {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(-0.625em);
+            transform: translateY(-0.625em); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@-webkit-keyframes elixir2 {
+  0% {
+    -webkit-transform: translate(8.75em, 20em) rotate(90deg);
+            transform: translate(8.75em, 20em) rotate(90deg); }
+  50% {
+    -webkit-transform: translate(8.125em, 20em) rotate(90deg);
+            transform: translate(8.125em, 20em) rotate(90deg); }
+  100% {
+    -webkit-transform: translate(8.75em, 20em) rotate(90deg);
+            transform: translate(8.75em, 20em) rotate(90deg); } }
+
+@keyframes elixir2 {
+  0% {
+    -webkit-transform: translate(8.75em, 20em) rotate(90deg);
+            transform: translate(8.75em, 20em) rotate(90deg); }
+  50% {
+    -webkit-transform: translate(8.125em, 20em) rotate(90deg);
+            transform: translate(8.125em, 20em) rotate(90deg); }
+  100% {
+    -webkit-transform: translate(8.75em, 20em) rotate(90deg);
+            transform: translate(8.75em, 20em) rotate(90deg); } }
+
+@-webkit-keyframes elixir3 {
+  0% {
+    -webkit-transform: translate(-11.25em, 29.6875em) rotate(180deg);
+            transform: translate(-11.25em, 29.6875em) rotate(180deg); }
+  50% {
+    -webkit-transform: translate(-11.25em, 29.0625em) rotate(180deg);
+            transform: translate(-11.25em, 29.0625em) rotate(180deg); }
+  100% {
+    -webkit-transform: translate(-11.25em, 29.6875em) rotate(180deg);
+            transform: translate(-11.25em, 29.6875em) rotate(180deg); } }
+
+@keyframes elixir3 {
+  0% {
+    -webkit-transform: translate(-11.25em, 29.6875em) rotate(180deg);
+            transform: translate(-11.25em, 29.6875em) rotate(180deg); }
+  50% {
+    -webkit-transform: translate(-11.25em, 29.0625em) rotate(180deg);
+            transform: translate(-11.25em, 29.0625em) rotate(180deg); }
+  100% {
+    -webkit-transform: translate(-11.25em, 29.6875em) rotate(180deg);
+            transform: translate(-11.25em, 29.6875em) rotate(180deg); } }
+
+@-webkit-keyframes elixir4 {
+  0% {
+    -webkit-transform: translate(-20.3125em, 8.75em) rotate(270deg);
+            transform: translate(-20.3125em, 8.75em) rotate(270deg); }
+  50% {
+    -webkit-transform: translate(-19.6875em, 8.75em) rotate(270deg);
+            transform: translate(-19.6875em, 8.75em) rotate(270deg); }
+  100% {
+    -webkit-transform: translate(-20.3125em, 8.75em) rotate(270deg);
+            transform: translate(-20.3125em, 8.75em) rotate(270deg); } }
+
+@keyframes elixir4 {
+  0% {
+    -webkit-transform: translate(-20.3125em, 8.75em) rotate(270deg);
+            transform: translate(-20.3125em, 8.75em) rotate(270deg); }
+  50% {
+    -webkit-transform: translate(-19.6875em, 8.75em) rotate(270deg);
+            transform: translate(-19.6875em, 8.75em) rotate(270deg); }
+  100% {
+    -webkit-transform: translate(-20.3125em, 8.75em) rotate(270deg);
+            transform: translate(-20.3125em, 8.75em) rotate(270deg); } }
+
+@-webkit-keyframes shodow1-elixir {
+  0% {
+    -webkit-transform: translateY(-0.625em) scale(0.8);
+            transform: translateY(-0.625em) scale(0.8); }
+  50% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1); }
+  100% {
+    -webkit-transform: translateY(-0.625em) scale(0.8);
+            transform: translateY(-0.625em) scale(0.8); } }
+
+@keyframes shodow1-elixir {
+  0% {
+    -webkit-transform: translateY(-0.625em) scale(0.8);
+            transform: translateY(-0.625em) scale(0.8); }
+  50% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1); }
+  100% {
+    -webkit-transform: translateY(-0.625em) scale(0.8);
+            transform: translateY(-0.625em) scale(0.8); } }
+
+@-webkit-keyframes shodow2-elixir {
+  0% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1); }
+  50% {
+    -webkit-transform: translateY(-0.625em) scale(0.8);
+            transform: translateY(-0.625em) scale(0.8); }
+  100% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1); } }
+
+@keyframes shodow2-elixir {
+  0% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1); }
+  50% {
+    -webkit-transform: translateY(-0.625em) scale(0.8);
+            transform: translateY(-0.625em) scale(0.8); }
+  100% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1); } }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image .elixir {
+                  position: absolute;
+                  width: 6.375em;
+                  height: 22.5em; }
+                  @media (max-width: 991px) {
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image .elixir {
+                      width: 3.5em;
+                      height: 12.25em; } }
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image .elixir.elixir-1 {
+                    top: -0.625em;
+                    left: 28.125em;
+                    background: url(../img/test/elixir-1.png) no-repeat 50% 50%/contain; }
+                    @media (max-width: 991px) {
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image .elixir.elixir-1 {
+                        top: -0.3125em;
+                        left: 15em; } }
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image .elixir.elixir-2 {
+                    top: -0.625em;
+                    left: 28.125em;
+                    background: url(../img/test/elixir-2.png) no-repeat 50% 50%/contain;
+                    -webkit-transform: translate(8.75em, 20em) rotate(90deg);
+                        -ms-transform: translate(8.75em, 20em) rotate(90deg);
+                            transform: translate(8.75em, 20em) rotate(90deg); }
+                    @media (max-width: 991px) {
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image .elixir.elixir-2 {
+                        top: -10em;
+                        left: 11.25em; } }
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image .elixir.elixir-3 {
+                    top: -0.625em;
+                    left: 28.125em;
+                    background: url(../img/test/elixir-3.png) no-repeat 50% 50%/contain;
+                    -webkit-transform: translate(-11.25em, 29.6875em) rotate(180deg);
+                        -ms-transform: translate(-11.25em, 29.6875em) rotate(180deg);
+                            transform: translate(-11.25em, 29.6875em) rotate(180deg); }
+                    @media (max-width: 991px) {
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image .elixir.elixir-3 {
+                        top: -14.0625em;
+                        left: 20.3125em; } }
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image .elixir.elixir-4 {
+                    top: -0.625em;
+                    left: 28.125em;
+                    background: url(../img/test/elixir-4.png) no-repeat 50% 50%/contain;
+                    -webkit-transform: translate(-20.3125em, 8.75em) rotate(270deg);
+                        -ms-transform: translate(-20.3125em, 8.75em) rotate(270deg);
+                            transform: translate(-20.3125em, 8.75em) rotate(270deg); }
+                    @media (max-width: 991px) {
+                      #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image .elixir.elixir-4 {
+                        top: -3.75em;
+                        left: 24.375em; } }
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .content .content-image .elixir .shadow {
+                    opacity: 0;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    height: 2.5em;
+                    bottom: 0;
+                    -webkit-transition: .5s;
+                    -o-transition: .5s;
+                    transition: .5s;
+                    background: url(../img/test/elixir-shadow.png) no-repeat 50% 50%/contain; }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .text {
+              position: absolute;
+              top: 5.875em;
+              right: 7em;
+              width: 93.75em;
+              height: 53.125em;
+              background: url(../img/test/options-item-2-text-1.png) no-repeat 50% 50%/contain;
+              pointer-events: none; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .text {
+                  top: 6.875em;
+                  right: 1.25em;
+                  width: 45.625em;
+                  height: 28.375em;
+                  background: url(../img/test/options-item-2-text-1-tab.png) no-repeat 50% 50%/contain; } }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .text {
+                  display: none !important; } }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .next {
+              position: absolute;
+              right: 2.1875em;
+              top: 28.4375em;
+              width: 7.5em;
+              height: 13.125em;
+              border: none;
+              outline: none;
+              background: url(../img/test/options-item-2-next.png) no-repeat 50% 50%/contain;
+              cursor: pointer; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .next {
+                  right: 1.25em;
+                  top: 42.8125em;
+                  width: 6.25em;
+                  height: 11.125em; } }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .next {
+                  right: 0.625em;
+                  top: 5em;
+                  width: 2.5em;
+                  height: 4.75em; } }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-more-info {
+              position: absolute;
+              top: 24.25em;
+              left: 61.25em;
+              width: 3.5625em;
+              height: 3.5625em;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              z-index: 3;
+              background: url(../img/test/more-info-0.png) no-repeat 50% 50%/contain; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-more-info {
+                  top: 45.5em;
+                  left: 24.0625em;
+                  width: 2.5em;
+                  height: 2.5em; } }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-more-info {
+                  display: none; } }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .prev {
+              position: absolute;
+              left: 2.1875em;
+              top: 28.4375em;
+              width: 7.5em;
+              height: 13.125em;
+              border: none;
+              outline: none;
+              background: url(../img/test/options-item-2-prev.png) no-repeat 50% 50%/contain;
+              cursor: pointer; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .prev {
+                  left: 1.25em;
+                  top: 42.8125em;
+                  width: 6.25em;
+                  height: 11.125em; } }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .prev {
+                  left: auto;
+                  right: 4.0625em;
+                  top: 5em;
+                  width: 2.5em;
+                  height: 4.75em; } }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select {
+              position: absolute;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -webkit-flex-direction: column;
+                  -ms-flex-direction: column;
+                      flex-direction: column;
+              -webkit-justify-content: space-around;
+                  -ms-flex-pack: distribute;
+                      justify-content: space-around;
+              width: 16.875em;
+              height: 11.875em;
+              top: 30em;
+              right: 11.875em; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select {
+                  top: 26.25em;
+                  right: auto;
+                  left: 4.375em; } }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select {
+                  top: 5em;
+                  right: auto;
+                  left: 20px;
+                  -webkit-transform: none;
+                      -ms-transform: none;
+                          transform: none;
+                  width: 11.25em;
+                  -webkit-box-orient: vertical;
+                  -webkit-box-direction: normal;
+                  -webkit-flex-direction: column;
+                      -ms-flex-direction: column;
+                          flex-direction: column;
+                  height: 6.875em; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select {
+                position: relative;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                background: transparent;
+                width: 100%;
+                padding-left: 3.5em;
+                height: 2em;
+                border: none;
+                outline: none;
+                cursor: pointer; }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select {
+                    text-align: left;
+                    height: 1.375em;
+                    padding-left: 2.25em; } }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select:nth-child(1):hover .btn-select-text {
+                  color: #FFA210; }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select:nth-child(1):hover:before {
+                  background-color: #FAAF3A;
+                  border-color: #FFE1B1; }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select:nth-child(2):hover .btn-select-text {
+                  color: #00A4AD; }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select:nth-child(2):hover:before {
+                  background: #00A4AD;
+                  border-color: #9BE2E6; }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select:nth-child(3):hover .btn-select-text {
+                  color: #8A1E83; }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select:nth-child(3):hover:before {
+                  background-color: #8A1E83;
+                  border-color: #D6A9D3; }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select:nth-child(4):hover .btn-select-text {
+                  color: #387DC0; }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select:nth-child(4):hover:before {
+                  background-color: #387DC0;
+                  border-color: #B7D2EC; }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select.active:nth-child(1) .btn-select-text {
+                  color: #FFA210; }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select.active:nth-child(1):before {
+                  background-color: #FAAF3A;
+                  border-color: #FFE1B1; }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select.active:nth-child(2) .btn-select-text {
+                  color: #00A4AD; }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select.active:nth-child(2):before {
+                  background: #00A4AD;
+                  border-color: #9BE2E6; }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select.active:nth-child(3) .btn-select-text {
+                  color: #8A1E83; }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select.active:nth-child(3):before {
+                  background-color: #8A1E83;
+                  border-color: #D6A9D3; }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select.active:nth-child(4) .btn-select-text {
+                  color: #387DC0; }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select.active:nth-child(4):before {
+                  background-color: #387DC0;
+                  border-color: #B7D2EC; }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select.active:after {
+                  content: "";
+                  position: absolute;
+                  top: 50%;
+                  left: 0;
+                  width: 2em;
+                  height: 2em;
+                  -webkit-transform: translateY(-50%);
+                      -ms-transform: translateY(-50%);
+                          transform: translateY(-50%);
+                  background-image: url(../img/test/options-item-2-check.jpg);
+                  background-repeat: no-repeat;
+                  -webkit-background-size: contain;
+                          background-size: contain;
+                  background-position: 50% 50%; }
+                  @media (max-width: 767px) {
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select.active:after {
+                      width: 1.25em;
+                      height: 1.25em; } }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select .btn-select-text {
+                  font-family: ProximaNova-Semibold, Arial, sans-serif;
+                  font-size: 1em;
+                  text-transform: uppercase;
+                  color: #D5D5D5;
+                  -webkit-transition: .2s;
+                  -o-transition: .2s;
+                  transition: .2s; }
+                  @media (max-width: 767px) {
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select .btn-select-text {
+                      font-size: 0.75em; } }
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select:before {
+                  content: "";
+                  position: absolute;
+                  top: 50%;
+                  left: 0;
+                  width: 1.25em;
+                  height: 1.25em;
+                  background: #D5D5D5;
+                  border: 0.3125em solid #EDEDED;
+                  -webkit-transform: translateY(-50%);
+                      -ms-transform: translateY(-50%);
+                          transform: translateY(-50%);
+                  -webkit-transition: .2s;
+                  -o-transition: .2s;
+                  transition: .2s;
+                  -webkit-border-radius: 50%;
+                          border-radius: 50%; }
+                  @media (max-width: 767px) {
+                    #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .btn-wrapper-select .btn-select:before {
+                      width: 0.875em;
+                      height: 0.875em;
+                      border-width: 0.1875em; } }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .select-block {
+              position: absolute;
+              right: 2.5em;
+              top: 53.125em;
+              width: 19.25em;
+              height: 5.625em; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .select-block {
+                  top: auto;
+                  right: 1.25em;
+                  bottom: 3.75em;
+                  width: 12.9375em;
+                  height: 3.75em; } }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="2"] .select-block {
+                  right: 50%;
+                  bottom: 1.25em;
+                  -webkit-transform: translateX(50%);
+                      -ms-transform: translateX(50%);
+                          transform: translateX(50%); } }
+            #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="3"] {
+              position: relative;
+              background: url(../img/test/options-item-3-bg.jpg) no-repeat 50% 0%/cover;
+              min-height: 58.75em; }
+              @media (max-width: 991px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="3"] {
+                  background: url(../img/test/options-item-3-bg-tab.jpg) no-repeat 50% 50%/cover; } }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="3"] {
+                  background: url(../img/test/options-item-3-bg-mob.jpg) no-repeat 50% 50%/contain; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="3"] .title .mob {
+                display: none; }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="3"] .title .mob {
+                    display: block; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="3"] .btn-more-info {
+                position: absolute;
+                top: 31.25em;
+                left: 49.6875em;
+                width: 3.5625em;
+                height: 3.5625em;
+                border: none;
+                outline: none;
+                background: url(../img/test/more-info-5.png) no-repeat 50% 50%/contain;
+                cursor: pointer; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="3"] .btn-more-info {
+                    top: 50em;
+                    left: 18.4375em;
+                    width: 2.5em;
+                    height: 2.5em; } }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="3"] .btn-more-info {
+                    top: 55em;
+                    left: 5.25em;
+                    width: 2em;
+                    height: 2em; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="3"] .next {
+                position: absolute;
+                right: 2.1875em;
+                top: 28.4375em;
+                width: 8.1875em;
+                height: 16.125em;
+                border: none;
+                outline: none;
+                background: url(../img/test/options-item-3-next.png) no-repeat 50% 50%/contain;
+                cursor: pointer; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="3"] .next {
+                    right: 1.25em;
+                    top: 42.8125em;
+                    width: 7.875em;
+                    height: 14.1875em; } }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="3"] .next {
+                    right: 1.25em;
+                    top: 5.625em;
+                    width: 6.875em;
+                    height: 4.5em;
+                    background: url(../img/test/options-item-3-next-mob.png) no-repeat 50% 50%/contain; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="3"] .prev {
+                position: absolute;
+                left: 2.1875em;
+                top: 28.4375em;
+                width: 7.5em;
+                height: 13.125em;
+                border: none;
+                outline: none;
+                background: url(../img/test/options-item-3-prev.png) no-repeat 50% 50%/contain;
+                cursor: pointer; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="3"] .prev {
+                    left: 1.25em;
+                    top: 42.8125em;
+                    width: 6.25em;
+                    height: 11.125em; } }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="3"] .prev {
+                    left: 1.25em;
+                    top: 5.625em;
+                    width: 2.5em;
+                    height: 4.75em; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="3"] .top {
+                display: none;
+                position: absolute;
+                right: 0.625em;
+                bottom: 10em;
+                width: 3.5em;
+                height: 3.5em;
+                border: none;
+                outline: none;
+                background: url(../img/test/btn-top.png) no-repeat 50% 50%/contain;
+                cursor: pointer;
+                -webkit-box-shadow: 0 0 0.9375em rgba(0, 0, 0, 0.2);
+                        box-shadow: 0 0 0.9375em rgba(0, 0, 0, 0.2);
+                z-index: 5;
+                -webkit-border-radius: 50%;
+                        border-radius: 50%; }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="3"] .top {
+                    display: block; } }
+              #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="3"] .select-block {
+                position: absolute;
+                right: 2.5em;
+                top: 53.125em;
+                width: 19.25em;
+                height: 5.625em; }
+                @media (max-width: 991px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="3"] .select-block {
+                    top: auto;
+                    right: 1.25em;
+                    bottom: 3.75em;
+                    width: 12.9375em;
+                    height: 3.75em; } }
+                @media (max-width: 767px) {
+                  #varioMain div.modal-box.modal-box-test > .inner .independent .options-list .options-item[data-option="3"] .select-block {
+                    right: 50%;
+                    bottom: 3.125em;
+                    -webkit-transform: translateX(50%);
+                        -ms-transform: translateX(50%);
+                            transform: translateX(50%); } }
+      #varioMain div.modal-box.modal-box-test > .inner .results {
+        position: relative;
+        width: 100%;
+        background: #fff;
+        display: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 3.125em 1.25em 1.25em; }
+        @media (max-width: 991px) {
+          #varioMain div.modal-box.modal-box-test > .inner .results {
+            padding: 1.875em 1.875em 9.375em; } }
+        @media (max-width: 767px) {
+          #varioMain div.modal-box.modal-box-test > .inner .results {
+            padding: 1.875em 1.25em 17.5em; } }
+        #varioMain div.modal-box.modal-box-test > .inner .results.show {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex; }
+        #varioMain div.modal-box.modal-box-test > .inner .results .close {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          width: 0.625em;
+          height: 0.625em;
+          font-size: 6.25em;
+          right: 0.3125em;
+          top: 0.125em;
+          color: #000;
+          cursor: pointer;
+          z-index: 10;
+          opacity: 1;
+          outline: none; }
+          @media (max-width: 991px) {
+            #varioMain div.modal-box.modal-box-test > .inner .results .close {
+              font-size: 3.75em; } }
+          @media (max-width: 767px) {
+            #varioMain div.modal-box.modal-box-test > .inner .results .close {
+              font-size: 2.5em; } }
+        #varioMain div.modal-box.modal-box-test > .inner .results .title {
+          font-family: ProximaNova-Semibold, Arial, sans-serif;
+          font-size: 3.125em;
+          line-height: 1.2;
+          text-align: center;
+          color: #000;
+          margin-bottom: 0.3125rem; }
+          @media (max-width: 991px) {
+            #varioMain div.modal-box.modal-box-test > .inner .results .title {
+              font-size: 2.5em;
+              margin-bottom: 0.9375rem; } }
+          @media (max-width: 767px) {
+            #varioMain div.modal-box.modal-box-test > .inner .results .title {
+              font-size: 1.875em;
+              margin-bottom: 0.625rem; } }
+        #varioMain div.modal-box.modal-box-test > .inner .results .title-more {
+          max-width: 53.75em;
+          font-family: ProximaNova-Regular, Arial, sans-serif;
+          font-size: 1.5em;
+          line-height: 1.7;
+          text-align: center;
+          color: #000;
+          margin-bottom: 1.25em; }
+          #varioMain div.modal-box.modal-box-test > .inner .results .title-more .mob {
+            display: none; }
+            @media (max-width: 991px) {
+              #varioMain div.modal-box.modal-box-test > .inner .results .title-more .mob {
+                display: block; } }
+            @media (max-width: 767px) {
+              #varioMain div.modal-box.modal-box-test > .inner .results .title-more .mob {
+                display: none; } }
+          @media (max-width: 991px) {
+            #varioMain div.modal-box.modal-box-test > .inner .results .title-more {
+              font-size: 1.25em;
+              margin-bottom: 6.25em; } }
+          @media (max-width: 767px) {
+            #varioMain div.modal-box.modal-box-test > .inner .results .title-more {
+              font-size: 0.875em;
+              margin-bottom: 7.5em; } }
+        #varioMain div.modal-box.modal-box-test > .inner .results .result-list {
+          max-width: 100em;
+          height: 36.875em;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          margin-bottom: 2.8125em;
+          list-style: none; }
+          @media (max-width: 991px) {
+            #varioMain div.modal-box.modal-box-test > .inner .results .result-list {
+              -webkit-flex-wrap: wrap;
+                  -ms-flex-wrap: wrap;
+                      flex-wrap: wrap;
+              height: auto;
+              margin-left: -0.625em;
+              margin-right: -0.625em;
+              margin-bottom: 2.5em; } }
+          @media (max-width: 767px) {
+            #varioMain div.modal-box.modal-box-test > .inner .results .result-list {
+              margin-bottom: 0.9375em; } }
+          #varioMain div.modal-box.modal-box-test > .inner .results .result-list .result-item {
+            display: none;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            width: 22.5em;
+            height: 32.5em;
+            padding: 1.625em 1.75em 2.5em;
+            background: #F4F4F4;
+            margin: 0 0.625em; }
+            @media (max-width: 991px) {
+              #varioMain div.modal-box.modal-box-test > .inner .results .result-list .result-item {
+                padding: 1.625em 1.25em 1.875em;
+                margin: 0 0.625em 1.25em;
+                width: 20.625em; } }
+            @media (max-width: 767px) {
+              #varioMain div.modal-box.modal-box-test > .inner .results .result-list .result-item {
+                width: 17.8125em;
+                margin: 0 0 0.9375em; } }
+            #varioMain div.modal-box.modal-box-test > .inner .results .result-list .result-item.show {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex; }
+            #varioMain div.modal-box.modal-box-test > .inner .results .result-list .result-item .image-wrapper {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: end;
+              -webkit-align-items: flex-end;
+                  -ms-flex-align: end;
+                      align-items: flex-end;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              height: 10.0625em;
+              width: 14.25em;
+              margin-bottom: 1.25em; }
+              #varioMain div.modal-box.modal-box-test > .inner .results .result-list .result-item .image-wrapper .result-image {
+                max-width: 100%;
+                max-height: 100%; }
+                #varioMain div.modal-box.modal-box-test > .inner .results .result-list .result-item .image-wrapper .result-image .result-image-cream {
+                  -webkit-transform: scale(0.8);
+                      -ms-transform: scale(0.8);
+                          transform: scale(0.8); }
+            #varioMain div.modal-box.modal-box-test > .inner .results .result-list .result-item .result-title {
+              font-family: ProximaNova-Semibold, Arial, sans-serif;
+              font-size: 1.125em;
+              line-height: 1.4;
+              text-align: center;
+              color: #000;
+              margin-bottom: 0.5em;
+              padding: 0 0.625em; }
+              @media (max-width: 767px) {
+                #varioMain div.modal-box.modal-box-test > .inner .results .result-list .result-item .result-title {
+                  padding: 0; } }
+            #varioMain div.modal-box.modal-box-test > .inner .results .result-list .result-item .result-text {
+              font-family: ProximaNova-Regular, Arial, sans-serif;
+              font-size: 1em;
+              line-height: 1.4;
+              text-align: center;
+              color: #000;
+              margin-bottom: auto; }
+            #varioMain div.modal-box.modal-box-test > .inner .results .result-list .result-item .result-art {
+              font-family: ProximaNova-Regular, Arial, sans-serif;
+              font-size: 0.875em;
+              line-height: 1.4;
+              text-align: center;
+              color: #000;
+              margin-bottom: 1.5625em; }
+            #varioMain div.modal-box.modal-box-test > .inner .results .result-list .result-item .result-link {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              width: 12.5em;
+              height: 3.75em;
+              border: 1px solid #000;
+              text-decoration: none;
+              -webkit-transition: .2s;
+              -o-transition: .2s;
+              transition: .2s;
+              outline: none; }
+              #varioMain div.modal-box.modal-box-test > .inner .results .result-list .result-item .result-link .result-link-text {
+                font-family: ProximaNova-Regular, Arial, sans-serif;
+                font-size: 1.125em;
+                line-height: 1.2;
+                text-align: center;
+                color: #000;
+                -webkit-transition: .2s;
+                -o-transition: .2s;
+                transition: .2s; }
+              #varioMain div.modal-box.modal-box-test > .inner .results .result-list .result-item .result-link:hover {
+                background: #000; }
+                #varioMain div.modal-box.modal-box-test > .inner .results .result-list .result-item .result-link:hover .result-link-text {
+                  color: #fff; }
+        #varioMain div.modal-box.modal-box-test > .inner .results .result-link-more {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          width: 20em;
+          height: 3.75em;
+          min-height: 3.75em;
+          text-decoration: none;
+          background: #EA406D;
+          outline: none;
+          -webkit-transition: .2s;
+          -o-transition: .2s;
+          transition: .2s; }
+          @media (max-width: 767px) {
+            #varioMain div.modal-box.modal-box-test > .inner .results .result-link-more {
+              width: 14.375em;
+              height: 3.125em; } }
+          #varioMain div.modal-box.modal-box-test > .inner .results .result-link-more .result-link-more-text {
+            font-family: ProximaNova-Regular, Arial, sans-serif;
+            font-size: 1.125em;
+            line-height: 1.2;
+            text-align: center;
+            color: #fff;
+            -webkit-transition: .2s;
+            -o-transition: .2s;
+            transition: .2s; }
+            @media (max-width: 767px) {
+              #varioMain div.modal-box.modal-box-test > .inner .results .result-link-more .result-link-more-text {
+                font-size: 0.875em; } }
+          #varioMain div.modal-box.modal-box-test > .inner .results .result-link-more:hover {
+            background: #dc184d; }
+        #varioMain div.modal-box.modal-box-test > .inner .results .buttons-custom-wrapper {
+          position: absolute;
+          left: 5.625em;
+          top: 53.125em;
+          width: 34.375em;
+          height: 5em;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+          @media (max-width: 991px) {
+            #varioMain div.modal-box.modal-box-test > .inner .results .buttons-custom-wrapper {
+              left: 50%;
+              top: auto;
+              bottom: 1.875em;
+              -webkit-transform: translateX(-50%);
+                  -ms-transform: translateX(-50%);
+                      transform: translateX(-50%); } }
+          @media (max-width: 767px) {
+            #varioMain div.modal-box.modal-box-test > .inner .results .buttons-custom-wrapper {
+              bottom: 10.625em;
+              width: 15em;
+              -webkit-flex-wrap: wrap;
+                  -ms-flex-wrap: wrap;
+                      flex-wrap: wrap;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+                  -ms-flex-pack: center;
+                      justify-content: center; } }
+          #varioMain div.modal-box.modal-box-test > .inner .results .buttons-custom-wrapper .link-download {
+            width: 16.875em;
+            height: 5em;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            text-decoration: none;
+            outline: none; }
+            @media (max-width: 767px) {
+              #varioMain div.modal-box.modal-box-test > .inner .results .buttons-custom-wrapper .link-download {
+                width: 15em;
+                margin-bottom: 0.9375em; } }
+            #varioMain div.modal-box.modal-box-test > .inner .results .buttons-custom-wrapper .link-download .round {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              width: 5em;
+              height: 5em;
+              margin-right: 1.25em;
+              background: #EA406D;
+              border: 2px solid #CE1244;
+              -webkit-border-radius: 50%;
+                      border-radius: 50%;
+              -webkit-transition: .2s;
+              -o-transition: .2s;
+              transition: .2s; }
+              #varioMain div.modal-box.modal-box-test > .inner .results .buttons-custom-wrapper .link-download .round .round-icon {
+                display: block;
+                width: 1.6875em;
+                height: 2.125em; }
+            #varioMain div.modal-box.modal-box-test > .inner .results .buttons-custom-wrapper .link-download .link-download-text {
+              font-family: ProximaNova-Semibold, Arial, sans-serif;
+              font-size: 1em;
+              line-height: 1.75;
+              text-transform: uppercase;
+              color: #000;
+              text-align: left; }
+            #varioMain div.modal-box.modal-box-test > .inner .results .buttons-custom-wrapper .link-download:hover .round {
+              background: #B90033;
+              border: 2px solid #DA0A43; }
+          #varioMain div.modal-box.modal-box-test > .inner .results .buttons-custom-wrapper .btn-new-test {
+            width: 16.875em;
+            height: 5em;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            text-decoration: none;
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer; }
+            @media (max-width: 767px) {
+              #varioMain div.modal-box.modal-box-test > .inner .results .buttons-custom-wrapper .btn-new-test {
+                width: 15em; } }
+            #varioMain div.modal-box.modal-box-test > .inner .results .buttons-custom-wrapper .btn-new-test .round {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              width: 5em;
+              height: 5em;
+              margin-right: 1.25em;
+              background: #C293C1;
+              border: 2px solid #B475B2;
+              -webkit-border-radius: 50%;
+                      border-radius: 50%;
+              -webkit-transition: .2s;
+              -o-transition: .2s;
+              transition: .2s; }
+              #varioMain div.modal-box.modal-box-test > .inner .results .buttons-custom-wrapper .btn-new-test .round .round-icon {
+                display: block;
+                width: 2.375em;
+                height: 2.125em;
+                margin-left: 0.1875em; }
+            #varioMain div.modal-box.modal-box-test > .inner .results .buttons-custom-wrapper .btn-new-test .btn-new-test-text {
+              font-family: ProximaNova-Semibold, Arial, sans-serif;
+              font-size: 1em;
+              line-height: 1.75;
+              text-transform: uppercase;
+              color: #000;
+              text-align: left; }
+            #varioMain div.modal-box.modal-box-test > .inner .results .buttons-custom-wrapper .btn-new-test:hover .round {
+              background: #8A1E83;
+              border: 2px solid #AD58A8; }
+        #varioMain div.modal-box.modal-box-test > .inner .results .select-block {
+          position: absolute;
+          right: 2.5em;
+          top: 53.125em;
+          width: 19.25em;
+          height: 5.625em;
+          background-repeat: no-repeat;
+          -webkit-background-size: contain;
+                  background-size: contain;
+          background-position: 50% 50%; }
+          @media (max-width: 991px) {
+            #varioMain div.modal-box.modal-box-test > .inner .results .select-block {
+              right: auto;
+              left: 50%;
+              bottom: auto;
+              top: 13.75em;
+              width: 12.9375em;
+              height: 3.75em;
+              -webkit-transform: translateX(-50%);
+                  -ms-transform: translateX(-50%);
+                      transform: translateX(-50%); } }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-0000 {
+            background-image: url(../img/test/options-item-1-selected-1-1-1-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-0110 {
+            background-image: url(../img/test/options-item-1-selected-1-2-2-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-0220 {
+            background-image: url(../img/test/options-item-1-selected-1-3-3-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-0330 {
+            background-image: url(../img/test/options-item-1-selected-1-4-4-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-1000 {
+            background-image: url(../img/test/options-item-1-selected-2-1-1-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-1110 {
+            background-image: url(../img/test/options-item-1-selected-1-2-2-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-1220 {
+            background-image: url(../img/test/options-item-1-selected-1-3-3-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-1330 {
+            background-image: url(../img/test/options-item-1-selected-1-4-4-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-0010 {
+            background-image: url(../img/test/options-item-1-selected-1-1-2-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-0020 {
+            background-image: url(../img/test/options-item-1-selected-1-1-3-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-0030 {
+            background-image: url(../img/test/options-item-1-selected-1-1-4-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-0100 {
+            background-image: url(../img/test/options-item-1-selected-1-1-2-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-0120 {
+            background-image: url(../img/test/options-item-1-selected-1-2-3-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-0130 {
+            background-image: url(../img/test/options-item-1-selected-1-2-4-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-0200 {
+            background-image: url(../img/test/options-item-1-selected-1-1-3-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-0210 {
+            background-image: url(../img/test/options-item-1-selected-1-2-3-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-0230 {
+            background-image: url(../img/test/options-item-1-selected-1-3-4-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-0300 {
+            background-image: url(../img/test/options-item-1-selected-1-1-4-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-0310 {
+            background-image: url(../img/test/options-item-1-selected-1-2-4-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-0320 {
+            background-image: url(../img/test/options-item-1-selected-1-2-4-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-1010 {
+            background-image: url(../img/test/options-item-1-selected-2-1-2-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-1020 {
+            background-image: url(../img/test/options-item-1-selected-2-1-3-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-1030 {
+            background-image: url(../img/test/options-item-1-selected-2-1-4-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-1100 {
+            background-image: url(../img/test/options-item-1-selected-2-1-2-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-1120 {
+            background-image: url(../img/test/options-item-1-selected-2-2-3-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-1130 {
+            background-image: url(../img/test/options-item-1-selected-2-2-4-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-1200 {
+            background-image: url(../img/test/options-item-1-selected-2-1-3-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-1210 {
+            background-image: url(../img/test/options-item-1-selected-2-2-3-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-1230 {
+            background-image: url(../img/test/options-item-1-selected-2-3-4-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-1300 {
+            background-image: url(../img/test/options-item-1-selected-2-1-4-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-1310 {
+            background-image: url(../img/test/options-item-1-selected-2-2-4-1.png); }
+          #varioMain div.modal-box.modal-box-test > .inner .results .select-block.select-block-1320 {
+            background-image: url(../img/test/options-item-1-selected-2-2-4-1.png); }

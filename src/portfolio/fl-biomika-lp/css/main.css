@@ -1,0 +1,1535 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.5.3
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url("../fonts/ProximaNova-Bold.woff?v=e2cf3dc2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url("../fonts/ProximaNova-Regular.woff?v=2d2ae255") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url("../fonts/ProximaNova-Light.woff?v=f7d4a806") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url("../fonts/ProximaNova-Semibold.woff?v=cab8b2fb") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'ProximaNova-SemiboldItalic';
+  src: url("../fonts/ProximaNova-SemiboldItalic.woff?v=65e014bb") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'AvenirNext-Regular';
+  src: url("../fonts/AvenirNext-Regular.woff?v=59349713") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Prata-Regular';
+  src: url("../fonts/Prata-Regular.woff?v=f786cb39") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'BebasNeue-Bold';
+  src: url("../fonts/BebasNeue-Bold.woff?v=cfa6f7f3") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url("../fonts/OpenSans-Semibold.woff?v=56bfcae6") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("../fonts/OpenSans-Regular.woff?v=ac327c4d") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("../fonts/OpenSans-Bold.woff?v=89266734") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'OpenSans-Italic';
+  src: url("../fonts/OpenSans-Italic.woff?v=52507468") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+#fl-biomika-lp {
+  font-size: -webkit-calc(100vw / 120);
+  font-size: calc(100vw / 120);
+  overflow-x: hidden; }
+  @media (max-width: 1025px) {
+    #fl-biomika-lp {
+      font-size: -webkit-calc(100vw / 48);
+      font-size: calc(100vw / 48); } }
+  @media (max-width: 767px) {
+    #fl-biomika-lp {
+      font-size: -webkit-calc(100vw / 20);
+      font-size: calc(100vw / 20); } }
+  #fl-biomika-lp * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    font-family: Arial, sans-serif;
+    -webkit-appearance: none;
+    outline: none !important; }
+  #fl-biomika-lp h1, #fl-biomika-lp h2, #fl-biomika-lp h3, #fl-biomika-lp h4, #fl-biomika-lp h5, #fl-biomika-lp h6 {
+    font-style: normal;
+    font-weight: normal; }
+
+#fl-biomika-lp {
+  background: #FFF;
+  overflow: hidden;
+  max-width: 100%; }
+  #fl-biomika-lp section.main-banner {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 62.5em;
+    z-index: 2; }
+    @media (max-width: 1025px) {
+      #fl-biomika-lp section.main-banner {
+        height: 24.75em; } }
+    @media (max-width: 767px) {
+      #fl-biomika-lp section.main-banner {
+        height: 11.25em; } }
+    #fl-biomika-lp section.main-banner .video-desktop {
+      position: absolute;
+      left: 0;
+      width: 52%;
+      display: block;
+      bottom: 0; }
+      @media (max-width: 1025px) {
+        #fl-biomika-lp section.main-banner .video-desktop {
+          width: 52%; } }
+      @media (max-width: 767px) {
+        #fl-biomika-lp section.main-banner .video-desktop {
+          display: none; } }
+    #fl-biomika-lp section.main-banner .right-bg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: url("../img/main-banner_02.png?v=01dd0579") no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover;
+      height: 100%;
+      width: 50%; }
+      @media (max-width: 767px) {
+        #fl-biomika-lp section.main-banner .right-bg {
+          width: 100%;
+          background: url("../img/main-banner-mob.jpg?v=ee3a3333") no-repeat;
+          -webkit-background-size: 20em 18.125em;
+                  background-size: 20em 18.125em; } }
+    #fl-biomika-lp section.main-banner .logo {
+      position: absolute;
+      top: 11.25em;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
+      @media (max-width: 1025px) {
+        #fl-biomika-lp section.main-banner .logo {
+          top: 3.125em; } }
+      #fl-biomika-lp section.main-banner .logo__circle {
+        background: url("../img/circle-logo.png?v=102c8cc8") no-repeat 50% 50%/contain;
+        width: 41.25em;
+        height: 41.25em; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.main-banner .logo__circle {
+            width: 18.75em;
+            height: 18.75em; } }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.main-banner .logo__circle {
+            display: none; } }
+      #fl-biomika-lp section.main-banner .logo__text {
+        position: absolute;
+        top: 27%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%); }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.main-banner .logo__text {
+            margin-top: -0.1875em; } }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.main-banner .logo__text {
+            margin-top: -0.375em; } }
+        #fl-biomika-lp section.main-banner .logo__text img {
+          width: 66.4375em; }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.main-banner .logo__text img {
+              width: 30.20688em;
+              margin-bottom: 1.4375em; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.main-banner .logo__text img {
+              width: 17em;
+              margin-bottom: 1.25em; } }
+        #fl-biomika-lp section.main-banner .logo__text p {
+          font-family: ProximaNova-Regular, Arial, sans-serif;
+          font-size: 1.625em;
+          line-height: 3.125em;
+          color: #fff;
+          text-transform: uppercase;
+          margin-top: 0.9375em;
+          text-align: center; }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.main-banner .logo__text p {
+              font-size: 0.875em;
+              line-height: 1;
+              margin-top: 0; } }
+  #fl-biomika-lp section.back-with-line {
+    z-index: 1;
+    position: relative;
+    height: 28.25em;
+    background-color: #BEE5EC; }
+    @media (max-width: 1025px) {
+      #fl-biomika-lp section.back-with-line {
+        height: 16.25em; } }
+    @media (max-width: 767px) {
+      #fl-biomika-lp section.back-with-line {
+        height: 11.75em; } }
+    #fl-biomika-lp section.back-with-line .img-1 {
+      position: absolute;
+      right: 17.88625em;
+      top: -6.25em;
+      width: 29.875em;
+      height: 30.6875em; }
+      @media (max-width: 1025px) {
+        #fl-biomika-lp section.back-with-line .img-1 {
+          width: 17.1875em;
+          height: 17.625em;
+          top: -2.9375em;
+          right: 0; } }
+      @media (max-width: 767px) {
+        #fl-biomika-lp section.back-with-line .img-1 {
+          width: 10.75em;
+          height: 11.0625em;
+          top: -1.5625em; } }
+    #fl-biomika-lp section.back-with-line .img-line {
+      position: absolute;
+      bottom: 0;
+      width: 100%; }
+      @media (max-width: 1025px) {
+        #fl-biomika-lp section.back-with-line .img-line {
+          width: 144%;
+          left: -10.875em; } }
+      @media (max-width: 767px) {
+        #fl-biomika-lp section.back-with-line .img-line {
+          width: 152%;
+          left: -5.375em; } }
+  #fl-biomika-lp section.cnvs {
+    position: relative;
+    height: 8.6875em;
+    background: url("../img/cnt-cnvs-2-bg.jpg?v=7b2f0958") no-repeat center bottom/cover; }
+    @media (max-width: 1025px) {
+      #fl-biomika-lp section.cnvs {
+        height: 10.4375em;
+        background: url("../img/about-bg-tablet.jpg?v=2e8301da") no-repeat center top/cover;
+        margin-top: -5.5em; } }
+    @media (max-width: 767px) {
+      #fl-biomika-lp section.cnvs {
+        height: 6.5625em;
+        margin-top: -4.5625em;
+        background: url("../img/about-bg-mob.jpg?v=981d2a48") no-repeat center bottom/cover; } }
+    #fl-biomika-lp section.cnvs .cnt-cnvs-2 {
+      position: relative;
+      width: 100%;
+      height: 8.6875em;
+      overflow: hidden; }
+      #fl-biomika-lp section.cnvs .cnt-cnvs-2 canvas {
+        max-width: 100%;
+        max-height: 37.5em;
+        display: block; }
+  #fl-biomika-lp section.microbe {
+    position: relative;
+    height: 115em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (max-width: 1025px) {
+      #fl-biomika-lp section.microbe {
+        height: 95.9375em; } }
+    @media (max-width: 767px) {
+      #fl-biomika-lp section.microbe {
+        height: auto; } }
+    #fl-biomika-lp section.microbe .image-ruler {
+      position: absolute;
+      top: 10.375em;
+      width: 4.75em;
+      left: 7.1875em;
+      height: 104.625em;
+      background: url("../img/Frame.svg?v=777f402c") no-repeat 50% 50%/contain; }
+      @media (max-width: 1025px) {
+        #fl-biomika-lp section.microbe .image-ruler {
+          display: none; } }
+    #fl-biomika-lp section.microbe .image-botl {
+      position: absolute;
+      top: -32.5em;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      width: 49.8275em;
+      height: 47.0775em;
+      background: url("../img/botls.png?v=0514b039") no-repeat center center/contain;
+      z-index: 2; }
+      @media (max-width: 1025px) {
+        #fl-biomika-lp section.microbe .image-botl {
+          top: -19.25em;
+          width: 28.67125em;
+          height: 27.08875em;
+          background: url("../img/botls.png?v=0514b039") no-repeat center center/contain; } }
+      @media (max-width: 767px) {
+        #fl-biomika-lp section.microbe .image-botl {
+          top: -10.625em;
+          width: 14.85437em;
+          height: 14.03438em; } }
+    #fl-biomika-lp section.microbe .skin-needs {
+      margin-top: 19.25em;
+      width: 68.125em; }
+      @media (max-width: 1025px) {
+        #fl-biomika-lp section.microbe .skin-needs {
+          width: 100%;
+          margin-top: 11.25em; } }
+      @media (max-width: 767px) {
+        #fl-biomika-lp section.microbe .skin-needs {
+          margin-top: 5.1875em;
+          padding: 0 1.25em; } }
+      #fl-biomika-lp section.microbe .skin-needs-title {
+        margin-bottom: 2.9375em;
+        font-family: ProximaNova-Bold, Arial, sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+        text-transform: uppercase; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.microbe .skin-needs-title {
+            font-size: 1.25em;
+            margin-bottom: 2.1875em; } }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.microbe .skin-needs-title {
+            font-size: 0.875em;
+            padding: 0 0.625em;
+            line-height: 1.7;
+            margin-bottom: 0.9375em; } }
+      #fl-biomika-lp section.microbe .skin-needs .jspHorizontalBar {
+        bottom: auto;
+        top: 0;
+        background: transparent; }
+        #fl-biomika-lp section.microbe .skin-needs .jspHorizontalBar .jspTrack {
+          background: #EDEDED;
+          -webkit-border-radius: 0.22578em;
+                  border-radius: 0.22578em;
+          height: 0.4375em; }
+        #fl-biomika-lp section.microbe .skin-needs .jspHorizontalBar .jspDrag {
+          background: #CCE1E2;
+          -webkit-border-radius: 0.22578em;
+                  border-radius: 0.22578em; }
+      #fl-biomika-lp section.microbe .skin-needs .jspVerticalBar, #fl-biomika-lp section.microbe .skin-needs .jspCorner {
+        display: none; }
+      #fl-biomika-lp section.microbe .skin-needs-items {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.microbe .skin-needs-items {
+            padding-left: 5.625em;
+            padding-right: 4.0625em;
+            -webkit-box-pack: start;
+            -webkit-justify-content: flex-start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start; } }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.microbe .skin-needs-items {
+            width: 30.625em;
+            overflow: auto;
+            padding-left: 0.9375em;
+            padding-right: 0.625em;
+            padding-top: 1.5625em; } }
+        #fl-biomika-lp section.microbe .skin-needs-items .item {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.microbe .skin-needs-items .item:nth-of-type(1) {
+              margin-right: 3.875em; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.microbe .skin-needs-items .item:nth-of-type(1) {
+              margin-right: 2.1875em; } }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.microbe .skin-needs-items .item:nth-of-type(2) {
+              margin-right: 2.375em; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.microbe .skin-needs-items .item:nth-of-type(2) {
+              margin-right: 1.25em; } }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.microbe .skin-needs-items .item:nth-of-type(3) {
+              margin-right: 2.5625em; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.microbe .skin-needs-items .item:nth-of-type(3) {
+              margin-right: 1.5625em; } }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.microbe .skin-needs-items .item:nth-of-type(4) {
+              margin-right: 4.875em; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.microbe .skin-needs-items .item:nth-of-type(4) {
+              margin-right: 3.75em; } }
+          #fl-biomika-lp section.microbe .skin-needs-items .item svg {
+            width: 6.0625em;
+            height: 6.0625em; }
+            @media (max-width: 1025px) {
+              #fl-biomika-lp section.microbe .skin-needs-items .item svg {
+                width: 4em;
+                height: 4em; } }
+            @media (max-width: 767px) {
+              #fl-biomika-lp section.microbe .skin-needs-items .item svg {
+                width: 3.1875em;
+                height: 3.1875em; } }
+          #fl-biomika-lp section.microbe .skin-needs-items .item .subtitle {
+            margin-top: 1.15em;
+            margin-bottom: 2.35em;
+            font-family: ProximaNova-Bold, Arial, sans-serif;
+            font-size: 1.25em; }
+            @media (max-width: 1025px) {
+              #fl-biomika-lp section.microbe .skin-needs-items .item .subtitle {
+                margin-top: 1.0625em;
+                margin-bottom: 1.875em; } }
+            #fl-biomika-lp section.microbe .skin-needs-items .item .subtitle .desktop {
+              display: none; }
+              @media (max-width: 1025px) {
+                #fl-biomika-lp section.microbe .skin-needs-items .item .subtitle .desktop {
+                  display: block; } }
+            @media (max-width: 1025px) {
+              #fl-biomika-lp section.microbe .skin-needs-items .item .subtitle {
+                display: block;
+                font-size: 1em;
+                text-align: center; } }
+            @media (max-width: 767px) {
+              #fl-biomika-lp section.microbe .skin-needs-items .item .subtitle {
+                display: block;
+                font-size: 0.875em;
+                margin-top: 0.625em;
+                text-align: center;
+                max-width: 6.25em;
+                margin-bottom: 1.375em; } }
+        #fl-biomika-lp section.microbe .skin-needs-items .item:last-child {
+          margin-left: -1.875em; }
+      #fl-biomika-lp section.microbe .skin-needs-text {
+        margin-bottom: 5em;
+        font-family: ProximaNova-Regular, Arial, sans-serif;
+        font-size: 1.125em;
+        line-height: 2.5em;
+        text-align: center;
+        font-weight: normal; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.microbe .skin-needs-text {
+            padding: 0em 3.125em;
+            margin-bottom: 1.875em;
+            line-height: 2.3; } }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.microbe .skin-needs-text {
+            text-align: left;
+            font-size: 0.875em;
+            padding: 0;
+            line-height: 2.2;
+            margin-bottom: 2.1875em; } }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.microbe .skin-needs-text br {
+            display: none; } }
+    #fl-biomika-lp section.microbe .cnt-cnvs-1 {
+      position: relative;
+      width: 100%;
+      height: 12.5em;
+      overflow: hidden;
+      background: url("../img/cnt-cnvs-1-bg.jpg?v=75ccdbc4") no-repeat center top/cover; }
+      @media (max-width: 1025px) {
+        #fl-biomika-lp section.microbe .cnt-cnvs-1 {
+          background: url("../img/to-choice-tablet.jpg?v=666213a5") no-repeat center top/contain; } }
+      @media (max-width: 767px) {
+        #fl-biomika-lp section.microbe .cnt-cnvs-1 {
+          height: 6.875em;
+          -webkit-background-size: cover;
+                  background-size: cover;
+          background: url("../img/to-choice-mob.jpg?v=7ea3cf73") no-repeat center top/contain; } }
+      #fl-biomika-lp section.microbe .cnt-cnvs-1 canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        max-width: 100%;
+        display: block; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.microbe .cnt-cnvs-1 canvas {
+            display: none; } }
+      #fl-biomika-lp section.microbe .cnt-cnvs-1 .cnvs-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -45%);
+            -ms-transform: translate(-50%, -45%);
+                transform: translate(-50%, -45%);
+        font-family: ProximaNova-Bold, Arial, sans-serif;
+        font-size: 2.125em;
+        text-transform: uppercase;
+        color: #fff;
+        line-height: 2;
+        text-align: center;
+        text-shadow: 1px 1px 1px #17b5bf, 1px -1px 1px #17b5bf, -1px 1px 1px #17b5bf, -1px -1px 1px #17b5bf;
+        z-index: 2; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.microbe .cnt-cnvs-1 .cnvs-title {
+            width: 100%;
+            font-size: 1.625em;
+            line-height: 1.9;
+            text-shadow: none; } }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.microbe .cnt-cnvs-1 .cnvs-title {
+            font-size: 0.875em; } }
+    #fl-biomika-lp section.microbe .microbe-box {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 8.125em; }
+      @media (max-width: 1025px) {
+        #fl-biomika-lp section.microbe .microbe-box {
+          position: relative;
+          width: 100%;
+          margin-top: 5.9375em; } }
+      @media (max-width: 767px) {
+        #fl-biomika-lp section.microbe .microbe-box {
+          height: auto;
+          margin-top: 0;
+          padding-top: 1.5625em; } }
+      #fl-biomika-lp section.microbe .microbe-box__image {
+        position: relative;
+        margin-right: 7.9375em; }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.microbe .microbe-box__image {
+            margin-right: 0; } }
+        #fl-biomika-lp section.microbe .microbe-box__image .big-microbe-tablet {
+          display: none; }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.microbe .microbe-box__image .big-microbe-tablet {
+              display: block;
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 20.625em;
+              height: 17.5em; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.microbe .microbe-box__image .big-microbe-tablet {
+              width: 16.6875em;
+              height: 14.0625em;
+              left: -0.9375em;
+              top: 14em; } }
+        #fl-biomika-lp section.microbe .microbe-box__image .big-microbe {
+          position: absolute;
+          left: -36.25em;
+          top: 3.75em;
+          background: url("../img/MicroBiom.jpg?v=e94853eb") no-repeat center center/contain;
+          height: 25em;
+          width: 31.68625em;
+          z-index: 2; }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.microbe .microbe-box__image .big-microbe {
+              display: none; } }
+        #fl-biomika-lp section.microbe .microbe-box__image .small-microbe {
+          position: absolute;
+          height: 14.0625em;
+          width: 18.75em;
+          left: -17.1875em;
+          top: -5em;
+          background: url("../img/big-microbe-tablet2.gif?v=f558c8c4") no-repeat center center/contain;
+          z-index: 2; }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.microbe .microbe-box__image .small-microbe {
+              height: 9.6875em;
+              width: 10.9375em;
+              left: 13.75em;
+              top: -5.625em; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.microbe .microbe-box__image .small-microbe {
+              height: 7.875em;
+              width: 7.875em;
+              left: 11.25em;
+              top: 10.1875em; } }
+        #fl-biomika-lp section.microbe .microbe-box__image .eyes-1 {
+          left: -19.375em;
+          top: 12.0625em;
+          z-index: 2; }
+        #fl-biomika-lp section.microbe .microbe-box__image .eyes-2 {
+          left: -26.25em;
+          top: 12.0625em;
+          z-index: 2; }
+        #fl-biomika-lp section.microbe .microbe-box__image .eyes {
+          position: absolute;
+          height: 5em;
+          width: 5em;
+          -webkit-border-radius: 50%;
+                  border-radius: 50%; }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.microbe .microbe-box__image .eyes {
+              display: none; } }
+          #fl-biomika-lp section.microbe .microbe-box__image .eyes .iris {
+            position: absolute;
+            -webkit-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+            height: 3.125em;
+            width: 3.125em;
+            left: 0.625em;
+            top: 0.625em;
+            background: url("../img/iris.png?v=7d965706") no-repeat center center/contain; }
+      #fl-biomika-lp section.microbe .microbe-box__text {
+        position: absolute;
+        left: 60.625em;
+        top: 68.75em; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.microbe .microbe-box__text {
+            width: 100%;
+            left: 0;
+            top: 0; } }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.microbe .microbe-box__text {
+            top: -3.9375em;
+            position: static;
+            top: 0; } }
+        #fl-biomika-lp section.microbe .microbe-box__text .subtitle {
+          margin-bottom: 1em;
+          font-family: ProximaNova-Semibold, Arial, sans-serif;
+          font-size: 1.5em;
+          line-height: 1.9;
+          text-transform: uppercase;
+          margin-bottom: 0.625em; }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.microbe .microbe-box__text .subtitle {
+              font-size: 1.25em;
+              padding-left: 19.6875em;
+              margin-bottom: 0.75em;
+              line-height: 1.8; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.microbe .microbe-box__text .subtitle {
+              padding-left: 1.25em;
+              font-size: 0.9375em; } }
+        #fl-biomika-lp section.microbe .microbe-box__text .title {
+          font-family: ProximaNova-Bold, Arial, sans-serif;
+          margin-bottom: 0.4375em;
+          font-size: 3.125em;
+          line-height: 1.2;
+          text-transform: uppercase;
+          color: #229EAE; }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.microbe .microbe-box__text .title {
+              font-size: 2.25em;
+              line-height: 1.4;
+              padding-left: 10.9375em;
+              margin-bottom: 2.3125em; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.microbe .microbe-box__text .title {
+              padding-left: 0.8125em;
+              font-size: 1.5em;
+              margin-bottom: 12.6875em; } }
+        #fl-biomika-lp section.microbe .microbe-box__text .text {
+          font-family: ProximaNova-Regular, Arial, sans-serif;
+          margin-bottom: 2.5em;
+          font-size: 1.125em;
+          line-height: 2.22; }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.microbe .microbe-box__text .text {
+              padding: 0 0.625em 0 1.25em;
+              margin-bottom: 2.5em; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.microbe .microbe-box__text .text {
+              font-size: 0.875em;
+              padding: 0 1.5em 0 1.25em;
+              line-height: 2.1;
+              margin-bottom: 2.3125em; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.microbe .microbe-box__text .text:nth-of-type(1) {
+              margin-bottom: 0.9375em; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.microbe .microbe-box__text .text:nth-last-of-type(1) {
+              margin-bottom: 1.25em; } }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.microbe .microbe-box__text .text br {
+              display: none; } }
+  #fl-biomika-lp section.information {
+    position: relative;
+    overflow: hidden;
+    height: 112.5em; }
+    @media (max-width: 1025px) {
+      #fl-biomika-lp section.information {
+        height: 118.75em; } }
+    @media (max-width: 767px) {
+      #fl-biomika-lp section.information {
+        height: 106.25em; } }
+    #fl-biomika-lp section.information .title {
+      font-family: ProximaNova-Bold, Arial, sans-serif;
+      font-size: 4.375em;
+      line-height: 1.43;
+      text-align: center;
+      text-transform: uppercase;
+      color: #229EAE; }
+      @media (max-width: 1025px) {
+        #fl-biomika-lp section.information .title {
+          font-size: 3.125em;
+          margin-bottom: 1.1875em; } }
+      @media (max-width: 767px) {
+        #fl-biomika-lp section.information .title {
+          font-size: 1.125em;
+          padding-top: 0.9375em;
+          padding-bottom: 0.9375em;
+          margin-bottom: 1.875em;
+          color: #fff;
+          background: url("../img/information-title-bg.jpg?v=bd74722a") no-repeat center top/cover; } }
+    #fl-biomika-lp section.information .image-1 {
+      position: absolute;
+      top: 30.1875em;
+      left: 63.4375em;
+      width: 34.5em;
+      height: 20.9375em;
+      background: url("../img/information-1.svg?v=d5cbc330") no-repeat 50% 50%/contain; }
+      @media (max-width: 1025px) {
+        #fl-biomika-lp section.information .image-1 {
+          left: 7.5em;
+          top: 43.75em;
+          width: 32.8125em;
+          height: 18.125em; } }
+      @media (max-width: 767px) {
+        #fl-biomika-lp section.information .image-1 {
+          width: 13.485em;
+          height: 7.60438em;
+          left: 3.125em;
+          top: 42.5em; } }
+    #fl-biomika-lp section.information .image-2 {
+      position: absolute;
+      top: 80.625em;
+      right: 16.25em;
+      width: 37.6875em;
+      height: 22.5em;
+      background: url("../img/information-2.jpg?v=3c38bb56") no-repeat 50% 50%/contain; }
+      @media (max-width: 1025px) {
+        #fl-biomika-lp section.information .image-2 {
+          top: 101.25em;
+          right: 11.25em;
+          width: 25.375em;
+          height: 15.125em; } }
+      @media (max-width: 767px) {
+        #fl-biomika-lp section.information .image-2 {
+          width: 17.5em;
+          height: 10.375em;
+          top: 94.0625em;
+          right: 1.25em; } }
+    #fl-biomika-lp section.information .image-3 {
+      position: absolute;
+      bottom: -10.625em;
+      right: 8.75em;
+      width: 4.875em;
+      height: 104.625em;
+      background: url("../img/information-3.svg?v=0acd0ef9") no-repeat 50% 50%/contain; }
+      @media (max-width: 1025px) {
+        #fl-biomika-lp section.information .image-3 {
+          display: none; } }
+    #fl-biomika-lp section.information .flask {
+      position: absolute;
+      top: 46.25em;
+      right: -3.125em;
+      width: 37.5em;
+      height: 37.5em;
+      z-index: 2;
+      pointer-events: none;
+      -webkit-animation: animeflask infinite 1s linear;
+              animation: animeflask infinite 1s linear; }
+
+@-webkit-keyframes animeflask {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.99; }
+  100% {
+    opacity: 1; } }
+
+@keyframes animeflask {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.99; }
+  100% {
+    opacity: 1; } }
+      @media (max-width: 1025px) {
+        #fl-biomika-lp section.information .flask {
+          top: 53.125em;
+          right: -12.5em;
+          height: 32.5em;
+          width: 32.5em; } }
+      @media (max-width: 767px) {
+        #fl-biomika-lp section.information .flask {
+          display: none; } }
+      #fl-biomika-lp section.information .flask svg {
+        width: 100%;
+        height: 100%; }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.information .flask svg {
+            display: none; } }
+      #fl-biomika-lp section.information .flask .tubeLabel {
+        fill: #FCEFD6;
+        font-size: 2.5em;
+        font-family: ProximaNova-Regular, Arial, sans-serif;
+        text-anchor: middle; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.information .flask .tubeLabel {
+            font-size: 0.625em; } }
+      @media (max-width: 1025px) {
+        #fl-biomika-lp section.information .flask .circle {
+          -webkit-transform: scale(0.6) translate(25%, 60%);
+              -ms-transform: scale(0.6) translate(25%, 60%);
+                  transform: scale(0.6) translate(25%, 60%); } }
+      #fl-biomika-lp section.information .flask .dragger {
+        -webkit-tap-highlight-color: transparent; }
+        #fl-biomika-lp section.information .flask .dragger .label {
+          fill: #FFFCF9;
+          font-size: 1.875em;
+          font-family: ProximaNova-Regular, Arial, sans-serif;
+          text-anchor: middle;
+          letter-spacing: 0.075em;
+          background: #000; }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.information .flask .dragger .label {
+              font-size: 0.9375em; } }
+    #fl-biomika-lp section.information .content-canvas-1 {
+      position: absolute;
+      right: 0;
+      top: 59.375em;
+      width: 100.9375em;
+      height: 12.5em;
+      z-index: 2; }
+      @media (max-width: 1025px) {
+        #fl-biomika-lp section.information .content-canvas-1 {
+          background-color: #000;
+          width: 100%;
+          top: 64.375em;
+          background: url("../img/PH-value-table.jpg?v=97ab4c58") no-repeat center top/contain; } }
+      @media (max-width: 767px) {
+        #fl-biomika-lp section.information .content-canvas-1 {
+          top: 51.875em;
+          height: 15.625em;
+          background: url("../img/PH-value-mob.jpg?v=73975659") no-repeat center top/cover; } }
+      #fl-biomika-lp section.information .content-canvas-1 canvas {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        display: block; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.information .content-canvas-1 canvas {
+            display: none; } }
+      #fl-biomika-lp section.information .content-canvas-1 .canvas-title {
+        position: absolute;
+        top: 50%;
+        left: 2em;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        font-family: ProximaNova-Bold, Arial, sans-serif;
+        color: #fff;
+        font-size: 6.25em;
+        text-shadow: 0 0.0625em 0.1875em rgba(0, 62, 81, 0.2);
+        line-height: 1; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.information .content-canvas-1 .canvas-title {
+            left: 0.8125em;
+            font-size: 3.75em; } }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.information .content-canvas-1 .canvas-title {
+            display: none; } }
+      #fl-biomika-lp section.information .content-canvas-1 .canvas-text {
+        position: absolute;
+        top: 50%;
+        left: 33.625em;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        font-family: ProximaNova-Bold, Arial, sans-serif;
+        color: #fff;
+        font-size: 1.375em;
+        line-height: 1.82; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.information .content-canvas-1 .canvas-text {
+            left: 12.5em;
+            max-width: 17.5em; } }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.information .content-canvas-1 .canvas-text {
+            text-align: center;
+            left: 0em;
+            top: 7.0625em;
+            font-size: 1.125em;
+            line-height: 2.2; } }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.information .content-canvas-1 .canvas-text br {
+            display: none; } }
+    #fl-biomika-lp section.information .about {
+      position: absolute;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      #fl-biomika-lp section.information .about.about-1 {
+        text-align: center;
+        top: 16.25em;
+        left: 0;
+        width: 100%; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.information .about.about-1 {
+            position: static; } }
+      #fl-biomika-lp section.information .about.about-2 {
+        top: 35.5em;
+        left: 19.125em;
+        width: 43.75em; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.information .about.about-2 {
+            position: static;
+            text-align: center;
+            left: 0;
+            width: 100%; } }
+      #fl-biomika-lp section.information .about.about-3 {
+        position: absolute;
+        top: 78.125em;
+        left: 19.125em;
+        width: 43.75em; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.information .about.about-3 {
+            width: 100%;
+            position: static;
+            margin-top: 34.25em; } }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.information .about.about-3 {
+            margin-top: 26.5em; } }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.information .about.about-3 .about-title {
+            text-align: center;
+            padding: 0 3.125em; } }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.information .about.about-3 .about-title {
+            text-align: left;
+            padding: 0 1.25em;
+            line-height: 1.9;
+            margin-bottom: 0.625em; } }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.information .about.about-3 .about-text {
+            text-align: center;
+            padding: 0 0.625em; } }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.information .about.about-3 .about-text {
+            text-align: left;
+            padding: 0 1.375em; } }
+      #fl-biomika-lp section.information .about .about-title {
+        font-family: ProximaNova-Bold, Arial, sans-serif;
+        font-size: 2.5em;
+        line-height: 1.5;
+        text-transform: uppercase;
+        color: #000;
+        margin-bottom: 0.375em;
+        width: 100%; }
+        #fl-biomika-lp section.information .about .about-title .p {
+          text-transform: lowercase; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.information .about .about-title {
+            font-size: 1.875em;
+            margin-bottom: 0.25em; } }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.information .about .about-title {
+            text-align: left;
+            font-size: 1em;
+            padding-left: 1.25em;
+            padding-right: 4.375em;
+            line-height: 1.6;
+            margin-bottom: 0.9375em; } }
+      #fl-biomika-lp section.information .about .about-text {
+        font-family: ProximaNova-Regular, Arial, sans-serif;
+        font-size: 1.125em;
+        line-height: 2.22;
+        color: #000;
+        width: 100%; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.information .about .about-text {
+            padding: 0 1.1875em;
+            margin-bottom: 2.5em;
+            font-size: 1.125em; } }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.information .about .about-text {
+            text-align: left;
+            font-size: 0.875em;
+            padding: 0 1.5em 0 1.25em;
+            line-height: 2.2;
+            margin-bottom: 1.75em; } }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.information .about .about-text br {
+            display: none; } }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.information .about .about-text br.table {
+            display: block; } }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.information .about .about-text br.table {
+            display: none; } }
+        #fl-biomika-lp section.information .about .about-text br.mob {
+          display: none; }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.information .about .about-text br.mob {
+              display: block; } }
+        #fl-biomika-lp section.information .about .about-text .bold {
+          font-family: ProximaNova-Bold, Arial, sans-serif;
+          font-size: 1em; }
+        #fl-biomika-lp section.information .about .about-text .italic {
+          font-family: ProximaNova-SemiboldItalic, Arial, sans-serif;
+          font-size: 1em; }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.information .about .about-text .italic {
+              font-size: 1.15625em; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.information .about .about-text .italic {
+              display: block;
+              margin-top: 1.4375em; } }
+  #fl-biomika-lp section.about {
+    position: relative;
+    height: 46.9375em;
+    background: url("../img/about-bg-new.jpg?v=42a94d6e") no-repeat 50% 50%/cover; }
+    @media (max-width: 1025px) {
+      #fl-biomika-lp section.about {
+        background: url("../img/about-bg-new-tablet.jpg?v=44463825");
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+                background-size: contain;
+        background-position: 50% 0%;
+        height: 50em; } }
+    @media (max-width: 767px) {
+      #fl-biomika-lp section.about {
+        background-image: url("../img/about-bg-new-mob.jpg?v=6b7b3a12");
+        height: 33.125em; } }
+    #fl-biomika-lp section.about .content {
+      position: absolute;
+      top: 10.5em;
+      left: 64.375em; }
+      @media (max-width: 1025px) {
+        #fl-biomika-lp section.about .content {
+          top: 34.5625em;
+          left: 0;
+          width: 100%; } }
+  @media (max-width: 1025px) and (max-width: 767px) {
+    #fl-biomika-lp section.about .content {
+      top: 20.9375em;
+      padding-left: 1.25em; } }
+      #fl-biomika-lp section.about .content .title {
+        font-family: ProximaNova-Bold, Arial, sans-serif;
+        font-size: 2.5em;
+        line-height: 1.25;
+        text-transform: uppercase;
+        color: #229EAE;
+        margin-bottom: 0.625em; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.about .content .title {
+            font-size: 1.875em;
+            text-align: center; } }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.about .content .title {
+            text-align: left;
+            font-size: 1em; } }
+      #fl-biomika-lp section.about .content .list {
+        list-style: none;
+        padding-left: 1.25em; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.about .content .list {
+            padding-left: 4.125em; } }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.about .content .list {
+            padding-left: 1.25em;
+            padding-right: 1.25em; } }
+        #fl-biomika-lp section.about .content .list .item {
+          position: relative;
+          font-size: 1.5em;
+          line-height: 2.5;
+          font-family: ProximaNova-Semibold, Arial, sans-serif;
+          color: #000; }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.about .content .list .item {
+              font-size: 1em;
+              line-height: 2.3; } }
+          #fl-biomika-lp section.about .content .list .item:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -0.8125em;
+            width: 0.25em;
+            height: 0.25em;
+            background: #7D7D7D;
+            -webkit-border-radius: 50%;
+                    border-radius: 50%;
+            -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                    transform: translateY(-50%); }
+            @media (max-width: 767px) {
+              #fl-biomika-lp section.about .content .list .item:before {
+                width: 0.3125em;
+                height: 0.3125em;
+                top: 1.125em;
+                left: -1.25em;
+                -webkit-transform: translateY(-0.1875em);
+                    -ms-transform: translateY(-0.1875em);
+                        transform: translateY(-0.1875em); } }
+  #fl-biomika-lp section.video {
+    position: relative;
+    padding-top: 6.875em;
+    padding-bottom: 5.625em; }
+    @media (max-width: 1025px) {
+      #fl-biomika-lp section.video {
+        padding-top: 1.25em;
+        padding-bottom: 3.75em; } }
+    @media (max-width: 767px) {
+      #fl-biomika-lp section.video {
+        padding-top: 1.875em;
+        padding-bottom: 3.125em;
+        padding-left: 1.25em;
+        padding-right: 1.25em; } }
+    #fl-biomika-lp section.video .video-wrap {
+      position: relative;
+      width: 81.9375em;
+      height: 46.25em;
+      background-color: #fff;
+      overflow: hidden; }
+      @media (max-width: 1025px) {
+        #fl-biomika-lp section.video .video-wrap {
+          width: 45.5em;
+          height: 25.5625em; } }
+      @media (max-width: 767px) {
+        #fl-biomika-lp section.video .video-wrap {
+          width: 100%;
+          height: 9.875em; } }
+      #fl-biomika-lp section.video .video-wrap .video-iframe {
+        width: 100%;
+        height: 100%; }
+    #fl-biomika-lp section.video .video-poster {
+      position: absolute;
+      left: -50%;
+      top: 0;
+      width: -webkit-calc(200% + 1px);
+      width: calc(200% + 1px);
+      height: -webkit-calc(200% + 1px);
+      height: calc(200% + 1px);
+      cursor: pointer; }
+    #fl-biomika-lp section.video .video-container {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      @media (max-width: 1025px) {
+        #fl-biomika-lp section.video .video-container {
+          padding-left: 0; } }
+    #fl-biomika-lp section.video .video-play {
+      font-size: 1em;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      background: url("../img/video-play.svg?v=1d15765b") no-repeat 50% 50%/contain;
+      width: 7.375em;
+      height: 7.375em;
+      border: 0;
+      cursor: pointer; }
+      @media (max-width: 1025px) {
+        #fl-biomika-lp section.video .video-play {
+          width: 7.375em;
+          height: 7.375em; } }
+      @media (max-width: 767px) {
+        #fl-biomika-lp section.video .video-play {
+          width: 3.25em;
+          height: 3.25em; } }
+  #fl-biomika-lp section.products {
+    padding: 0 3.125em 3.125em; }
+    @media (max-width: 1025px) {
+      #fl-biomika-lp section.products {
+        padding: 0 3.125em 0em; } }
+    @media (max-width: 767px) {
+      #fl-biomika-lp section.products {
+        padding: 0 1.25em 1.25em; } }
+    #fl-biomika-lp section.products .wrap {
+      height: 69.5em;
+      background: url("../img/products-bg.jpg?v=26ff5ab4") no-repeat 50% 50%/cover;
+      position: relative; }
+      @media (max-width: 1025px) {
+        #fl-biomika-lp section.products .wrap {
+          background: none;
+          height: 187.5em; } }
+      @media (max-width: 767px) {
+        #fl-biomika-lp section.products .wrap {
+          height: 120.625em; } }
+      #fl-biomika-lp section.products .wrap .product1-img {
+        display: none; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.products .wrap .product1-img {
+            position: absolute;
+            z-index: 3;
+            left: 9.3125em;
+            top: -1em;
+            display: block;
+            width: 19.4375em;
+            height: 33.375em; } }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.products .wrap .product1-img {
+            width: 10.6875em;
+            height: 18.20125em;
+            left: 0em;
+            top: -0.8125em; } }
+      #fl-biomika-lp section.products .wrap .product2-img {
+        display: none; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.products .wrap .product2-img {
+            position: absolute;
+            z-index: 3;
+            left: 10.5625em;
+            top: 60.5625em;
+            display: block;
+            width: 16.9375em;
+            height: 37.5625em; } }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.products .wrap .product2-img {
+            width: 8.625em;
+            height: 20.32625em;
+            left: 0.9375em;
+            top: 39.0625em; } }
+      #fl-biomika-lp section.products .wrap .product3-img {
+        display: none; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.products .wrap .product3-img {
+            position: absolute;
+            z-index: 3;
+            left: 9.1875em;
+            top: 126.1875em;
+            display: block;
+            width: 19.75em;
+            height: 33.75em; } }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.products .wrap .product3-img {
+            width: 10.6875em;
+            height: 18.38875em;
+            left: 0em;
+            top: 81.0625em; } }
+      #fl-biomika-lp section.products .wrap .percent {
+        position: absolute;
+        z-index: 2; }
+        #fl-biomika-lp section.products .wrap .percent::after {
+          content: '';
+          display: none;
+          position: absolute;
+          z-index: -1;
+          right: -2.5em;
+          top: 4.375em;
+          height: 42.82062em;
+          width: 45.5em;
+          background: #EBF2F4; }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.products .wrap .percent::after {
+              display: block; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.products .wrap .percent::after {
+              height: 28em;
+              width: 18.75em;
+              right: -0.8125em;
+              top: 2.1875em; } }
+        #fl-biomika-lp section.products .wrap .percent.percent-1 {
+          top: 15.625em;
+          left: 27.5em; }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.products .wrap .percent.percent-1 {
+              top: 11em;
+              left: 28.25em; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.products .wrap .percent.percent-1 {
+              top: 7.5em;
+              left: 10.625em; } }
+        #fl-biomika-lp section.products .wrap .percent.percent-2 {
+          top: 15.625em;
+          left: 64.375em; }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.products .wrap .percent.percent-2 {
+              top: 76.75em;
+              left: 28.4375em; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.products .wrap .percent.percent-2 {
+              top: 49.375em;
+              left: 10.625em; } }
+        #fl-biomika-lp section.products .wrap .percent.percent-3 {
+          top: 15.625em;
+          left: 98.75em; }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.products .wrap .percent.percent-3 {
+              top: 138.625em;
+              left: 28.25em; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.products .wrap .percent.percent-3 {
+              top: 89.375em;
+              left: 10.625em; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.products .wrap .percent.percent-3::after {
+              height: 29.375em; } }
+        #fl-biomika-lp section.products .wrap .percent .num {
+          font-family: ProximaNova-Bold, Arial, sans-serif;
+          font-size: 5em;
+          line-height: 1.1;
+          color: #F2C09D;
+          text-transform: uppercase; }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.products .wrap .percent .num {
+              font-size: 2.5em; } }
+          #fl-biomika-lp section.products .wrap .percent .num .num-span {
+            font-family: ProximaNova-Bold, Arial, sans-serif;
+            font-size: 0.625em;
+            padding-left: 0.0625em; }
+            @media (max-width: 767px) {
+              #fl-biomika-lp section.products .wrap .percent .num .num-span {
+                font-size: 0.625em; } }
+        #fl-biomika-lp section.products .wrap .percent .about {
+          font-family: ProximaNova-Bold, Arial, sans-serif;
+          font-size: 1.5em;
+          line-height: 1.25;
+          text-transform: uppercase;
+          color: #BCD3DA; }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.products .wrap .percent .about {
+              font-size: 0.875em;
+              line-height: 1.6; } }
+      #fl-biomika-lp section.products .wrap .info {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 26.25em;
+        position: absolute;
+        z-index: 3; }
+        @media (max-width: 767px) {
+          #fl-biomika-lp section.products .wrap .info {
+            width: 100%; } }
+        #fl-biomika-lp section.products .wrap .info.info-1 {
+          top: 36.875em;
+          left: 7.1875em; }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.products .wrap .info.info-1 {
+              top: 31.75em;
+              left: 7.6875em; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.products .wrap .info.info-1 {
+              top: 17.9375em;
+              left: 0em; } }
+        #fl-biomika-lp section.products .wrap .info.info-2 {
+          top: 36.875em;
+          left: 43.125em; }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.products .wrap .info.info-2 {
+              top: 97.375em;
+              left: 7.6875em; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.products .wrap .info.info-2 {
+              top: 59.875em;
+              left: 0em; } }
+        #fl-biomika-lp section.products .wrap .info.info-3 {
+          top: 36.875em;
+          left: 77.5em; }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.products .wrap .info.info-3 {
+              top: 159.3125em;
+              left: 7.6875em; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.products .wrap .info.info-3 {
+              top: 99.6875em;
+              left: 0em; } }
+          #fl-biomika-lp section.products .wrap .info.info-3 .title {
+            margin-bottom: 0.4375em; }
+          #fl-biomika-lp section.products .wrap .info.info-3 .text {
+            margin-bottom: 1.6875em; }
+            @media (max-width: 767px) {
+              #fl-biomika-lp section.products .wrap .info.info-3 .text {
+                padding: 0 1.25em; } }
+        #fl-biomika-lp section.products .wrap .info .title {
+          font-family: ProximaNova-Bold, Arial, sans-serif;
+          font-size: 2.25em;
+          line-height: 1.4;
+          color: #229EAE;
+          text-align: center;
+          text-transform: uppercase;
+          margin-bottom: 0.625em; }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.products .wrap .info .title {
+              font-size: 1.375em;
+              margin-bottom: 0.4375em; } }
+        #fl-biomika-lp section.products .wrap .info .text {
+          font-family: ProximaNova-Regular, Arial, sans-serif;
+          font-size: 1em;
+          line-height: 1.5;
+          text-align: center;
+          color: #000;
+          margin-bottom: 2.6875em; }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.products .wrap .info .text {
+              font-size: 0.875em;
+              padding: 0 1.375em;
+              margin-bottom: 1.125em; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.products .wrap .info .text br {
+              display: none; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.products .wrap .info .text br.mob {
+              display: block; } }
+        #fl-biomika-lp section.products .wrap .info .link {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          text-decoration: none;
+          color: #fff;
+          background: #000 url("../img/arrow.svg?v=9f1e34a3") no-repeat 70% 52%;
+          -webkit-background-size: 1.4375em 1.25em;
+                  background-size: 1.4375em 1.25em;
+          outline: none;
+          width: 12.1875em;
+          height: 4.25em;
+          -webkit-transition: .2s;
+          -o-transition: .2s;
+          transition: .2s;
+          padding: 0 2.6875em;
+          -webkit-border-radius: 2.5em;
+                  border-radius: 2.5em;
+          font-size: 1em;
+          margin-bottom: 1.5625em; }
+          @media (max-width: 1025px) {
+            #fl-biomika-lp section.products .wrap .info .link {
+              background: #000 url("../img/arrow.svg?v=9f1e34a3") no-repeat 76% 52%; } }
+          @media (max-width: 767px) {
+            #fl-biomika-lp section.products .wrap .info .link {
+              width: 10.625em;
+              height: 3.75em;
+              padding: 0 2.375em;
+              margin-bottom: 0.9375em; } }
+          #fl-biomika-lp section.products .wrap .info .link .link-span {
+            color: #fff;
+            font-family: ProximaNova-Bold, Arial, sans-serif;
+            font-size: 1.25em;
+            line-height: 1.2; }
+          #fl-biomika-lp section.products .wrap .info .link:hover {
+            opacity: .7; }
+        @media (max-width: 1025px) {
+          #fl-biomika-lp section.products .wrap .info .art {
+            font-size: 0.875em; } }

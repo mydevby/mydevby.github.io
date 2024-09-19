@@ -1,0 +1,2983 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.5.3
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+@-webkit-keyframes imgTransotion {
+  from {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    opacity: 0; }
+  to {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    opacity: 1; } }
+@keyframes imgTransotion {
+  from {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    opacity: 0; }
+  to {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    opacity: 1; } }
+
+body {
+  margin: 0; }
+
+#ref-manager {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+  #ref-manager .ref-manager-ozon-ref {
+    overflow: hidden; }
+  #ref-manager .ref-manager-container {
+    position: relative;
+    max-width: 75em;
+    padding: 0 10px;
+    margin: 0 auto; }
+  #ref-manager .ref-manager-section-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background: #005BFF;
+    z-index: 100;
+    visibility: hidden;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  #ref-manager .ref-manager-section-overlay.ref-manager-active {
+    visibility: visible;
+    height: 100%;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s; }
+  #ref-manager .ref-manager-start-earning {
+    overflow: hidden;
+    font-size: 16px;
+    background: #005BFF;
+    position: relative;
+    padding-top: 1.25em;
+    max-height: 100vh; }
+    @media (max-width: 1440px) {
+      #ref-manager .ref-manager-start-earning {
+        font-size: -webkit-calc(100vh / 48.75);
+        font-size: calc(100vh / 48.75); } }
+    #ref-manager .ref-manager-start-earning .ref-manager-container {
+      height: 100vh; }
+    #ref-manager .ref-manager-start-earning .ref-manager-scroll-img {
+      position: absolute;
+      left: 4.0625em;
+      bottom: 2.8125em;
+      width: 1.25em;
+      height: 3.1875em;
+      -webkit-animation-duration: 1.5s;
+              animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-name: scroll;
+              animation-name: scroll;
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease; }
+    #ref-manager .ref-manager-start-earning .ref-manager-menu {
+      margin-bottom: 9.0625em; }
+      #ref-manager .ref-manager-start-earning .ref-manager-menu .ref-manager-list {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+      #ref-manager .ref-manager-start-earning .ref-manager-menu .ref-manager-item {
+        margin-right: 1em; }
+        #ref-manager .ref-manager-start-earning .ref-manager-menu .ref-manager-item:nth-last-of-type(1) {
+          margin-right: 0; }
+      #ref-manager .ref-manager-start-earning .ref-manager-menu .ref-manager-link {
+        font-family: 'GTE-Light', Arial, sans-serif;
+        font-weight: normal;
+        padding: 0.125em 1.0625em 0;
+        color: #fff;
+        font-size: 1em;
+        line-height: 2em;
+        border: 1px solid transparent;
+        -webkit-border-radius: 0.125em;
+                border-radius: 0.125em;
+        letter-spacing: 0.00813em; }
+        #ref-manager .ref-manager-start-earning .ref-manager-menu .ref-manager-link:hover {
+          border-color: #fff; }
+        #ref-manager .ref-manager-start-earning .ref-manager-menu .ref-manager-link:active {
+          background: rgba(255, 255, 255, 0.2);
+          border: 1px solid transparent; }
+    #ref-manager .ref-manager-start-earning .ref-manager-img {
+      -webkit-transition: none;
+      -o-transition: none;
+      transition: none;
+      position: absolute;
+      right: 0.9375em;
+      bottom: 12.5em;
+      opacity: 0; }
+      #ref-manager .ref-manager-start-earning .ref-manager-img img {
+        width: 100%; }
+    #ref-manager .ref-manager-start-earning .ref-manager-img-1 {
+      -webkit-transition: none;
+      -o-transition: none;
+      transition: none;
+      width: 39.0625em;
+      height: 38em; }
+    #ref-manager .ref-manager-start-earning .ref-manager-img-2 {
+      -webkit-transition: none;
+      -o-transition: none;
+      transition: none;
+      width: 39.3125em;
+      height: 39.4375em; }
+    #ref-manager .ref-manager-start-earning .ref-manager-img-3 {
+      -webkit-transition: none;
+      -o-transition: none;
+      transition: none;
+      width: 41.625em;
+      height: 40.3125em; }
+    #ref-manager .ref-manager-start-earning .ref-manager-img-4 {
+      -webkit-transition: none;
+      -o-transition: none;
+      transition: none;
+      width: 39.0625em;
+      height: 41.5em; }
+    #ref-manager .ref-manager-start-earning .ref-manager-title {
+      margin-bottom: 0.75em;
+      font-family: 'GTE-Bold', Arial, sans-serif;
+      font-weight: normal;
+      font-size: 2.625em;
+      line-height: 1.15;
+      color: #fff;
+      letter-spacing: 0.08125em; }
+    #ref-manager .ref-manager-start-earning .ref-manager-description {
+      font-family: 'GTE-Light', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 1.5em;
+      color: #fff;
+      margin-bottom: 1.4375em;
+      line-height: 1.4;
+      letter-spacing: 0.02875em; }
+    #ref-manager .ref-manager-start-earning .ref-manager-btn {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 13.4375em;
+      height: 3.125em;
+      -webkit-border-radius: 0.1875em;
+              border-radius: 0.1875em;
+      text-decoration: none;
+      outline: none;
+      font-family: 'GTE-Regular', Arial, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.5em;
+      line-height: 1;
+      letter-spacing: 0.00813em;
+      padding: 0.5em 0 0.3125em;
+      text-align: center;
+      cursor: pointer;
+      border: 0.125em solid #F91155;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+      #ref-manager .ref-manager-start-earning .ref-manager-btn.ref-manager-btn-red {
+        color: #fff;
+        background: #F91155;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+        #ref-manager .ref-manager-start-earning .ref-manager-btn.ref-manager-btn-red:hover {
+          background-color: #c41c4d;
+          border-color: #c41c4d; }
+    #ref-manager .ref-manager-start-earning .ref-manager-content {
+      height: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+    #ref-manager .ref-manager-start-earning .ref-manager-text-container {
+      display: none;
+      -webkit-flex-shrink: 0;
+          -ms-flex-negative: 0;
+              flex-shrink: 0; }
+      @media (max-width: 1200px) {
+        #ref-manager .ref-manager-start-earning .ref-manager-text-container {
+          margin-left: 0; } }
+    #ref-manager .ref-manager-start-earning .ref-manager-img-container {
+      position: relative;
+      -webkit-flex-shrink: 0;
+          -ms-flex-negative: 0;
+              flex-shrink: 0;
+      width: -webkit-calc(58.33333% - 1.25rem);
+      width: calc(58.33333% - 1.25rem);
+      margin-right: 0.625rem;
+      margin-left: 0.625rem; }
+    #ref-manager .ref-manager-start-earning .ref-manager-icon-o {
+      position: absolute;
+      bottom: 47.8125em;
+      right: 32.5em;
+      width: 6.25em;
+      height: 6.1875em;
+      -webkit-animation: shift 2s linear infinite;
+              animation: shift 2s linear infinite;
+      -webkit-animation-delay: 0.3s;
+              animation-delay: 0.3s;
+      -webkit-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s; }
+    #ref-manager .ref-manager-start-earning .ref-manager-icon-z {
+      position: absolute;
+      bottom: 48.75em;
+      right: -1.875em;
+      width: 4.875em;
+      height: 6.1875em;
+      -webkit-animation: shift 2s linear infinite;
+              animation: shift 2s linear infinite;
+      -webkit-animation-delay: 0.4s;
+              animation-delay: 0.4s;
+      -webkit-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s; }
+    #ref-manager .ref-manager-start-earning .ref-manager-icon-o2 {
+      position: absolute;
+      bottom: 16.875em;
+      right: -9.0625em;
+      width: 6.25em;
+      height: 6.1875em;
+      -webkit-animation: shift 2s linear infinite;
+              animation: shift 2s linear infinite;
+      -webkit-animation-delay: 0.5s;
+              animation-delay: 0.5s;
+      -webkit-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s; }
+    #ref-manager .ref-manager-start-earning .ref-manager-icon-n {
+      position: absolute;
+      bottom: 15.3125em;
+      top: auto !important;
+      left: auto !important;
+      right: 47.3125em;
+      width: 5.625em;
+      height: 6.1875em;
+      -webkit-animation: shift 2s linear infinite;
+              animation: shift 2s linear infinite;
+      -webkit-animation-delay: 0.6s;
+              animation-delay: 0.6s;
+      -webkit-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s; }
+    #ref-manager .ref-manager-start-earning .ref-manager-icon-money {
+      position: absolute !important;
+      bottom: 49.375em;
+      top: auto !important;
+      left: auto !important;
+      right: 27.8125em;
+      width: 6.25em;
+      height: 4.6875em; }
+    #ref-manager .ref-manager-start-earning .ref-manager-icon-time {
+      position: absolute;
+      bottom: 44.3125em;
+      top: auto !important;
+      left: auto !important;
+      right: 1.375em;
+      width: 6.25em;
+      height: 4.8125em; }
+    #ref-manager .ref-manager-start-earning .ref-manager-icon-deal {
+      position: absolute;
+      bottom: 22.8125em;
+      top: auto !important;
+      left: auto !important;
+      right: -7.375em;
+      width: 6.25em;
+      height: 4.75em; }
+    #ref-manager .ref-manager-start-earning .ref-manager-icon-aim {
+      position: absolute;
+      bottom: 18.125em;
+      right: 42.1875em;
+      top: auto !important;
+      left: auto !important;
+      width: 6.25em;
+      height: 4.875em; }
+    #ref-manager .ref-manager-start-earning .ref-manager-dots {
+      opacity: 0; }
+    #ref-manager .ref-manager-start-earning .ref-manager-icon-square {
+      opacity: 0; }
+    #ref-manager .ref-manager-start-earning .ref-manager-icon-square-2 {
+      opacity: 0;
+      visibility: hidden; }
+  #ref-manager .ref-manager-start-earning-1 .ref-manager-img-1 {
+    -webkit-animation: imgTransotion 1s linear;
+            animation: imgTransotion 1s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
+  #ref-manager .ref-manager-start-earning-1 .ref-manager-text-container-1 {
+    display: block;
+    margin-left: -4.0625em; }
+  #ref-manager .ref-manager-start-earning-1 .ref-manager-zig-zag {
+    display: none; }
+  #ref-manager .ref-manager-start-earning-1 .ref-manager-dots {
+    opacity: 0;
+    visibility: hidden; }
+  #ref-manager .ref-manager-start-earning-1 .ref-manager-icon-square {
+    display: none; }
+  #ref-manager .ref-manager-start-earning-1 .ref-manager-icon-lines {
+    display: none; }
+  #ref-manager .ref-manager-start-earning-mob .swiper-container {
+    height: 100%; }
+  #ref-manager .ref-manager-start-earning-mob .swiper-slide {
+    padding-top: 2em;
+    height: 100vh; }
+  #ref-manager .ref-manager-start-earning-mob .swiper-pagination {
+    left: 50%;
+    width: 95%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding-top: 0.8125em;
+    padding-bottom: 1.0625em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  #ref-manager .ref-manager-start-earning-mob .swiper-pagination-bullet {
+    height: 0.1875em;
+    margin: 0 0.125em;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.3);
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  #ref-manager .ref-manager-start-earning-mob .swiper-pagination-bullet-active {
+    background: #FFFFFF;
+    width: 3.5625em;
+    height: 0.1875em;
+    margin-right: 0.25em;
+    -webkit-border-radius: 0;
+            border-radius: 0; }
+  #ref-manager .ref-manager-start-earning-mob .ref-manager-menu {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #E4E4E4;
+    z-index: 10;
+    padding: 1.375em 1em; }
+    #ref-manager .ref-manager-start-earning-mob .ref-manager-menu .ref-manager-item {
+      margin-bottom: 2.0625em; }
+      #ref-manager .ref-manager-start-earning-mob .ref-manager-menu .ref-manager-item:nth-last-of-type(1) {
+        margin-bottom: 0; }
+    #ref-manager .ref-manager-start-earning-mob .ref-manager-menu .ref-manager-link {
+      font-family: 'GTE-Light', Arial, sans-serif;
+      font-weight: 400;
+      font-weight: bold;
+      font-size: 1.5em;
+      line-height: 1.625em;
+      letter-spacing: 0.04375em;
+      color: #005BFF; }
+    #ref-manager .ref-manager-start-earning-mob .ref-manager-menu .ref-manager-menu-close {
+      position: absolute;
+      top: 1.4375em;
+      right: 1.125em;
+      height: 1.25em;
+      width: 1.25em; }
+      #ref-manager .ref-manager-start-earning-mob .ref-manager-menu .ref-manager-menu-close::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        width: 1.625em;
+        height: 0.0625em;
+        background-color: #797979; }
+      #ref-manager .ref-manager-start-earning-mob .ref-manager-menu .ref-manager-menu-close::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+        width: 1.625em;
+        height: 0.0625em;
+        background-color: #797979; }
+  #ref-manager .ref-manager-start-earning-1-mob {
+    font-size: 16px; }
+    @media (max-width: 992px) {
+      #ref-manager .ref-manager-start-earning-1-mob {
+        font-size: -webkit-calc(100vh / 40);
+        font-size: calc(100vh / 40); } }
+    #ref-manager .ref-manager-start-earning-1-mob .ref-manager-title {
+      margin-bottom: 1.4375em;
+      font-family: 'GTE-Bold', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 1.625em;
+      line-height: 1.1;
+      color: #fff;
+      letter-spacing: 0.02875em;
+      padding-left: 0.625em; }
+    #ref-manager .ref-manager-start-earning-1-mob .ref-manager-description {
+      position: relative;
+      font-family: 'GTE-Light', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 1em;
+      color: #fff;
+      line-height: 1.2;
+      letter-spacing: 0.04375em;
+      padding-left: 0.875em; }
+      #ref-manager .ref-manager-start-earning-1-mob .ref-manager-description::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -0.9375em;
+        z-index: -1;
+        width: 17.125em;
+        height: 6.875em;
+        background: url("../img/description-bg.svg") no-repeat left top/contain; }
+    #ref-manager .ref-manager-start-earning-1-mob .ref-manager-img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      width: 14.875em;
+      height: 25.25em; }
+    #ref-manager .ref-manager-start-earning-1-mob .ref-manager-icon-o {
+      position: absolute;
+      left: -1.875em;
+      bottom: 7.1875em;
+      width: 8.625em;
+      height: 8.625em; }
+    #ref-manager .ref-manager-start-earning-1-mob .ref-manager-dots {
+      position: absolute;
+      left: 2.8125em;
+      bottom: 5em;
+      width: 6.625em;
+      height: 6.625em;
+      z-index: 1; }
+    #ref-manager .ref-manager-start-earning-1-mob .ref-manager-swipe {
+      position: absolute;
+      right: 0.625em;
+      top: 12.5em;
+      width: 2.3125em;
+      height: 1.3125em;
+      -webkit-animation-duration: 1.5s;
+              animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-name: scroll-right-dark;
+              animation-name: scroll-right-dark;
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease; }
+  #ref-manager .ref-manager-start-earning-2 {
+    font-size: 16px; }
+    @media (max-width: 1440px) {
+      #ref-manager .ref-manager-start-earning-2 {
+        font-size: -webkit-calc(100vh / 48.75);
+        font-size: calc(100vh / 48.75); } }
+    #ref-manager .ref-manager-start-earning-2 .ref-manager-text-container {
+      margin-left: 0;
+      padding-top: 12.75em;
+      padding-left: 4.875em; }
+    #ref-manager .ref-manager-start-earning-2 .ref-manager-title {
+      margin-bottom: 0.4375em; }
+    #ref-manager .ref-manager-start-earning-2 .ref-manager-img-container {
+      position: relative;
+      width: -webkit-calc(66.66667% - 1.25rem);
+      width: calc(66.66667% - 1.25rem);
+      margin-right: 0.625rem;
+      margin-left: 0.625rem; }
+    #ref-manager .ref-manager-start-earning-2 .ref-manager-img {
+      right: -1.5625em;
+      z-index: 2; }
+    #ref-manager .ref-manager-start-earning-2 .ref-manager-img-2 {
+      -webkit-animation: imgTransotion 1s linear;
+              animation: imgTransotion 1s linear;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    #ref-manager .ref-manager-start-earning-2 .ref-manager-icon-o {
+      position: absolute;
+      top: -4.0625em;
+      right: auto;
+      left: -11.25em;
+      width: 9.75em;
+      height: 9.75em; }
+    #ref-manager .ref-manager-start-earning-2 .ref-manager-icon-z {
+      position: absolute;
+      bottom: 50.625em;
+      right: -2.5em;
+      width: 3.1875em;
+      height: 4.125em; }
+    #ref-manager .ref-manager-start-earning-2 .ref-manager-icon-o2 {
+      position: absolute;
+      bottom: 20em;
+      right: -8.125em;
+      width: 4.1875em;
+      height: 4.125em; }
+    #ref-manager .ref-manager-start-earning-2 .ref-manager-icon-n {
+      position: absolute;
+      bottom: 18.125em;
+      right: 47.1875em;
+      width: 3.75em;
+      height: 4.125em; }
+    #ref-manager .ref-manager-start-earning-2 .ref-manager-icon-money {
+      position: absolute;
+      top: 1.875em;
+      bottom: auto;
+      right: auto;
+      left: -15.9375em !important;
+      width: 9.375em;
+      height: 7.1875em;
+      -webkit-animation: imgTransotion 1s linear;
+              animation: imgTransotion 1s linear;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    #ref-manager .ref-manager-start-earning-2 .ref-manager-icon-time {
+      display: none !important; }
+    #ref-manager .ref-manager-start-earning-2 .ref-manager-icon-deal {
+      display: none !important; }
+    #ref-manager .ref-manager-start-earning-2 .ref-manager-icon-aim {
+      display: none !important; }
+    #ref-manager .ref-manager-start-earning-2 .ref-manager-zig-zag-left {
+      position: absolute;
+      left: -3.75em;
+      top: 0em;
+      width: 9.375em;
+      height: 1.5625em; }
+    #ref-manager .ref-manager-start-earning-2 .ref-manager-zig-zag-right {
+      position: absolute;
+      right: -8.75em;
+      top: 10em;
+      width: 9.375em;
+      height: 1.5625em;
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg); }
+    #ref-manager .ref-manager-start-earning-2 .ref-manager-zig-zag-1 {
+      position: absolute;
+      top: 0em;
+      left: 0;
+      width: 128px;
+      height: 16px;
+      z-index: 2; }
+    #ref-manager .ref-manager-start-earning-2 .ref-manager-zig-zag-2 {
+      position: absolute;
+      top: 0.9375em;
+      left: 24px;
+      width: 128px;
+      height: 16px; }
+    #ref-manager .ref-manager-start-earning-2 .ref-manager-zig-zag-1, #ref-manager .ref-manager-start-earning-2 .ref-manager-zig-zag-2 {
+      overflow: hidden; }
+      #ref-manager .ref-manager-start-earning-2 .ref-manager-zig-zag-1 .ref-manager-inner, #ref-manager .ref-manager-start-earning-2 .ref-manager-zig-zag-2 .ref-manager-inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        -webkit-animation: scroll-left-s2 3s infinite linear;
+                animation: scroll-left-s2 3s infinite linear; }
+        #ref-manager .ref-manager-start-earning-2 .ref-manager-zig-zag-1 .ref-manager-inner:after, #ref-manager .ref-manager-start-earning-2 .ref-manager-zig-zag-2 .ref-manager-inner:after {
+          content: "";
+          height: 100%;
+          width: 500%;
+          position: absolute;
+          background: url(../img/zig-zag-white.svg) left top repeat-x;
+          -webkit-background-size: 18.9% 100%;
+                  background-size: 18.9% 100%;
+          top: 0; }
+
+@-webkit-keyframes scroll-left-s2 {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  to {
+    -webkit-transform: translateX(-113%);
+            transform: translateX(-113%); } }
+
+@keyframes scroll-left-s2 {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  to {
+    -webkit-transform: translateX(-113%);
+            transform: translateX(-113%); } }
+    #ref-manager .ref-manager-start-earning-2 .ref-manager-dots {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transition: all 5s;
+      -o-transition: all 5s;
+      transition: all 5s;
+      position: absolute;
+      right: 27.8125em;
+      bottom: 29.75em;
+      height: 11.25em;
+      width: 11.25em;
+      z-index: 1; }
+    #ref-manager .ref-manager-start-earning-2 .ref-manager-icon-square {
+      opacity: 0;
+      visibility: hidden; }
+    #ref-manager .ref-manager-start-earning-2 .ref-manager-icon-lines {
+      display: none; }
+  #ref-manager .ref-manager-start-earning-2-mob {
+    font-size: 16px; }
+    @media (max-width: 992px) {
+      #ref-manager .ref-manager-start-earning-2-mob {
+        font-size: -webkit-calc(100vh / 40);
+        font-size: calc(100vh / 40); } }
+    #ref-manager .ref-manager-start-earning-2-mob .ref-manager-text-container {
+      padding-top: 4.0625em; }
+    #ref-manager .ref-manager-start-earning-2-mob .ref-manager-title {
+      margin-bottom: 0.8125em;
+      font-family: 'GTE-Bold', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 1.625em;
+      line-height: 1;
+      color: #fff;
+      letter-spacing: 0.02875em;
+      padding-right: 0.625em;
+      text-align: right; }
+    #ref-manager .ref-manager-start-earning-2-mob .ref-manager-description {
+      font-family: 'GTE-Light', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 1em;
+      color: #fff;
+      line-height: 1.1;
+      letter-spacing: 0.02875em;
+      padding-right: 0.875em;
+      text-align: right;
+      margin-right: -0.3125em; }
+    #ref-manager .ref-manager-start-earning-2-mob .ref-manager-img {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 2;
+      width: 11.0625em;
+      height: 25.25em; }
+    #ref-manager .ref-manager-start-earning-2-mob .ref-manager-icon-z {
+      position: absolute;
+      right: -2.5em;
+      bottom: 8.125em;
+      width: 6.875em;
+      height: 8.8125em; }
+    #ref-manager .ref-manager-start-earning-2-mob .ref-manager-icon-money {
+      position: absolute;
+      right: 3.125em;
+      bottom: 15.625em;
+      width: 5.625em;
+      z-index: 2; }
+    #ref-manager .ref-manager-start-earning-2-mob .ref-manager-dots {
+      position: absolute;
+      right: 3.375em;
+      bottom: 4.6875em;
+      width: 6.625em;
+      height: 6.625em;
+      z-index: 1; }
+    #ref-manager .ref-manager-start-earning-2-mob .ref-manager-zig-zag {
+      position: absolute;
+      left: 4.0625em;
+      top: 3.75em;
+      width: 5.3125em;
+      height: 1.125em; }
+    #ref-manager .ref-manager-start-earning-2-mob .ref-manager-swipe {
+      position: absolute;
+      right: 0.625em;
+      top: 14.375em;
+      width: 2.3125em;
+      height: 1.3125em;
+      -webkit-animation-duration: 1.5s;
+              animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-name: scroll-right-dark;
+              animation-name: scroll-right-dark;
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease; }
+  #ref-manager .ref-manager-start-earning-3 {
+    font-size: 16px; }
+    @media (max-width: 1440px) {
+      #ref-manager .ref-manager-start-earning-3 {
+        font-size: -webkit-calc(100vh / 48.75);
+        font-size: calc(100vh / 48.75); } }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-title {
+      margin-bottom: 0.5em; }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-text-container {
+      margin-left: 0;
+      padding-top: 12.75em;
+      padding-left: 0px; }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-content {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: row-reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse; }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-img-container {
+      position: relative;
+      width: -webkit-calc(66.66667% - 1.25rem);
+      width: calc(66.66667% - 1.25rem);
+      margin-right: 0.625rem;
+      margin-left: 0.625rem; }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-img {
+      right: -0.1875em;
+      z-index: 2; }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-img-3 {
+      -webkit-animation: imgTransotion 1s linear;
+              animation: imgTransotion 1s linear;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-icon-o {
+      position: absolute;
+      bottom: 48.75em;
+      right: auto;
+      left: 12.8125em;
+      width: 4.1875em;
+      height: 4.1875em; }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-icon-z {
+      position: absolute;
+      top: -6.25em;
+      right: -15.9375em;
+      width: 7.125em;
+      height: 9.625em; }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-icon-o2 {
+      position: absolute;
+      bottom: 16.25em;
+      right: -13.4375em;
+      width: 4.1875em;
+      height: 4.1875em; }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-icon-n {
+      position: absolute;
+      bottom: 23.75em;
+      right: 44.6875em;
+      width: 3.75em;
+      height: 4.125em; }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-icon-money {
+      display: none; }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-icon-time {
+      position: absolute;
+      top: 1.25em !important;
+      right: -20.3125em;
+      width: 9.375em;
+      height: 7.1875em;
+      -webkit-animation: imgTransotion 1s linear;
+              animation: imgTransotion 1s linear;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-icon-deal {
+      display: none; }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-icon-aim {
+      display: none; }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-icon-square {
+      -webkit-animation: opacitySquare 5s;
+              animation: opacitySquare 5s;
+      -webkit-animation-delay: 1s;
+              animation-delay: 1s;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards;
+      visibility: visible;
+      -webkit-transition: all 5s;
+      -o-transition: all 5s;
+      transition: all 5s;
+      position: absolute;
+      height: 14.75em;
+      width: 14.75em;
+      right: -1.25em;
+      bottom: 37.625em; }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-icon-lines.ref-manager-left {
+      position: absolute;
+      left: 4.0625em;
+      top: -0.3125em;
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg);
+      -webkit-animation: imgTransotion 1s linear;
+              animation: imgTransotion 1s linear;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-icon-lines.ref-manager-right {
+      position: absolute;
+      bottom: 17.5em;
+      right: -15.9375em;
+      -webkit-animation: imgTransotion 1s linear;
+              animation: imgTransotion 1s linear;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-zig-zag {
+      display: none; }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-dots {
+      visibility: hidden; }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-text-container {
+      padding-right: 4.875em;
+      padding-top: 7.5em; }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-title {
+      text-align: right; }
+    #ref-manager .ref-manager-start-earning-3 .ref-manager-description {
+      text-align: right;
+      margin-right: -0.3125em; }
+  #ref-manager .ref-manager-start-earning-3-mob {
+    font-size: 16px; }
+    @media (max-width: 992px) {
+      #ref-manager .ref-manager-start-earning-3-mob {
+        font-size: -webkit-calc(100vh / 40);
+        font-size: calc(100vh / 40); } }
+    #ref-manager .ref-manager-start-earning-3-mob .ref-manager-text-container {
+      padding-top: 4.0625em; }
+    #ref-manager .ref-manager-start-earning-3-mob .ref-manager-title {
+      margin-bottom: 0.8125em;
+      font-family: 'GTE-Bold', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 1.625em;
+      line-height: 1;
+      color: #fff;
+      letter-spacing: 0.02875em;
+      padding-left: 0.625em; }
+    #ref-manager .ref-manager-start-earning-3-mob .ref-manager-description {
+      font-family: 'GTE-Light', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 1em;
+      color: #fff;
+      line-height: 1.1;
+      letter-spacing: 0.02875em;
+      padding-left: 0.875em; }
+    #ref-manager .ref-manager-start-earning-3-mob .ref-manager-img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      width: 14.9375em;
+      height: 25.5em; }
+    #ref-manager .ref-manager-start-earning-3-mob .ref-manager-icon-o {
+      position: absolute;
+      right: -3.4375em;
+      top: 5.3125em;
+      width: 8.625em;
+      height: 8.625em;
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
+    #ref-manager .ref-manager-start-earning-3-mob .ref-manager-icon-square {
+      position: absolute;
+      left: 1.5625em;
+      bottom: 1.25em;
+      width: 7.625em;
+      height: 7.625em; }
+    #ref-manager .ref-manager-start-earning-3-mob .ref-manager-icon-time {
+      position: absolute;
+      left: 0.625em;
+      bottom: 15em;
+      width: 5.625em; }
+    #ref-manager .ref-manager-start-earning-3-mob .ref-manager-dots {
+      position: absolute;
+      right: 3.375em;
+      bottom: 5.1875em;
+      width: 6.625em;
+      height: 6.625em;
+      z-index: 1; }
+    #ref-manager .ref-manager-start-earning-3-mob .ref-manager-zig-zag {
+      position: absolute;
+      left: 3.9375em;
+      top: -0.9375em;
+      width: 5.375em;
+      height: 6.25em; }
+    #ref-manager .ref-manager-start-earning-3-mob .ref-manager-swipe {
+      position: absolute;
+      right: 0.625em;
+      top: 14.375em;
+      width: 2.3125em;
+      height: 1.3125em;
+      -webkit-animation-duration: 1.5s;
+              animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-name: scroll-right-dark;
+              animation-name: scroll-right-dark;
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease; }
+  #ref-manager .ref-manager-start-earning-4 {
+    font-size: 16px;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s; }
+    @media (max-width: 1440px) {
+      #ref-manager .ref-manager-start-earning-4 {
+        font-size: -webkit-calc(100vh / 48.75);
+        font-size: calc(100vh / 48.75); } }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-text-container {
+      padding-top: 5.9375em;
+      margin-left: 0;
+      margin-right: 5em;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-content {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: row-reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse; }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-title {
+      text-align: right;
+      margin-bottom: 0.5em; }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-description {
+      text-align: right;
+      font-size: 1.4375em;
+      margin-right: -0.3125em;
+      letter-spacing: 0.05em; }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-img-container {
+      position: relative;
+      width: -webkit-calc(58.33333% - 1.25rem);
+      width: calc(58.33333% - 1.25rem);
+      margin-right: 0.625rem;
+      margin-left: 0.625rem; }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-img {
+      right: -3.125em;
+      z-index: 2; }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-img-4 {
+      -webkit-animation: imgTransotion 1s linear;
+              animation: imgTransotion 1s linear;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-icon-square {
+      visibility: hidden;
+      position: absolute;
+      left: 17.5em;
+      bottom: 32.5em;
+      z-index: 1; }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-icon-square-2 {
+      visibility: visible;
+      -webkit-animation: opacitySquare 5s;
+              animation: opacitySquare 5s;
+      -webkit-animation-delay: 1s;
+              animation-delay: 1s;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards;
+      position: absolute;
+      left: 17.5em;
+      bottom: 30.3125em;
+      z-index: 1; }
+
+@-webkit-keyframes opacitySquare {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes opacitySquare {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-icon-o {
+      height: 4.1875em;
+      width: 4.1875em;
+      bottom: 49.0625em;
+      right: 25em; }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-icon-n {
+      width: 3.75em;
+      height: 4.125em;
+      top: 14.375em !important;
+      left: -0.625em !important; }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-icon-z {
+      width: 3.1875em;
+      height: 4.125em;
+      top: -4.375em;
+      right: -15.625em; }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-icon-o2 {
+      width: 9.75em;
+      height: 9.75em;
+      bottom: 16.25em;
+      right: -26.5625em; }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-icon-money {
+      display: none !important; }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-icon-time {
+      display: none !important; }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-icon-aim {
+      display: none !important; }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-icon-deal {
+      width: 9.375em;
+      height: 7.125em;
+      bottom: 23.75em;
+      right: -21.875em;
+      -webkit-animation: imgTransotion 1s linear;
+              animation: imgTransotion 1s linear;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-dots {
+      display: none; }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-icon-lines {
+      display: none; }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-zig-zag-left {
+      position: absolute;
+      left: -0.625em;
+      top: 5.625em;
+      width: 9.375em;
+      height: 1.5625em; }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-zig-zag-right {
+      position: absolute;
+      right: -35.3125em;
+      top: -2.5em;
+      width: 9.375em;
+      height: 1.5625em;
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg); }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-zig-zag-1 {
+      position: absolute;
+      top: 0em;
+      left: 0;
+      width: 128px;
+      height: 16px;
+      z-index: 2; }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-zig-zag-2 {
+      position: absolute;
+      top: 0.9375em;
+      left: 24px;
+      width: 128px;
+      height: 16px; }
+    #ref-manager .ref-manager-start-earning-4 .ref-manager-zig-zag-1, #ref-manager .ref-manager-start-earning-4 .ref-manager-zig-zag-2 {
+      overflow: hidden; }
+      #ref-manager .ref-manager-start-earning-4 .ref-manager-zig-zag-1 .ref-manager-inner, #ref-manager .ref-manager-start-earning-4 .ref-manager-zig-zag-2 .ref-manager-inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        -webkit-animation: scroll-left-s4 3s infinite linear;
+                animation: scroll-left-s4 3s infinite linear; }
+        #ref-manager .ref-manager-start-earning-4 .ref-manager-zig-zag-1 .ref-manager-inner:after, #ref-manager .ref-manager-start-earning-4 .ref-manager-zig-zag-2 .ref-manager-inner:after {
+          content: "";
+          height: 100%;
+          width: 500%;
+          position: absolute;
+          background-image: url(../img/zig-zag-white.svg);
+          -webkit-background-size: 18.9% 100%;
+                  background-size: 18.9% 100%;
+          top: 0; }
+
+@-webkit-keyframes scroll-left-s4 {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  to {
+    -webkit-transform: translateX(-113%);
+            transform: translateX(-113%); } }
+
+@keyframes scroll-left-s4 {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  to {
+    -webkit-transform: translateX(-113%);
+            transform: translateX(-113%); } }
+  #ref-manager .ref-manager-start-earning-4-mob {
+    font-size: 16px; }
+    @media (max-width: 992px) {
+      #ref-manager .ref-manager-start-earning-4-mob {
+        font-size: -webkit-calc(100vh / 40);
+        font-size: calc(100vh / 40); } }
+    #ref-manager .ref-manager-start-earning-4-mob .ref-manager-text-container {
+      padding-top: 4.0625em; }
+    #ref-manager .ref-manager-start-earning-4-mob .ref-manager-title {
+      margin-bottom: 0.8125em;
+      font-family: 'GTE-Bold', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 1.625em;
+      line-height: 1;
+      color: #fff;
+      letter-spacing: 0.02875em;
+      padding-right: 0.625em;
+      text-align: right; }
+    #ref-manager .ref-manager-start-earning-4-mob .ref-manager-description {
+      font-family: 'GTE-Light', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 1em;
+      color: #fff;
+      line-height: 1.1;
+      letter-spacing: 0.02875em;
+      padding-right: 0.875em;
+      text-align: right; }
+    #ref-manager .ref-manager-start-earning-4-mob .ref-manager-img {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 2;
+      width: 11.5625em;
+      height: 25.5em; }
+    #ref-manager .ref-manager-start-earning-4-mob .ref-manager-icon-n {
+      position: absolute;
+      right: -0.625em;
+      bottom: 9.6875em;
+      width: 8.0625em;
+      height: 8.8125em;
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg);
+      z-index: 1; }
+    #ref-manager .ref-manager-start-earning-4-mob .ref-manager-icon-square {
+      position: absolute;
+      left: 1.5625em;
+      bottom: 1.875em;
+      width: 7.625em;
+      height: 7.625em; }
+    #ref-manager .ref-manager-start-earning-4-mob .ref-manager-icon-deal {
+      position: absolute;
+      right: 5em;
+      bottom: 16.875em;
+      width: 5.625em;
+      z-index: 2; }
+    #ref-manager .ref-manager-start-earning-4-mob .ref-manager-icon-lines {
+      position: absolute;
+      left: 5.375em;
+      top: 1.5625em;
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg);
+      width: 0.5625em;
+      height: 6.8125em; }
+    #ref-manager .ref-manager-start-earning-4-mob .ref-manager-dots {
+      position: absolute;
+      right: 5.9375em;
+      bottom: 8.125em;
+      width: 6.625em;
+      height: 6.625em;
+      z-index: 1; }
+    #ref-manager .ref-manager-start-earning-4-mob .ref-manager-zig-zag {
+      position: absolute;
+      left: 3.9375em;
+      top: -0.9375em;
+      width: 5.375em;
+      height: 6.25em; }
+    #ref-manager .ref-manager-start-earning-4-mob .ref-manager-swipe {
+      position: absolute;
+      right: 0.625em;
+      top: 14.375em;
+      width: 2.3125em;
+      height: 1.3125em;
+      -webkit-animation-duration: 1.5s;
+              animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-name: scroll-right-dark;
+              animation-name: scroll-right-dark;
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease; }
+  #ref-manager .ref-manager-start-earning-5 {
+    font-size: 16px;
+    background-color: #F91155; }
+    @media (max-width: 1440px) {
+      #ref-manager .ref-manager-start-earning-5 {
+        font-size: -webkit-calc(100vh / 48.75);
+        font-size: calc(100vh / 48.75); } }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-img-container {
+      position: absolute;
+      width: 100%;
+      height: 76%; }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-text-container-5 {
+      width: 100%;
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-left: 0;
+      padding-top: 9.375em; }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-img {
+      display: none; }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-icon-o {
+      display: none; }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-icon-z {
+      display: none; }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-icon-n {
+      display: none; }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-icon-square {
+      display: none; }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-icon-money {
+      display: none !important; }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-icon-time {
+      display: none !important; }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-icon-aim {
+      display: none !important; }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-icon-deal {
+      display: none !important; }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-icon-o2 {
+      display: none; }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-title {
+      text-align: center;
+      margin-bottom: 2.875em; }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-text {
+      font-family: 'GTE-Regular', Arial;
+      font-size: 1.4375em;
+      line-height: 1.3;
+      text-align: center;
+      letter-spacing: 0.04375em;
+      color: #FFFFFF;
+      margin-bottom: 0.9375em; }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-zig-zag-left {
+      position: absolute;
+      left: -4.375em;
+      top: 0.9375em;
+      width: 9.375em;
+      height: 1.5625em;
+      -webkit-transform: rotate(90deg) !important;
+          -ms-transform: rotate(90deg) !important;
+              transform: rotate(90deg) !important; }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-zig-zag-right {
+      position: absolute;
+      top: auto;
+      bottom: 9.375em;
+      right: 0em;
+      width: 9.375em;
+      height: 1.5625em; }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-zig-zag-1 {
+      position: absolute;
+      top: 0em;
+      left: 0;
+      width: 128px;
+      height: 16px;
+      z-index: 2; }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-zig-zag-2 {
+      position: absolute;
+      top: 0.9375em;
+      left: 24px;
+      width: 128px;
+      height: 16px; }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-zig-zag-1, #ref-manager .ref-manager-start-earning-5 .ref-manager-zig-zag-2 {
+      overflow: hidden; }
+      #ref-manager .ref-manager-start-earning-5 .ref-manager-zig-zag-1 .ref-manager-inner, #ref-manager .ref-manager-start-earning-5 .ref-manager-zig-zag-2 .ref-manager-inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        -webkit-animation: scroll-left-s5 3s infinite linear;
+                animation: scroll-left-s5 3s infinite linear; }
+        #ref-manager .ref-manager-start-earning-5 .ref-manager-zig-zag-1 .ref-manager-inner:after, #ref-manager .ref-manager-start-earning-5 .ref-manager-zig-zag-2 .ref-manager-inner:after {
+          content: "";
+          height: 100%;
+          width: 500%;
+          position: absolute;
+          background-image: url(../img/zig-zag-white.svg);
+          -webkit-background-size: 18.9% 100%;
+                  background-size: 18.9% 100%;
+          top: 0; }
+
+@-webkit-keyframes scroll-left-s5 {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  to {
+    -webkit-transform: translateX(-113%);
+            transform: translateX(-113%); } }
+
+@keyframes scroll-left-s5 {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  to {
+    -webkit-transform: translateX(-113%);
+            transform: translateX(-113%); } }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-dots {
+      display: none; }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-icon-lines {
+      display: none; }
+    #ref-manager .ref-manager-start-earning-5 .ref-manager-scroll-img {
+      position: static;
+      left: 50%;
+      -webkit-animation-duration: 1.5s;
+              animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-name: scroll;
+              animation-name: scroll;
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease; }
+  #ref-manager .ref-manager-start-earning-5-mob {
+    background-color: #F91155;
+    font-size: 16px; }
+    @media (max-width: 992px) {
+      #ref-manager .ref-manager-start-earning-5-mob {
+        font-size: -webkit-calc(100vh / 40);
+        font-size: calc(100vh / 40); } }
+    #ref-manager .ref-manager-start-earning-5-mob .ref-manager-text-container {
+      width: 100%;
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-left: 0;
+      padding-top: 10em; }
+    #ref-manager .ref-manager-start-earning-5-mob .ref-manager-title {
+      margin-bottom: 2.8125em;
+      font-family: 'GTE-Bold', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 1.625em;
+      line-height: 1;
+      color: #fff;
+      letter-spacing: 0.02875em;
+      text-align: center; }
+    #ref-manager .ref-manager-start-earning-5-mob .ref-manager-text {
+      font-family: 'GTE-Regular', Arial;
+      font-size: 0.8125em;
+      line-height: 1.1;
+      text-align: center;
+      letter-spacing: 0.02875em;
+      color: #FFFFFF;
+      margin-bottom: 3.4375em; }
+    #ref-manager .ref-manager-start-earning-5-mob .ref-manager-zig-zag {
+      position: absolute;
+      width: 6.875em;
+      height: 1.0625em;
+      left: 0.375em;
+      top: 4.5em; }
+    #ref-manager .ref-manager-start-earning-5-mob .ref-manager-icon-lines {
+      position: absolute;
+      width: 0.5625em;
+      height: 5.375em;
+      right: 0.8125em;
+      bottom: 0.9375em;
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
+    #ref-manager .ref-manager-start-earning-5-mob .ref-manager-scroll-img {
+      position: static;
+      left: 50%;
+      -webkit-animation-duration: 1.5s;
+              animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-name: scroll;
+              animation-name: scroll;
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease; }
+
+@-webkit-keyframes zigzag {
+  0% {
+    background-position: left; }
+  100% {
+    background-position: 15.625em; } }
+
+@keyframes zigzag {
+  0% {
+    background-position: left; }
+  100% {
+    background-position: 15.625em; } }
+  #ref-manager .ref-manager-video {
+    font-size: 16px;
+    position: relative;
+    padding-top: 1.25em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-height: 100vh; }
+    @media (max-width: 1440px) {
+      #ref-manager .ref-manager-video {
+        font-size: -webkit-calc(100vh / 48.75);
+        font-size: calc(100vh / 48.75); } }
+    #ref-manager .ref-manager-video .ref-manager-container {
+      padding: 0;
+      width: 100%; }
+    #ref-manager .ref-manager-video .ref-manager-scroll-img {
+      position: absolute;
+      left: 4.0625em;
+      bottom: 2.8125em;
+      width: 1.25em;
+      height: 3.1875em;
+      z-index: 10;
+      -webkit-animation-duration: 1.5s;
+              animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-name: scroll;
+              animation-name: scroll;
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease; }
+    #ref-manager .ref-manager-video .ref-manager-menu {
+      position: relative;
+      z-index: 3;
+      margin-bottom: 1.375em; }
+      #ref-manager .ref-manager-video .ref-manager-menu .ref-manager-list {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+      #ref-manager .ref-manager-video .ref-manager-menu .ref-manager-item {
+        margin-right: 1em; }
+        #ref-manager .ref-manager-video .ref-manager-menu .ref-manager-item:nth-last-of-type(1) {
+          margin-right: 0; }
+      #ref-manager .ref-manager-video .ref-manager-menu .ref-manager-link {
+        font-family: 'GTE-Light', Arial, sans-serif;
+        font-weight: 400;
+        padding: 0.125em 1.0625em 0;
+        color: #979797;
+        font-size: 1em;
+        line-height: 2em;
+        border: 1px solid transparent;
+        letter-spacing: 0.00813em;
+        -webkit-border-radius: 0.125em;
+                border-radius: 0.125em; }
+        #ref-manager .ref-manager-video .ref-manager-menu .ref-manager-link:hover {
+          border-color: #979797; }
+        #ref-manager .ref-manager-video .ref-manager-menu .ref-manager-link:active {
+          background: rgba(151, 151, 151, 0.2);
+          border: 1px solid transparent; }
+        #ref-manager .ref-manager-video .ref-manager-menu .ref-manager-link.active {
+          background: rgba(151, 151, 151, 0.4);
+          border: 1px solid transparent;
+          pointer-events: none; }
+    #ref-manager .ref-manager-video .ref-manager-infographics {
+      width: 100%;
+      padding: 0 0.5em 1.25em 0.5em;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      #ref-manager .ref-manager-video .ref-manager-infographics .ref-manager-item {
+        position: relative;
+        margin-right: 6em; }
+        #ref-manager .ref-manager-video .ref-manager-infographics .ref-manager-item:nth-last-of-type(1) {
+          margin-right: 0; }
+        #ref-manager .ref-manager-video .ref-manager-infographics .ref-manager-item .ref-manager-red {
+          position: absolute;
+          top: -40px;
+          left: -210px;
+          width: 186px;
+          height: 186px;
+          background: url("../img/video/red.svg") no-repeat 50% 50%/contain; }
+        #ref-manager .ref-manager-video .ref-manager-infographics .ref-manager-item .ref-manager-blue {
+          position: absolute;
+          top: -40px;
+          left: 220px;
+          width: 186px;
+          height: 186px;
+          background: url("../img/video/blue.svg") no-repeat 50% 50%/contain; }
+        #ref-manager .ref-manager-video .ref-manager-infographics .ref-manager-item .ref-manager-red-small {
+          position: absolute;
+          top: -50px;
+          left: 250px;
+          width: 27px;
+          height: 27px;
+          background: url("../img/video/red-small.svg") no-repeat 50% 50%/contain; }
+      #ref-manager .ref-manager-video .ref-manager-infographics .ref-manager-text-bold {
+        font-family: 'GTE-Bold', Arial, sans-serif;
+        font-weight: 400;
+        font-size: 3em;
+        font-weight: normal;
+        color: #005BFF;
+        line-height: 1;
+        letter-spacing: 0.00813em;
+        padding: 0;
+        margin: 0;
+        margin-bottom: -0.125em; }
+      #ref-manager .ref-manager-video .ref-manager-infographics .ref-manager-text {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-family: 'GTE-Regular', Arial, sans-serif;
+        color: #242424;
+        font-size: 1.5em;
+        line-height: 0.9;
+        font-weight: normal;
+        letter-spacing: 0.00813em;
+        padding: 0;
+        min-height: 2.25em; }
+    #ref-manager .ref-manager-video .ref-manager-video-container {
+      position: relative;
+      height: 100%;
+      overflow: hidden; }
+    #ref-manager .ref-manager-video .ref-manager-video-wrap {
+      height: 100%; }
+      #ref-manager .ref-manager-video .ref-manager-video-wrap iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        border: none; }
+      #ref-manager .ref-manager-video .ref-manager-video-wrap .ref-manager-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000000;
+        z-index: 3;
+        cursor: pointer; }
+        #ref-manager .ref-manager-video .ref-manager-video-wrap .ref-manager-overlay.ref-manager-open {
+          height: -webkit-calc(100% - 50px);
+          height: calc(100% - 50px); }
+      #ref-manager .ref-manager-video .ref-manager-video-wrap .ref-manager-play {
+        position: absolute;
+        left: 49.5%;
+        top: 48.5%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        height: 6.4375em;
+        width: 6.4375em;
+        border: 0.15625em solid #fff;
+        -webkit-border-radius: 50%;
+                border-radius: 50%; }
+        #ref-manager .ref-manager-video .ref-manager-video-wrap .ref-manager-play::after {
+          content: '';
+          position: absolute;
+          left: 55%;
+          top: 50%;
+          -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+          width: 0;
+          height: 0;
+          border-top: 1.25em solid transparent;
+          border-left: 2.1875em solid #fff;
+          border-bottom: 1.25em solid transparent; }
+  #ref-manager .ref-manager-menu-mob {
+    font-size: 16px;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #E4E4E4;
+    z-index: 11;
+    padding: 1.375em 1em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    @media (max-width: 992px) {
+      #ref-manager .ref-manager-menu-mob {
+        font-size: -webkit-calc(100vh / 35.5);
+        font-size: calc(100vh / 35.5); } }
+    #ref-manager .ref-manager-menu-mob .ref-manager-list {
+      padding-left: 0;
+      margin-top: 0; }
+    #ref-manager .ref-manager-menu-mob .ref-manager-item {
+      margin-bottom: 2.0625em;
+      list-style: none; }
+      #ref-manager .ref-manager-menu-mob .ref-manager-item:nth-last-of-type(1) {
+        margin-bottom: 0; }
+    #ref-manager .ref-manager-menu-mob .ref-manager-link {
+      font-family: 'GTE-Bold';
+      font-weight: 400;
+      font-size: 1.5em;
+      line-height: 1.625em;
+      letter-spacing: 0.04375em;
+      color: #005BFF;
+      text-decoration: none; }
+    #ref-manager .ref-manager-menu-mob .ref-manager-menu-close {
+      position: absolute;
+      top: 1.375em;
+      right: 1.25em;
+      height: 1.25em;
+      width: 1.25em; }
+      #ref-manager .ref-manager-menu-mob .ref-manager-menu-close::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        width: 1.625em;
+        height: 0.0625em;
+        background-color: #797979; }
+      #ref-manager .ref-manager-menu-mob .ref-manager-menu-close::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+        width: 1.625em;
+        height: 1px;
+        background-color: #797979; }
+  #ref-manager .ref-manager-video-mob {
+    overflow: hidden;
+    position: relative;
+    padding-top: 1.5625em;
+    font-size: 16px; }
+    @media (max-width: 992px) {
+      #ref-manager .ref-manager-video-mob {
+        font-size: -webkit-calc(100vh / 40);
+        font-size: calc(100vh / 40); } }
+    #ref-manager .ref-manager-video-mob .ref-manager-menu-icon {
+      top: 0.625em !important; }
+    #ref-manager .ref-manager-video-mob .ref-manager-scroll-img {
+      position: absolute;
+      left: 4.0625em;
+      bottom: 2.8125em;
+      width: 1.25em;
+      height: 3.1875em;
+      z-index: 10; }
+    #ref-manager .ref-manager-video-mob .ref-manager-infographics {
+      padding-top: 5.5em;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      padding-bottom: 1.25em;
+      overflow-x: auto;
+      margin-bottom: 1.5625em; }
+      #ref-manager .ref-manager-video-mob .ref-manager-infographics .ref-manager-item {
+        position: relative;
+        margin: 0 0.625em;
+        -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+                flex-shrink: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; }
+        #ref-manager .ref-manager-video-mob .ref-manager-infographics .ref-manager-item::after {
+          content: '';
+          position: absolute;
+          right: -0.625em;
+          top: 0;
+          height: 2.25em;
+          width: 1px;
+          background-color: #E4E4E4; }
+        #ref-manager .ref-manager-video-mob .ref-manager-infographics .ref-manager-item:nth-last-of-type(1) {
+          padding-right: 0.625em; }
+          #ref-manager .ref-manager-video-mob .ref-manager-infographics .ref-manager-item:nth-last-of-type(1)::after {
+            content: none; }
+      #ref-manager .ref-manager-video-mob .ref-manager-infographics .ref-manager-text-bold {
+        font-family: 'GTE-Bold', Arial, sans-serif;
+        font-weight: 400;
+        font-size: 1.75em;
+        color: #005BFF;
+        line-height: 1.1;
+        letter-spacing: 0.00813em;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 0.1875em; }
+      #ref-manager .ref-manager-video-mob .ref-manager-infographics .ref-manager-text {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-family: 'GTE-Light', Arial, sans-serif;
+        color: #242424;
+        font-size: 0.75em;
+        line-height: 1;
+        font-weight: normal;
+        letter-spacing: 0.00813em;
+        padding: 0; }
+    #ref-manager .ref-manager-video-mob .ref-manager-video-wrap-mob {
+      position: relative;
+      z-index: 2;
+      background: #D8D8D8;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding-top: 4.375em;
+      padding-bottom: 3.75em; }
+      #ref-manager .ref-manager-video-mob .ref-manager-video-wrap-mob .ref-manager-title {
+        font-family: 'GTE-Bold', Arial, sans-serif;
+        font-weight: normal;
+        font-size: 1.625em;
+        line-height: 1;
+        text-align: center;
+        letter-spacing: 0.02875em;
+        color: #005BFF;
+        margin-bottom: 1.0625em; }
+      #ref-manager .ref-manager-video-mob .ref-manager-video-wrap-mob .ref-manager-btn {
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        font-family: 'GTE-Regular';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.125em;
+        line-height: 1.5em;
+        letter-spacing: 0.00813em;
+        color: #FFF;
+        background: #F91155;
+        -webkit-border-radius: 0.175em;
+                border-radius: 0.175em;
+        width: 11.125em;
+        height: 2.5em; }
+        #ref-manager .ref-manager-video-mob .ref-manager-video-wrap-mob .ref-manager-btn:hover {
+          background: #c41c4d; }
+        #ref-manager .ref-manager-video-mob .ref-manager-video-wrap-mob .ref-manager-btn::after {
+          content: '';
+          width: 0;
+          height: 0;
+          border-top: 0.4375em solid transparent;
+          border-left: 0.75em solid #fff;
+          border-bottom: 0.4375em solid transparent;
+          margin-left: 0.5625em; }
+      #ref-manager .ref-manager-video-mob .ref-manager-video-wrap-mob .ref-manager-icon-zig-zag {
+        position: absolute;
+        left: 1.25em;
+        top: 1.25em;
+        width: 5.3125em;
+        height: 1.25em; }
+    #ref-manager .ref-manager-video-mob .ref-manager-video-wrap {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      overflow: hidden;
+      max-height: 36.75em; }
+      #ref-manager .ref-manager-video-mob .ref-manager-video-wrap.ref-manager-open {
+        display: block; }
+      #ref-manager .ref-manager-video-mob .ref-manager-video-wrap iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        border: none; }
+      #ref-manager .ref-manager-video-mob .ref-manager-video-wrap .ref-manager-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: -webkit-calc(100% - 50px);
+        height: calc(100% - 50px);
+        opacity: 0;
+        background: #000000;
+        z-index: 3;
+        cursor: pointer; }
+      #ref-manager .ref-manager-video-mob .ref-manager-video-wrap .ref-manager-play {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        height: 2.625em;
+        width: 2.625em;
+        border: 1px solid #fff;
+        -webkit-border-radius: 50%;
+                border-radius: 50%; }
+        #ref-manager .ref-manager-video-mob .ref-manager-video-wrap .ref-manager-play::after {
+          content: '';
+          position: absolute;
+          left: 55%;
+          top: 50%;
+          -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+          width: 0;
+          height: 0;
+          border-top: 0.625em solid transparent;
+          border-left: 0.9375em solid #fff;
+          border-bottom: 0.625em solid transparent; }
+    #ref-manager .ref-manager-video-mob .ref-manager-icon-top {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 4.5625em;
+      width: 11.875em; }
+    #ref-manager .ref-manager-video-mob .ref-manager-icon-bottom {
+      position: absolute;
+      right: 0.5625em;
+      bottom: -0.0625em;
+      width: 14.875em;
+      height: 9.5em; }
+  #ref-manager .ref-manager-calculator {
+    position: relative;
+    font-size: 16px;
+    background: #E4E4E4;
+    padding-top: 1.5625em; }
+    @media (max-width: 1440px) {
+      #ref-manager .ref-manager-calculator {
+        font-size: -webkit-calc(100vh / 48.75);
+        font-size: calc(100vh / 48.75); } }
+    #ref-manager .ref-manager-calculator .ref-manager-scroll-img {
+      position: absolute;
+      left: 4.0625em;
+      bottom: 2.8125em;
+      width: 1.25em;
+      height: 3.1875em;
+      z-index: 10;
+      -webkit-animation-duration: 1.5s;
+              animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-name: scroll;
+              animation-name: scroll;
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease; }
+    #ref-manager .ref-manager-calculator .ref-manager-menu {
+      margin-bottom: 4.0625em; }
+      #ref-manager .ref-manager-calculator .ref-manager-menu .ref-manager-list {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+      #ref-manager .ref-manager-calculator .ref-manager-menu .ref-manager-item {
+        margin-right: 1em; }
+        #ref-manager .ref-manager-calculator .ref-manager-menu .ref-manager-item:nth-last-of-type(1) {
+          margin-right: 0; }
+      #ref-manager .ref-manager-calculator .ref-manager-menu .ref-manager-link {
+        font-family: 'GTE-Light', Arial, sans-serif;
+        font-weight: normal;
+        padding: 0.125em 1.0625em 0;
+        color: #979797;
+        font-size: 1em;
+        line-height: 2em;
+        border: 1px solid transparent;
+        letter-spacing: 0.00833em;
+        -webkit-border-radius: 0.125em;
+                border-radius: 0.125em; }
+        #ref-manager .ref-manager-calculator .ref-manager-menu .ref-manager-link:hover {
+          border-color: #979797; }
+        #ref-manager .ref-manager-calculator .ref-manager-menu .ref-manager-link:active {
+          background: rgba(151, 151, 151, 0.2);
+          border: 1px solid transparent; }
+        #ref-manager .ref-manager-calculator .ref-manager-menu .ref-manager-link.active {
+          background: rgba(151, 151, 151, 0.4);
+          border: 1px solid transparent;
+          pointer-events: none; }
+    #ref-manager .ref-manager-calculator .ref-manager-content {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    #ref-manager .ref-manager-calculator .ref-manager-text-container {
+      width: 41.875em;
+      margin-left: 0; }
+      #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-title {
+        font-family: 'GTE-Bold', Arial, sans-serif;
+        font-weight: normal;
+        color: #005BFF;
+        font-size: 3em;
+        padding-top: 0.125em;
+        margin-bottom: 0.25em;
+        line-height: 1;
+        letter-spacing: 0.00937em; }
+      #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-list {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        padding-left: 0.75em; }
+      #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-item {
+        position: relative;
+        max-width: 10em;
+        margin-right: 7em;
+        margin-bottom: -2.875em; }
+        #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-item .ref-manager-icon-round {
+          display: block;
+          width: 6.25em;
+          height: 6.25em;
+          position: relative;
+          z-index: 2; }
+          #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-item .ref-manager-icon-round.ref-manager-icon-round-left {
+            top: 2.75em;
+            left: -3.875em; }
+          #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-item .ref-manager-icon-round.ref-manager-icon-round-right {
+            top: 3.5625em;
+            right: -3.75em; }
+        #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-item .ref-manager-icon {
+          position: absolute;
+          display: block;
+          width: 6.25em;
+          height: 5em;
+          z-index: 3; }
+          #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-item .ref-manager-icon.ref-manager-icon-left {
+            top: 0.375em;
+            left: -0.625em; }
+          #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-item .ref-manager-icon.ref-manager-icon-right {
+            top: 0.625em;
+            right: -0.75em; }
+        #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-item:nth-of-type(odd) {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-align: start;
+          -webkit-align-items: flex-start;
+              -ms-flex-align: start;
+                  align-items: flex-start; }
+          #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-item:nth-of-type(odd):after {
+            position: absolute;
+            right: 0;
+            top: 0.625em;
+            font-family: 'GTE-Regular', Arial, sans-serif;
+            font-weight: normal;
+            color: #D9D9D9;
+            font-size: 12.5em;
+            z-index: 1;
+            line-height: 1; }
+        #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-item:nth-of-type(even) {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-align: end;
+          -webkit-align-items: flex-end;
+              -ms-flex-align: end;
+                  align-items: flex-end;
+          margin-top: 2.9375em; }
+          #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-item:nth-of-type(even) .ref-manager-text {
+            text-align: right; }
+          #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-item:nth-of-type(even):after {
+            position: absolute;
+            left: 0;
+            top: 0.625em;
+            font-family: 'GTE-Regular', Arial, sans-serif;
+            font-weight: normal;
+            color: #D9D9D9;
+            font-size: 12.5em;
+            z-index: 1;
+            line-height: 1; }
+        #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-item:nth-of-type(1)::after {
+          content: '1';
+          top: 0.125em; }
+        #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-item:nth-of-type(2)::after {
+          content: '2';
+          left: -0.0625em;
+          top: 0.21875em; }
+        #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-item:nth-of-type(3)::after {
+          content: '3';
+          right: -0.0625em;
+          top: 0.1875em; }
+        #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-item:nth-of-type(3) .ref-manager-icon-round-left {
+          left: -3.5625em;
+          top: 2em; }
+        #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-item:nth-of-type(4) {
+          margin-top: 5em; }
+          #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-item:nth-of-type(4)::after {
+            content: '4';
+            left: -0.0625em;
+            top: 0.125em; }
+          #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-item:nth-of-type(4) .ref-manager-icon .ref-manager-icon-right {
+            right: -1.6875em; }
+          #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-item:nth-of-type(4) .ref-manager-icon-round-right {
+            top: 1.75em;
+            right: -3.75em; }
+      #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-text {
+        position: relative;
+        font-family: 'GTE-Regular', Arial, sans-serif;
+        font-weight: normal;
+        font-size: 1em;
+        line-height: 1.15;
+        z-index: 2;
+        max-width: 10em;
+        letter-spacing: 0.02875em; }
+        #ref-manager .ref-manager-calculator .ref-manager-text-container .ref-manager-text .ref-manager-blue {
+          color: #005BFF; }
+    #ref-manager .ref-manager-calculator .ref-manager-income-calculator {
+      position: relative;
+      z-index: 2;
+      padding-left: 1.25em;
+      padding-top: 0.9375em;
+      width: -webkit-calc(50% - 1.25rem);
+      width: calc(50% - 1.25rem);
+      margin-right: 0.625rem;
+      margin-left: 0.625rem;
+      margin-top: -0.625em;
+      margin-left: 1.875em;
+      margin-right: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-main-bg {
+        width: 34.8125em;
+        height: 36.0625em;
+        position: absolute;
+        left: 0;
+        top: -2.1875em;
+        background: #fff;
+        z-index: -1;
+        -webkit-transform: translateY(25px);
+            -ms-transform: translateY(25px);
+                transform: translateY(25px); }
+      #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-main-bg-blue {
+        width: 35.0625em;
+        height: 34.4375em;
+        position: absolute;
+        right: -4.6875em;
+        top: -2.5em;
+        background: url(../img/calculator/calculator-main-bg-blue.svg) no-repeat 50% 50%/contain;
+        z-index: -2; }
+      #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-dots {
+        width: 10.75em;
+        height: 10.75em;
+        position: absolute;
+        right: -5.625em;
+        bottom: 5.125em;
+        background: url(../img/calculator/dots.svg) no-repeat 50% 50%/contain;
+        z-index: -3; }
+      #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-title {
+        font-family: 'GTE-Bold', Arial, sans-serif;
+        font-weight: normal;
+        font-size: 2.875em;
+        line-height: 1;
+        color: #F91155;
+        margin-bottom: 0.75em;
+        position: relative;
+        letter-spacing: 0.02875em; }
+        #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-title .ref-manager-zig-zag-1 {
+          position: absolute;
+          top: 0.9375em;
+          right: 1.125em;
+          width: 2.25em;
+          height: 0.3125em;
+          z-index: 2; }
+        #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-title .ref-manager-zig-zag-2 {
+          position: absolute;
+          top: 1.25em;
+          right: 0.6875em;
+          width: 2.25em;
+          height: 0.3125em; }
+        #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-title .ref-manager-zig-zag-1, #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-title .ref-manager-zig-zag-2 {
+          overflow: hidden; }
+          #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-title .ref-manager-zig-zag-1 .ref-manager-inner, #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-title .ref-manager-zig-zag-2 .ref-manager-inner {
+            width: 98%;
+            height: 100%;
+            position: relative;
+            -webkit-animation: scroll-left 3s infinite linear;
+                    animation: scroll-left 3s infinite linear; }
+            #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-title .ref-manager-zig-zag-1 .ref-manager-inner:after, #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-title .ref-manager-zig-zag-2 .ref-manager-inner:after {
+              content: "";
+              height: 0.3125em;
+              width: 500%;
+              position: absolute;
+              background-image: url(../img/calculator/zig-zag.svg);
+              -webkit-background-size: 19.5% 100%;
+                      background-size: 19.5% 100%;
+              background-repeat-y: no-repeat;
+              top: 0; }
+
+@-webkit-keyframes scroll-left {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  to {
+    -webkit-transform: translateX(-99%);
+            transform: translateX(-99%); } }
+
+@keyframes scroll-left {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  to {
+    -webkit-transform: translateX(-99%);
+            transform: translateX(-99%); } }
+      #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-row {
+        width: 100%;
+        margin-bottom: 1.0625em;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+      #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-description {
+        font-family: 'GTE-Thin';
+        font-weight: normal;
+        color: #888888;
+        font-size: 1em;
+        line-height: 1.2;
+        margin-bottom: 1.875em;
+        font-style: italic;
+        letter-spacing: 0.04688em; }
+      #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-income {
+        font-family: 'GTE-Bold';
+        font-weight: normal;
+        font-size: 2em;
+        line-height: 1.2;
+        letter-spacing: 0.02937em; }
+      #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-result {
+        font-family: 'GTE-Bold', Arial, sans-serif;
+        color: #1161fa;
+        font-weight: normal;
+        font-size: 2.25em;
+        line-height: 1.15;
+        letter-spacing: 0.02875em; }
+      #ref-manager .ref-manager-calculator .ref-manager-income-calculator input {
+        width: 4.75em;
+        height: 2.125em;
+        border: 1px solid #E4E4E4;
+        -webkit-border-radius: 0.125em;
+                border-radius: 0.125em;
+        padding: 0.3em 0.625em 0;
+        outline: none;
+        font-family: GTE-Thin, Arial, sans-serif;
+        font-weight: normal;
+        font-size: 1em;
+        line-height: 1.1875em;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -moz-appearance: textfield;
+        -webkit-appearance: none; }
+        #ref-manager .ref-manager-calculator .ref-manager-income-calculator input:focus {
+          background-color: #E4E4E4; }
+        #ref-manager .ref-manager-calculator .ref-manager-income-calculator input::-webkit-outer-spin-button, #ref-manager .ref-manager-calculator .ref-manager-income-calculator input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0; }
+      #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-label {
+        font-family: 'GTE-Regular', Arial, sans-serif;
+        max-width: 14.6875em;
+        margin-right: 1.25em;
+        font-size: 1em;
+        line-height: 1.2;
+        letter-spacing: 0.02875em; }
+      #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-slider-wrap {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 100%;
+        max-width: 15.9375em;
+        overflow: hidden; }
+      #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-slider {
+        width: 10.3125em;
+        margin-right: 1.25em; }
+      #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ui-widget.ui-widget-content {
+        height: 0.125em;
+        background-color: #E4E4E4;
+        border-color: #E4E4E4; }
+      #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ui-slider-handle {
+        height: 0.75em;
+        width: 0.75em;
+        background: #f61b58 !important;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        border: 0 !important;
+        top: 50% !important;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        outline: none;
+        margin: 0;
+        position: absolute;
+        cursor: pointer; }
+        #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ui-slider-handle:before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: -15.625em;
+          width: 15.625em;
+          height: 0.125em;
+          background: #246afa;
+          -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+                  transform: translateY(-50%); }
+        #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ui-slider-handle::after {
+          content: "";
+          height: 1.5625em;
+          width: 1.5625em;
+          background-color: transparent;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+          -webkit-border-radius: 50%;
+                  border-radius: 50%; }
+      #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-btn {
+        font-family: 'GTE-Regular', Arial, sans-serif;
+        text-align: center;
+        color: #FFF;
+        background: #F91155;
+        -webkit-border-radius: 0.125em;
+                border-radius: 0.125em;
+        padding: 0.9375em;
+        margin: 0 auto;
+        margin-top: 0.625em;
+        font-size: 1.5em;
+        line-height: 1;
+        letter-spacing: 0.00813em;
+        width: 13.3125em;
+        height: 3em;
+        border: 0.125em solid #F91155;
+        margin-bottom: 0.9375em; }
+        #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-btn:hover {
+          background-color: #c41c4d;
+          border-color: #c41c4d; }
+      #ref-manager .ref-manager-calculator .ref-manager-income-calculator .ref-manager-footnote {
+        color: #888888;
+        line-height: 1.2;
+        margin-bottom: 1.5625em;
+        margin-left: -1.5625em;
+        font-family: 'GTE-Thin', Arial, sans-serif;
+        font-weight: 100;
+        font-size: 0.625em;
+        letter-spacing: 0.075em; }
+  #ref-manager .ref-manager-calculator-mob {
+    position: relative;
+    font-size: 16px; }
+    @media (max-width: 992px) {
+      #ref-manager .ref-manager-calculator-mob {
+        font-size: -webkit-calc(100vh / 40);
+        font-size: calc(100vh / 40); } }
+    #ref-manager .ref-manager-calculator-mob .swiper-container {
+      height: 100%; }
+    #ref-manager .ref-manager-calculator-mob .swiper-slide {
+      padding-top: 2em; }
+    #ref-manager .ref-manager-calculator-mob .swiper-pagination {
+      left: 50%;
+      width: 95%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      padding-top: 0.8125em;
+      padding-bottom: 1.0625em;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    #ref-manager .ref-manager-calculator-mob .swiper-pagination-bullet {
+      height: 0.125em;
+      margin: 0 0.125em;
+      opacity: 1;
+      background: rgba(121, 121, 121, 0.4);
+      -webkit-border-radius: 0;
+              border-radius: 0;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+    #ref-manager .ref-manager-calculator-mob .swiper-pagination-bullet-active {
+      background: #797979;
+      width: 6em;
+      height: 0.125em;
+      margin-right: 0.25em;
+      -webkit-border-radius: 0;
+              border-radius: 0; }
+    #ref-manager .ref-manager-calculator-mob .ref-manager-title {
+      font-family: 'GTE-Bold', Arial, sans-serif;
+      color: #005BFF;
+      font-size: 1.625em;
+      font-weight: normal;
+      line-height: 1;
+      padding-left: 0.4375em;
+      padding-top: 0.125em;
+      margin-bottom: 1.6875em;
+      letter-spacing: 0.02875em; }
+    #ref-manager .ref-manager-calculator-mob .ref-manager-swipe {
+      position: absolute;
+      right: 0.8125em;
+      top: 5.625em;
+      width: 2.3125em;
+      height: 1.25em;
+      -webkit-animation-duration: 1.5s;
+              animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-name: scroll-right-dark;
+              animation-name: scroll-right-dark;
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease; }
+    #ref-manager .ref-manager-calculator-mob .ref-manager-list {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    #ref-manager .ref-manager-calculator-mob .ref-manager-item {
+      position: relative;
+      margin-bottom: 5.3125em;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-item:nth-of-type(odd) {
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        text-align: left; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-item:nth-of-type(even) {
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        text-align: right; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-item-1::after {
+        content: '';
+        position: absolute;
+        left: -5.625em;
+        top: -0.125em;
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
+        height: 8.125em;
+        width: 8.125em;
+        background: url("../img/startEarning/start-earning-icon-o.svg") no-repeat center top/contain; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-item-1::before {
+        content: '1';
+        position: absolute;
+        right: -0.21875em;
+        top: -0.0625em;
+        font-family: 'GTE-Regular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12.5em;
+        line-height: 1;
+        text-align: right;
+        letter-spacing: 0.36458em;
+        color: #797979;
+        opacity: 0.1; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-item-1 .icon {
+        width: 4.375em;
+        height: 4.125em; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-item-2 {
+        margin-right: 5em; }
+        #ref-manager .ref-manager-calculator-mob .ref-manager-item-2::after {
+          content: '';
+          position: absolute;
+          right: -5.625em;
+          top: 0.9375em;
+          height: 8.125em;
+          width: 8.125em;
+          background: url("../img/startEarning/start-earning-icon-o.svg") no-repeat center top/contain; }
+        #ref-manager .ref-manager-calculator-mob .ref-manager-item-2::before {
+          content: '2';
+          position: absolute;
+          left: 0.0625em;
+          top: -0.0625em;
+          font-family: 'GTE-Regular';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12.5em;
+          line-height: 1;
+          text-align: right;
+          letter-spacing: 0.36458em;
+          color: #797979;
+          opacity: 0.1; }
+        #ref-manager .ref-manager-calculator-mob .ref-manager-item-2 .icon {
+          width: 4.375em;
+          height: 3.3125em; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-item-3 {
+        margin-top: 2.8125em; }
+        #ref-manager .ref-manager-calculator-mob .ref-manager-item-3::after {
+          content: '';
+          position: absolute;
+          left: -5.5em;
+          top: -1.25em;
+          -webkit-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+                  transform: rotate(180deg);
+          height: 8.125em;
+          width: 8.125em;
+          background: url("../img/startEarning/start-earning-icon-o.svg") no-repeat center top/contain; }
+        #ref-manager .ref-manager-calculator-mob .ref-manager-item-3::before {
+          content: '3';
+          position: absolute;
+          right: -0.375em;
+          top: 0em;
+          font-family: 'GTE-Regular';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12.5em;
+          line-height: 1;
+          text-align: right;
+          letter-spacing: 0.36458em;
+          color: #797979;
+          opacity: 0.1; }
+        #ref-manager .ref-manager-calculator-mob .ref-manager-item-3 .ref-manager-icon {
+          width: 4.375em;
+          height: 3.3125em; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-item-4 {
+        margin-top: -0.3125em;
+        margin-right: 5em; }
+        #ref-manager .ref-manager-calculator-mob .ref-manager-item-4::after {
+          content: '';
+          position: absolute;
+          right: -5.625em;
+          top: 0.625em;
+          height: 8.125em;
+          width: 8.125em;
+          background: url("../img/startEarning/start-earning-icon-o.svg") no-repeat center top/contain; }
+        #ref-manager .ref-manager-calculator-mob .ref-manager-item-4::before {
+          content: '4';
+          position: absolute;
+          left: 0em;
+          top: -0.0625em;
+          font-family: 'GTE-Regular';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12.5em;
+          line-height: 1;
+          text-align: right;
+          letter-spacing: 0.36458em;
+          color: #797979;
+          opacity: 0.1; }
+        #ref-manager .ref-manager-calculator-mob .ref-manager-item-4 .ref-manager-icon {
+          width: 2.625em;
+          height: 3.4375em; }
+    #ref-manager .ref-manager-calculator-mob .ref-manager-icon {
+      margin-bottom: 1.4375em;
+      position: relative;
+      z-index: 2; }
+    #ref-manager .ref-manager-calculator-mob .ref-manager-text {
+      position: relative;
+      font-family: 'GTE-Regular', Arial, sans-serif;
+      font-size: 0.875em;
+      letter-spacing: 0.02875em;
+      line-height: 1.1;
+      z-index: 2;
+      max-width: 13.125em; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-text .ref-manager-blue {
+        color: #005BFF; }
+    #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator-title {
+      font-family: 'GTE-Bold', Arial, sans-serif;
+      font-weight: normal;
+      font-size: 1.625em;
+      line-height: 1;
+      color: #F91155;
+      margin-bottom: 4.3125em;
+      letter-spacing: 0.02875em; }
+    #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator {
+      width: 20em;
+      position: relative;
+      z-index: 0;
+      padding-top: 0px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin: 0 auto; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator::after {
+        content: "";
+        width: 19.375em;
+        height: 27.3125em;
+        position: absolute;
+        left: 0.625em;
+        top: -7.5em;
+        background-image: url("../img/calculator/calculator-back-mob.svg");
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+                background-size: contain;
+        z-index: -1; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator .ref-manager-col {
+        width: 100%;
+        margin-bottom: 1.0625em;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 0 1.25em; }
+        #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator .ref-manager-col:nth-last-of-type(1) {
+          margin-bottom: 0.5em; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator .ref-manager-row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 0 1.25em;
+        margin-bottom: 0.3125em; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator .ref-manager-description {
+        font-family: 'GTE-Thin', Arial, sans-serif;
+        font-weight: 300;
+        color: #888888;
+        font-size: 0.55em;
+        margin-bottom: 0.625em;
+        font-style: italic;
+        padding: 0 2.25em;
+        letter-spacing: 0.1em; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator .ref-manager-income {
+        font-family: 'GTE-Bold', Arial, sans-serif;
+        font-weight: normal;
+        font-size: 1.125em;
+        line-height: 1.3125em;
+        letter-spacing: 0.02875em; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator .ref-manager-result {
+        font-family: 'GTE-Bold', Arial, sans-serif;
+        color: #1161fa;
+        font-size: 1.375em;
+        font-weight: normal;
+        line-height: 1.625em;
+        letter-spacing: 0.02875em; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator input {
+        width: 5em;
+        height: 1.875em;
+        border: 1px solid #E4E4E4;
+        -webkit-border-radius: 0.125em;
+                border-radius: 0.125em;
+        padding: 0 0.625em;
+        outline: none;
+        font-family: GTE-Thin, Arial, sans-serif;
+        font-weight: normal;
+        font-size: 0.75em;
+        line-height: 1.1875em;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+                flex-shrink: 0;
+        -webkit-appearance: none; }
+        #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator input:focus {
+          background-color: #E4E4E4; }
+        #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator input::-webkit-outer-spin-button, #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator .ref-manager-label {
+        font-family: 'GTE-Regular', Arial, sans-serif;
+        max-width: 100%;
+        font-size: 0.625em;
+        line-height: 1;
+        letter-spacing: 0.02875em;
+        margin-bottom: -0.5em; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator .ref-manager-slider-wrap {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator .ref-manager-slider {
+        width: 15em;
+        margin-right: 0.9375em; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator .ui-widget.ui-widget-content {
+        height: 0.125em;
+        background-color: #E4E4E4;
+        border-color: #E4E4E4; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator .ui-slider-handle {
+        height: 0.625em;
+        width: 0.625em;
+        background: #f61b58 !important;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        border: 0 !important;
+        top: 50% !important;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        outline: none;
+        margin: 0;
+        position: absolute;
+        cursor: pointer; }
+        #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator .ui-slider-handle:before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: -15.625em;
+          width: 15.625em;
+          height: 0.125em;
+          background: #246afa;
+          -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+                  transform: translateY(-50%); }
+        #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator .ui-slider-handle:after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+          height: 15px;
+          width: 15px;
+          -webkit-border-radius: 50%;
+                  border-radius: 50%;
+          background-color: transparent; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator .ref-manager-btn {
+        font-family: 'GTE-Regular', Arial, sans-serif;
+        color: #FFF;
+        font-size: 1.125em;
+        background: #F91155;
+        -webkit-border-radius: 0.1875em;
+                border-radius: 0.1875em;
+        padding: 0.9375em 3.8125em;
+        margin: 0 auto;
+        margin-top: 0em;
+        margin-bottom: 0.625em;
+        width: 13.875em;
+        letter-spacing: 0.00813em; }
+        #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator .ref-manager-btn:hover {
+          background: #c41c4d; }
+      #ref-manager .ref-manager-calculator-mob .ref-manager-income-calculator .ref-manager-footnote {
+        font-family: 'GTE-Regular', Arial, sans-serif;
+        color: #888888;
+        font-size: 0.625em;
+        line-height: 1.2;
+        margin-bottom: 1.5625em;
+        letter-spacing: 0.01875em;
+        padding: 0 0.9375em; }
+    #ref-manager .ref-manager-calculator-mob .ref-manager-scroll-icon {
+      position: absolute;
+      right: 1.25em;
+      top: 5.625em;
+      width: 1.25em;
+      height: 3.1875em;
+      -webkit-animation-duration: 1.5s;
+              animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-name: scroll;
+              animation-name: scroll;
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease; }
+
+@-webkit-keyframes shift {
+  0% {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  16.66% {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0); }
+  50% {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translate3d(0, 5px, 0);
+            transform: translate3d(0, 5px, 0); }
+  83.34% {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0); }
+  100% {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@keyframes shift {
+  0% {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  16.66% {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0); }
+  50% {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translate3d(0, 5px, 0);
+            transform: translate3d(0, 5px, 0); }
+  83.34% {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0); }
+  100% {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
