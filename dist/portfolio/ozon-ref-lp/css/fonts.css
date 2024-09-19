@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'GTE-Bold';
+  font-display: swap;
+  src: url("../fonts/GTEestiProDisplay-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'GTE-Light';
+  font-display: swap;
+  src: url("../fonts/GTEestiProDisplay-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: 'GTE-LightItalic';
+  font-display: swap;
+  src: url("../fonts/GTEestiProDisplay-LightItalic.woff") format("woff"); }
+
+@font-face {
+  font-family: 'GTE-Medium';
+  font-display: swap;
+  src: url("../fonts/GTEestiProDisplay-Medium.woff") format("woff"); }
+
+@font-face {
+  font-family: 'GTE-Regular';
+  font-display: swap;
+  src: url("../fonts/GTEestiProDisplay-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'GTE-Thin';
+  font-display: swap;
+  src: url("../fonts/GTEestiProDisplay-Thin.woff") format("woff"); }
+
+@font-face {
+  font-family: 'GTEProText-Regular';
+  font-display: swap;
+  src: url("../fonts/GTEestiProText-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'GTEProText-Bold';
+  font-display: swap;
+  src: url("../fonts/GTEestiProText-Bold.woff") format("woff"); }

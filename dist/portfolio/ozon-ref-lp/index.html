@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>ozon-ref</title>
+    <link data-n-head="true" rel="icon" type="image/x-icon" href="./img/favicon.ico">
+	<link rel="stylesheet" href="./css/main.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" integrity="sha256-XwfUNXGiAjWyUGBhyXKdkRedMrizx1Ejqo/NReYNdUE=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/vendors.css">
+</head>
+<body>
+
+    <style>@keyframes  rotate{0%{transform: rotate(0deg);}50%{transform: rotate(180deg);}100%{transform: rotate(360deg);}} @keyframes  rotate2{0%{transform: rotate(0deg); border-top-color: #005BFF;}50%{transform: rotate(180deg); border-top-color: #F91155;}100%{transform: rotate(360deg); border-top-color: #F91155;}}.pre-loader{width: 100%; height: 100%; margin: 0; padding: 0; background: #fff; position: fixed; left: 0; right: 0; top: 0; bottom: 0; z-index: 999;}.pre-loader .wrapper{left: 50%; top: 50%; position: absolute; transform: translateX(-50%) translateY(-50%);}.pre-loader .inner, .pre-loader .inner div{border-radius: 50%; border: 3px solid transparent; padding: 6px; animation: rotate2 4s infinite linear;}.pre-loader .inner, .pre-loader .inner *{will-change: transform;}</style><div class="pre-loader"> <div class="wrapper"> <div class="inner"> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+
+    <div id="ref-manager">
+
+        <div id="ref-manager-question" class="modal-box">
+            <div class="inner inner-custom">
+                <button class="close close-custom"></button>
+                <p class="ref-manager-info-text">
+                    Пожалуйста, заполните недостающую информацию в&nbsp;Личном&nbsp;кабинете
+                </p>
+                <div class="ref-manager-btn-wrap">
+                    <a  class="ref-manager-btn ref-manager-btn-red ref-manager-js-submit" href="https://www.ozon.ru/" target="_blank">Войти</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="ref-manager-ooops" class="modal-box">
+            <div class="inner inner-custom">
+                <button class="close close-custom"></button>
+                <p class="ref-manager-info-text">
+                    Упс! Вы не можете зарегистрироваться в&nbsp;реферальной программе, пока сумма ваших&nbsp;трат на&nbsp;Ozon.ru меньше&nbsp;2&nbsp;500 рублей. Возвращайтесь к&nbsp;регистрации, после покупок&nbsp;:)
+                </p>
+            </div>
+        </div>
+
+        <div id="ref-manager-faq" class="modal-box">
+            <div class="inner inner-custom">
+                <button class="close close-custom"></button>
+                <div class="ref-manager-faq-list-wrap">
+                    <div class="ref-manager-title">Вопросы-ответы</div>
+                    <ul id="ref-manager-faq-list" class="ref-manager-faq-list">
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">Что такое реферальная программа?</h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Реферальная программа – это маркетинговая акция, позволяющая получать вознаграждение баллами от покупок, которые совершают пользователи на OZON, используя ваш уникальный реферальный промокод или уникальную реферальную ссылку.
+                                </p>
+                                <p>
+                                    Пользователями могут быть: родственники, друзья, подписчики и любой другой человек.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Кто такой Менеджер OZON?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Менеджерами мы называем клиентов OZON, которые стали  участникам реферальной программы.
+
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Кто такой успешный Менеджер OZON?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Успешный Менеджер – участник, достигший определенного уровня по обороту заказов привлеченных клиентов.
+                                </p>
+                                <p>
+                                    Таким Менеджерам доступны варианты дополнительного поощрения и вознаграждения.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">Как стать Менеджером OZON?</h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Для участия в реферальной программе необходимо:
+                                </p>
+                                <p>
+                                    1) Быть старше 18 лет <br>
+                                    2) Быть зарегистрированным на OZON <br>
+                                    3) Совершить покупку на сумму не менее 2 500 рублей без учета баллов* <br>
+                                    4) Заполнить анкету на странице реферальной программы ozon.ru/manager
+                                </p>
+                                <p>*Для участия в программе, сумма покупки должна составлять не менее 2 500 рублей. Частично или полностью компенсировать эту сумму баллами и бонусами “Спасибо” нельзя.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Вы оформляете по трудовой книжке?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Так как реферальная программа – это маркетинговая акция, участие в ней не влечет возникновения договорных отношений.
+                                </p>
+                                <p>
+                                    Поэтому, участники реферальной программы не оформляются по трудовому или гражданско-правовому договору.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Какие документы необходимы для участия в реферальной программе?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Для участия в программе, документы не нужны, просто заполните анкету на странице ozon.ru/manager, в соответствии с паспортными данными.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Могу ли я стать Менеджером, если я индивидуальный предприниматель?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Индивидуальный предприниматель может стать Менеджером реферальной программы.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Могу ли я участвовать в реферальной программе, если я не живу в РФ?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Можно участвовать в программе и жить за пределами РФ.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Кто такие клиенты?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Клиенты – это пользователи, привлеченные Менеджером.
+                                </p>
+                                <p>Клиенты совершают покупки, используя реферальный промокод, а Менеджер получает вознаграждение в форме баллов на счет.</p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Что такое реферальный промокод и как я могу его получить?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Реферальный промокод – это уникальный код, благодаря которому Менеджеру начисляются баллы после совершения покупок его клиентами.
+                                </p>
+                                <p>Промокод можно найти в бизнес кабинете, сразу после регистрации в программе.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Могу ли я одновременно участвовать в партнерской программе и в реферальной?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Участие в двух программах сразу запрещено.
+                                </p>
+                                <p>Если вы являетесь участником партнерской программы и хотите участвовать в реферальной, то будьте готовы к тому, что мы попросим вас отказаться от участия в партнерской. А заработанные баллы в период участия в обеих программах могут быть аннулированы.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Могу ли я использовать реферальный промокод в партнерской программе?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Использовать реферальный промокод в партнерской программе запрещено.
+                                </p>
+                                <p>Мы следим за выполнением этого условия. В случае обнаружения нарушения правил – ваш аккаунт может быть заблокирован, а заработанные баллы запрещенными методами будут аннулированы.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Как я могу заработать на реферальной программе?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    В реферальной программе есть несколько путей получения вознаграждения. При желании, можно использовать один или несколько из них:
+                                </p>
+                                <p><b>1) Привлекайте новых клиентов</b></p>
+                                <p>Вы получаете 500 баллов за нового клиента, который впервые совершит покупку на OZON (одну или несколько) на сумму
+                                    от 2 500 рублей.
+                                </p>
+                                <p><b>2)   Мотивируйте клиентов покупать больше</b></p>
+                                <p>Чем больше покупают клиенты по вашему реферальному промокоду, тем больше ваше вознаграждение.
+                                </p>
+                                <p>Подробнее о вознаграждениях вы можете узнать в Бизнес кабинете Менеджера.
+                                </p>
+                                <p><b>3)   Участвуйте в заданиях
+                                </b></p>
+                                <p>В рамках реферальной программы можно получать баллы участвуя в заданиях от OZON, брендов, представленных на сайте, а также от партнеров OZON.
+                                </p>
+                                <p>С доступными для вас заданиями вы можете ознакомиться в Бизнес кабинете Менеджера.
+                                </p>
+                                <p>Например, бренд назначает задание на продажу пылесосов. Где за один проданный пылесос Менеджер может получить 300 баллов. Чем больше пылесосов продадите – тем больше баллов получите.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Как я могу отследить свои результаты?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Вся статистика по доходу и прогрессу отражена в бизнес кабинете.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Как я могу получить
+                                    Mercedes-Benz?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Стать обладателями автомобиля Mercedes-Benz могут активные и целеустремленные Менеджеры OZON, которые выполнят ряд условий реферальной программы.
+                                </p>
+                                <p>Условия, выполнение которых обязательно для получения  Mercedes-Benz вы можете узнать в Бизнес кабинете Менеджера.</p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Как происходит
+                                    начисление
+                                    баллов?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Заработанные вами баллы рассчитываются с первого по последнее число текущего месяца и начисляются на ваш балльный счет в следующем месяце пятнадцатого числа.
+
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    1 балл – это сколько?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    1 балл OZON = 1 рублю.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Как потратить?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Баллами можно оплатить до 100% стоимости заказа на ozon.ru или  вывести баллы в рубли.
+                                </p>
+                                <p>Вывести баллы в рубли может только индивидуальный предприниматель или самозанятый. Для вывода средств необходимо оформить гражданско-правовой договор возмездного оказания услуг. Подробные условия заключения договора читайте в Бизнес кабинете Менеджера.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Есть ли ограничения по количеству баллов, которые я могу получить?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Ограничений по количеству баллов, которые вы можете заработать, нет. Размер вознаграждения зависит только от Менеджера.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Какие рекламные материалы я могу использовать?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Менеджеру доступны изображения всех товаров на сайте Ozon.ru, а также рекламные материалы, которые размещены в Бизнес кабинете.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Как я могу продвигать свой реферальный промокод?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Продвигать реферальный промокод легко: делитесь им в социальных сетях, мессенджерах, sms-сообщениях с семьей, друзьями, друзьями друзей, коллегами и другими пользователями.
+                                </p>
+                                <p>Условиями программы запрещены любые платные каналы привлечения трафика, а также массовые спам-рассылки.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Что такое баллбэк?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Баллбэк – это возврат процента от суммы покупок Менеджера на его счет.
+                                </p>
+                                <p>Баллбэк активируется в кабинете менеджера после выполнения условий.  Об условиях, выполнение которых обязательно для активации, читайте в Бизнес Кабинете.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Сгорят ли ранее мной накопленные баллы на личном счете?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Баллы остаются на вашем счете.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Должен ли мой клиент вводить промокод при каждой покупке, чтобы мне получать баллы за его заказы?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Да, клиент должен вводить реферальный промокод Менеджера каждый раз, когда совершает покупку на OZON.
+                                </p>
+                                <p>Если клиенты не вводят реферальный промокод Менеджера в своих заказах, то сумма по ним не участвует в премировании Менеджера.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Что будет, если мой клиент введет два разных реферальных промокода?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Если клиент, ввел два реферальных промокода двух разных Менеджеров, то к заказу привяжется только один – последний введенный.
+                                </p>
+                                <p>А если ваш клиент ранее еще не совершал покупок на OZON, то он не сможет ввести второй (конкурирующий) код, пока сумма его покупок не достигнет 2 500 рублей без учета оплаты баллами и бонусами “Спасибо”. Это ваша гарантия, что вы точно получите вознаграждение за привлечение нового клиента.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ref-manager-faq-item">
+                            <div class="ref-manager-question ref-manager-js-question">
+                                <h3 class="ref-manager-question-title">
+                                    Что такое Бизнес кабинет Менеджера?
+                                </h3>
+                            </div>
+                            <div class="ref-manager-answer">
+                                <p>
+                                    Бизнес кабинет Менеджера – это инструмент, который позволит участникам реферальной программы:
+                                </p>
+                                <p> 1) отслеживать свой доход по привлеченным заказам и клиентам <br>
+                                    2) посмотреть статистику по достижениям<br>
+                                    3) получить доступ к бесплатным образовательным материалам, которые помогут прокачать свои навыки в продажах, научиться привлекать клиентов, а также разобраться в специфике товаров и в том, как увеличить свой доход.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="ref-manager-ozon-ref">
+
+            <section class="ref-manager-start-earning ref-manager-start-earning-1" data-gtm="Начните зарабатывать" data-section-name="startEarning">
+                <nav class="ref-manager-menu">
+                    <ul class="ref-manager-list">
+                        <li class="ref-manager-item">
+                            <a href="#video" class="ref-manager-link">О программе</a>
+                        </li>
+                        <li class="ref-manager-item">
+                            <a href="#calculator" class="ref-manager-link">Спланировать доход </a>
+                        </li>
+                        <li class="ref-manager-item">
+                            <a href="#story" class="ref-manager-link">Привилегии</a>
+                        </li>
+                        <li class="ref-manager-item">
+                            <a href="#academy" class="ref-manager-link">Курс на миллион</a>
+                        </li>
+                        <li class="ref-manager-item">
+                            <a href="#feedback" class="ref-manager-link">Стать Менеджером</a>
+                        </li>
+                        <li class="ref-manager-item">
+                            <a href="https://www.ozon.ru/" class="ref-manager-link ref-manager-link-new-page" target="_blank">Бизнес Кабинет</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="ref-manager-container">
+                    <div class="ref-manager-content">
+                        <div class="ref-manager-text-container ref-manager-text-container-1">
+                            <h1 class="ref-manager-title">Начните зарабатывать <br> c крупнейшим <br> интернет-магазином!</h1>
+                            <p class="ref-manager-description">Покупают ваши друзья, <br> а зарабатываете вы!</p>
+                            <a href="#feedback" class="ref-manager-btn ref-manager-btn-red ref-manager-scroll-to-feedback">Стать Менеджером OZON</a>
+                        </div>
+                        <div class="ref-manager-text-container ref-manager-text-container-2">
+                            <h2 class="ref-manager-title">Хотите</h2>
+                            <p class="ref-manager-description">Увеличить доход <br>
+                                и позволить себе то, <br>
+                                о чём давно мечтаете?</p>
+                        </div>
+                        <div class="ref-manager-text-container ref-manager-text-container-3">
+                            <h2 class="ref-manager-title">Хотите</h2>
+                            <p class="ref-manager-description">Находить время <br>
+                                на близких и всё успевать?&nbsp;</p>
+                        </div>
+                        <div class="ref-manager-text-container ref-manager-text-container-4">
+                            <h1 class="ref-manager-title">Хотите</h1>
+                            <p class="ref-manager-description">Попробовать себя в роли <br>
+                                предпринимателя и прокачать <br>
+                                деловые навыки? <br></p>
+                        </div>
+                        <div class="ref-manager-text-container ref-manager-text-container-5">
+                            <h2 class="ref-manager-title">Реферальная программа OZON <br> поможет вам достичь своих целей!</h2>
+                            <p class="ref-manager-text">Листайте вниз, <br> чтобы узнать подробнее</p>
+                            <img class="ref-manager-scroll-img" src="img/scroll.svg" alt="Скролл"  width="20" height="51">
+                        </div>
+                        <div class="ref-manager-img-container">
+                            <picture class="ref-manager-img ref-manager-img-1">
+                                <source type="image/webp" srcset="./img/startEarning/start-earning-img.webp">
+                                <source type="image/png" srcset="./img/startEarning/start-earning-img.png">
+                                <img src="./img/startEarning/start-earning-img.png" alt="">
+                            </picture>
+                            <picture class="ref-manager-img ref-manager-img-2">
+                                <source type="image/webp" srcset="./img/startEarning/start-earning-img-2.webp">
+                                <source type="image/png" srcset="./img/startEarning/start-earning-img-2.png">
+                                <img src="./img/startEarning/start-earning-img-2.png" alt="">
+                            </picture>
+                            <picture class="ref-manager-img ref-manager-img-3">
+                                <source type="image/webp" srcset="./img/startEarning/start-earning-img-3.webp">
+                                <source type="image/png" srcset="./img/startEarning/start-earning-img-3.png">
+                                <img src="./img/startEarning/start-earning-img-3.png" alt="">
+                            </picture>
+                            <picture class="ref-manager-img ref-manager-img-4">
+                                <source type="image/webp" srcset="./img/startEarning/start-earning-img-4.webp">
+                                <source type="image/png" srcset="./img/startEarning/start-earning-img-4.png">
+                                <img src="./img/startEarning/start-earning-img-4.png" alt="">
+                            </picture>
+                            <img src="./img/startEarning/start-earning-icon-o.svg" class="ref-manager-icon-o"  alt="o">
+                            <img src="./img/startEarning/money.svg" class="ref-manager-icon-money ref-manager-mouse-parallax" data-speed="1" data-num="1" alt="Иконка">
+                            <img src="./img/startEarning/start-earning-icon-z.svg" class="ref-manager-icon-z" alt="z">
+                            <img src="./img/startEarning/time.svg" class="ref-manager-icon-time ref-manager-mouse-parallax" data-speed="1" data-num="-1" alt="Иконка">
+                            <img src="./img/startEarning/start-earning-icon-o.svg" class="ref-manager-icon-o2" alt="o">
+                            <img src="./img/startEarning/deal.svg" class="ref-manager-icon-deal ref-manager-mouse-parallax" data-speed="1" data-num="1" alt="Иконка">
+                            <img src="./img/startEarning/start-earning-icon-n.svg" class="ref-manager-icon-n" alt="n">
+                            <img src="./img/startEarning/aim.svg" class="ref-manager-icon-aim ref-manager-mouse-parallax" data-speed="1" data-num="-1" alt="Иконка">
+                            <div class="ref-manager-zig-zag-left ref-manager-mouse-parallax" data-speed="1" data-num="-1">
+                                <div class="ref-manager-zig-zag-1">
+                                    <div class="ref-manager-inner">
+                                    </div>
+                                </div>
+                                <div class="ref-manager-zig-zag-2">
+                                    <div class="ref-manager-inner">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ref-manager-zig-zag-right">
+                                <div class="ref-manager-zig-zag-1">
+                                    <div class="ref-manager-inner">
+                                    </div>
+                                </div>
+                                <div class="ref-manager-zig-zag-2">
+                                    <div class="ref-manager-inner">
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./img/dots.svg" class="ref-manager-dots ref-manager-mouse-parallax" data-speed="1" data-num="-1" alt="">
+                            <img src="./img/square.svg" class="ref-manager-icon-square ref-manager-mouse-parallax" data-speed="1" data-num="-1" alt="">
+                            <img src="./img/square.svg" class="ref-manager-icon-square-2 ref-manager-mouse-parallax" data-speed="1" data-num="-1" alt="">
+                            <img src="./img/lines.svg" class="ref-manager-icon-lines ref-manager-left" alt="">
+                            <img src="./img/lines.svg" class="ref-manager-icon-lines ref-manager-right ref-manager-mouse-parallax" data-speed="1" data-num="-1" alt="">
+                        </div>
+                    </div>
+                </div>
+                <img class="ref-manager-scroll-img" src="img/scroll.svg" alt="Скролл"  width="20" height="51">
+            </section>
+
+            <section class="ref-manager-video" data-gtm="О программе" data-section-name="video">
+                <nav class="ref-manager-menu">
+                    <ul class="ref-manager-list">
+                        <li class="ref-manager-item">
+                            <a href="#video" class="ref-manager-link ref-manager-active">О программе</a>
+                        </li>
+                        <li class="ref-manager-item">
+                            <a href="#calculator" class="ref-manager-link">Спланировать доход </a>
+                        </li>
+                        <li class="ref-manager-item">
+                            <a href="#story" class="ref-manager-link">Привилегии</a>
+                        </li>
+                        <li class="ref-manager-item">
+                            <a href="#academy" class="ref-manager-link">Курс на миллион</a>
+                        </li>
+                        <li class="ref-manager-item">
+                            <a href="#feedback" class="ref-manager-link">Стать Менеджером</a>
+                        </li>
+                        <li class="ref-manager-item">
+                            <a href="https://www.ozon.ru/" class="ref-manager-link ref-manager-link-new-page" target="_blank">Бизнес Кабинет</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="ref-manager-container">
+                    <ul class="ref-manager-infographics">
+                        <li class="ref-manager-item">
+                            <div  class="ref-manager-red ref-manager-mouse-parallax" data-speed="1" data-num="-1"></div>
+                            <p class="ref-manager-text-bold">21 год</p>
+                            <p class="ref-manager-text">на рынке</p>
+                        </li>
+                        <li class="ref-manager-item">
+                            <p class="ref-manager-text-bold">24</p>
+                            <p class="ref-manager-text">категории</p>
+                        </li>
+                        <li class="ref-manager-item">
+                            <p class="ref-manager-text-bold">>15 млн</p>
+                            <p class="ref-manager-text">товаров</p>
+                        </li>
+                        <li class="ref-manager-item">
+                            <p class="ref-manager-text-bold">>2 млн</p>
+                            <p class="ref-manager-text">пользователей <br> ежедневно</p>
+                        </li>
+                        <li class="ref-manager-item">
+                            <p class="ref-manager-text-bold">>120 тыс</p>
+                            <p class="ref-manager-text">заказов в день</p>
+                            <div  class="ref-manager-blue ref-manager-mouse-parallax" data-speed="1" data-num="1"></div>
+                            <div  class="ref-manager-red-small ref-manager-mouse-parallax" data-speed="1" data-num="1"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ref-manager-video-container">
+                    <div class="ref-manager-video-wrap">
+                        <div id="ref-manager-player"></div>
+                        <div class="ref-manager-overlay ref-manager-close">
+                            <a href="#" class="ref-manager-play"></a>
+                        </div>
+                    </div>
+                </div>
+                <img class="ref-manager-scroll-img" src="img/scroll.svg" alt="Скролл"  width="20" height="51">
+            </section>
+
+            <section class="ref-manager-calculator" data-gtm="Спланировать доход" data-section-name="calculator">
+                <nav class="ref-manager-menu">
+                    <ul class="ref-manager-list">
+                        <li class="ref-manager-item">
+                            <a href="#video" class="ref-manager-link">О программе</a>
+                        </li>
+                        <li class="ref-manager-item">
+                            <a href="#calculator" class="ref-manager-link ref-manager-active">Спланировать доход </a>
+                        </li>
+                        <li class="ref-manager-item">
+                            <a href="#story" class="ref-manager-link">Привилегии</a>
+                        </li>
+                        <li class="ref-manager-item">
+                            <a href="#academy" class="ref-manager-link">Курс на миллион</a>
+                        </li>
+                        <li class="ref-manager-item">
+                            <a href="#feedback" class="ref-manager-link">Стать Менеджером</a>
+                        </li>
+                        <li class="ref-manager-item">
+                            <a href="https://www.ozon.ru/" class="ref-manager-link ref-manager-link-new-page" target="_blank">Бизнес Кабинет</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="ref-manager-container">
+                    <div class="ref-manager-content">
+                        <div class="ref-manager-text-container">
+                            <h2 class="ref-manager-title">Из чего складывается <br> заработок?</h2>
+                            <ul class="ref-manager-list">
+                                <li class="ref-manager-item">
+                                    <img src="./img/calculator/calculator-1.svg" class="ref-manager-icon ref-manager-icon-left" alt="Иконка">
+                                    <img src="./img/calculator/calculator-bg.svg" class="ref-manager-icon-round ref-manager-icon-round-left ref-manager-mouse-parallax" data-speed="1" data-num="-1" alt="o">
+                                    <p class="ref-manager-text"><span class="ref-manager-blue">Рекомендуйте OZON друзьям</span> и&nbsp;получайте баллы за&nbsp;каждого нового клиента</p>
+                                </li>
+                                <li class="ref-manager-item">
+                                    <img src="./img/calculator/calculator-3.svg" class="ref-manager-icon ref-manager-icon-right" alt="Иконка">
+                                    <img src="./img/calculator/calculator-bg2.svg" class="ref-manager-icon-round ref-manager-icon-round-right ref-manager-mouse-parallax" data-speed="1" data-num="-1"  alt="o">
+                                    <p class="ref-manager-text"><span class="ref-manager-blue">Создавайте постоянную клиентскую сеть</span> и&nbsp;получайте вознаграждения за&nbsp;заказы</p>
+                                </li>
+                                <li class="ref-manager-item">
+                                    <img src="./img/calculator/calculator-2.svg" class="ref-manager-icon ref-manager-icon-left" alt="Иконка">
+                                    <img src="./img/calculator/calculator-bg.svg" class="ref-manager-icon-round ref-manager-icon-round-left ref-manager-mouse-parallax" data-speed="1" data-num="1"  alt="o">
+                                    <p class="ref-manager-text"><span class="ref-manager-blue">Продвигайте Акции и&nbsp;получайте еще больше</span> заказов от&nbsp;своих клиентов. Больше заказов &#8212; больше баллов!</p>
+                                </li>
+                                <li class="ref-manager-item">
+                                    <img src="./img/calculator/calculator-4.svg" class="ref-manager-icon ref-manager-icon-right" alt="Иконка">
+                                    <img src="./img/calculator/calculator-bg2.svg" class="ref-manager-icon-round ref-manager-icon-round-right ref-manager-mouse-parallax" data-speed="1" data-num="1"  alt="o">
+                                    <p class="ref-manager-text"><span class="ref-manager-blue">Выполняйте<br> задания —</span> получайте дополнительные бонусы</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <form class="ref-manager-income-calculator">
+                            <div class="ref-manager-main-bg"></div>
+                            <div class="ref-manager-main-bg-blue"></div>
+                            <div class="ref-manager-dots"></div>
+                            <h2 class="ref-manager-title">
+                                Калькулятор <br> дохода
+                                <div class="ref-manager-zig-zag-1">
+                                    <div class="ref-manager-inner">
+                                    </div>
+                                </div>
+                                <div class="ref-manager-zig-zag-2">
+                                    <div class="ref-manager-inner">
+                                    </div>
+                                </div>
+                            </h2>
+                            <div class="ref-manager-row">
+                                <p class="ref-manager-label">Количество привлеченных клиентов в&nbsp;месяц</p>
+                                <div class="ref-manager-slider-wrap">
+                                    <div class="ref-manager-slider ref-manager-clients-desk"></div>
+                                    <input tabindex="0" class="ref-manager-count-clients-desktop ref-manager-check" type="number" value="5" pattern="\d*" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="ref-manager-row">
+                                <p class="ref-manager-label">Из&nbsp;них новых клиентов&nbsp;OZON</p>
+                                <div class="ref-manager-slider-wrap">
+                                    <div class="ref-manager-slider ref-manager-new-clients-desk"></div>
+                                    <input tabindex="0" class="ref-manager-count-new-clients-desk ref-manager-check" type="number" value="1" min="0" max="99000" pattern="\d*" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="ref-manager-row">
+                                <p class="ref-manager-label">Заказов в&nbsp;месяц <br> на&nbsp;одного клиента</p>
+                                <div class="ref-manager-slider-wrap">
+                                    <div class="ref-manager-slider ref-manager-order-per-clients-desk"></div>
+                                    <input tabindex="0" class="ref-manager-check" type="number" value="1" min="0" max="10" pattern="\d*" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="ref-manager-row">
+                                <p class="ref-manager-label">Сумма одного заказа <br> на&nbsp;клиетна</p>
+                                <div class="ref-manager-slider-wrap">
+                                    <div class="ref-manager-slider ref-manager-AOV-client-desk"></div>
+                                    <input tabindex="0" class="ref-manager-check" type="number" value="3000" min="0" max="300000" pattern="\d*" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="ref-manager-row">
+                                <p class="ref-manager-label">Сумма&nbsp;ваших личных&nbsp;покупок</p>
+                                <div class="ref-manager-slider-wrap">
+                                    <div class="ref-manager-slider ref-manager-NS-manager-desk"></div>
+                                    <input tabindex="0" class="ref-manager-check" type="number" value="2500" min="0" max="300000" pattern="\d*" autocomplete="off">
+                                </div>
+                            </div>
+                            <p class="ref-manager-description">+&nbsp;как&nbsp;минимум два выполненых задания от&nbsp;OZON в&nbsp;месяц</p>
+                            <div class="ref-manager-row">
+                                <p class="ref-manager-income">Ваш&nbsp;доход в&nbsp;месяц</p>
+                                <p class="ref-manager-result ref-manager-result-desktop"></p>
+                            </div>
+                            <a href="#feedback" class="ref-manager-btn ref-manager-scroll-to-feedback">Заработать</a>
+                            <p class="ref-manager-footnote">Важно! Калькулятор рассчитывает ориентировочную сумму вознаграждения. У&nbsp;вас&nbsp;будет много дополнительных возможностей повлиять на свой заработок: количество действующих клиентов, их&nbsp;и&nbsp;ваш личный оброт, квалификация и многое другое.</p>
+                        </form>
+                    </div>
+                </div>
+                <img class="ref-manager-scroll-img" src="img/scroll-dark.svg" alt="Скролл"  width="20" height="51">
+            </section>
+
+            <section class="ref-manager-story" data-gtm="Привилегии" data-section-name="story">
+                <div class="ref-manager-container">
+                    <nav class="ref-manager-menu">
+                        <ul class="ref-manager-list">
+                            <li class="ref-manager-item">
+                                <a href="#video" class="ref-manager-link">О программе</a>
+                            </li>
+                            <li class="ref-manager-item">
+                                <a href="#calculator" class="ref-manager-link">Спланировать доход </a>
+                            </li>
+                            <li class="ref-manager-item">
+                                <a href="#story" class="ref-manager-link ref-manager-active">Привилегии</a>
+                            </li>
+                            <li class="ref-manager-item">
+                                <a href="#academy" class="ref-manager-link">Курс на миллион</a>
+                            </li>
+                            <li class="ref-manager-item">
+                                <a href="#feedback" class="ref-manager-link">Стать Менеджером</a>
+                            </li>
+                            <li class="ref-manager-item">
+                                <a href="https://www.ozon.ru/" class="ref-manager-link ref-manager-link-new-page" target="_blank">Бизнес Кабинет</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="ref-manager-content">
+                        <div class="ref-manager-left">
+                            <h2 class="ref-manager-section-title">Начните свою историю успеха вместе с OZON</h2>
+                            <div class="ref-manager-img-wrapper">
+                                <picture class="ref-manager-car"  width="765" height="375">
+                                    <source type="image/webp" srcset="img/story/car.webp">
+                                    <source type="image/png" srcset="img/story/car.png">
+                                    <img src="img/story/car.png" alt="Mercedes-Benz">
+                                </picture>
+                                <div class="ref-manager-car-info ref-manager-mouse-parallax" data-speed="1" data-num="-1">
+                                    <p>
+                                        Станьте обладателем<br>
+                                        Mercedes-Benz*
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="ref-manager-btn ref-manager-btn-go-feedback" href="#feedback">Стать Mенеджером OZON</a>
+                        </div>
+                        <div class="ref-manager-right">
+                            <h2 class="ref-manager-section-title">Привилегии успешных Менеджеров</h2>
+                            <ul class="ref-manager-bonus-list">
+                                <li class="ref-manager-bonus-item">
+                                    <div class="ref-manager-before ref-manager-mouse-parallax" data-speed="1" data-num="1"></div>
+                                    <div class="ref-manager-bonus-content">
+                                        Оплата&nbsp;до&nbsp;100%<br>
+                                        от&nbsp;стоимости<br>
+                                        заказа&nbsp;баллами<br>
+                                        OZON
+                                    </div>
+                                </li>
+                                <li class="ref-manager-bonus-item">
+                                    <div class="ref-manager-before ref-manager-mouse-parallax" data-speed="1" data-num="1"></div>
+                                    <div class="ref-manager-bonus-content">
+                                        Вывод&nbsp;баллов<br>
+                                        OZON&nbsp;в&nbsp;рубли
+                                    </div>
+                                </li>
+                                <li class="ref-manager-bonus-item">
+                                    <div class="ref-manager-before ref-manager-mouse-parallax" data-speed="1" data-num="-1"></div>
+                                    <div class="ref-manager-bonus-content">
+                                        Подарки<br>
+                                        от&nbsp;партнеров<br>
+                                        и&nbsp;легендарных<br>
+                                        брендов
+                                    </div>
+                                </li>
+                                <li class="ref-manager-bonus-item">
+                                    <div class="ref-manager-before ref-manager-mouse-parallax" data-speed="1" data-num="-1"></div>
+                                    <div class="ref-manager-bonus-content">
+                                        Доступ<br>
+                                        к&nbsp;закрытым<br>
+                                        мероприятиям<br>
+                                        OZON
+                                    </div>
+                                </li>
+                                <li class="ref-manager-bonus-item">
+                                    <div class="ref-manager-before ref-manager-mouse-parallax" data-speed="1" data-num="1"></div>
+                                    <div class="ref-manager-bonus-content">
+                                        Баллбэк&nbsp;3%<br>
+                                        на&nbsp;ваши&nbsp;личные<br>
+                                        заказы
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="ref-manager-info-block">
+                                <div class="ref-manager-before ref-manager-mouse-parallax" data-speed="1" data-num="-1"></div>
+                                <p class="ref-manager-info-text">
+                                    Подробная информация о&nbsp;премировании Менеджеров реферальной программы OZON
+                                    и&nbsp;начислении баллов доступна в&nbsp;<a href="#" target="_blank">Публичной Оферте</a>
+                                </p>
+                                <p class="ref-manager-info-text">
+                                    *Внешний вид приза может отличаться от&nbsp;изображения в&nbsp;рекламных и&nbsp;информационных материалах
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="ref-manager-scroll-img" src="img/scroll.svg" alt="Скролл" width="20" height="51">
+            </section>
+
+            <section class="ref-manager-academy" data-gtm="Академия OZON" data-section-name="academy">
+                <div class="ref-manager-container">
+                    <nav class="ref-manager-menu">
+                        <ul class="ref-manager-list">
+                            <li class="ref-manager-item">
+                                <a href="#video" class="ref-manager-link">О программе</a>
+                            </li>
+                            <li class="ref-manager-item">
+                                <a href="#calculator" class="ref-manager-link">Спланировать доход </a>
+                            </li>
+                            <li class="ref-manager-item">
+                                <a href="#story" class="ref-manager-link">Привилегии</a>
+                            </li>
+                            <li class="ref-manager-item">
+                                <a href="#academy" class="ref-manager-link ref-manager-active">Курс на миллион</a>
+                            </li>
+                            <li class="ref-manager-item">
+                                <a href="#feedback" class="ref-manager-link">Стать Менеджером</a>
+                            </li>
+                            <li class="ref-manager-item">
+                                <a href="https://www.ozon.ru/" class="ref-manager-link ref-manager-link-new-page" target="_blank">Бизнес Кабинет</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="ref-manager-content">
+                        <div class="ref-manager-left">
+                            <div class="ref-manager-zig-zag-1">
+                                <div class="ref-manager-inner">
+                                    <img class="ref-manager-img" src="img/academy/zig-zag.svg">
+                                </div>
+                            </div>
+                            <div class="ref-manager-zig-zag-2">
+                                <div class="ref-manager-inner">
+                                    <img class="ref-manager-img" src="img/academy/zig-zag.svg">
+                                </div>
+                            </div>
+                            <h2 class="ref-manager-section-title">
+                                Образовательная платформа<br>
+                                «Курс на миллион»
+                            </h2>
+                            <div class="ref-manager-info-block">
+                                <div class="ref-manager-info-block-bg ref-manager-mouse-parallax" data-speed="1" data-num="-1"></div>
+                                <div class="ref-manager-info-block-content">
+                                    <p class="ref-manager-info-text">
+                                        <b>Вы всегда можете рассчитывать<br>
+                                            на поддержку экспертов OZON<br>
+                                            и специалистов известных брендов.</b>
+                                    </p>
+                                    <p class="ref-manager-info-text">
+                                        На старте и на всех последующих этапах<br>
+                                        вашего развития вы сможете:
+                                    </p>
+                                    <ul class="ref-manager-info-list">
+                                        <li class="ref-manager-info-item">
+                                            участвовать в очных и онлайн-тренингах,<br>
+                                            чтобы прокачать свои деловые навыки
+                                        </li>
+                                        <li class="ref-manager-info-item">
+                                            получать обучающие статьи и видео-курсы,<br>
+                                            чтобы стать для своего окружения главным<br>
+                                            проводником по брендам и выгодным<br>
+                                            покупкам на OZON
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="ref-manager-btn ref-manager-js-show-faq">Вопросы-ответы</button>
+                        </div>
+                        <div class="ref-manager-right">
+                            <h2 class="ref-manager-section-title">На вводных онлайн-<br>курсах вы узнаете:</h2>
+                            <ul class="ref-manager-online-list">
+                                <li class="ref-manager-online-item">
+                                    <div class="ref-manager-before ref-manager-mouse-parallax" data-speed="1" data-num="-1"></div>
+                                    <div class="ref-manager-online-content">
+                                        Как создать свою<br>
+                                        сеть клиентов
+                                    </div>
+                                </li>
+                                <li class="ref-manager-online-item">
+                                    <div class="ref-manager-before ref-manager-mouse-parallax" data-speed="1" data-num="1"></div>
+                                    <div class="ref-manager-online-content">
+                                        Все про эффективные<br>
+                                        продажи
+                                    </div>
+                                </li>
+                                <li class="ref-manager-online-item">
+                                    <div class="ref-manager-before ref-manager-mouse-parallax" data-speed="1" data-num="-1"></div>
+                                    <div class="ref-manager-online-content">
+                                        Как рекламировать<br>
+                                        свои кодовые слова
+                                    </div>
+                                </li>
+                                <li class="ref-manager-online-item">
+                                    <div class="ref-manager-before ref-manager-mouse-parallax" data-speed="1" data-num="1"></div>
+                                    <div class="ref-manager-online-content">
+                                        Сколько можно<br>
+                                        заработать
+                                    </div>
+                                </li>
+                                <li class="ref-manager-online-item">
+                                    <div class="ref-manager-before ref-manager-mouse-parallax" data-speed="1" data-num="-1"></div>
+                                    <div class="ref-manager-online-content">
+                                        Грамотное планирование<br>
+                                        и управление финансами
+                                    </div>
+                                </li>
+                                <li class="ref-manager-online-item">
+                                    <div class="ref-manager-before ref-manager-mouse-parallax" data-speed="1" data-num="1"></div>
+                                    <div class="ref-manager-online-content">
+                                        Как стать обладателем<br>
+                                        Mercedes-Benz
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img class="ref-manager-scroll-img" src="img/scroll-dark.svg" alt="Скролл"  width="20" height="51">
+            </section>
+
+            <section class="ref-manager-feedback" data-gtm="Стать Менеджером" data-section-name="feedback">
+                <div class="ref-manager-container">
+                    <nav class="ref-manager-menu">
+                        <ul class="ref-manager-list">
+                            <li class="ref-manager-item">
+                                <a href="#video" class="ref-manager-link">О программе</a>
+                            </li>
+                            <li class="ref-manager-item">
+                                <a href="#calculator" class="ref-manager-link">Спланировать доход </a>
+                            </li>
+                            <li class="ref-manager-item">
+                                <a href="#story" class="ref-manager-link">Привилегии</a>
+                            </li>
+                            <li class="ref-manager-item">
+                                <a href="#academy" class="ref-manager-link">Курс на миллион</a>
+                            </li>
+                            <li class="ref-manager-item">
+                                <a href="#feedback" class="ref-manager-link ref-manager-active">Стать Менеджером</a>
+                            </li>
+                            <li class="ref-manager-item">
+                                <a href="https://www.ozon.ru/" class="ref-manager-link ref-manager-link-new-page" target="_blank">Бизнес Кабинет</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="ref-manager-way ref-manager-way-one">
+                        <h2 class="ref-manager-section-title">Заполните форму:</h2>
+                        <div class="ref-manager-more-info">
+                            <h3 class="ref-manager-more-info-title">
+                                Чтобы зарегистрироваться в реферальной программе:
+                            </h3>
+                            <ol class="ref-manager-more-info-list">
+                                <li class="ref-manager-more-info-item">
+                                    Заполните в&nbsp;личном кабинете OZON: ФИО и&nbsp;дату рождения (должны совпадать с&nbsp;паспортными данными), город проживания, телефон и&nbsp;email;
+                                </li>
+                                <li class="ref-manager-more-info-item">
+                                    Внесите в&nbsp;форме регистрации ссылки на&nbsp;свои аккаунты в&nbsp;социальных сетях;
+                                </li>
+                                <li class="ref-manager-more-info-item">
+                                    Нажмите кнопку «Отправить».
+                                </li>
+                            </ol>
+                            <p class="ref-manager-more-info-text">
+                                Обращаем ваше внимание, что&nbsp;ошибки в&nbsp;указанных данных могут привести к&nbsp;отключению от&nbsp;программы или&nbsp;блокировки привилегий Менеджеров.
+                            </p>
+                        </div>
+                        <form class="ref-manager-feedback-form">
+                            <div class="ref-manager-feedback-column">
+                                <div class="ref-manager-feedback-form-group">
+                                    <label for="ref-manager-name">Заполнить ФИО*</label>
+                                    <input type="text" name="name" id="ref-manager-name" data-gtm="fio" placeholder="Фамилия Имя Отчество" autocomplete="off">
+                                </div>
+                                <div class="ref-manager-feedback-form-group">
+                                    <label class="ref-manager-feedback-form-group-label">
+                                        <p class="ref-manager-feedback-form-group-text">
+                                            Дата<br>рождения*
+                                        </p>
+                                        <input class="ref-manager-air-date-picker" data-gtm="birth" type="text" name="date" id="ref-manager-date" readonly>
+                                    </label>
+                                </div>
+                                <div class="ref-manager-feedback-form-group ref-manager-ui-input">
+                                    <label for="ref-manager-city">Город*</label>
+                                    <input type="text" name="city" data-gtm="city" id="ref-manager-city">
+                                    <div class="ref-manager-wrap-scroll">
+                                        <div class="ref-manager-wrapper-city-list">
+                                            <ul class="ref-manager-city-list" id="ref-manager-city-list-desktop"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ref-manager-feedback-form-group">
+                                    <label for="ref-manager-phone">Телефон*</label>
+                                    <input class="ref-manager-input-mask-phone" type="text" data-gtm="phone" name="phone" id="ref-manager-phone" placeholder="+7 (XXX) XXX-XX-XX" autocomplete="off">
+                                </div>
+                                <div class="ref-manager-feedback-form-group">
+                                    <label for="ref-manager-email">Email*</label>
+                                    <input class="ref-manager-input-mask-email" type="email" data-gtm="email" name="email" id="ref-manager-email" placeholder="privet@ozon.ru"  autocomplete="off">
+                                </div>
+                                <p class="ref-manager-feedback-info">
+                                    *Обязательное поле для заполнения
+                                </p>
+                            </div>
+                            <div class="ref-manager-feedback-column">
+                                <div class="ref-manager-feedback-form-group ref-manager-feedback-form-social ref-manager-feedback-form-social-vk">
+                                    <input class="ref-manager-input-mask-vk" type="text" data-gtm="vk" name="vk" placeholder="vk.com/stefan" autocomplete="off">
+                                </div>
+                                <div class="ref-manager-feedback-form-group ref-manager-feedback-form-social ref-manager-feedback-form-social-ok">
+                                    <input class="ref-manager-input-mask-ok" type="text" data-gtm="ok" name="ok" placeholder="ok.ru/stefan" autocomplete="off">
+                                </div>
+                                <div class="ref-manager-feedback-form-group ref-manager-feedback-form-social ref-manager-feedback-form-social-fb">
+                                    <input class="ref-manager-input-mask-fb" type="text" data-gtm="fb" name="fb" placeholder="facebook.com/stefan" autocomplete="off">
+                                </div>
+                                <div class="ref-manager-feedback-form-group ref-manager-feedback-form-social ref-manager-feedback-form-social-in">
+                                    <input class="ref-manager-input-mask-in" type="text" data-gtm="ig" name="in" placeholder="@stefan" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="ref-manager-feedback-column">
+                                <div class="ref-manager-checkbox-area">
+                                    <label>
+                                        <input id="ref-manager-consent" data-gtm="Я принимаю условия Оферты" type="checkbox" name="consent">
+                                        <span class="ref-manager-new-checkbox"></span>
+                                    </label>
+                                    <p>Я принимаю <a href="#" target="_blank">условия Оферты</a> и даю своё согласие OZON на&nbsp;обработку моей персональной информации на&nbsp;условиях, определенных <a href="#" target="_blank">Политикой конфиденциальности.</a></p>
+                                </div>
+                                <div class="ref-manager-checkbox-area">
+                                    <label>
+                                        <input id="ref-manager-confirmation" data-gtm="Подтверждаю, что не являюсь участником Партнёрской программы OZON" type="checkbox" name="confirmation">
+                                        <span class="ref-manager-new-checkbox"></span>
+                                    </label>
+                                    <p>Подтверждаю, что не являюсь участником Партнёрской программы OZON/ ИЛИ являюсь, но отказываюсь от участия в&nbsp;ней и&nbsp;присоединяюсь к реферальной программе в качестве Менеджера OZON.</p>
+                                </div>
+                                <input type="button" class="ref-manager-btn ref-manager-show-modal" value="Отправить">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="ref-manager-way ref-manager-way-two">
+                        <div class="ref-manager-content">
+                            <a class="ref-manager-link ref-manager-link-red" href="https://www.ozon.ru/" target="_blank">Войти в Бизнес кабинет</a>
+                        </div>
+                    </div>
+                    <div class="ref-manager-way ref-manager-way-three">
+                        <div class="ref-manager-content">
+                            <div class="ref-manager-wrapper">
+                                <p class="ref-manager-text">
+                                    Пожалуйста, авторизуйтесь на сайте OZON,
+                                    чтобы продолжить регистрацию в реферальной программе
+                                </p>
+                                <button class="ref-manager-link ref-manager-link-red ref-manager-open-auth">Авторизоваться</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ref-manager-bottom">
+                        <div class="ref-manager-phone">
+                            <a class="ref-manager-bottom-link" href="tel:88002346006">8 (800) 234-60-06</a> — круглосуточно
+                        </div>
+                        <div class="ref-manager-email">
+                            <a class="ref-manager-bottom-link" href="mailto:referral@ozon.ru">referral@ozon.ru</a>
+                        </div>
+                        <div class="ref-manager-copyright">
+                            © 1998—2019, ООО&nbsp;«Интернет&nbsp;Решения». Все&nbsp;права&nbsp;защищены
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <nav class="ref-manager-menu-mob">
+            <div class="ref-manager-menu-close"></div>
+            <ul class="ref-manager-list">
+                <li class="ref-manager-item">
+                    <a href="#videoMob" class="ref-manager-link">О программе</a>
+                </li>
+                <li class="ref-manager-item">
+                    <a href="#calculatorMob" class="ref-manager-link">Спланировать доход </a>
+                </li>
+                <li class="ref-manager-item">
+                    <a href="#storyMob" class="ref-manager-link">Привилегии</a>
+                </li>
+                <li class="ref-manager-item">
+                    <a href="#academyMob" class="ref-manager-link">Курс на миллион</a>
+                </li>
+                <li class="ref-manager-item">
+                    <a href="#feedbackMob" class="ref-manager-link">Стать Менеджером</a>
+                </li>
+                <li class="ref-manager-item">
+                    <a href="https://www.ozon.ru/" class="ref-manager-link ref-manager-link-new-page" target="_blank">Бизнес Кабинет</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="ref-manager-ozon-ref-mob">
+
+            <section class="ref-manager-start-earning-mob" data-gtm="Начните зарабатывать" data-section-name="startEarningMob">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ref-manager-start-earning-1-mob">
+                            <div class="ref-manager-content">
+                                <a href="#" class="ref-manager-menu-icon ref-manager-menu-icon-light"></a>
+                                <div class="ref-manager-text-container">
+                                    <h1 class="ref-manager-title">Начните <br> зарабатывать <br> c крупнейшим <br> интернет-<br> магазином!</h1>
+                                    <p class="ref-manager-description">Покупают ваши друзья, <br> а зарабатываете вы!</p>
+                                </div>
+                                <div class="ref-manager-img-container">
+                                    <picture class="ref-manager-img">
+                                        <source type="image/webp" srcset="./img/startEarning/start-earning-img_mob.webp">
+                                        <source type="image/png" srcset="./img/startEarning/start-earning-img_mob.png">
+                                        <img src="./img/startEarning/start-earning-img_mob.png">
+                                    </picture>
+                                    <img src="./img/startEarning/start-earning-icon-o.svg" class="ref-manager-icon-o" alt="o">
+                                    <img src="./img/dots.svg" class="ref-manager-dots" alt="">
+                                    <img src="./img/swipe-icon.svg" class="ref-manager-swipe" alt="Стрелка">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ref-manager-start-earning-2-mob">
+                            <div class="ref-manager-content">
+                                <a href="#" class="ref-manager-menu-icon ref-manager-menu-icon-light"></a>
+                                <div class="ref-manager-text-container">
+                                    <h2 class="ref-manager-title">Хотите</h2>
+                                    <p class="ref-manager-description">Увеличить доход <br>
+                                        и позволить себе то, <br>
+                                        о чём давно мечтаете? <br></p>
+                                </div>
+                                <div class="ref-manager-img-container">
+                                    <picture class="ref-manager-img">
+                                        <source type="image/webp" srcset="./img/startEarning/start-earning-img-2_mob.webp">
+                                        <source type="image/png" srcset="./img/startEarning/start-earning-img-2_mob.png">
+                                        <img src="./img/startEarning/start-earning-img-2_mob.png">
+                                    </picture>
+                                    <img src="./img/startEarning/money.svg" class="ref-manager-icon-money" alt="Иконка">
+                                    <img src="./img/startEarning/start-earning-icon-z.svg" class="ref-manager-icon-z" alt="z">
+                                    <img src="./img/dots.svg" class="ref-manager-dots" alt="">
+                                    <img src="./img/story/zig-zag-mob.svg" class="ref-manager-zig-zag" alt="">
+                                    <img src="./img/swipe-icon.svg" class="ref-manager-swipe" alt="Стрелка">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ref-manager-start-earning-3-mob">
+                            <div class="ref-manager-content">
+                                <a href="#" class="ref-manager-menu-icon ref-manager-menu-icon-light"></a>
+                                <div class="ref-manager-text-container">
+                                    <h2 class="ref-manager-title">Хотите</h2>
+                                    <p class="ref-manager-description">Находить время <br>
+                                        на близких и всё <br> успевать?</p>
+                                </div>
+                                <div class="ref-manager-img-container">
+                                    <picture class="ref-manager-img">
+                                        <source type="image/webp" srcset="./img/startEarning/start-earning-img-3_mob.webp">
+                                        <source type="image/png" srcset="./img/startEarning/start-earning-img-3_mob.png">
+                                        <img src="./img/startEarning/start-earning-img-2_mob.png">
+                                    </picture>
+                                    <img src="./img/startEarning/time.svg" class="ref-manager-icon-time" alt="Иконка">
+                                    <img src="./img/startEarning/start-earning-icon-o.svg" class="ref-manager-icon-o" alt="o">
+                                    <img src="./img/dots.svg" class="ref-manager-dots" alt="">
+                                    <img src="./img/square.svg" class="ref-manager-icon-square" alt="">
+                                    <img src="./img/swipe-icon.svg" class="ref-manager-swipe" alt="Стрелка">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ref-manager-start-earning-4-mob">
+                            <div class="ref-manager-content">
+                                <a href="#" class="ref-manager-menu-icon ref-manager-menu-icon-light"></a>
+                                <div class="ref-manager-text-container">
+                                    <h2 class="ref-manager-title">Хотите</h2>
+                                    <p class="ref-manager-description">Попробовать себя в роли <br>
+                                        предпринимателя <br>
+                                        и прокачать <br>
+                                        деловые навыки? <br></p>
+                                </div>
+                                <div class="ref-manager-img-container">
+                                    <picture class="ref-manager-img">
+                                        <source type="image/webp" srcset="./img/startEarning/start-earning-img-4_mob.webp">
+                                        <source type="image/png" srcset="./img/startEarning/start-earning-img-4_mob.png">
+                                        <img src="./img/startEarning/start-earning-img-2_mob.png">
+                                    </picture>
+                                    <img src="./img/startEarning/deal.svg" class="ref-manager-icon-deal" alt="Иконка">
+                                    <img src="./img/startEarning/start-earning-icon-n.svg" class="ref-manager-icon-n" alt="n">
+                                    <img src="./img/dots.svg" class="ref-manager-dots" alt="">
+                                    <img src="./img/swipe-icon.svg" class="ref-manager-swipe" alt="Стрелка">
+                                    <img src="./img/lines.svg" class="ref-manager-icon-lines" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ref-manager-start-earning-5-mob">
+                            <div class="ref-manager-content">
+                                <a href="#" class="ref-manager-menu-icon ref-manager-menu-icon-light"></a>
+                                <div class="ref-manager-text-container">
+                                    <h2 class="ref-manager-title">Реферальная <br> программа OZON <br> поможет вам достичь <br> своих целей!</h2>
+                                    <p class="ref-manager-text">Смахивайте
+                                        вверх, чтобы <br> узнать подробнее</p>
+                                    <img src="./img/story/zig-zag-mob.svg" class="ref-manager-zig-zag right" alt="">
+                                    <img class="ref-manager-scroll-img" src="img/scroll.svg" alt="Скролл"  width="20" height="51">
+                                    <img src="./img/lines.svg" class="ref-manager-icon-lines" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ref-manager-video-mob" data-gtm="О программе" data-section-name="videoMob">
+                <img src="./img/video/video-icon-top.svg" class="ref-manager-icon-top" alt="">
+                <a href="#" class="ref-manager-menu-icon ref-manager-menu-icon-dark"></a>
+                <ul class="ref-manager-infographics">
+                    <li class="ref-manager-item">
+                        <p class="ref-manager-text-bold">21 год</p>
+                        <p class="ref-manager-text">на рынке</p>
+                    </li>
+                    <li class="ref-manager-item">
+                        <p class="ref-manager-text-bold">24</p>
+                        <p class="ref-manager-text">категории</p>
+                    </li>
+                    <li class="ref-manager-item">
+                        <p class="ref-manager-text-bold">>2 млн</p>
+                        <p class="ref-manager-text">пользователей <br> ежедневно</p>
+                    </li>
+                    <li class="ref-manager-item">
+                        <p class="ref-manager-text-bold">>15 млн</p>
+                        <p class="ref-manager-text">товаров</p>
+                    </li>
+                    <li class="ref-manager-item">
+                        <p class="ref-manager-text-bold">>120 тыс</p>
+                        <p class="ref-manager-text">заказов в день</p>
+                    </li>
+                </ul>
+                <div class="ref-manager-video-wrap-mob">
+                    <h3 class="ref-manager-title">Что за компания?</h3>
+                    <a href="#" class="ref-manager-btn ref-manager-watch">Смотреть</a>
+                    <img src="./img/story/zig-zag-mob.svg" class="ref-manager-icon-zig-zag" alt="">
+                    <div class="ref-manager-video-wrap">
+                        <div id="ref-manager-player-mob"></div>
+                        <div class="ref-manager-overlay">
+                            <a href="#" class="ref-manager-play"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="./img/video/video-icon-bottom.svg" class="ref-manager-icon-bottom" alt="">
+            </section>
+
+            <section class="ref-manager-calculator-mob" data-gtm="Спланировать доход" data-section-name="calculatorMob">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="ref-manager-menu-icon ref-manager-menu-icon-dark ref-manager-scroll-right-dark"></a>
+                            <h2 class="ref-manager-title ref-manager-income-calculator-title">Калькулятор <br> дохода</h2>
+                            <form class="ref-manager-income-calculator">
+                                <div class="ref-manager-col">
+                                    <p class="ref-manager-label">Количество привлеченных клиентов в&nbsp;месяц</p>
+                                    <div class="ref-manager-slider-wrap">
+                                        <div class="ref-manager-slider ref-manager-clients-mob"></div>
+                                        <input tabindex="0" class="ref-manager-check ref-manager-count-clients-mob" type="number" value="5" pattern="\d*" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="ref-manager-col">
+                                    <p class="ref-manager-label">Из&nbsp;них новых клиентов&nbsp;OZON</p>
+                                    <div class="ref-manager-slider-wrap">
+                                        <div class="ref-manager-slider ref-manager-new-clients-mob"></div>
+                                        <input tabindex="0" class="ref-manager-check ref-manager-count-new-clients-mob" type="number" value="1" min="0" max="99000" pattern="\d*" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="ref-manager-col">
+                                    <p class="ref-manager-label">Заказов в&nbsp;месяц  на&nbsp;одного клиента</p>
+                                    <div class="ref-manager-slider-wrap">
+                                        <div class="ref-manager-slider ref-manager-order-per-clients-mob"></div>
+                                        <input tabindex="0" class="ref-manager-check" type="number" value="1" min="0" max="10" pattern="\d*" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="ref-manager-col">
+                                    <p class="ref-manager-label">Сумма одного заказа на&nbsp;клиетна</p>
+                                    <div class="ref-manager-slider-wrap">
+                                        <div class="ref-manager-slider ref-manager-AOV-client-mob"></div>
+                                        <input tabindex="0" class="check" type="number" value="3000" min="0" max="300000" pattern="\d*" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="ref-manager-col">
+                                    <p class="ref-manager-label">Сумма&nbsp;ваших личных&nbsp;покупок</p>
+                                    <div class="ref-manager-slider-wrap">
+                                        <div class="ref-manager-slider ref-manager-NS-manager-mob"></div>
+                                        <input tabindex="0" class="ref-manager-check" type="number" value="2500" min="0" max="300000" pattern="\d*" autocomplete="off">
+                                    </div>
+                                </div>
+                                <p class="ref-manager-description">+&nbsp;как&nbsp;минимум два выполненых задания от&nbsp;OZON в&nbsp;месяц</p>
+                                <div class="ref-manager-row">
+                                    <p class="ref-manager-income">Ваш доход в&nbsp;месяц</p>
+                                    <p class="ref-manager-result ref-manager-result-mob"></p>
+                                </div>
+                                <a href="#feedbackMob" class="ref-manager-btn ref-manager-scroll-to-feedback-mob">Заработать</a>
+                                <p class="ref-manager-footnote">Важно! Калькулятор рассчитывает ориентировочную сумму вознаграждения. У вас будет много дополнительных возможностей повлиять на свой заработок: количество действующих клиентов, их и ваш личный оброт, квалификация и&nbsp;многое другое.</p>
+                            </form>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="ref-manager-menu-icon ref-manager-menu-icon-dark ref-manager-scroll-right-dark"></a>
+                            <h2 class="ref-manager-title">Из&nbsp;чего <br> складывается <br> заработок?</h2>
+                            <div class="ref-manager-list">
+                                <div class="ref-manager-item ref-manager-item-1">
+                                    <img src="./img/calculator/calculator-icon-mob-1.svg" class="ref-manager-icon" alt="Иконка">
+                                    <p class="ref-manager-text"><span class="ref-manager-blue">Рекомендуйте OZON <br> друзьям</span> и&nbsp;получайте баллы за&nbsp;каждого нового клиента</p>
+                                </div>
+                                <div class="ref-manager-item ref-manager-item-2">
+                                    <img src="./img/calculator/calculator-icon-mob-2.svg" class="ref-manager-icon" alt="Иконка">
+                                    <p class="ref-manager-text"><span class="ref-manager-blue">Создавайте постоянную клиентскую сеть</span> и&nbsp;получайте вознаграждения за&nbsp;заказы</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="ref-manager-menu-icon ref-manager-menu-icon-dark ref-manager-scroll-down-dark"></a>
+                            <h2 class="ref-manager-title">Больше заказов — <br> больше баллов!</h2>
+                            <div class="ref-manager-list">
+                                <div class="ref-manager-item ref-manager-item-3">
+                                    <img src="./img/calculator/calculator-icon-mob-3.svg" class="ref-manager-icon" alt="Иконка">
+                                    <p class="ref-manager-text"><span class="ref-manager-blue">Продвигайте Акции <br> и&nbsp;получайте еще&nbsp;больше</span> заказов от&nbsp;своих клиентов</p>
+                                </div>
+                                <div class="ref-manager-item ref-manager-item-4">
+                                    <img src="./img/calculator/calculator-icon-mob-4.svg" class="ref-manager-icon" alt="Иконка">
+                                    <p class="ref-manager-text"><span class="ref-manager-blue">Выполняйте задания —</span> получайте дополнительные бонусы</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ref-manager-story-mob" data-gtm="Привилегии" data-section-name="storyMob">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ref-manager-swiper-slide-red">
+                            <a href="#" class="ref-manager-menu-icon ref-manager-menu-icon-light ref-manager-scroll-right-light"></a>
+                            <h2 class="ref-manager-title">Начните свою<br>историю успеха<br>вместе с OZON</h2>
+                            <div class="ref-manager-img-wrapper">
+                                <picture class="ref-manager-car" width="765" height="375">
+                                    <source type="image/webp" srcset="img/story/car.webp">
+                                    <source type="image/png" srcset="img/story/car.png">
+                                    <img src="img/story/car.png" alt="Mercedes-Benz">
+                                </picture>
+                                <div class="ref-manager-car-info">
+                                    <p>
+                                        Станьте обладателем<br>
+                                        Mercedes-Benz*
+                                    </p>
+                                </div>
+                                <p class="ref-manager-more-info">
+                                    *Внешний вид приза может отличаться от&nbsp;изображения<br>
+                                    в&nbsp;рекламных и&nbsp;информационных материалах
+                                </p>
+                            </div>
+                            <a class="ref-manager-btn ref-manager-scroll-to-feedback-mob" href="#feedbackMob">Стать Менеджером OZON</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="ref-manager-menu-icon ref-manager-menu-icon-light ref-manager-scroll-right-light"></a>
+                            <h2 class="ref-manager-title ref-manager-title-2">Привилегии<br> успешных<br> Менеджеров</h2>
+                            <ul class="ref-manager-bonus-list ref-manager-bonus-list-1">
+                                <li class="ref-manager-bonus-item">
+                                    <div class="ref-manager-bonus-content">
+                                        Оплата&nbsp;до&nbsp;100%<br>
+                                        от&nbsp;стоимости&nbsp;заказа<br>
+                                        баллами&nbsp;OZON
+                                    </div>
+                                </li>
+                                <li class="ref-manager-bonus-item">
+                                    <div class="ref-manager-bonus-content">
+                                        Вывод&nbsp;баллов<br>
+                                        OZON&nbsp;в&nbsp;рубли
+                                    </div>
+                                </li>
+                                <li class="ref-manager-bonus-item">
+                                    <div class="ref-manager-bonus-content">
+                                        Подарки&nbsp;от&nbsp;партнеров<br>
+                                        и&nbsp;легендарных&nbsp;брендов
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="ref-manager-menu-icon ref-manager-menu-icon-light ref-manager-scroll-down-light"></a>
+                            <div class="ref-manager-zigzag-wrapper">
+                                <div class="ref-manager-zigzag"></div>
+                            </div>
+                            <ul class="ref-manager-bonus-list  ref-manager-bonus-list-2">
+                                <li class="ref-manager-bonus-item">
+                                    <div class="ref-manager-bonus-content">
+                                        Доступ&nbsp;к&nbsp;закрытым<br>
+                                        мероприятиям&nbsp;OZON
+                                    </div>
+                                </li>
+                                <li class="ref-manager-bonus-item">
+                                    <div class="ref-manager-bonus-content">
+                                        Баллбэк&nbsp;3%&nbsp;на&nbsp;ваши<br>
+                                        личные&nbsp;заказы
+                                    </div>
+                                </li>
+                            </ul>
+                            <p class="ref-manager-info-text">
+                                Подробная информация о&nbsp;премировании Менеджеров реферальной программы OZON
+                                и&nbsp;начислении баллов доступна в&nbsp;<a href="#" target="_blank">Публичной Оферте</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ref-manager-academy-mob" data-gtm="Академия OZON"  data-section-name="academyMob">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="ref-manager-menu-icon ref-manager-menu-icon-dark ref-manager-scroll-right-dark"></a>
+                            <h2 class="ref-manager-title">
+                                Образовательная<br>
+                                платформа<br>
+                                «Курс на миллион»
+                            </h2>
+                            <div class="ref-manager-info-block">
+                                <p class="ref-manager-info-text">
+                                    Вы всегда можете рассчитывать<br>
+                                    на поддержку экспертов OZON<br>
+                                    и специалистов известных<br>
+                                    брендов.
+                                </p>
+                                <ul class="ref-manager-info-list">
+                                    <li class="ref-manager-info-item">
+                                        участвовать в очных и онлайн-<br>
+                                        тренингах, чтобы прокачать свои<br>
+                                        деловые навыки
+                                    </li>
+                                    <li class="ref-manager-info-item">
+                                        получать обучающие статьи<br>
+                                        и видео-курсы, чтобы стать<br>
+                                        для своего окружения главным<br>
+                                        проводником по брендам<br>
+                                        и выгодным покупкам на OZON
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="ref-manager-btn ref-manager-js-show-faq">Вопросы-ответы</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="ref-manager-menu-icon ref-manager-menu-icon-dark ref-manager-scroll-right-dark"></a>
+                            <h2 class="ref-manager-title ref-manager-title-2">На вводных<br> онлайн-курсах<br> вы узнаете:</h2>
+                            <ul class="ref-manager-online-list ref-manager-online-list-1">
+                                <li class="ref-manager-online-item">
+                                    <div class="ref-manager-online-content">
+                                        Как создать свою<br>
+                                        сеть клиентов
+                                    </div>
+                                </li>
+                                <li class="ref-manager-online-item">
+                                    <div class="ref-manager-online-content">
+                                        Все про эффективные<br>
+                                        продажи
+                                    </div>
+                                </li>
+                                <li class="ref-manager-online-item">
+                                    <div class="ref-manager-online-content">
+                                        Как рекламировать<br>
+                                        свои кодовые слова
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="ref-manager-menu-icon ref-manager-menu-icon-dark ref-manager-scroll-down-dark"></a>
+                            <div class="ref-manager-lines-wrapper">
+                                <div class="ref-manager-lines"></div>
+                            </div>
+                            <ul class="ref-manager-online-list ref-manager-online-list-2">
+                                <li class="ref-manager-online-item">
+                                    <div class="ref-manager-online-content">
+                                        Сколько можно<br>
+                                        заработать
+                                    </div>
+                                </li>
+                                <li class="ref-manager-online-item">
+                                    <div class="ref-manager-online-content">
+                                        Грамотное планирование<br>
+                                        и управление финансами
+                                    </div>
+                                </li>
+                                <li class="ref-manager-online-item">
+                                    <div class="ref-manager-online-content">
+                                        Как стать обладателем<br>
+                                        Mercedes-Benz
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ref-manager-feedback-mob" data-gtm="Стать Менеджером" data-section-name="feedbackMob">
+                <a href="#" class="ref-manager-menu-icon ref-manager-menu-icon-light"></a>
+                <h2 class="ref-manager-title">Заполните форму,<br> чтобы стать<br> менеджером:</h2>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="ref-manager-way ref-manager-way-one">
+                                <form class="ref-manager-feedback-form">
+                                    <div class="ref-manager-more-info">
+                                        <h3 class="ref-manager-more-info-title">
+                                            Чтобы зарегистрироваться в&nbsp;реферальной программе:
+                                        </h3>
+                                        <ul class="ref-manager-more-info-list">
+                                            <li class="ref-manager-more-info-item">
+                                                Заполните в&nbsp;личном кабинете OZON: ФИО и&nbsp;дату рождения (должны совпадать с&nbsp;паспортными данными), город проживания, телефон и&nbsp;email;
+                                            </li>
+                                            <li class="ref-manager-more-info-item">
+                                                Внесите в&nbsp;форме регистрации ссылки на&nbsp;свои аккаунты в&nbsp;социальных сетях;
+                                            </li>
+                                            <li class="ref-manager-more-info-item">
+                                                Нажмите кнопку «Отправить».
+                                            </li>
+                                        </ul>
+                                        <p class="ref-manager-more-info-text">
+                                            Обращаем ваше внимание, что&nbsp;ошибки в&nbsp;указанных данных могут привести к&nbsp;отключению от&nbsp;программы или&nbsp;блокировки привилегий Менеджеров.
+                                        </p>
+                                    </div>
+                                    <div class="ref-manager-feedback-form-group">
+                                        <label for="ref-manager-nameMob">Заполнить ФИО*</label>
+                                        <input type="text" name="name-mob" id="ref-manager-nameMob" data-gtm="fio" placeholder="Фамилия Имя Отчество" autocomplete="off">
+                                    </div>
+                                    <div class="ref-manager-feedback-form-group">
+                                        <label class="ref-manager-feedback-form-group-label">
+                                            <p class="ref-manager-feedback-form-group-text">
+                                                Дата<br>рождения*
+                                            </p>
+                                            <input class="ref-manager-air-date-picker" data-gtm="birth" type="text" name="date" id="ref-manager-dateMob" readonly>
+                                        </label>
+                                    </div>
+                                    <div class="ref-manager-feedback-form-group ref-manager-ui-input-mob">
+                                        <label for="ref-manager-cityMob">Город*</label>
+                                        <input type="text" name="city-mob" data-gtm="city" id="ref-manager-cityMob">
+                                        <div class="ref-manager-wrap-scroll-mob">
+                                            <div class="ref-manager-wrapper-city-list-mob">
+                                                <ul class="ref-manager-city-list" id="ref-manager-cityListMob"></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ref-manager-feedback-form-group">
+                                        <label for="ref-manager-phoneMob">Телефон*</label>
+                                        <input class="ref-manager-input-mask-phone" type="text" data-gtm="phone" name="phone-mob" id="ref-manager-phoneMob" placeholder="+7 (XXX) XXX-XX-XX" autocomplete="off" required>
+                                    </div>
+                                    <div class="ref-manager-feedback-form-group">
+                                        <label for="ref-manager-emailMob">Email*</label>
+                                        <input  type="email" class="ref-manager-input-mask-email" data-gtm="email" name="email-mob" id="ref-manager-emailMob" placeholder="privet@ozon.ru"  autocomplete="off" required>
+                                    </div>
+                                    <p class="ref-manager-feedback-info">
+                                        *Обязательное поле для заполнения
+                                    </p>
+                                    <div class="ref-manager-feedback-form-group ref-manager-feedback-form-social ref-manager-feedback-form-social-vk">
+                                        <input class="ref-manager-input-mask-vk" type="text" data-gtm="vk" name="vk-mob" placeholder="vk.com/stefan" autocomplete="off">
+                                    </div>
+                                    <div class="ref-manager-feedback-form-group ref-manager-feedback-form-social ref-manager-feedback-form-social-ok">
+                                        <input class="ref-manager-input-mask-ok" type="text" data-gtm="ok"  name="ok-mob" placeholder="ok.ru/stefan" autocomplete="off">
+                                    </div>
+                                    <div class="ref-manager-feedback-form-group ref-manager-feedback-form-social ref-manager-feedback-form-social-fb">
+                                        <input class="ref-manager-input-mask-fb" type="text" data-gtm="fb" name="fb-mob" placeholder="facebook.com/stefan" autocomplete="off">
+                                    </div>
+                                    <div class="ref-manager-feedback-form-group ref-manager-feedback-form-social ref-manager-feedback-form-social-in">
+                                        <input class="ref-manager-input-mask-in" type="text" data-gtm="ig" name="in-mob" placeholder="@stefan" autocomplete="off">
+                                    </div>
+                                    <div class="ref-manager-checkbox-area">
+                                        <label>
+                                            <input id="ref-manager-consentMob" data-gtm="Я принимаю условия Оферты" type="checkbox" name="consent-mob">
+                                            <span class="ref-manager-new-checkbox"></span>
+                                        </label>
+                                        <p>Я принимаю <a href="#" target="_blank">условия Оферты</a> и даю своё согласие OZON на&nbsp;обработку моей персональной информации на&nbsp;условиях, определенных <a href="#" target="_blank">Политикой конфиденциальности.</a></p>
+                                    </div>
+                                    <div class="ref-manager-checkbox-area">
+                                        <label>
+                                            <input id="ref-manager-confirmationMob" data-gtm="Подтверждаю, что не являюсь участником Партнёрской программы OZON" type="checkbox" name="confirmation-mob">
+                                            <span class="ref-manager-new-checkbox"></span>
+                                        </label>
+                                        <p>Подтверждаю, что не являюсь участником Партнёрской программы OZON/ ИЛИ являюсь, но отказываюсь от&nbsp;участия в&nbsp;ней и&nbsp;присоединяюсь к реферальной программе в качестве Менеджера OZON.</p>
+                                    </div>
+                                    <input type="button" class="ref-manager-btn ref-manager-show-modal" value="Отправить">
+                                </form>
+                                <div class="ref-manager-bottom">
+                                    <div class="ref-manager-phone">
+                                        <a class="ref-manager-bottom-link" href="tel:88002346006">8 (800) 234-60-06</a> — круглосуточно
+                                    </div>
+                                    <div class="ref-manager-email">
+                                        <a class="ref-manager-bottom-link" href="mailto:referral@ozon.ru">referral@ozon.ru</a>
+                                    </div>
+                                </div>
+                                <div class="ref-manager-copy">
+                                    © 1998—2019,&nbsp;ООО&nbsp;«Интернет&nbsp;Решения». Все&nbsp;права&nbsp;защищены
+                                </div>
+                            </div>
+                            <div class="ref-manager-way ref-manager-way-two">
+                                <div class="ref-manager-content">
+                                    <a class="ref-manager-link ref-manager-link-red" href="https://www.ozon.ru/" target="_blank">Войти в Бизнес кабинет</a>
+                                </div>
+                                <div class="ref-manager-bottom">
+                                    <div class="ref-manager-phone">
+                                        <a class="ref-manager-bottom-link" href="tel:88002346006">8 (800) 234-60-06</a> — круглосуточно
+                                    </div>
+                                    <div class="ref-manager-email">
+                                        <a class="ref-manager-bottom-link" href="mailto:referral@ozon.ru">referral@ozon.ru</a>
+                                    </div>
+                                </div>
+                                <div class="ref-manager-copy">
+                                    © 1998—2019,&nbsp;ООО&nbsp;«Интернет&nbsp;Решения». Все&nbsp;права&nbsp;защищены
+                                </div>
+                            </div>
+                            <div class="ref-manager-way ref-manager-way-three">
+                                <div class="ref-manager-content">
+                                    <div class="ref-manager-wrapper">
+                                        <p class="ref-manager-text">
+                                            Пожалуйста, авторизуйтесь на сайте OZON,
+                                            чтобы продолжить регистрацию в&nbsp;реферальной программе
+                                        </p>
+                                        <button class="ref-manager-link ref-manager-link-red ref-manager-open-auth">Авторизоваться</button>
+                                    </div>
+                                </div>
+                                <div class="ref-manager-bottom">
+                                    <div class="ref-manager-phone">
+                                        <a class="ref-manager-bottom-link" href="tel:88002346006">8 (800) 234-60-06</a> — круглосуточно
+                                    </div>
+                                    <div class="ref-manager-email">
+                                        <a class="ref-manager-bottom-link" href="mailto:referral@ozon.ru">referral@ozon.ru</a>
+                                    </div>
+                                </div>
+                                <div class="ref-manager-copy">
+                                    © 1998—2019,&nbsp;ООО&nbsp;«Интернет&nbsp;Решения». Все&nbsp;права&nbsp;защищены
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js" defer></script>
+    <script src="./js/jquery.scrollify.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js" integrity="sha256-uckMYBvIGtce2L5Vf/mwld5arpR5JuhAEeJyjPZSUKY=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" defer></script>
+    <script src="js/jquery.selectric.min.js" defer></script>
+    <script src="js/datepicker.min.js" defer></script>
+    <script src="js/jquery.inputmask.min.js" defer></script>
+    <script src="js/jquery.modalBox.min.js" defer></script>
+    <script src="js/simplebar.min.js" defer></script>
+	<script src="./js/am-script.js" defer></script>
+    <script src="./js/main.js" defer></script>
+	<script src="./js/ny-script.js" defer></script>
+
+</body>
+</html>

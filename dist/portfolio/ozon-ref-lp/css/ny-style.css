@@ -1,0 +1,2651 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.5.3
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+#ref-manager section.ref-manager-story {
+  font-size: 16px;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(#F91155), color-stop(50%, #F91155), color-stop(50%, #005BFF), to(#005BFF));
+  background: -webkit-linear-gradient(left, #F91155 0%, #F91155 50%, #005BFF 50%, #005BFF 100%);
+  background: -o-linear-gradient(left, #F91155 0%, #F91155 50%, #005BFF 50%, #005BFF 100%);
+  background: linear-gradient(to right, #F91155 0%, #F91155 50%, #005BFF 50%, #005BFF 100%); }
+  @media (max-width: 1440px) {
+    #ref-manager section.ref-manager-story {
+      font-size: -webkit-calc(100vh / 50);
+      font-size: calc(100vh / 50); } }
+  #ref-manager section.ref-manager-story .ref-manager-scroll-img {
+    position: absolute;
+    left: 4.0625em;
+    bottom: 2.8125em;
+    width: 1.25em;
+    height: 3.1875em;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+            animation-name: scroll;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    will-change: transform;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(1.25em);
+            transform: translateY(1.25em); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(1.25em);
+            transform: translateY(1.25em); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+  #ref-manager section.ref-manager-story .ref-manager-container {
+    position: relative;
+    padding: 1.5em 0.625em 2em;
+    height: 100vh; }
+  #ref-manager section.ref-manager-story .ref-manager-menu {
+    margin-bottom: 3.0625em; }
+    #ref-manager section.ref-manager-story .ref-manager-menu .ref-manager-list {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    #ref-manager section.ref-manager-story .ref-manager-menu .ref-manager-item {
+      margin-right: 1.125em; }
+      #ref-manager section.ref-manager-story .ref-manager-menu .ref-manager-item:nth-last-of-type(1) {
+        margin-right: 0; }
+    #ref-manager section.ref-manager-story .ref-manager-menu .ref-manager-link {
+      font-family: 'GTE-Light', Arial, sans-serif;
+      font-weight: 400;
+      padding: 0.125em 1.0625em 0;
+      color: #FFF;
+      font-size: 1em;
+      line-height: 2em;
+      border: 1px solid transparent;
+      font-weight: normal;
+      letter-spacing: 0.01875em;
+      -webkit-border-radius: 0.125em;
+              border-radius: 0.125em; }
+      #ref-manager section.ref-manager-story .ref-manager-menu .ref-manager-link:hover {
+        border-color: #fff; }
+      #ref-manager section.ref-manager-story .ref-manager-menu .ref-manager-link:active {
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid transparent; }
+      #ref-manager section.ref-manager-story .ref-manager-menu .ref-manager-link.ref-manager-active {
+        background: rgba(255, 255, 255, 0.4);
+        border: 1px solid transparent;
+        pointer-events: none; }
+  #ref-manager section.ref-manager-story .ref-manager-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    width: 100%; }
+    #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-left,
+    #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right {
+      width: -webkit-calc(50% - 1px);
+      width: calc(50% - 1px); }
+      #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-left .ref-manager-section-title,
+      #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-section-title {
+        font-family: 'GTE-Bold', Arial, sans-serif;
+        font-weight: 400;
+        font-size: 2.8125em;
+        line-height: 1.1;
+        letter-spacing: 0.05625em;
+        color: #fff;
+        margin: 0 0 0.5em; }
+    #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-left {
+      padding-right: 3.75em; }
+      #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-left .ref-manager-section-title {
+        position: relative;
+        margin-left: -0.3125em; }
+        #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-left .ref-manager-section-title:before {
+          content: "";
+          position: absolute;
+          top: -2.0625em;
+          left: -3.5625em;
+          width: 3em;
+          height: 3em;
+          background: url(../img/story/rounds.svg) no-repeat 50% 50%/contain; }
+      #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-left .ref-manager-img-wrapper {
+        position: relative;
+        height: 27.3125em;
+        padding: 2.5em 0 0;
+        z-index: 2;
+        margin-bottom: 1.5625em; }
+        #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-left .ref-manager-img-wrapper:before {
+          content: "";
+          position: absolute;
+          bottom: -2em;
+          right: 28.4375em;
+          width: 12.1875em;
+          height: 12.1875em;
+          z-index: -1;
+          background: url(../img/story/lines.svg) no-repeat 50% 50%/contain; }
+        #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-left .ref-manager-img-wrapper .ref-manager-car {
+          position: relative;
+          display: block;
+          height: 24.0625em;
+          width: 54.9375em;
+          max-width: none;
+          margin-left: -15.625em; }
+        #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-left .ref-manager-img-wrapper .ref-manager-car-info {
+          font-size: 1.375em;
+          position: absolute;
+          z-index: -1;
+          top: -0.65625em;
+          right: -2.3125em;
+          width: 21.25em;
+          height: 9.8125em;
+          background: url(../img/story/blue-headline.svg) no-repeat 50% 50%/contain;
+          background-position: -0.5625em -0.0625em; }
+          #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-left .ref-manager-img-wrapper .ref-manager-car-info p {
+            position: absolute;
+            top: 1.375em;
+            right: 0;
+            margin: 0;
+            padding: 1.375em;
+            font-family: 'GTE-Bold', Arial, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1em;
+            letter-spacing: 0.04375em;
+            text-align: right;
+            color: #fff;
+            -webkit-transform: rotate(-14deg);
+                -ms-transform: rotate(-14deg);
+                    transform: rotate(-14deg);
+            line-height: 1.3; }
+      #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-left .ref-manager-btn {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 13.75em;
+        height: 3em;
+        -webkit-border-radius: 0.125em;
+                border-radius: 0.125em;
+        background: #fff;
+        text-decoration: none;
+        outline: none;
+        font-family: 'GTE-Regular', Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        color: #797979;
+        font-size: 1.5em;
+        line-height: 1;
+        padding: 0.3125em 0em 0.1875em;
+        text-align: center;
+        margin-left: 2.1875em;
+        border: 0.125em solid #fff;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        letter-spacing: 0.025em; }
+        #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-left .ref-manager-btn:hover {
+          background-color: #cecece;
+          border-color: #cecece;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+    #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right {
+      padding-left: 4.5em;
+      position: relative; }
+      #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-section-title {
+        margin-bottom: 0.8125em; }
+      #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-bonus-list {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        max-height: 33.75em;
+        height: 33.75em;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding-left: 0.625em; }
+        #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-bonus-list .ref-manager-bonus-item {
+          width: 13.75em;
+          height: 10.9375em;
+          position: relative;
+          z-index: 2; }
+          #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-bonus-list .ref-manager-bonus-item .ref-manager-bonus-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            padding: 4.6875em 0.625em 0.625em 3.75em;
+            font-family: 'GTE-Regular', Arial, sans-serif;
+            font-weight: normal;
+            font-size: 1em;
+            line-height: 1.2;
+            color: #fff;
+            background-repeat: no-repeat;
+            -webkit-background-size: 5em 3.75em;
+                    background-size: 5em 3.75em;
+            background-position: 42% 0;
+            letter-spacing: 0.0375em; }
+          #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-bonus-list .ref-manager-bonus-item .ref-manager-before {
+            position: absolute;
+            width: 6.25em;
+            height: 6.25em;
+            left: 0;
+            top: 0.9375em;
+            background: url(../img/story/bonus-bg.svg) no-repeat 50% 50%/contain; }
+          #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-bonus-list .ref-manager-bonus-item:after {
+            top: -0.075em;
+            right: 0;
+            position: absolute;
+            font-family: 'GTE-Regular', Arial, sans-serif;
+            font-weight: normal;
+            color: #fff;
+            font-size: 12.5em;
+            line-height: 1;
+            opacity: .1; }
+        #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-bonus-list .ref-manager-bonus-item:nth-child(1) {
+          -webkit-box-ordinal-group: 2;
+          -webkit-order: 1;
+              -ms-flex-order: 1;
+                  order: 1;
+          margin-right: 6.25em; }
+          #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-bonus-list .ref-manager-bonus-item:nth-child(1):after {
+            content: '1'; }
+          #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-bonus-list .ref-manager-bonus-item:nth-child(1) .ref-manager-bonus-content {
+            background-image: url(../img/story/bonus-1.svg); }
+        #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-bonus-list .ref-manager-bonus-item:nth-child(2) {
+          margin-top: -1em;
+          -webkit-box-ordinal-group: 5;
+          -webkit-order: 4;
+              -ms-flex-order: 4;
+                  order: 4; }
+          #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-bonus-list .ref-manager-bonus-item:nth-child(2):after {
+            content: '2';
+            top: -0.0625em;
+            right: 0.025em; }
+          #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-bonus-list .ref-manager-bonus-item:nth-child(2) .ref-manager-bonus-content {
+            background-image: url(../img/story/bonus-2.svg); }
+        #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-bonus-list .ref-manager-bonus-item:nth-child(3) {
+          -webkit-box-ordinal-group: 3;
+          -webkit-order: 2;
+              -ms-flex-order: 2;
+                  order: 2; }
+          #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-bonus-list .ref-manager-bonus-item:nth-child(3):after {
+            content: '3';
+            top: -0.01875em; }
+          #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-bonus-list .ref-manager-bonus-item:nth-child(3) .ref-manager-bonus-content {
+            background-image: url(../img/story/bonus-3.svg); }
+        #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-bonus-list .ref-manager-bonus-item:nth-child(4) {
+          -webkit-box-ordinal-group: 6;
+          -webkit-order: 5;
+              -ms-flex-order: 5;
+                  order: 5; }
+          #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-bonus-list .ref-manager-bonus-item:nth-child(4):after {
+            content: '4';
+            top: 0.05em;
+            right: 0.025em; }
+          #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-bonus-list .ref-manager-bonus-item:nth-child(4) .ref-manager-bonus-content {
+            background-image: url(../img/story/bonus-4.svg); }
+        #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-bonus-list .ref-manager-bonus-item:nth-child(5) {
+          -webkit-box-ordinal-group: 4;
+          -webkit-order: 3;
+              -ms-flex-order: 3;
+                  order: 3; }
+          #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-bonus-list .ref-manager-bonus-item:nth-child(5):after {
+            content: '5'; }
+          #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-bonus-list .ref-manager-bonus-item:nth-child(5) .ref-manager-bonus-content {
+            background-image: url(../img/story/bonus-5.svg); }
+      #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-info-block {
+        width: 28.75em;
+        min-height: 8em;
+        font-family: 'GTE-Thin', Arial, sans-serif;
+        font-weight: 100;
+        color: #fff;
+        font-size: 0.625em;
+        line-height: 1.2;
+        letter-spacing: 0.05625em;
+        position: absolute;
+        bottom: 0.375em;
+        right: -7.1875em; }
+        #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-info-block .ref-manager-info-text {
+          padding: 0;
+          margin: 0; }
+          #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-info-block .ref-manager-info-text:not(:last-child) {
+            margin-bottom: 1.0625em; }
+          #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-info-block .ref-manager-info-text a {
+            color: #fff;
+            text-decoration: underline; }
+            #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-info-block .ref-manager-info-text a:hover, #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-info-block .ref-manager-info-text a:active, #ref-manager section.ref-manager-story .ref-manager-content .ref-manager-right .ref-manager-info-block .ref-manager-info-text a:visited {
+              color: #fff;
+              text-decoration: underline; }
+
+#ref-manager section.ref-manager-academy {
+  font-size: 16px;
+  position: relative;
+  background: #e4e4e4; }
+  @media (max-width: 1440px) {
+    #ref-manager section.ref-manager-academy {
+      font-size: -webkit-calc(100vh / 50);
+      font-size: calc(100vh / 50); } }
+  #ref-manager section.ref-manager-academy .ref-manager-scroll-img {
+    position: absolute;
+    left: 4.0625em;
+    bottom: 2.8125em;
+    width: 1.25em;
+    height: 3.1875em;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+            animation-name: scroll;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    will-change: transform;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(1.25em);
+            transform: translateY(1.25em); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+  #ref-manager section.ref-manager-academy .ref-manager-container {
+    height: 100vh;
+    padding: 1.5em 0.625em 2.5em; }
+  #ref-manager section.ref-manager-academy .ref-manager-menu {
+    margin-bottom: 1.875em; }
+    #ref-manager section.ref-manager-academy .ref-manager-menu .ref-manager-list {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    #ref-manager section.ref-manager-academy .ref-manager-menu .ref-manager-item {
+      margin-right: 1.125em; }
+      #ref-manager section.ref-manager-academy .ref-manager-menu .ref-manager-item:nth-last-of-type(1) {
+        margin-right: 0; }
+    #ref-manager section.ref-manager-academy .ref-manager-menu .ref-manager-link {
+      font-family: 'GTE-Light', Arial, sans-serif;
+      font-weight: 400;
+      padding: 0.125em 1.0625em 0;
+      color: #979797;
+      font-size: 1em;
+      line-height: 2em;
+      border: 1px solid transparent;
+      -webkit-border-radius: 0.125em;
+              border-radius: 0.125em;
+      letter-spacing: 0.01875em; }
+      #ref-manager section.ref-manager-academy .ref-manager-menu .ref-manager-link:hover {
+        border-color: #979797; }
+      #ref-manager section.ref-manager-academy .ref-manager-menu .ref-manager-link:active {
+        background: rgba(151, 151, 151, 0.2);
+        border: 1px solid transparent; }
+      #ref-manager section.ref-manager-academy .ref-manager-menu .ref-manager-link.ref-manager-active {
+        background: rgba(151, 151, 151, 0.4);
+        border: 1px solid transparent;
+        pointer-events: none; }
+  #ref-manager section.ref-manager-academy .ref-manager-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    width: 100%; }
+    #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left,
+    #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-right {
+      width: -webkit-calc(50% - 1px);
+      width: calc(50% - 1px); }
+      #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-section-title,
+      #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-right .ref-manager-section-title {
+        font-family: 'GTE-Bold', Arial, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.8125em;
+        line-height: 1.1;
+        letter-spacing: 0.0625em;
+        margin: 0 0 3.5em; }
+    #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left {
+      position: relative;
+      margin-left: -1.875em; }
+      #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-zig-zag-1 {
+        position: absolute;
+        top: 68.8%;
+        right: 0.5em;
+        width: 1em;
+        height: 7.5em; }
+      #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-zig-zag-2 {
+        position: absolute;
+        top: 66%;
+        right: -0.5em;
+        width: 1em;
+        height: 7.5em; }
+      #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-zig-zag-1, #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-zig-zag-2 {
+        overflow: hidden; }
+        #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-zig-zag-1 .ref-manager-inner, #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-zig-zag-2 .ref-manager-inner {
+          width: 100%;
+          position: relative;
+          -webkit-animation: scroll-top 3s infinite linear;
+                  animation: scroll-top 3s infinite linear;
+          will-change: transform;
+          -webkit-transition: .2s;
+          -o-transition: .2s;
+          transition: .2s; }
+          #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-zig-zag-1 .ref-manager-inner:after, #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-zig-zag-2 .ref-manager-inner:after {
+            content: "";
+            height: 500%;
+            width: 100%;
+            position: absolute;
+            background-image: url(../img/academy/zig-zag.svg);
+            -webkit-background-size: 100% 20%;
+                    background-size: 100% 20%; }
+          #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-zig-zag-1 .ref-manager-inner .ref-manager-img, #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-zig-zag-2 .ref-manager-inner .ref-manager-img {
+            width: 100%; }
+
+@-webkit-keyframes scroll-top {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+  to {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%); } }
+
+@keyframes scroll-top {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+  to {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%); } }
+      #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-section-title {
+        color: #005BFF;
+        margin-bottom: 0.3125em; }
+      #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-info-block {
+        width: 32.375em;
+        height: 28em;
+        margin-bottom: 1em;
+        margin-left: -0.625em;
+        position: relative; }
+        #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-info-block .ref-manager-info-block-bg {
+          position: absolute;
+          top: -0.625em;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: url(../img/academy/blue-text.svg) no-repeat 50% 50%/contain;
+          z-index: 1; }
+        #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-info-block .ref-manager-info-block-content {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          padding: 5.4375em 3.75em 5em 5.375em;
+          z-index: 2; }
+        #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-info-block .ref-manager-info-text {
+          font-family: 'GTE-Light', Arial, sans-serif;
+          font-weight: 400;
+          font-size: 1em;
+          line-height: 1.2;
+          color: #fff;
+          letter-spacing: 0.04063em; }
+          #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-info-block .ref-manager-info-text b {
+            font-family: 'GTE-Regular', Arial, sans-serif;
+            font-weight: normal;
+            letter-spacing: 0.0625em; }
+          #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-info-block .ref-manager-info-text:nth-child(1) {
+            margin-bottom: 1.1875em; }
+          #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-info-block .ref-manager-info-text:nth-child(2) {
+            margin-bottom: 2.375em; }
+        #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-info-block .ref-manager-info-list {
+          list-style: none;
+          font-family: 'GTE-Regular', Arial, sans-serif;
+          font-weight: normal;
+          font-size: 1em;
+          line-height: 1.2;
+          color: #fff;
+          letter-spacing: 0.04063em; }
+          #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-info-block .ref-manager-info-list .ref-manager-info-item {
+            padding: 0 0 1.25em 0.9375em;
+            position: relative; }
+            #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-info-block .ref-manager-info-list .ref-manager-info-item:last-child {
+              padding-bottom: 0; }
+            #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-info-block .ref-manager-info-list .ref-manager-info-item:before {
+              content: '';
+              position: absolute;
+              left: -0.625em;
+              top: 0.375em;
+              width: 0.625em;
+              height: 0.625em;
+              -webkit-border-radius: 50%;
+                      border-radius: 50%;
+              background: #F91155; }
+      #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-btn {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 13.75em;
+        height: 3.125em;
+        -webkit-border-radius: 0.125em;
+                border-radius: 0.125em;
+        background: #F91155;
+        text-decoration: none;
+        outline: none;
+        font-family: 'GTE-Regular', Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        color: #fff;
+        font-size: 1.5em;
+        line-height: 1;
+        padding: 0.3125em 0.5em 0.1875em;
+        margin-left: 3.5em;
+        border: 2px solid #F91155;
+        cursor: pointer;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        letter-spacing: 0.03125em; }
+        #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-left .ref-manager-btn:hover {
+          background-color: #c41c4d;
+          border-color: #c41c4d;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+    #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-right {
+      padding-left: 5.375em; }
+      #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-right .ref-manager-section-title {
+        color: #F91155;
+        margin-bottom: 1.8em;
+        margin-right: -0.625em;
+        position: relative; }
+        #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-right .ref-manager-section-title:before {
+          content: "";
+          position: absolute;
+          width: 2.4375em;
+          height: 2.4375em;
+          background: url(../img/academy/dots.svg) no-repeat 50% 50%/contain;
+          right: -0.625em;
+          bottom: -2em; }
+      #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-right .ref-manager-online-list {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        max-height: 35.625em;
+        height: 35.625em;
+        padding-left: 0.125em; }
+        #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-right .ref-manager-online-list .ref-manager-online-item {
+          width: 12.5em;
+          height: 10.625em;
+          position: relative; }
+          #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-right .ref-manager-online-list .ref-manager-online-item .ref-manager-online-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 4.6875em 0.625em 0.625em 3.75em;
+            font-family: 'GTE-Regular', Arial, sans-serif;
+            font-weight: normal;
+            font-size: 1em;
+            line-height: 1.12;
+            color: #242424;
+            background-repeat: no-repeat;
+            -webkit-background-size: 5em 3.75em;
+                    background-size: 5em 3.75em;
+            background-position: 50% 0;
+            z-index: 2; }
+          #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-right .ref-manager-online-list .ref-manager-online-item .ref-manager-before {
+            position: absolute;
+            width: 6.25em;
+            height: 6.25em;
+            left: 0;
+            top: 0.3125em;
+            background: url(../img/academy/online-bg.svg) no-repeat 50% 50%/contain; }
+        #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-right .ref-manager-online-list .ref-manager-online-item:nth-child(1) {
+          margin-right: 2.8125em; }
+          #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-right .ref-manager-online-list .ref-manager-online-item:nth-child(1) .ref-manager-online-content {
+            background-image: url(../img/academy/online-1.svg); }
+        #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-right .ref-manager-online-list .ref-manager-online-item:nth-child(2) {
+          margin-right: 2.8125em; }
+          #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-right .ref-manager-online-list .ref-manager-online-item:nth-child(2) .ref-manager-online-content {
+            background-image: url(../img/academy/online-2.svg); }
+        #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-right .ref-manager-online-list .ref-manager-online-item:nth-child(3) {
+          margin-right: 2.8125em; }
+          #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-right .ref-manager-online-list .ref-manager-online-item:nth-child(3) .ref-manager-online-content {
+            background-image: url(../img/academy/online-3.svg); }
+        #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-right .ref-manager-online-list .ref-manager-online-item:nth-child(4) {
+          margin-top: 2.5em; }
+        #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-right .ref-manager-online-list .ref-manager-online-item:nth-child(4) .ref-manager-online-content {
+          background-image: url(../img/academy/online-4.svg); }
+        #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-right .ref-manager-online-list .ref-manager-online-item:nth-child(5) .ref-manager-online-content {
+          background-image: url(../img/academy/online-5.svg); }
+        #ref-manager section.ref-manager-academy .ref-manager-content .ref-manager-right .ref-manager-online-list .ref-manager-online-item:nth-child(6) .ref-manager-online-content {
+          background-image: url(../img/academy/online-6.svg); }
+
+#ref-manager section.ref-manager-feedback {
+  font-size: 16px;
+  background: #005BFF; }
+  @media (max-width: 1440px) {
+    #ref-manager section.ref-manager-feedback {
+      font-size: -webkit-calc(100vh / 50);
+      font-size: calc(100vh / 50); } }
+  #ref-manager section.ref-manager-feedback .ref-manager-container {
+    height: 100vh;
+    padding: 1.5em 0.625em 1.5em 0; }
+  #ref-manager section.ref-manager-feedback .ref-manager-menu {
+    margin-bottom: 3.125em; }
+    #ref-manager section.ref-manager-feedback .ref-manager-menu .ref-manager-list {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    #ref-manager section.ref-manager-feedback .ref-manager-menu .ref-manager-item {
+      margin-right: 1.125em; }
+      #ref-manager section.ref-manager-feedback .ref-manager-menu .ref-manager-item:nth-last-of-type(1) {
+        margin-right: 0; }
+    #ref-manager section.ref-manager-feedback .ref-manager-menu .ref-manager-link {
+      font-family: 'GTE-Light', Arial, sans-serif;
+      font-weight: 400;
+      padding: 0.125em 1.0625em 0;
+      color: #fff;
+      font-size: 1em;
+      line-height: 2;
+      border: 1px solid transparent;
+      -webkit-border-radius: 0.125em;
+              border-radius: 0.125em;
+      letter-spacing: 0.01875em; }
+      #ref-manager section.ref-manager-feedback .ref-manager-menu .ref-manager-link:hover {
+        border-color: #fff; }
+      #ref-manager section.ref-manager-feedback .ref-manager-menu .ref-manager-link:active {
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid transparent; }
+      #ref-manager section.ref-manager-feedback .ref-manager-menu .ref-manager-link.ref-manager-active {
+        background: rgba(255, 255, 255, 0.4);
+        border: 1px solid transparent;
+        pointer-events: none; }
+  #ref-manager section.ref-manager-feedback .ref-manager-section-title {
+    font-family: 'GTE-Bold', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.8125em;
+    line-height: 1.04;
+    letter-spacing: 0.05312em;
+    color: #fff;
+    margin: 0 0 0.875em; }
+  #ref-manager section.ref-manager-feedback .ref-manager-way-one,
+  #ref-manager section.ref-manager-feedback .ref-manager-way-two,
+  #ref-manager section.ref-manager-feedback .ref-manager-way-three {
+    margin-bottom: 3.4375em;
+    display: none; }
+    #ref-manager section.ref-manager-feedback .ref-manager-way-one.ref-manager-way-visible,
+    #ref-manager section.ref-manager-feedback .ref-manager-way-two.ref-manager-way-visible,
+    #ref-manager section.ref-manager-feedback .ref-manager-way-three.ref-manager-way-visible {
+      display: block; }
+  #ref-manager section.ref-manager-feedback .ref-manager-way-two,
+  #ref-manager section.ref-manager-feedback .ref-manager-way-three {
+    min-height: 38em;
+    position: relative; }
+    #ref-manager section.ref-manager-feedback .ref-manager-way-two .ref-manager-content,
+    #ref-manager section.ref-manager-feedback .ref-manager-way-three .ref-manager-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      #ref-manager section.ref-manager-feedback .ref-manager-way-two .ref-manager-content .ref-manager-wrapper,
+      #ref-manager section.ref-manager-feedback .ref-manager-way-three .ref-manager-content .ref-manager-wrapper {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+      #ref-manager section.ref-manager-feedback .ref-manager-way-two .ref-manager-content .ref-manager-text,
+      #ref-manager section.ref-manager-feedback .ref-manager-way-three .ref-manager-content .ref-manager-text {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 23.5em;
+        height: 3.75em;
+        font-family: GTE-Thin, Arial, sans-serif;
+        font-size: 1em;
+        line-height: 1.1875em;
+        letter-spacing: 0.03125em;
+        color: #fff;
+        margin-right: 3.25em;
+        padding-top: 0.75em; }
+      #ref-manager section.ref-manager-feedback .ref-manager-way-two .ref-manager-content .ref-manager-link,
+      #ref-manager section.ref-manager-feedback .ref-manager-way-three .ref-manager-content .ref-manager-link {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 13.125em;
+        height: 2.875em;
+        -webkit-border-radius: 0.125em;
+                border-radius: 0.125em;
+        text-decoration: none;
+        outline: none;
+        font-family: 'GTE-Regular', Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5em;
+        line-height: 1;
+        padding: 0.3125em 0.5em 0.1875em;
+        cursor: pointer;
+        border: 2px solid #f91155; }
+        @media (max-width: 992px) {
+          #ref-manager section.ref-manager-feedback .ref-manager-way-two .ref-manager-content .ref-manager-link,
+          #ref-manager section.ref-manager-feedback .ref-manager-way-three .ref-manager-content .ref-manager-link {
+            width: 10.625em; } }
+        #ref-manager section.ref-manager-feedback .ref-manager-way-two .ref-manager-content .ref-manager-link.ref-manager-link-red,
+        #ref-manager section.ref-manager-feedback .ref-manager-way-three .ref-manager-content .ref-manager-link.ref-manager-link-red {
+          color: #fff;
+          background: #F91155;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+          #ref-manager section.ref-manager-feedback .ref-manager-way-two .ref-manager-content .ref-manager-link.ref-manager-link-red:hover,
+          #ref-manager section.ref-manager-feedback .ref-manager-way-three .ref-manager-content .ref-manager-link.ref-manager-link-red:hover {
+            background: #c41c4d;
+            border-color: #c41c4d;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s; }
+  #ref-manager section.ref-manager-feedback .ref-manager-feedback-form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
+    #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) {
+      width: 24.0625em;
+      min-width: 23.75em;
+      margin-right: 1.5em; }
+      #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 0.75em;
+        font-family: 'GTE-Light', Arial,sans-serif;
+        font-weight: 400;
+        color: #fff;
+        font-size: 1em;
+        line-height: 1.2;
+        letter-spacing: 0.02937em; }
+        #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group label.ref-manager-feedback-form-group-label {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          width: 50%; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group label.ref-manager-feedback-form-group-label .ref-manager-feedback-form-group-text {
+            width: 5.625em;
+            padding-right: 0.625em; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group label.ref-manager-feedback-form-group-label .ref-manager-air-date-picker {
+            pointer-events: none; }
+        #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group.ref-manager-ui-input {
+          position: relative; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group.ref-manager-ui-input .ref-manager-wrap-scroll {
+            position: absolute;
+            top: 100%;
+            left: 5.625em;
+            right: 0;
+            height: auto; }
+            #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group.ref-manager-ui-input .ref-manager-wrap-scroll .ref-manager-wrapper-city-list {
+              height: auto;
+              max-height: 9.8125em; }
+              #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group.ref-manager-ui-input .ref-manager-wrap-scroll .ref-manager-wrapper-city-list .ref-manager-city-list {
+                margin: 0;
+                padding: 0; }
+                #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group.ref-manager-ui-input .ref-manager-wrap-scroll .ref-manager-wrapper-city-list .ref-manager-city-list .ref-manager-city-item {
+                  color: #797979;
+                  border-left: 0.625em solid #FFFFFF;
+                  border-right: 0.625em solid #FFFFFF;
+                  border-bottom: 1px solid #797979;
+                  padding: 0.625em 0.3125em;
+                  background: #fff;
+                  cursor: pointer; }
+                  #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group.ref-manager-ui-input .ref-manager-wrap-scroll .ref-manager-wrapper-city-list .ref-manager-city-list .ref-manager-city-item:first-child {
+                    -webkit-border-radius: 0.125em 0.125em 0 0;
+                            border-radius: 0.125em 0.125em 0 0; }
+                  #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group.ref-manager-ui-input .ref-manager-wrap-scroll .ref-manager-wrapper-city-list .ref-manager-city-list .ref-manager-city-item:last-child {
+                    border-bottom: 1px solid transparent;
+                    -webkit-border-radius: 0 0 0.125em 0.125em;
+                            border-radius: 0 0 0.125em 0.125em; }
+                  #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group.ref-manager-ui-input .ref-manager-wrap-scroll .ref-manager-wrapper-city-list .ref-manager-city-list .ref-manager-city-item:hover {
+                    background: #E4E4E4;
+                    border-left: 0.625em solid #E4E4E4;
+                    border-right: 0.625em solid #E4E4E4; }
+        #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group label {
+          width: 5.625em;
+          padding-right: 0.625em; }
+        #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text'],
+        #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email'] {
+          -webkit-box-flex: 1;
+          -webkit-flex-grow: 1;
+              -ms-flex-positive: 1;
+                  flex-grow: 1;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          background: #005BFF;
+          border: 1px solid #fff;
+          color: inherit;
+          padding: 0.75em 0.6875em 0.4375em;
+          -webkit-border-radius: 0.125em;
+                  border-radius: 0.125em;
+          font: inherit; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']::-webkit-input-placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']::-webkit-input-placeholder {
+            color: #fff;
+            font-family: 'GTE-Thin', Arial,sans-serif;
+            letter-spacing: 0.05em; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']::-moz-placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']::-moz-placeholder {
+            color: #fff;
+            font-family: 'GTE-Thin', Arial,sans-serif;
+            letter-spacing: 0.05em; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']:-ms-input-placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']:-ms-input-placeholder {
+            color: #fff;
+            font-family: 'GTE-Thin', Arial,sans-serif;
+            letter-spacing: 0.05em; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text'].ref-manager-air-date-picker,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email'].ref-manager-air-date-picker {
+            cursor: pointer;
+            max-width: 6.25em; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']:focus,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']:focus {
+            outline: none;
+            /*background-color: rgba(244, 244, 244, 0.2);*/ }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']#ref-manager-name:hover::-webkit-input-placeholder, #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']#ref-manager-name:focus::-webkit-input-placeholder, #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']#ref-manager-email:hover::-webkit-input-placeholder, #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']#ref-manager-email:focus::-webkit-input-placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']#ref-manager-name:hover::-webkit-input-placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']#ref-manager-name:focus::-webkit-input-placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']#ref-manager-email:hover::-webkit-input-placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']#ref-manager-email:focus::-webkit-input-placeholder {
+            color: transparent; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']#ref-manager-name:hover::-moz-placeholder, #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']#ref-manager-name:focus::-moz-placeholder, #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']#ref-manager-email:hover::-moz-placeholder, #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']#ref-manager-email:focus::-moz-placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']#ref-manager-name:hover::-moz-placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']#ref-manager-name:focus::-moz-placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']#ref-manager-email:hover::-moz-placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']#ref-manager-email:focus::-moz-placeholder {
+            color: transparent; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']#ref-manager-name:hover:-ms-input-placeholder, #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']#ref-manager-name:focus:-ms-input-placeholder, #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']#ref-manager-email:hover:-ms-input-placeholder, #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']#ref-manager-email:focus:-ms-input-placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']#ref-manager-name:hover:-ms-input-placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']#ref-manager-name:focus:-ms-input-placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']#ref-manager-email:hover:-ms-input-placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']#ref-manager-email:focus:-ms-input-placeholder {
+            color: transparent; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']#ref-manager-name:hover::-ms-input-placeholder, #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']#ref-manager-name:focus::-ms-input-placeholder, #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']#ref-manager-email:hover::-ms-input-placeholder, #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']#ref-manager-email:focus::-ms-input-placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']#ref-manager-name:hover::-ms-input-placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']#ref-manager-name:focus::-ms-input-placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']#ref-manager-email:hover::-ms-input-placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']#ref-manager-email:focus::-ms-input-placeholder {
+            color: transparent; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']#ref-manager-name:hover::placeholder, #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']#ref-manager-name:focus::placeholder, #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']#ref-manager-email:hover::placeholder, #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text']#ref-manager-email:focus::placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']#ref-manager-name:hover::placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']#ref-manager-name:focus::placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']#ref-manager-email:hover::placeholder,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email']#ref-manager-email:focus::placeholder {
+            color: transparent; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='text'].ref-manager-invalid,
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group input[type='email'].ref-manager-invalid {
+            border-color: #F91155 !important; }
+        #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-form-group:last-of-type {
+          margin-bottom: 1.5em; }
+      #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(1) .ref-manager-feedback-info {
+        margin: 0;
+        padding: 0;
+        font-family: 'GTE-Thin', Arial, sans-serif;
+        font-weight: 400;
+        color: #fff;
+        font-size: 1em;
+        line-height: 1.2;
+        letter-spacing: 0.04375em; }
+    #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(2) {
+      width: 18.6875em;
+      margin-right: 5.125em; }
+      #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(2) .ref-manager-feedback-form-group {
+        width: 100%;
+        position: relative;
+        margin-bottom: 0.75em;
+        font-family: 'GTE-Regular', Arial, sans-serif;
+        color: #fff;
+        font-weight: normal;
+        font-size: 1em;
+        line-height: 1.2;
+        letter-spacing: 0.02937em; }
+        #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(2) .ref-manager-feedback-form-group input[type="text"] {
+          -webkit-box-flex: 1;
+          -webkit-flex-grow: 1;
+              -ms-flex-positive: 1;
+                  flex-grow: 1;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          background: #005BFF;
+          border: 1px solid #fff;
+          color: inherit;
+          padding: 0.75em 2.5em 0.4375em 0.6875em;
+          -webkit-border-radius: 2px;
+                  border-radius: 2px;
+          font: inherit;
+          width: 100%; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(2) .ref-manager-feedback-form-group input[type="text"]::-webkit-input-placeholder {
+            color: #fff;
+            font-family: 'GTE-Thin', Arial,sans-serif;
+            letter-spacing: 0.05em; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(2) .ref-manager-feedback-form-group input[type="text"]::-moz-placeholder {
+            color: #fff;
+            font-family: 'GTE-Thin', Arial,sans-serif;
+            letter-spacing: 0.05em; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(2) .ref-manager-feedback-form-group input[type="text"]:-ms-input-placeholder {
+            color: #fff;
+            font-family: 'GTE-Thin', Arial,sans-serif;
+            letter-spacing: 0.05em; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(2) .ref-manager-feedback-form-group input[type="text"]:focus {
+            outline: none;
+            background-color: rgba(244, 244, 244, 0.2); }
+            #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(2) .ref-manager-feedback-form-group input[type="text"]:focus::-webkit-input-placeholder {
+              color: transparent; }
+            #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(2) .ref-manager-feedback-form-group input[type="text"]:focus::-moz-placeholder {
+              color: transparent; }
+            #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(2) .ref-manager-feedback-form-group input[type="text"]:focus:-ms-input-placeholder {
+              color: transparent; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(2) .ref-manager-feedback-form-group input[type="text"]:hover::-webkit-input-placeholder {
+            color: transparent; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(2) .ref-manager-feedback-form-group input[type="text"]:hover::-moz-placeholder {
+            color: transparent; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(2) .ref-manager-feedback-form-group input[type="text"]:hover:-ms-input-placeholder {
+            color: transparent; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(2) .ref-manager-feedback-form-group input[type="text"]:hover::-ms-input-placeholder {
+            color: transparent; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(2) .ref-manager-feedback-form-group input[type="text"]:hover::placeholder {
+            color: transparent; }
+        #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(2) .ref-manager-feedback-form-group.ref-manager-feedback-form-social:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 2.5em;
+          height: 2.5em;
+          background-repeat: no-repeat;
+          background-position: 50% 50%; }
+        #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(2) .ref-manager-feedback-form-group.ref-manager-feedback-form-social.ref-manager-feedback-form-social-vk:before {
+          background-image: url(../img/feedback/soc-vk.svg);
+          -webkit-background-size: 1.5em 0.875em;
+                  background-size: 1.5em 0.875em; }
+        #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(2) .ref-manager-feedback-form-group.ref-manager-feedback-form-social.ref-manager-feedback-form-social-ok:before {
+          background-image: url(../img/feedback/soc-ok.svg);
+          -webkit-background-size: 0.875em 1.5625em;
+                  background-size: 0.875em 1.5625em;
+          top: -0.0625em; }
+        #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(2) .ref-manager-feedback-form-group.ref-manager-feedback-form-social.ref-manager-feedback-form-social-fb:before {
+          background-image: url(../img/feedback/soc-fb.svg);
+          -webkit-background-size: 0.875em 1.5625em;
+                  background-size: 0.875em 1.5625em;
+          top: -0.0625em; }
+        #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(2) .ref-manager-feedback-form-group.ref-manager-feedback-form-social.ref-manager-feedback-form-social-in:before {
+          background-image: url(../img/feedback/soc-in.svg);
+          -webkit-background-size: 1.5em 1.5em;
+                  background-size: 1.5em 1.5em;
+          top: -0.0625em; }
+    #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(3) {
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
+      #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(3) .ref-manager-checkbox-area {
+        font-family: GTE-Thin, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 0.6875em;
+        line-height: 1.3;
+        letter-spacing: 0.09375em;
+        color: #fff;
+        margin-bottom: 1.25em;
+        max-width: 40em;
+        padding-left: 3.1875em; }
+        #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(3) .ref-manager-checkbox-area a {
+          font-family: GTE-Thin, Arial, sans-serif;
+          font-weight: 400;
+          line-height: 1.2;
+          letter-spacing: 0.09375em;
+          color: #fff;
+          text-decoration: underline; }
+        #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(3) .ref-manager-checkbox-area label {
+          font: inherit;
+          position: relative;
+          cursor: pointer; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(3) .ref-manager-checkbox-area label input[type=checkbox] {
+            position: absolute;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            opacity: 0; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(3) .ref-manager-checkbox-area label .ref-manager-new-checkbox {
+            position: absolute;
+            margin-left: -3.3125em;
+            width: 1.5625em;
+            height: 1.5625em;
+            background: url(../img/feedback/check-false.svg) no-repeat 50% 50%/contain; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(3) .ref-manager-checkbox-area label input[type=checkbox]:checked + .ref-manager-new-checkbox {
+            background: url(../img/feedback/check-true.svg) no-repeat 50% 50%/contain; }
+          #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(3) .ref-manager-checkbox-area label input.ref-manager-invalid[type=checkbox] + .ref-manager-new-checkbox {
+            background: url(../img/feedback/check-invalid.svg) no-repeat 50% 50%/contain; }
+      #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(3) .ref-manager-btn {
+        -webkit-appearance: none;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 13.5625em;
+        height: 3.125em;
+        -webkit-border-radius: 0.125em;
+                border-radius: 0.125em;
+        background: #F91155;
+        text-decoration: none;
+        outline: none;
+        font-family: 'GTE-Regular', Arial, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-weight: normal;
+        color: #fff;
+        font-size: 1.5em;
+        line-height: 1;
+        padding: 0.3125em 0.5em 0.1875em;
+        cursor: pointer;
+        border: 2px solid #F91155;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        letter-spacing: 0.03125em; }
+        #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(3) .ref-manager-btn:hover {
+          border-color: #c41c4d;
+          background: #c41c4d; }
+        #ref-manager section.ref-manager-feedback .ref-manager-feedback-form .ref-manager-feedback-column:nth-child(3) .ref-manager-btn.ref-manager-disabled {
+          background: #C2C2C2;
+          border-color: #C2C2C2;
+          pointer-events: none;
+          cursor: default; }
+  #ref-manager section.ref-manager-feedback .ref-manager-more-info {
+    max-width: 63.125em;
+    width: 100%;
+    margin: 0 5.625em 2.1875em;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1.0625em 2.125em;
+    font-family: GTE-Regular, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: 0.02937em; }
+    #ref-manager section.ref-manager-feedback .ref-manager-more-info .ref-manager-more-info-title {
+      font: inherit;
+      font-weight: normal;
+      margin-bottom: 1.25em;
+      letter-spacing: 0.04375em; }
+    #ref-manager section.ref-manager-feedback .ref-manager-more-info .ref-manager-more-info-list {
+      font-family: GTE-Thin, Arial, sans-serif;
+      font-weight: 400;
+      margin: 0;
+      padding: 0 0 0.625em 1.125em;
+      list-style-type: decimal; }
+      #ref-manager section.ref-manager-feedback .ref-manager-more-info .ref-manager-more-info-list .ref-manager-more-info-item {
+        position: relative;
+        list-style-type: decimal;
+        padding-left: 0.4375em;
+        letter-spacing: 0.04375em; }
+    #ref-manager section.ref-manager-feedback .ref-manager-more-info .ref-manager-more-info-text {
+      padding: 0;
+      letter-spacing: 0.04375em; }
+  #ref-manager section.ref-manager-feedback .ref-manager-bottom {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-family: GTE-Bold, Arial, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.25em;
+    line-height: 1.2;
+    letter-spacing: 0.045em;
+    margin: 0 auto; }
+    #ref-manager section.ref-manager-feedback .ref-manager-bottom .ref-manager-phone {
+      font: inherit; }
+      #ref-manager section.ref-manager-feedback .ref-manager-bottom .ref-manager-phone .ref-manager-bottom-link {
+        color: inherit;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s; }
+        #ref-manager section.ref-manager-feedback .ref-manager-bottom .ref-manager-phone .ref-manager-bottom-link:hover {
+          opacity: .7; }
+    #ref-manager section.ref-manager-feedback .ref-manager-bottom .ref-manager-email {
+      font: inherit; }
+      #ref-manager section.ref-manager-feedback .ref-manager-bottom .ref-manager-email .ref-manager-bottom-link {
+        color: inherit;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s; }
+        #ref-manager section.ref-manager-feedback .ref-manager-bottom .ref-manager-email .ref-manager-bottom-link:hover {
+          opacity: .7; }
+    #ref-manager section.ref-manager-feedback .ref-manager-bottom .ref-manager-copyright {
+      font-family: GTE-Thin, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 0.75em;
+      line-height: 1;
+      letter-spacing: 0.02813em;
+      color: #fff;
+      max-width: 21.25em; }
+
+#ref-manager .modal-box {
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  outline: none;
+  overflow: hidden !important; }
+  @media (max-width: 1440px) {
+    #ref-manager .modal-box {
+      font-size: -webkit-calc(100vw / 90);
+      font-size: calc(100vw / 90); } }
+  @media (max-width: 992px) {
+    #ref-manager .modal-box {
+      font-size: -webkit-calc(100vw / 50);
+      font-size: calc(100vw / 50); } }
+  #ref-manager .modal-box .inner.inner-custom {
+    width: 50em;
+    padding: 1.5625em 2.1875em; }
+    @media (max-width: 992px) {
+      #ref-manager .modal-box .inner.inner-custom {
+        width: 37.5em; } }
+    #ref-manager .modal-box .inner.inner-custom.show-modal-inner .ref-manager-btn-wrap .ref-manager-btn {
+      opacity: 1; }
+    #ref-manager .modal-box .inner.inner-custom .close.close-custom {
+      font-size: 1em;
+      position: absolute;
+      right: -6.25em;
+      top: 0;
+      width: 3.75em;
+      height: 3.75em;
+      background: url(../img/close.svg) no-repeat 50% 50%/contain;
+      cursor: pointer;
+      outline: none; }
+      @media (max-width: 992px) {
+        #ref-manager .modal-box .inner.inner-custom .close.close-custom {
+          right: -5em; } }
+    #ref-manager .modal-box .inner.inner-custom .ref-manager-info-text {
+      font-family: GTE-Regular, Arial, sans-serif;
+      font-weight: normal;
+      padding: 0;
+      font-size: 1.5em;
+      line-height: 1.2;
+      text-align: center;
+      letter-spacing: 0.01em;
+      color: #242424; }
+    #ref-manager .modal-box .inner.inner-custom .ref-manager-btn-wrap {
+      margin: 1em 0 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; }
+      #ref-manager .modal-box .inner.inner-custom .ref-manager-btn-wrap .ref-manager-btn {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 13.125em;
+        height: 2.875em;
+        -webkit-border-radius: 0.125em;
+                border-radius: 0.125em;
+        text-decoration: none;
+        outline: none;
+        font-family: 'GTE-Regular', Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5em;
+        line-height: 1;
+        padding: 0.3125em 0.5em 0.1875em;
+        cursor: pointer;
+        border: 2px solid #f91155;
+        opacity: 0; }
+        @media (max-width: 992px) {
+          #ref-manager .modal-box .inner.inner-custom .ref-manager-btn-wrap .ref-manager-btn {
+            width: 10.625em; } }
+        #ref-manager .modal-box .inner.inner-custom .ref-manager-btn-wrap .ref-manager-btn.ref-manager-btn-red {
+          color: #fff;
+          background: #F91155;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+          #ref-manager .modal-box .inner.inner-custom .ref-manager-btn-wrap .ref-manager-btn.ref-manager-btn-red:hover {
+            background: #c41c4d;
+            border-color: #c41c4d;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s; }
+        #ref-manager .modal-box .inner.inner-custom .ref-manager-btn-wrap .ref-manager-btn.ref-manager-btn-white {
+          color: #797979;
+          background: #fff;
+          border: 2px solid #797979;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+          #ref-manager .modal-box .inner.inner-custom .ref-manager-btn-wrap .ref-manager-btn.ref-manager-btn-white:hover {
+            background: #cecece;
+            border-color: #cecece;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s; }
+  @media (max-width: 992px) {
+    #ref-manager .modal-box#ref-manager-faq {
+      padding: 0;
+      font-size: -webkit-calc(100vw / 22);
+      font-size: calc(100vw / 22); } }
+  @media (max-width: 992px) {
+    #ref-manager .modal-box#ref-manager-faq .close.close-custom {
+      top: 1.875em;
+      right: 0.8125em;
+      width: 1.25em;
+      height: 1.25em;
+      z-index: 2; } }
+  #ref-manager .modal-box#ref-manager-faq.active .inner.show-modal-inner .ref-manager-faq-list-wrap {
+    opacity: 1; }
+  #ref-manager .modal-box#ref-manager-faq .inner {
+    padding: 0;
+    height: 29.6875em;
+    max-height: 90%; }
+    @media (max-width: 992px) {
+      #ref-manager .modal-box#ref-manager-faq .inner {
+        height: 100vh;
+        width: 100vw;
+        max-height: 100%; } }
+    #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-title {
+      display: none;
+      padding-top: 1.375em;
+      font-family: 'GTE-Bold', Arial, sans-serif;
+      font-weight: 400;
+      color: #005BFF;
+      font-size: 1.375em;
+      line-height: 1;
+      letter-spacing: 0.02813em;
+      padding-left: 1.375em;
+      margin-bottom: 0.75em; }
+      @media (max-width: 992px) {
+        #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-title {
+          display: block;
+          padding-left: 0.5em; } }
+    #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-faq-list-wrap {
+      max-height: 100%;
+      opacity: 0; }
+      #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-faq-list-wrap .ref-manager-faq-list {
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-faq-list-wrap .ref-manager-faq-list .ref-manager-faq-item:nth-of-type(1) .ref-manager-question-title {
+          border-top: 0 !important; }
+          @media (max-width: 992px) {
+            #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-faq-list-wrap .ref-manager-faq-list .ref-manager-faq-item:nth-of-type(1) .ref-manager-question-title {
+              border-top: .5px solid #D8D8D8  !important; } }
+        #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-faq-list-wrap .ref-manager-faq-list .ref-manager-faq-item .ref-manager-question {
+          background: #fff;
+          border-left: 0.875em solid #fff;
+          border-right: 0.875em solid #fff;
+          cursor: pointer; }
+          @media (max-width: 992px) {
+            #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-faq-list-wrap .ref-manager-faq-list .ref-manager-faq-item .ref-manager-question {
+              border-left: 0.6875em solid #fff;
+              border-right: 0.6875em solid #fff; } }
+          #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-faq-list-wrap .ref-manager-faq-list .ref-manager-faq-item .ref-manager-question .ref-manager-question-title {
+            margin: 0;
+            padding: 0.625em 0.9375em 0.5em;
+            font-family: GTE-Regular, Arial, sans-serif;
+            font-weight: normal;
+            font-size: 1.5em;
+            line-height: 1.2;
+            letter-spacing: 0.01em;
+            color: #242424;
+            border-top: .5px solid #D8D8D8; }
+            @media (max-width: 992px) {
+              #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-faq-list-wrap .ref-manager-faq-list .ref-manager-faq-item .ref-manager-question .ref-manager-question-title {
+                font-size: 0.875em;
+                padding-left: 0;
+                padding-right: 0;
+                border-top: .5px solid #D8D8D8;
+                border-bottom: 0; } }
+          #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-faq-list-wrap .ref-manager-faq-list .ref-manager-faq-item .ref-manager-question:hover {
+            background: #E4E4E4;
+            border-left: 0.875em solid #E4E4E4;
+            border-right: 0.875em solid #E4E4E4; }
+            @media (max-width: 992px) {
+              #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-faq-list-wrap .ref-manager-faq-list .ref-manager-faq-item .ref-manager-question:hover {
+                background: #fff;
+                border-left: 0.6875em solid #fff;
+                border-right: 0.6875em solid #fff; } }
+          #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-faq-list-wrap .ref-manager-faq-list .ref-manager-faq-item .ref-manager-question.ref-manager-active {
+            background: #E4E4E4;
+            border-left: 0.875em solid #E4E4E4 !important;
+            border-right: 0.875em solid #E4E4E4 !important; }
+            @media (max-width: 992px) {
+              #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-faq-list-wrap .ref-manager-faq-list .ref-manager-faq-item .ref-manager-question.ref-manager-active {
+                border-left: 0.6875em solid #E4E4E4 !important;
+                border-right: 0.6875em solid #E4E4E4 !important; } }
+            #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-faq-list-wrap .ref-manager-faq-list .ref-manager-faq-item .ref-manager-question.ref-manager-active .ref-manager-question-title {
+              border-bottom: 0;
+              border-top: 0; }
+              @media (max-width: 992px) {
+                #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-faq-list-wrap .ref-manager-faq-list .ref-manager-faq-item .ref-manager-question.ref-manager-active .ref-manager-question-title {
+                  border-top: 0; } }
+          #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-faq-list-wrap .ref-manager-faq-list .ref-manager-faq-item .ref-manager-question.ref-manager-active + .ref-manager-answer {
+            display: block;
+            background-color: #fff; }
+        #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-faq-list-wrap .ref-manager-faq-list .ref-manager-faq-item.last-child .ref-manager-question {
+          border-bottom-color: transparent; }
+        #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-faq-list-wrap .ref-manager-faq-list .ref-manager-faq-item .ref-manager-answer {
+          display: none;
+          padding: 1.5625em 2.125em;
+          font-family: GTE-Regular, Arial, sans-serif;
+          font-weight: normal;
+          font-size: 1.125em;
+          line-height: 1.2;
+          letter-spacing: 0.0075em;
+          color: #242424; }
+          @media (max-width: 992px) {
+            #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-faq-list-wrap .ref-manager-faq-list .ref-manager-faq-item .ref-manager-answer {
+              font-family: 'GTE-Light', Arial, sans-serif;
+              font-size: 0.875em;
+              padding: 0.9375em 0.775em; } }
+          #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-faq-list-wrap .ref-manager-faq-list .ref-manager-faq-item .ref-manager-answer p {
+            padding: 0;
+            margin: 0 0 0.8125em; }
+            #ref-manager .modal-box#ref-manager-faq .inner .ref-manager-faq-list-wrap .ref-manager-faq-list .ref-manager-faq-item .ref-manager-answer p:last-child {
+              margin: 0; }
+
+#ref-manager section.ref-manager-start-earning-mob {
+  position: relative;
+  background: #005BFF; }
+
+#ref-manager section.ref-manager-video-mob {
+  position: relative;
+  background: #fff; }
+
+#ref-manager section.ref-manager-calculator-mob {
+  position: relative;
+  background: #E4E4E4; }
+
+#ref-manager section.ref-manager-story-mob {
+  font-size: 16px;
+  position: relative;
+  background: #005BFF; }
+  @media (max-width: 992px) {
+    #ref-manager section.ref-manager-story-mob {
+      font-size: -webkit-calc(100vh / 40);
+      font-size: calc(100vh / 40); } }
+  #ref-manager section.ref-manager-story-mob .swiper-container {
+    height: 100%; }
+  #ref-manager section.ref-manager-story-mob .swiper-slide {
+    padding-top: 2em; }
+    #ref-manager section.ref-manager-story-mob .swiper-slide.ref-manager-swiper-slide-red {
+      background: #F91155; }
+  #ref-manager section.ref-manager-story-mob .swiper-pagination {
+    left: 50%;
+    width: 95%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding-top: 0.8125em;
+    padding-bottom: 1.0625em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  #ref-manager section.ref-manager-story-mob .swiper-pagination-bullet {
+    width: 6em;
+    height: 0.125em;
+    margin: 0 0.125em;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.4);
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  #ref-manager section.ref-manager-story-mob .swiper-pagination-bullet-active {
+    background: #fff;
+    width: 6em;
+    height: 0.125em;
+    margin-right: 0.25em;
+    -webkit-border-radius: 0;
+            border-radius: 0; }
+  #ref-manager section.ref-manager-story-mob .ref-manager-title {
+    font-family: 'GTE-Bold', Arial, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.625em;
+    margin-bottom: 0;
+    line-height: 1;
+    letter-spacing: 0.02813em;
+    padding-left: 0.375em; }
+    #ref-manager section.ref-manager-story-mob .ref-manager-title.ref-manager-title-2 {
+      margin-bottom: 1.5em; }
+  #ref-manager section.ref-manager-story-mob .ref-manager-img-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 22.5em;
+    margin-bottom: 1.25em; }
+    #ref-manager section.ref-manager-story-mob .ref-manager-img-wrapper .ref-manager-car {
+      position: absolute;
+      top: 3.75em;
+      left: 0;
+      max-width: 37.75em;
+      height: 16.25em;
+      margin-left: -18.125em;
+      z-index: 2; }
+    #ref-manager section.ref-manager-story-mob .ref-manager-img-wrapper .ref-manager-car-info {
+      font-size: 1em;
+      position: absolute;
+      z-index: 1;
+      top: 0.625em;
+      left: -4.0625em;
+      width: 20.125em;
+      height: 8.625em;
+      background: url(../img/story/blue-headline.svg) no-repeat 50% 50%/contain; }
+      #ref-manager section.ref-manager-story-mob .ref-manager-img-wrapper .ref-manager-car-info p {
+        position: absolute;
+        top: 1.375em;
+        right: 0;
+        margin: 0;
+        padding: 1.125em 0.75em;
+        font-family: 'GTE-Bold', Arial, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.25em;
+        text-align: right;
+        color: #fff;
+        -webkit-transform: rotate(-14deg);
+            -ms-transform: rotate(-14deg);
+                transform: rotate(-14deg); }
+    #ref-manager section.ref-manager-story-mob .ref-manager-img-wrapper .ref-manager-more-info {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      font-family: GTE-Regular, Arial, sans-serif;
+      font-weight: normal;
+      font-size: 0.625em;
+      line-height: 1.2;
+      color: #fff;
+      letter-spacing: 0.01875em;
+      padding: 0 2em; }
+  #ref-manager section.ref-manager-story-mob .ref-manager-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 13.75em;
+    height: 3.125em;
+    -webkit-border-radius: 0.15625em;
+            border-radius: 0.15625em;
+    background: #fff;
+    text-decoration: none;
+    outline: none;
+    font-family: 'GTE-Regular', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #797979;
+    font-size: 1.125em;
+    line-height: 1;
+    padding: 0.25em 0.4375em 0.125em;
+    margin: 0 auto; }
+    #ref-manager section.ref-manager-story-mob .ref-manager-btn:hover {
+      background: #cecece; }
+  #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-1 {
+    height: 25em;
+    padding: 0 1.25em 1.25em; }
+    #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-1 .ref-manager-bonus-item {
+      position: relative;
+      font-family: GTE-Regular, Arial, sans-serif;
+      font-weight: normal;
+      font-size: 0.875em;
+      line-height: 1.14;
+      letter-spacing: 0.0075em;
+      color: #fff;
+      height: 10em; }
+      #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-1 .ref-manager-bonus-item .ref-manager-bonus-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        padding: 4.25em 4.0625em 0.6875em 4.8125em;
+        font-family: 'GTE-Regular', Arial, sans-serif;
+        font-weight: normal;
+        font-size: 0.875em;
+        line-height: 1.14;
+        letter-spacing: 0.116667px;
+        color: #fff;
+        background-repeat: no-repeat;
+        -webkit-background-size: 4.875em 3.75em;
+                background-size: 4.875em 3.75em;
+        background-position: 27% 0; }
+      #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-1 .ref-manager-bonus-item:before {
+        content: '';
+        position: absolute;
+        width: 7.125em;
+        height: 7.125em;
+        left: 0;
+        top: 0;
+        background: url(../img/story/bonus-bg.svg) no-repeat 50% 50%/contain; }
+      #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-1 .ref-manager-bonus-item:after {
+        top: -0.0625em;
+        right: 0;
+        position: absolute;
+        font-family: 'GTE-Regular', Arial, sans-serif;
+        font-weight: normal;
+        color: #fff;
+        font-size: 10.6875em;
+        line-height: 1;
+        opacity: .1; }
+      #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-1 .ref-manager-bonus-item:nth-child(1):after {
+        content: '1'; }
+      #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-1 .ref-manager-bonus-item:nth-child(1) .ref-manager-bonus-content {
+        background-position: 5em 0;
+        background-image: url(../img/story/bonus-1.svg); }
+      #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-1 .ref-manager-bonus-item:nth-child(2) {
+        text-align: right; }
+        #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-1 .ref-manager-bonus-item:nth-child(2):before {
+          right: -0.6875em;
+          left: auto;
+          -webkit-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+                  transform: rotate(180deg); }
+        #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-1 .ref-manager-bonus-item:nth-child(2):after {
+          content: '2';
+          right: auto;
+          left: 0; }
+        #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-1 .ref-manager-bonus-item:nth-child(2) .ref-manager-bonus-content {
+          background-position: top 0 right 3.75em;
+          background-image: url(../img/story/bonus-2.svg); }
+      #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-1 .ref-manager-bonus-item:nth-child(3):after {
+        content: '3'; }
+      #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-1 .ref-manager-bonus-item:nth-child(3) .ref-manager-bonus-content {
+        background-position: 5em 0;
+        background-image: url(../img/story/bonus-3.svg); }
+  #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-2 {
+    height: -20em;
+    padding: 0 -1.25em; }
+    #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-2 .ref-manager-bonus-item {
+      position: relative;
+      font-family: GTE-Regular, Arial, sans-serif;
+      font-weight: normal;
+      font-size: -0.875em;
+      line-height: 1.14;
+      letter-spacing: -0.0075em;
+      color: #fff;
+      height: 10em; }
+      #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-2 .ref-manager-bonus-item .ref-manager-bonus-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        padding: 4.25em 4.0625em 0.6875em 4.8125em;
+        font-family: 'GTE-Regular', Arial, sans-serif;
+        font-weight: normal;
+        font-size: 0.875em;
+        line-height: 1.14;
+        letter-spacing: 0.116667px;
+        color: #fff;
+        background-repeat: no-repeat;
+        -webkit-background-size: 4.875em 3.75em;
+                background-size: 4.875em 3.75em;
+        background-position: 28% 0; }
+      #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-2 .ref-manager-bonus-item:before {
+        content: '';
+        position: absolute;
+        width: 7.125em;
+        height: 7.125em;
+        left: 0;
+        top: 0;
+        background: url(../img/story/bonus-bg.svg) no-repeat 50% 50%/contain; }
+      #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-2 .ref-manager-bonus-item:after {
+        top: -0.0625em;
+        right: 0;
+        position: absolute;
+        font-family: 'GTE-Regular', Arial, sans-serif;
+        font-weight: normal;
+        color: #fff;
+        font-size: 10.6875em;
+        line-height: 1;
+        opacity: .1; }
+      #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-2 .ref-manager-bonus-item:nth-child(1):after {
+        content: '4'; }
+      #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-2 .ref-manager-bonus-item:nth-child(1) .ref-manager-bonus-content {
+        background-position: 5em 0;
+        background-image: url(../img/story/bonus-4.svg); }
+      #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-2 .ref-manager-bonus-item:nth-child(2) {
+        text-align: right; }
+        #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-2 .ref-manager-bonus-item:nth-child(2):before {
+          right: -0.6875em;
+          left: auto;
+          -webkit-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+                  transform: rotate(180deg); }
+        #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-2 .ref-manager-bonus-item:nth-child(2):after {
+          content: '5';
+          right: auto;
+          left: 0; }
+        #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-2 .ref-manager-bonus-item:nth-child(2) .ref-manager-bonus-content {
+          background-position: top 0 right 4.0625em;
+          background-image: url(../img/story/bonus-5.svg); }
+      #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-2 .ref-manager-bonus-item:nth-child(3):after {
+        content: '3'; }
+      #ref-manager section.ref-manager-story-mob .ref-manager-bonus-list.ref-manager-bonus-list-2 .ref-manager-bonus-item:nth-child(3) .ref-manager-bonus-content {
+        background-image: url(../img/story/bonus-3.svg); }
+  #ref-manager section.ref-manager-story-mob .ref-manager-zigzag-wrapper {
+    height: 9.375em;
+    padding: 2.5em; }
+    #ref-manager section.ref-manager-story-mob .ref-manager-zigzag-wrapper .ref-manager-zigzag {
+      width: 5.25em;
+      height: 0.875em;
+      background-image: url(../img/story/zig-zag-mob.svg);
+      -webkit-background-size: 5.25em 0.875em;
+              background-size: 5.25em 0.875em; }
+  #ref-manager section.ref-manager-story-mob .ref-manager-info-text {
+    font-family: GTE-Regular, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 0.625em;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: 0.01875em;
+    padding: 0 2em; }
+    #ref-manager section.ref-manager-story-mob .ref-manager-info-text a {
+      display: inline;
+      font: inherit;
+      color: #fff;
+      text-decoration: underline; }
+
+#ref-manager section.ref-manager-academy-mob {
+  font-size: 16px;
+  position: relative;
+  background: #e4e4e4; }
+  @media (max-width: 992px) {
+    #ref-manager section.ref-manager-academy-mob {
+      font-size: -webkit-calc(100vh / 40);
+      font-size: calc(100vh / 40); } }
+  #ref-manager section.ref-manager-academy-mob .swiper-container {
+    height: 100%; }
+  #ref-manager section.ref-manager-academy-mob .swiper-slide {
+    padding-top: 2em; }
+  #ref-manager section.ref-manager-academy-mob .swiper-pagination {
+    width: 95%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding-top: 0.8125em;
+    padding-bottom: 1.0625em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  #ref-manager section.ref-manager-academy-mob .swiper-pagination-bullet {
+    width: 6em;
+    height: 0.125em;
+    margin: 0 0.125em;
+    opacity: 1;
+    background: rgba(121, 121, 121, 0.4);
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  #ref-manager section.ref-manager-academy-mob .swiper-pagination-bullet-active {
+    background: #797979;
+    width: 6em;
+    height: 0.125em;
+    margin-right: 0.25em;
+    -webkit-border-radius: 0;
+            border-radius: 0; }
+  #ref-manager section.ref-manager-academy-mob .ref-manager-title {
+    font-family: 'GTE-Bold', Arial, sans-serif;
+    font-weight: 400;
+    color: #005BFF;
+    font-size: 1.625em;
+    line-height: 1;
+    letter-spacing: 0.02937em;
+    padding-left: 0.375em;
+    margin-bottom: 2.0625em; }
+    #ref-manager section.ref-manager-academy-mob .ref-manager-title.ref-manager-title-2 {
+      color: #F91155;
+      margin-bottom: 1.5em; }
+  #ref-manager section.ref-manager-academy-mob .ref-manager-info-block {
+    width: 18.75em;
+    height: 20.625em;
+    background: url(../img/academy/blue-text-mob.svg) no-repeat 50% 50%/contain;
+    padding: 2.5em 2.1875em;
+    margin: 0 auto 1.5625em; }
+    #ref-manager section.ref-manager-academy-mob .ref-manager-info-block .ref-manager-info-text {
+      font-family: 'GTE-Bold', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 0.875em;
+      line-height: 1.15;
+      color: #fff;
+      letter-spacing: 0.02187em;
+      padding: 0;
+      margin-bottom: 1.0625em; }
+    #ref-manager section.ref-manager-academy-mob .ref-manager-info-block .ref-manager-info-list {
+      list-style: none;
+      font-family: 'GTE-Regular', Arial, sans-serif;
+      font-weight: normal;
+      font-size: 0.875em;
+      line-height: 1.15;
+      color: #fff;
+      letter-spacing: 0.02187em; }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-info-block .ref-manager-info-list .ref-manager-info-item {
+        padding: 0 0 1.0625em 0.75em;
+        position: relative; }
+        #ref-manager section.ref-manager-academy-mob .ref-manager-info-block .ref-manager-info-list .ref-manager-info-item:first-child {
+          margin-right: -0.75em; }
+        #ref-manager section.ref-manager-academy-mob .ref-manager-info-block .ref-manager-info-list .ref-manager-info-item:last-child {
+          padding-bottom: 0; }
+        #ref-manager section.ref-manager-academy-mob .ref-manager-info-block .ref-manager-info-list .ref-manager-info-item:before {
+          content: '';
+          position: absolute;
+          left: -0.1875em;
+          top: 0.3125em;
+          width: 0.40625em;
+          height: 0.40625em;
+          -webkit-border-radius: 50%;
+                  border-radius: 50%;
+          background: #F91155; }
+  #ref-manager section.ref-manager-academy-mob .ref-manager-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 15.625em;
+    height: 3.125em;
+    -webkit-border-radius: 0.1875em;
+            border-radius: 0.1875em;
+    background: #F91155;
+    text-decoration: none;
+    outline: none;
+    font-family: 'GTE-Regular', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #fff;
+    font-size: 1.125em;
+    line-height: 1;
+    padding: 0.25em 0.4375em 0.125em;
+    margin: 0 auto;
+    border: 0.125em solid #F91155;
+    cursor: pointer; }
+    #ref-manager section.ref-manager-academy-mob .ref-manager-btn:hover {
+      background: #c41c4d;
+      border-color: #c41c4d; }
+  #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-1 {
+    height: 25em;
+    padding: 0 1.25em 1.25em; }
+    #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-1 .ref-manager-online-item {
+      position: relative;
+      font-family: GTE-Regular, Arial, sans-serif;
+      font-weight: normal;
+      font-size: 0.875em;
+      line-height: 1.14;
+      letter-spacing: 0.0075em;
+      color: #fff;
+      height: 10.625em; }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-1 .ref-manager-online-item .ref-manager-online-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        padding: 4.25em 4.375em 0.6875em 3.4375em;
+        font-family: 'GTE-Regular', Arial, sans-serif;
+        font-weight: normal;
+        font-size: 0.875em;
+        line-height: 1.14;
+        letter-spacing: 0.0275em;
+        color: #242424;
+        background-repeat: no-repeat;
+        -webkit-background-size: 4.9375em 3.75em;
+                background-size: 4.9375em 3.75em;
+        background-position: top 0 left 3.4375em; }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-1 .ref-manager-online-item:before {
+        content: '';
+        position: absolute;
+        width: 7.125em;
+        height: 7.125em;
+        left: -1.5em;
+        top: 0px;
+        background: url(../img/academy/online-bg.svg) no-repeat 50% 50%/contain; }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-1 .ref-manager-online-item:after {
+        top: -0.0625em;
+        right: 0;
+        position: absolute;
+        font-family: 'GTE-Regular', Arial, sans-serif;
+        font-weight: normal;
+        color: #242424;
+        font-size: 9.375em;
+        line-height: 1;
+        opacity: .1; }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-1 .ref-manager-online-item:nth-child(1):after {
+        content: '1'; }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-1 .ref-manager-online-item:nth-child(1) .ref-manager-bonus-content {
+        background-image: url(../img/academy/online-1.svg); }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-1 .ref-manager-online-item:nth-child(2) {
+        text-align: right; }
+        #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-1 .ref-manager-online-item:nth-child(2):before {
+          right: -10px;
+          left: auto;
+          -webkit-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+                  transform: rotate(180deg); }
+        #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-1 .ref-manager-online-item:nth-child(2):after {
+          content: '2';
+          right: auto;
+          left: 0; }
+        #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-1 .ref-manager-online-item:nth-child(2) .ref-manager-online-content {
+          background-image: url(../img/academy/online-2.svg);
+          background-position: top 0 right 4.375em; }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-1 .ref-manager-online-item:nth-child(3):after {
+        content: '3'; }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-1 .ref-manager-online-item:nth-child(3) .ref-manager-bonus-content {
+        background-position: top 0 left 3.125em;
+        background-image: url(../img/academy/online-3.svg); }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-1 .ref-manager-online-item:nth-child(1) .ref-manager-online-content {
+        background-image: url(../img/academy/online-1.svg); }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-1 .ref-manager-online-item:nth-child(2) .ref-manager-online-content {
+        background-image: url(../img/academy/online-2.svg); }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-1 .ref-manager-online-item:nth-child(3) .ref-manager-online-content {
+        background-image: url(../img/academy/online-3.svg); }
+  #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-2 {
+    height: 25em;
+    padding: 0 1.25em 1.25em; }
+    #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-2 .ref-manager-online-item {
+      position: relative;
+      font-family: GTE-Regular, Arial, sans-serif;
+      font-weight: normal;
+      font-size: 0.875em;
+      line-height: 1.14;
+      letter-spacing: 0.0075em;
+      color: #fff;
+      height: 10.625em; }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-2 .ref-manager-online-item .ref-manager-online-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        padding: 4.25em 5em 0.6875em 2.875em;
+        font-family: 'GTE-Regular', Arial, sans-serif;
+        font-weight: normal;
+        font-size: 0.875em;
+        line-height: 1.14;
+        letter-spacing: 0.4px;
+        color: #242424;
+        background-repeat: no-repeat;
+        -webkit-background-size: 4.9375em 3.75em;
+                background-size: 4.9375em 3.75em;
+        background-position: top 0 left 3.125em; }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-2 .ref-manager-online-item:before {
+        content: '';
+        position: absolute;
+        width: 7.125em;
+        height: 7.125em;
+        left: -2.1875em;
+        top: 0px;
+        background: url(../img/academy/online-bg.svg) no-repeat 50% 50%/contain; }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-2 .ref-manager-online-item:after {
+        top: -0.0625em;
+        right: 0;
+        position: absolute;
+        font-family: 'GTE-Regular', Arial, sans-serif;
+        font-weight: normal;
+        color: #242424;
+        font-size: 9.375em;
+        line-height: 1;
+        opacity: .1; }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-2 .ref-manager-online-item:nth-child(1):after {
+        content: '4'; }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-2 .ref-manager-online-item:nth-child(1) .ref-manager-bonus-content {
+        background-image: url(../img/academy/online-4.svg); }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-2 .ref-manager-online-item:nth-child(2) {
+        text-align: right; }
+        #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-2 .ref-manager-online-item:nth-child(2):before {
+          right: -0.0625em;
+          left: auto;
+          -webkit-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+                  transform: rotate(180deg); }
+        #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-2 .ref-manager-online-item:nth-child(2):after {
+          content: '5';
+          right: auto;
+          left: 0; }
+        #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-2 .ref-manager-online-item:nth-child(2) .ref-manager-online-content {
+          background-image: url(../img/academy/online-5.svg);
+          background-position: top 0 right 5em; }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-2 .ref-manager-online-item:nth-child(3):after {
+        content: '6'; }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-2 .ref-manager-online-item:nth-child(3) .ref-manager-online-content {
+        background-image: url(../img/academy/online-6.svg); }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-2 .ref-manager-online-item:nth-child(1) .ref-manager-online-content {
+        background-image: url(../img/academy/online-4.svg); }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-2 .ref-manager-online-item:nth-child(2) .ref-manager-online-content {
+        background-image: url(../img/academy/online-5.svg); }
+      #ref-manager section.ref-manager-academy-mob .ref-manager-online-list.ref-manager-online-list-2 .ref-manager-online-item:nth-child(3) .ref-manager-online-content {
+        background-image: url(../img/academy/online-6.svg); }
+  #ref-manager section.ref-manager-academy-mob .ref-manager-lines-wrapper {
+    height: 6.875em;
+    padding: 0 4.375em; }
+    #ref-manager section.ref-manager-academy-mob .ref-manager-lines-wrapper .ref-manager-lines {
+      width: 6.5em;
+      height: 6.5em;
+      background-image: url(../img/academy/lines-mob.svg);
+      -webkit-background-size: contain;
+              background-size: contain;
+      background-repeat: no-repeat; }
+  #ref-manager section.ref-manager-academy-mob .ref-manager-info-text {
+    font-family: GTE-Regular, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 1.1;
+    color: #fff;
+    letter-spacing: 0.291667px;
+    padding: 0 20px; }
+    #ref-manager section.ref-manager-academy-mob .ref-manager-info-text a {
+      display: inline;
+      font: inherit;
+      color: #fff;
+      text-decoration: underline; }
+
+#ref-manager section.ref-manager-feedback-mob {
+  font-size: 16px;
+  position: relative;
+  background: #005BFF;
+  padding-top: 2em; }
+  @media (max-width: 992px) {
+    #ref-manager section.ref-manager-feedback-mob {
+      font-size: -webkit-calc(100vh / 40);
+      font-size: calc(100vh / 40);
+      min-height: 30em; } }
+  #ref-manager section.ref-manager-feedback-mob .ref-manager-title {
+    font-family: 'GTE-Bold', Arial, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.625em;
+    line-height: 1;
+    letter-spacing: 0.02813em;
+    padding-left: 0.375em;
+    margin-bottom: 0.75em; }
+  #ref-manager section.ref-manager-feedback-mob .swiper-container {
+    width: 100%;
+    max-height: -webkit-calc(100vh - 15.625em);
+    max-height: calc(100vh - 15.625em);
+    min-height: -webkit-calc(100vh - 15.625em);
+    min-height: calc(100vh - 15.625em); }
+  #ref-manager section.ref-manager-feedback-mob .swiper-slide {
+    padding: 0 0.9375em 0 0.625em; }
+    #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-one,
+    #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-two,
+    #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-three {
+      display: none; }
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-one.ref-manager-way-visible,
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-two.ref-manager-way-visible,
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-three.ref-manager-way-visible {
+        display: block; }
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-one .ref-manager-bottom,
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-two .ref-manager-bottom,
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-three .ref-manager-bottom {
+        font-family: GTE-Bold, Arial, sans-serif;
+        font-weight: 400;
+        color: #fff;
+        font-size: 1em;
+        line-height: 1.4;
+        letter-spacing: 0.02875em;
+        margin: 0 auto 0.625em; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-one .ref-manager-bottom .ref-manager-phone,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-two .ref-manager-bottom .ref-manager-phone,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-three .ref-manager-bottom .ref-manager-phone {
+          font: inherit; }
+          #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-one .ref-manager-bottom .ref-manager-phone .ref-manager-bottom-link,
+          #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-two .ref-manager-bottom .ref-manager-phone .ref-manager-bottom-link,
+          #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-three .ref-manager-bottom .ref-manager-phone .ref-manager-bottom-link {
+            color: inherit; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-one .ref-manager-bottom .ref-manager-email,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-two .ref-manager-bottom .ref-manager-email,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-three .ref-manager-bottom .ref-manager-email {
+          font: inherit; }
+          #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-one .ref-manager-bottom .ref-manager-email .ref-manager-bottom-link,
+          #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-two .ref-manager-bottom .ref-manager-email .ref-manager-bottom-link,
+          #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-three .ref-manager-bottom .ref-manager-email .ref-manager-bottom-link {
+            font-family: GTE-Regular, Arial, sans-serif;
+            font-weight: normal;
+            color: inherit; }
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-one .ref-manager-copy,
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-two .ref-manager-copy,
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-three .ref-manager-copy {
+        font-family: GTE-Thin, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 0.625em;
+        line-height: 1.2;
+        letter-spacing: 0.1125em;
+        color: #fff;
+        margin: 0 -0.3125em; }
+    #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-two .ref-manager-content,
+    #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-three .ref-manager-content {
+      min-height: -webkit-calc(100vh - 15.625em);
+      min-height: calc(100vh - 15.625em);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-two .ref-manager-content .ref-manager-wrapper,
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-three .ref-manager-content .ref-manager-wrapper {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+    #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-two .ref-manager-text,
+    #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-three .ref-manager-text {
+      text-align: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      height: 3.75em;
+      font-family: GTE-Thin, Arial, sans-serif;
+      font-size: 1em;
+      line-height: 1.1875em;
+      letter-spacing: 0.03125em;
+      color: #fff;
+      padding: 0 1.25em;
+      margin-bottom: 1.375em; }
+    #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-two .ref-manager-link,
+    #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-three .ref-manager-link {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 13.75em;
+      height: 2.875em;
+      -webkit-border-radius: 0.125em;
+              border-radius: 0.125em;
+      text-decoration: none;
+      outline: none;
+      font-family: 'GTE-Regular', Arial, sans-serif;
+      font-style: normal;
+      text-align: center;
+      font-weight: normal;
+      font-size: 1.5em;
+      line-height: 1;
+      padding: 0.3125em 0.5em 0.1875em;
+      cursor: pointer;
+      border: 2px solid #f91155; }
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-two .ref-manager-link.ref-manager-link-red,
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-way-three .ref-manager-link.ref-manager-link-red {
+        color: #fff;
+        background: #F91155;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+    #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 0.5625em;
+      font-family: GTE-Regular, Arial,sans-serif;
+      color: #fff;
+      font-weight: normal;
+      font-size: 0.875em;
+      line-height: 1.15;
+      letter-spacing: 0.02813em; }
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group label.ref-manager-feedback-form-group-label {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 46%; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group label.ref-manager-feedback-form-group-label .ref-manager-feedback-form-group-text {
+          width: 5.8125em;
+          padding-right: 0.75em; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group label.ref-manager-feedback-form-group-label .ref-manager-air-date-picker {
+          pointer-events: none; }
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-ui-input-mob {
+        position: relative; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-ui-input-mob .ref-manager-wrap-scroll-mob {
+          position: absolute;
+          top: 100%;
+          left: 5.75em;
+          right: 0;
+          z-index: 4; }
+          #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-ui-input-mob .ref-manager-wrap-scroll-mob .ref-manager-wrapper-city-list-mob {
+            height: auto;
+            max-height: 9.5em; }
+            #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-ui-input-mob .ref-manager-wrap-scroll-mob .ref-manager-wrapper-city-list-mob .ref-manager-city-list {
+              margin: 0;
+              padding: 0; }
+              #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-ui-input-mob .ref-manager-wrap-scroll-mob .ref-manager-wrapper-city-list-mob .ref-manager-city-list .ref-manager-city-item {
+                color: #797979;
+                border-left: 0.625em solid #FFFFFF;
+                border-right: 0.625em solid #FFFFFF;
+                border-bottom: 1px solid #797979;
+                padding: 0.625em 0.3125em;
+                background: #fff;
+                cursor: pointer; }
+                #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-ui-input-mob .ref-manager-wrap-scroll-mob .ref-manager-wrapper-city-list-mob .ref-manager-city-list .ref-manager-city-item:first-child {
+                  -webkit-border-radius: 0.125em 0.125em 0 0;
+                          border-radius: 0.125em 0.125em 0 0; }
+                #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-ui-input-mob .ref-manager-wrap-scroll-mob .ref-manager-wrapper-city-list-mob .ref-manager-city-list .ref-manager-city-item:last-child {
+                  border-bottom: 1px solid transparent;
+                  -webkit-border-radius: 0 0 0.125em 0.125em;
+                          border-radius: 0 0 0.125em 0.125em; }
+                #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-ui-input-mob .ref-manager-wrap-scroll-mob .ref-manager-wrapper-city-list-mob .ref-manager-city-list .ref-manager-city-item:hover {
+                  background: #E4E4E4;
+                  border-left: 0.625em solid #E4E4E4;
+                  border-right: 0.625em solid #E4E4E4; }
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group label {
+        width: 5.8125em;
+        padding-right: 0.6875em; }
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text'],
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email'] {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        background: #005BFF;
+        border: 1px solid #fff;
+        color: inherit;
+        padding: 0.5625em 0.75em 0.5em;
+        -webkit-border-radius: 2px;
+                border-radius: 2px;
+        font: inherit; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']::-webkit-input-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']::-webkit-input-placeholder {
+          color: #fff; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']::-moz-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']::-moz-placeholder {
+          color: #fff; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']:-ms-input-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']:-ms-input-placeholder {
+          color: #fff; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text'].ref-manager-air-date-picker,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email'].ref-manager-air-date-picker {
+          cursor: pointer;
+          max-width: 6.625em; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']:focus,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']:focus {
+          outline: none;
+          background-color: rgba(244, 244, 244, 0.2); }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-nameMob:focus::-webkit-input-placeholder, #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-emailMob:focus::-webkit-input-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-nameMob:focus::-webkit-input-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-emailMob:focus::-webkit-input-placeholder {
+          color: transparent; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-nameMob:focus::-moz-placeholder, #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-emailMob:focus::-moz-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-nameMob:focus::-moz-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-emailMob:focus::-moz-placeholder {
+          color: transparent; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-nameMob:focus:-ms-input-placeholder, #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-emailMob:focus:-ms-input-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-nameMob:focus:-ms-input-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-emailMob:focus:-ms-input-placeholder {
+          color: transparent; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-nameMob:focus::-ms-input-placeholder, #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-emailMob:focus::-ms-input-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-nameMob:focus::-ms-input-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-emailMob:focus::-ms-input-placeholder {
+          color: transparent; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-nameMob:focus::placeholder, #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-emailMob:focus::placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-nameMob:focus::placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-emailMob:focus::placeholder {
+          color: transparent; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-fullname-mob:hover::-webkit-input-placeholder, #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-fullname-mob:focus::-webkit-input-placeholder, #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-email-mob:hover::-webkit-input-placeholder, #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-email-mob:focus::-webkit-input-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-fullname-mob:hover::-webkit-input-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-fullname-mob:focus::-webkit-input-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-email-mob:hover::-webkit-input-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-email-mob:focus::-webkit-input-placeholder {
+          color: transparent; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-fullname-mob:hover::-moz-placeholder, #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-fullname-mob:focus::-moz-placeholder, #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-email-mob:hover::-moz-placeholder, #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-email-mob:focus::-moz-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-fullname-mob:hover::-moz-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-fullname-mob:focus::-moz-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-email-mob:hover::-moz-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-email-mob:focus::-moz-placeholder {
+          color: transparent; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-fullname-mob:hover:-ms-input-placeholder, #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-fullname-mob:focus:-ms-input-placeholder, #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-email-mob:hover:-ms-input-placeholder, #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-email-mob:focus:-ms-input-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-fullname-mob:hover:-ms-input-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-fullname-mob:focus:-ms-input-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-email-mob:hover:-ms-input-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-email-mob:focus:-ms-input-placeholder {
+          color: transparent; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-fullname-mob:hover::-ms-input-placeholder, #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-fullname-mob:focus::-ms-input-placeholder, #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-email-mob:hover::-ms-input-placeholder, #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-email-mob:focus::-ms-input-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-fullname-mob:hover::-ms-input-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-fullname-mob:focus::-ms-input-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-email-mob:hover::-ms-input-placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-email-mob:focus::-ms-input-placeholder {
+          color: transparent; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-fullname-mob:hover::placeholder, #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-fullname-mob:focus::placeholder, #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-email-mob:hover::placeholder, #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text']#ref-manager-email-mob:focus::placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-fullname-mob:hover::placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-fullname-mob:focus::placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-email-mob:hover::placeholder,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email']#ref-manager-email-mob:focus::placeholder {
+          color: transparent; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='text'].ref-manager-invalid,
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group input[type='email'].ref-manager-invalid {
+          border-color: #F91155; }
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group:nth-child(5) {
+        margin-bottom: 1.125em; }
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-feedback-form-social {
+        position: relative; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-feedback-form-social:before {
+          content: '';
+          position: absolute;
+          top: -0.125em;
+          right: 0;
+          width: 2.5em;
+          height: 2.5em;
+          background-repeat: no-repeat;
+          background-position: 50% 50%; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-feedback-form-social input:hover::-webkit-input-placeholder {
+          color: transparent; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-feedback-form-social input:hover::-moz-placeholder {
+          color: transparent; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-feedback-form-social input:hover:-ms-input-placeholder {
+          color: transparent; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-feedback-form-social input:hover::-ms-input-placeholder {
+          color: transparent; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-feedback-form-social input:hover::placeholder {
+          color: transparent; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-feedback-form-social input:focus::-webkit-input-placeholder {
+          color: transparent; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-feedback-form-social input:focus::-moz-placeholder {
+          color: transparent; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-feedback-form-social input:focus:-ms-input-placeholder {
+          color: transparent; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-feedback-form-social input:focus::-ms-input-placeholder {
+          color: transparent; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-feedback-form-social input:focus::placeholder {
+          color: transparent; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-feedback-form-social.ref-manager-feedback-form-social-vk:before {
+          background-image: url(../img/feedback/soc-vk.svg);
+          -webkit-background-size: 1.6875em 1em;
+                  background-size: 1.6875em 1em; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-feedback-form-social.ref-manager-feedback-form-social-ok:before {
+          background-image: url(../img/feedback/soc-ok.svg);
+          -webkit-background-size: 1em 1.6875em;
+                  background-size: 1em 1.6875em; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-feedback-form-social.ref-manager-feedback-form-social-fb:before {
+          background-image: url(../img/feedback/soc-fb.svg);
+          -webkit-background-size: 1em 1.6875em;
+                  background-size: 1em 1.6875em; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-feedback-form-social.ref-manager-feedback-form-social-in {
+          margin-bottom: 1.375em; }
+          #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-form-group.ref-manager-feedback-form-social.ref-manager-feedback-form-social-in:before {
+            background-image: url(../img/feedback/soc-in.svg);
+            -webkit-background-size: 1.6875em 1.6875em;
+                    background-size: 1.6875em 1.6875em; }
+    #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-more-info {
+      margin: 0 -0.25em 1.375em;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 0.6875em 0.3125em;
+      font-family: GTE-Regular, Arial, sans-serif;
+      font-weight: normal;
+      font-size: 0.875em;
+      line-height: 1.1;
+      color: #fff;
+      letter-spacing: 0.0625em; }
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-more-info .ref-manager-more-info-title {
+        font: inherit;
+        font-weight: normal;
+        margin-bottom: 0.6875em; }
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-more-info .ref-manager-more-info-list {
+        font-family: GTE-Thin, Arial, sans-serif;
+        font-weight: 400;
+        margin: 0;
+        padding: 0 0 0.625em 1.125em;
+        list-style-type: decimal; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-more-info .ref-manager-more-info-list .ref-manager-more-info-item {
+          position: relative;
+          padding-left: 0;
+          list-style-type: decimal; }
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-more-info .ref-manager-more-info-text {
+        padding: 0; }
+    #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-checkbox-area {
+      font-family: GTE-Thin, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 0.625em;
+      line-height: 1.2;
+      letter-spacing: 0.125em;
+      color: #fff;
+      margin-bottom: 2em;
+      padding-left: 3.5em; }
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-checkbox-area a {
+        font-family: GTE-Thin, Arial, sans-serif;
+        font-weight: 400;
+        line-height: 1.2;
+        letter-spacing: 0.03125em;
+        color: #fff;
+        text-decoration: underline; }
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-checkbox-area label {
+        font: inherit;
+        position: relative;
+        cursor: pointer; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-checkbox-area label input[type=checkbox] {
+          position: absolute;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          opacity: 0; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-checkbox-area label .ref-manager-new-checkbox {
+          position: absolute;
+          margin-left: -3.5em;
+          width: 1.5625em;
+          height: 1.5625em;
+          background: url(../img/feedback/check-false.svg) no-repeat 50% 50%/contain; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-checkbox-area label input[type=checkbox]:checked + .ref-manager-new-checkbox {
+          background: url(../img/feedback/check-true.svg) no-repeat 50% 50%/contain; }
+        #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-checkbox-area label input.ref-manager-invalid[type=checkbox] + .ref-manager-new-checkbox {
+          background: url(../img/feedback/check-invalid.svg) no-repeat 50% 50%/contain; }
+    #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-btn {
+      -webkit-appearance: none;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 13.75em;
+      height: 3.125em;
+      -webkit-border-radius: 0.125em;
+              border-radius: 0.125em;
+      background: #F91155;
+      text-decoration: none;
+      outline: none;
+      font-family: 'GTE-Regular', Arial, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      color: #fff;
+      font-size: 1.125em;
+      line-height: 1.2;
+      padding: 0.28125em 0.4375em 0.15625em;
+      cursor: pointer;
+      border: 0.125em solid #F91155;
+      margin: 0 auto 1.375em; }
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-btn:hover {
+        border-color: #c41c4d;
+        background: #c41c4d; }
+      #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-btn.ref-manager-disabled {
+        background: #C2C2C2;
+        border-color: #C2C2C2;
+        pointer-events: none;
+        cursor: default; }
+    #ref-manager section.ref-manager-feedback-mob .swiper-slide .ref-manager-feedback-form .ref-manager-feedback-info {
+      padding: 0;
+      font-family: 'GTE-Thin', Arial, sans-serif;
+      font-weight: 400;
+      color: #fff;
+      font-weight: normal;
+      font-size: 0.875em;
+      line-height: 1.15;
+      letter-spacing: 0.0275em;
+      margin: 0 0 1.125em 0; }

@@ -1,0 +1,20 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 2H3V3H2V2Z" fill="white"/>
+<path d="M2 14L2 13H3V14H2Z" fill="white"/>
+<path d="M13 2H14V3H13V2Z" fill="white"/>
+<path d="M10 10H9V9H10V10Z" fill="white"/>
+<path d="M6 9H7V10H6V9Z" fill="white"/>
+<path d="M10 7H9V6L10 6V7Z" fill="white"/>
+<path d="M12 5H11V4L12 4V5Z" fill="white"/>
+<path d="M7 7H6V6L7 6V7Z" fill="white"/>
+<path d="M13 13H14V14H13V13Z" fill="white"/>
+<path d="M3 14V15H13V14H3Z" fill="white"/>
+<path d="M7 10V11H9V10H7Z" fill="white"/>
+<path d="M9 6V5L7 5V6L9 6Z" fill="white"/>
+<path d="M6 7H5V9H6V7Z" fill="white"/>
+<path d="M10 9H11V7H10V9Z" fill="white"/>
+<path d="M14 13H15V3H14V13Z" fill="white"/>
+<path d="M3 1V2H13V1H3Z" fill="white"/>
+<path d="M1 13H2L2 3H1L1 13Z" fill="white"/>
+<path d="M3 2V1H13V2M3 2H2V3M3 2V3H2M3 2H13M2 3H1L1 13H2M2 3L2 13M3 14V15H13V14M3 14V13H2M3 14H2L2 13M3 14H13M14 13H15V3H14M14 13H13V14M14 13V14H13M14 13V3M13 2H14V3M13 2V3H14M9 10H10V9M9 10V9H10M9 10V11H7V10M9 10H7M10 9H11V7H10M10 9V7M6 7H5V9H6M6 7H7V6M6 7V6L7 6M6 7V9M6 9H7V10M6 9V10H7M10 7H9V6M10 7V6L9 6M9 6V5L7 5V6M9 6L7 6M12 5H11V4L12 4V5Z" stroke="white" stroke-width="0.5"/>
+</svg>
